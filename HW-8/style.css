@@ -1,0 +1,19 @@
+h3:first-child {
+    color:pink;
+}
+
+#greycol {
+    color:grey;
+}
+
+p:nth-child(1) {
+    color: red;
+}
+
+.yellow {
+    color:yellow;
+}
+
+p:nth-last-child(2) {
+    color: green;
+}
