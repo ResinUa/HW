@@ -1,0 +1,8 @@
+.element {
+    height: 220px;
+    width: 350px;
+    border: 2px dashed red;
+    background-color: green;
+    margin-bottom: 30px;
+    padding: 15px 10px 20px 10px;
+}
