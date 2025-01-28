@@ -1,6 +1,6 @@
 .holder {
     display: flex;
-    width: 910px;
+    width: 912px;
     height: 245px;
     flex-wrap: wrap;
 }
@@ -12,6 +12,7 @@
     white-space: nowrap;
     border-left: 5px solid black;
     border-top: 5px solid black;
+    border-radius: 40px 0 0 0;
 }
 
 .item:last-child {
@@ -21,13 +22,14 @@
     white-space: nowrap; 
     border-right: 5px solid black;
     border-top: 5px solid black; 
+    border-radius: 0 40px 0 0;
 }
 
 .item:nth-child(2) {
     background-color: rgb(0, 151, 185);
     order: 3;
     height: 50%;
-    padding-right: 291px;
+    padding-right: 262px;
     border-bottom: 5px solid black;
 }
 .item:nth-child(3) {
@@ -46,4 +48,26 @@
     padding-right: 292px;    
     border-right: 5px solid black;
     border-bottom: 5px solid black;
+}
+
+.item:first-child,.item:last-child {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(2),.item:nth-child(3),.item:nth-last-child(2) {
+    font-size: 35px;
+    display: flex;
+    align-items: center; /* <-- це виконується */
+    justify-items: center; /* <-- воно просто ігнорує цю частину коду 🫠*/
+    flex-basis: 17px;
+}
+
+.example {
+    font-size: 30px;
+    height: 350px;
+    display: flex;
+    align-items: end;
 }
