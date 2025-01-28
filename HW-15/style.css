@@ -61,7 +61,7 @@
     font-size: 35px;
     display: flex;
     align-items: center; /* <-- це виконується */
-    justify-items: center; /* <-- воно просто ігнорує цю частину коду 🫠*/
+    justify-content: center; /* <-- воно просто ігнорує цю частину коду 🫠*/
     flex-basis: 17px;
 }
 
