@@ -1,15 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 .holder {
     display: flex;
     width: 912px;
-    height: 245px;
+    height: 200px;
     flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 
 .item:first-child {
     background-color: rgb(255, 84, 84);
-    width: 449px;
-    height: 113px;
-    white-space: nowrap;
     border-left: 5px solid black;
     border-top: 5px solid black;
     border-radius: 40px 0 0 0;
@@ -17,9 +26,6 @@
 
 .item:last-child {
     background-color: rgb(255, 174, 0); 
-    width: 449px;
-    height: 113px;
-    white-space: nowrap; 
     border-right: 5px solid black;
     border-top: 5px solid black; 
     border-radius: 0 40px 0 0;
@@ -28,41 +34,28 @@
 .item:nth-child(2) {
     background-color: rgb(0, 151, 185);
     order: 3;
-    height: 50%;
-    padding-right: 262px;
     border-bottom: 5px solid black;
 }
 .item:nth-child(3) {
     background-color: rgb(109, 36, 192);
     order: 2;
-    height: 50%;
-    padding-right: 291px;
     border-left: 5px solid black;
     border-bottom: 5px solid black;
 }
 
 .item:nth-last-child(2) {
     background-color: green;
-    order: 4;
-    height: 50%;
-    padding-right: 292px;    
+    order: 4;    
     border-right: 5px solid black;
     border-bottom: 5px solid black;
 }
 
 .item:first-child,.item:last-child {
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-basis: 50%;
 }
 
 .item:nth-child(2),.item:nth-child(3),.item:nth-last-child(2) {
-    font-size: 35px;
-    display: flex;
-    align-items: center; /* <-- це виконується */
-    justify-content: center; /* <-- воно просто ігнорує цю частину коду 🫠*/
-    flex-basis: 17px;
+    flex-grow: 1;
 }
 
 .example {
