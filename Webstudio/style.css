@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.head {
+  background-color: white;
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-links {
+  width: 281px;
+  height: 16px;
+}
+
+#header-links {
+  color: #212121;
+}
+
+#header-links:hover {
+  color: #2196f3;
+}
+
+.header-inf {
+  display: flex;
+  flex-direction: row;
+}
+
+#up1,
+.uppertext1 {
+  text-transform: uppercase;
+}
+
+#opacity60 {
+  opacity: 60%;
+}
