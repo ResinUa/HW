@@ -1,14 +1,38 @@
-.container {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 1920px;
     height: 1080px;
+}
+
+.rectangleborder {
+    width: 1920;
+    height: 1080;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-#haii {
-    width: 750px;
-    height: 250px;
-    font-size: 150px;
+.rectangle {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(112, 255, 114);
+    background-image: url(./img/hedgehogimg.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    transition-property: width, background-color, background-image, background-position background-repeat;
+    transition-duration: ;
+    transition-delay: ;
 }
 
+.rectangle:hover {
+    width: 400px;
+    background-color: cornflowerblue;
+    background-image: url(./img/grassimg.png);
+    background-size: 20%;
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
