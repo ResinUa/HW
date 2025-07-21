@@ -1,3 +1,15 @@
 .footer {
     background-color: #2F303A;
   }
+
+  .footer-content p{
+   color: rgba($color: #ffffff, $alpha: 0.6);
+   &:hover {
+    color: rgba($color: #ffffff, $alpha: 1.0);
+   }
+  }
+
+.footer-content {
+   display: flex;
+   flex-direction: column;
+}

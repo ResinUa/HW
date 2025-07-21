@@ -1,12 +1,34 @@
-.s1-main {
+.s1 {
   width: 100%;
   height: 600px;
-  background-image: url(/Webstudio/src/img/s1bg.png);
+  background-image: url(src/img/svg/s1bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   @include flex-position
 }
 
+.s3 { 
+  display: flex;
+  width: 1170px;
+  height: 386px;
+  .s3img1 {
+  background-image: url(/src/img/garbage/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
+.s3img2 {
+  background-image: url(/src/img/garbage/img2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 
+.s3img3 {
+  background-image: url(/src/img/garbage/img3.jpg);
+  background-repeat: no-repeat;  
+  background-position: bottom;
+}
+}
 
 
 
