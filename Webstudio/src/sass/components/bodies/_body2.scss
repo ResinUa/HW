@@ -1,0 +1,34 @@
+.m2s {
+    margin-top: 74px;
+    margin-bottom: 94px;
+    margin-left: 215px;
+    margin-right: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .m2sbutton {
+        display: flex;
+        justify-content: center;
+        width: 575px;
+        height: 54px;
+    }
+
+    button {
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f5f4fa;
+
+        a {
+            text-decoration: none;
+            color: #212121;
+            font-weight: medium;
+            font-size: 16px;
+        }
+    }
+
+    button:hover {
+        background-color: #2196F3;
+    }
+}

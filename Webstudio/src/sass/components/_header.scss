@@ -1,22 +1,43 @@
 @import "./../utlits/mixins";
 
-.head {
+header {
   background-color: white;
   width: 100%;
   height: 80px;
   @include flex-position();
-  
-  .header-inf {
-    @include flex-position(row, space-between);
-    word-spacing: 20px;
-  }
+  position: fixed;
+}
 
-  .header-links {
-    word-spacing: 20px;
-  }
 
+.header-inf {
   a {
     text-decoration: none;
-    color: black;
+    color: #757575;
+    font-weight: medium;
   }
+  #hhiemail {
+    padding-right: 20%;
+  }
+}
+
+.header-links {
+  display: flex;
+  padding-left: 20%;
+  a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: medium;
+  }
+  div {
+    padding-right: 25%;
+  }
+}
+
+.h1half,
+.h2half {
+  display: flex;
+}
+
+.h1half {
+  padding-right: 30%;
 }

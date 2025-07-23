@@ -11,98 +11,151 @@
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   </head>  
   <body>
-    <header class="head">
-      <div class="WebStudiologo">
-    <svg class="sigmajacus"><use href="./src/img/symbol-defs.svg#icon-WebStudiologo"></use></svg> 
-      </div>
-      <div class="header-links">
-        <a href="#">Студія</a>
-        <a href="#">Портфоліо</a>
-        <a href="#">Контакти</a>
-      </div>
-      <div class="header-inf">
-        <a href="#">info@devstudio.com</a>
-        <p>+38-096-111-11-11</p>
-      </div>
+    <header>
+        <div class="h1half">
+          <div class="WebStudiologo">
+              <svg class="sigmajacus"><use href="./src/img/symbol-defs.svg#icon-WebStudiologo"></use></svg>
+          </div>
+          <div class="header-links">
+            <div id="hlstudio"><a href="#">Студія</a></div>
+            <div id="hlportfolio"><a href="#">Портфоліо</a></div>
+            <div id="hlcontacts"><a href="#">Контакти</a></div>
+          </div>
+        </div>
+        <div class="h2half">
+          <div class="header-inf" style="display: flex;">
+            <div  id="hhiemail"><a href="#">info@devstudio.com</a></div>
+            <div id="hhiphone"><a href="#">+380961111111</a></div>
+          </div>
+        </div>
     </header>
     <main class="main">
       <section class="s1">
-        <h2>ефективні рішення для вашого бізнесу</h2>
-        <button><a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF">Замовити послугу</a></button>
+         <div class="bgoverlay">
+           <div class="s1nbgc"> <!--nbgc stands for non background content -->
+            <h2 id="s1h2">ефективні рішення для<br>вашого бізнесу</h2>
+            <button id="s1button"><a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF" id="s1a">Замовити послугу</a></button>
+                   </div>
+         </div>
       </section>
     <section class="s2">
-        <div class="s2img"> <!--я хз як ти це будеш рівняти лол це твої проблеми на завтра-->    
-          <svg><use href="./src/img/symbol-defs.svg#icon-MrAntTenna"></use></svg>
-           <h2>УВАГА ДО ДЕТАЛЕЙ</h2> 
-           <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-          <svg><use href="./src/img/symbol-defs.svg#icon-stupid_clock"></use></svg>
-            <h2>ПУНКТУАЛЬНІСТЬ</h2>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-          <svg><use href="./src/img/symbol-defs.svg#icon-diagram_-stonks"></use></svg>
-            <h2>ПЛАНУВАННЯ</h2>
-            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-          <svg><use href="./src/img/symbol-defs.svg#icon-astronaut"></use></svg>
-            <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <div class="s2img">
+              <div class="s2rec1">
+                <svg id="s2rec1"><use href="./src/img/symbol-defs.svg#icon-MrAntTenna"></use></svg>
+              </div>
+              <div class="s2rec2">
+                <svg id="s2rec2"><use href="./src/img/symbol-defs.svg#icon-stupid_clock"></use></svg>
+              </div>
+              <div class="s2rec3">
+                <svg id="s2rec3"><use href="./src/img/symbol-defs.svg#icon-diagram_-stonks"></use></svg>
+              </div>
+              <div class="s2rec4">
+                <svg id="s2rec4"><use href="./src/img/symbol-defs.svg#icon-astronaut"></use></svg>
+              </div>
+                    </div>
+              <div class="s2tc"> <!-- tc stands for text content -->
+              <div class="s2tc1">
+                <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
+                  <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              </div>
+              <div class="s2tc2">
+                <h2>ПУНКТУАЛЬНІСТЬ</h2>
+                  <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              </div>
+              <div class="s2tc3">
+                <h2>ПЛАНУВАННЯ</h2>
+                  <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+              </div>
+              <div class="s2tc4"> 
+                <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                  <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              </div>
+            </div>
     </section>
 <section class="s3">
   <h2>Чим ми займаємося</h2>
-  <div class="s3img1">ДЕСКТОПНІ ДОДАТКИ</div>
-  <div class="s3img2">МОБІЛЬНІ ДОДАТКИ</div>
-  <div class="s3img3">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+  <div class="s3img">
+    <div class="s3img1">
+      <div id="s3img1">ДЕСКТОПНІ ДОДАТКИ</div>
+    </div>
+    <div class="s3img2">
+      <div id="s3img2">МОБІЛЬНІ ДОДАТКИ</div>
+    </div>
+    <div class="s3img3">
+      <div id="s3img3">ДИЗАЙНЕРСЬКІ РІШЕННЯ</div>
+    </div>
+  </div>
 </section>
   <section class="s4">
-    <h2>НАША КОМАНДА</h2>
-    <div>
-    <img src="/src/img/people/img1ppl.jpg" alt="ppl1">
-    <p>Ігор Дем'яненко</p>
-    <p>Product Designer</p> 
-<svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
-  </div>
-      <div>
-    <img src="/src/img/people/img2ppl.jpg" alt="ppl2">
-    <p>Ольга Рєпіна</p>
-    <p>Frontend Developer</p> 
-<svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
-  </div>
-      <div>
-    <img src="/src/img/people/img3ppl.jpg" alt="ppl3">
-    <p>Микола Тарасов</p>
-    <p>Marketing</p> 
-<svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
-  </div>
-      <div>
-    <img src="/src/img/people/img4ppl.jpg" alt="ppl4">
-    <p>Михайло Єрмаков</p>
-    <p>UI Designer</p>
-<svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
-<svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
-  </div>
+    <h2>Наша команда</h2>
+    <div class="s4ppl">
+      <div class="s4ppl1">
+      <img src="/src/img/people/img1ppl.jpg" alt="ppl1">
+      <div class="s4pplt">
+        <p id="s4ppln">Ігор Дем'яненко</p>
+        <p id="s4pplj">Product Designer</p>
+      </div> 
+      <div class="s4pplsvg">
+        <svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
+      </div>
+        </div>
+        <div class="s4ppl2">
+      <img src="/src/img/people/img2ppl.jpg" alt="ppl2">
+      <div class="s4pplt">
+        <p id="s4ppln">Ольга Рєпіна</p>
+        <p id="s4pplj">Frontend Developer</p>
+      </div> 
+      <div class="s4pplsvg">
+        <svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
+      </div>
+        </div>
+        <div class="s4ppl3">
+      <img src="/src/img/people/img3ppl.jpg" alt="ppl3">
+      <div class="s4pplt">
+        <p id="s4ppln">Микола Тарасов</p>
+        <p id="s4pplj">Marketing</p>
+      </div> 
+      <div class="s4pplsvg">
+        <svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
+      </div>
+        </div>
+        <div class="s4ppl4">
+      <img src="/src/img/people/img4ppl.jpg" alt="ppl4">
+      <div class="s4pplt">
+        <p id="s4ppln">Михайло Єрмаков</p>
+        <p id="s4pplj">UI Designer</p>
+      </div>
+      <div class="s4pplsvg">
+        <svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
+        <svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
+          </div>
+      </div>
+    </div>
   </section>
   <section class="s5">
-    <h2>ПОСТІЙНІ КЛІЄНТИ</h2>
-    <div>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-yanco"></use></svg></a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-_company"></use></svg></a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-company"></use></svg></a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-petersfoster"></use></svg></a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-brand"></use></svg></a>
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF"><svg><use href="./src/img/symbol-defs.svg#icon-taclinedecline"></use></svg></a>
+    <h2>Постійні клієнти</h2>
+    <div class="s5svg">
+      <a href="#" id="s5c1"><svg><use href="./src/img/symbol-defs.svg#icon-yanco"></use></svg></a>
+      <a href="#" id="s5c2"><svg><use href="./src/img/symbol-defs.svg#icon-ccompany"></use></svg></a>
+      <a href="#" id="s5c3"><svg><use href="./src/img/symbol-defs.svg#icon-company"></use></svg></a>
+      <a href="#" id="s5c4"><svg><use href="./src/img/symbol-defs.svg#icon-petersfoster"></use></svg></a>
+      <a href="#" id="s5c5"><svg><use href="./src/img/symbol-defs.svg#icon-brand"></use></svg></a>
+      <a href="#" id="s5c6"><svg><use href="./src/img/symbol-defs.svg#icon-taclinedecline"></use></svg></a>
     </div>
   </section>  
      <section class="m2s">
-     <div>
+     <div class="m2sbutton">
       <button><a href="#">Усі</a></button>
      <button><a href="#">Веб-сайти</a></button>
      <button><a href="#">Додатки</a></button>
@@ -158,28 +211,30 @@
 </main>
     <footer class="footer">
       <div>
-      <div class="WebStudiologo">
-    <svg class="sigmajacus"><use href="./src/img/symbol-defs.svg#icon-WebStudiologo"></use></svg>        
+      <div class="fp1">
+        <div class="WebStudiologo">
+            <svg class="sigmajacus"><use href="./src/img/symbol-defs.svg#icon-WebStudiologo"></use></svg>
+        </div>
+        <div class="footer-content">
+          <p>м. Київ, пр-т Лесі Українки, 26</p>
+          <p>info@devstudio.com</p>
+          <p>+38 096 111 11 11</p>
+        </div>
       </div>
-      <div class="footer-content">
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
-        <p>info@devstudio.com</p>
-        <p>+38 096 111 11 11</p>
-      </div>
-<div> <h2>ПРИЄДНУЙТЕСЬ</h2>
-      <div>
+<div class="fp2"> <h2>ПРИЄДНУЙТЕСЬ</h2>
+      <div class="fsvg">
 <svg><use href="./src/img/symbol-defs.svg#icon-instalogocringe"></use></svg>
 <svg><use href="./src/img/symbol-defs.svg#icon-larrythebird"></use></svg>
 <svg><use href="./src/img/symbol-defs.svg#icon-boomerplatform"></use></svg>
 <svg><use href="./src/img/symbol-defs.svg#icon-ImAHungryProgrammerWompWomp"></use></svg>
       </div>
       </div>
-      <div>
+      <div class="fp3">
         <h2>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
       <div>
       <form action="">
         <input type="text" placeholder="E-mail" required>
-        <button><a href="https://youtu.be/dQw4w9WgXcQ?si=KyziA7uC25UN1_tF">Підписатися<svg><use href="./src/img/symbol-defs.svg#icon-telegfran"></use></svg></a></button>
+        <button><a href="#"></use></svg></a></button>
       </form>
       </div>
     </div>

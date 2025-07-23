@@ -1,5 +1,6 @@
 .footer {
     background-color: #2F303A;
+    height: 252px;
   }
 
   .footer-content p{
@@ -12,4 +13,23 @@
 .footer-content {
    display: flex;
    flex-direction: column;
+}
+
+.fsvg {
+      svg {
+      width: 44px;
+      height: 44px;
+    }
+}
+
+.footer {
+  display: flex;
+.fp1, .fp2, .fp3 {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.fp1 {
+  height: 252px;
 }
