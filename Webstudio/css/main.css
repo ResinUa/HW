@@ -40,6 +40,50 @@ header {
   padding-right: 30%;
 }
 
+#hlshover,
+#hlphover,
+#hlchover {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  opacity: 0%;
+}
+
+.header-links #hlstudio #hlshover,
+.header-links #hlstudio #hlphover,
+.header-links #hlstudio #hlchover,
+.header-links #hlportfolio #hlshover,
+.header-links #hlportfolio #hlphover,
+.header-links #hlportfolio #hlchover,
+.header-links #hlcontacts #hlshover,
+.header-links #hlcontacts #hlphover,
+.header-links #hlcontacts #hlchover {
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.header-links #hlstudio:hover #hlshover,
+.header-links #hlstudio:hover #hlphover,
+.header-links #hlstudio:hover #hlchover,
+.header-links #hlportfolio:hover #hlshover,
+.header-links #hlportfolio:hover #hlphover,
+.header-links #hlportfolio:hover #hlchover,
+.header-links #hlcontacts:hover #hlshover,
+.header-links #hlcontacts:hover #hlphover,
+.header-links #hlcontacts:hover #hlchover {
+  opacity: 100%;
+}
+
+.header-inf a {
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.header-inf a:hover {
+  color: #2196f3;
+}
+
 .footer {
   background-color: #2F303A;
   height: 252px;
@@ -291,6 +335,14 @@ header {
 .s4 .s4ppl1 .s4pplsvg, .s4 .s4ppl2 .s4pplsvg, .s4 .s4ppl3 .s4pplsvg, .s4 .s4ppl4 .s4pplsvg {
   display: flex;
   justify-content: center;
+}
+.s4 .s4ppl1 .s4pplsvg svg, .s4 .s4ppl2 .s4pplsvg svg, .s4 .s4ppl3 .s4pplsvg svg, .s4 .s4ppl4 .s4pplsvg svg {
+  fill: var(--color1, #afb1b8);
+  transition-property: fill;
+  transition-duration: 0.5s;
+}
+.s4 .s4ppl1 .s4pplsvg svg:hover, .s4 .s4ppl2 .s4pplsvg svg:hover, .s4 .s4ppl3 .s4pplsvg svg:hover, .s4 .s4ppl4 .s4pplsvg svg:hover {
+  fill: var(--color1, #2196F3);
 }
 
 .s4ppl1 {

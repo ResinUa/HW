@@ -15,6 +15,7 @@ header {
     color: #757575;
     font-weight: medium;
   }
+
   #hhiemail {
     padding-right: 20%;
   }
@@ -23,11 +24,13 @@ header {
 .header-links {
   display: flex;
   padding-left: 20%;
+
   a {
     text-decoration: none;
     color: #212121;
     font-weight: medium;
   }
+
   div {
     padding-right: 25%;
   }
@@ -40,4 +43,56 @@ header {
 
 .h1half {
   padding-right: 30%;
+}
+
+#hlshover,
+#hlphover,
+#hlchover {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  opacity: 0%;
+}
+
+.header-links {
+
+  #hlstudio,
+  #hlportfolio,
+  #hlcontacts {
+
+    #hlshover,
+    #hlphover,
+    #hlchover {
+      transition-property: opacity;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.header-links {
+
+  #hlstudio:hover,
+  #hlportfolio:hover,
+  #hlcontacts:hover {
+
+    #hlshover,
+    #hlphover,
+    #hlchover {
+      opacity: 100%;
+    }
+  }
+}
+
+.header-inf {
+  a {
+    transition-property: color;
+    transition-duration: 1s;
+  }
+}
+
+.header-inf {
+  a:hover {
+    color: #2196f3;
+  }
 }

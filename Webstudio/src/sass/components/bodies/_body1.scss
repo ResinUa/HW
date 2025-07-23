@@ -220,6 +220,14 @@ h2 {
 .s4pplsvg {
   display: flex;
   justify-content: center;
+  svg {
+  fill: var(--color1, #afb1b8);
+transition-property: fill;
+transition-duration: 0.5s;
+  }
+  svg:hover {
+  fill: var(--color1, #2196F3);
+  }
 }
   }
 }
