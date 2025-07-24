@@ -17,6 +17,9 @@ header {
 .header-inf #hhiemail {
   padding-right: 20%;
 }
+.header-inf #hhiphone {
+  width: 300px;
+}
 
 .header-links {
   display: flex;
@@ -86,7 +89,7 @@ header {
 
 .footer {
   background-color: #2F303A;
-  height: 252px;
+  height: 300px;
 }
 
 .footer-content p {
@@ -116,6 +119,10 @@ header {
 
 .fp1 {
   height: 252px;
+}
+
+.fp2 {
+  margin-top: -150px;
 }
 
 .s1 {
@@ -381,6 +388,16 @@ header {
   color: #757575;
 }
 
+.socialaicon {
+  width: 44px;
+  height: 44px;
+}
+
+.socialaicon:hover {
+  --color4: #2196F3;
+  --color2: #ffffff;
+}
+
 .s5 {
   justify-content: center;
   margin-top: 94px;
@@ -400,6 +417,15 @@ header {
 .s5 .s5svg {
   display: flex;
   justify-content: center;
+}
+
+.s5svgi {
+  --color2: #afb1b8;
+  transition: all 1s ease;
+}
+
+.s5svgi:hover {
+  --color2: #2196F3;
 }
 
 .m2s {

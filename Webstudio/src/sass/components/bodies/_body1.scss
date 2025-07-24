@@ -1,3 +1,6 @@
+// @use "../../utlits/colors";
+@use "/src/sass/utlits/colors";
+
 .s1 {
   width: 100%;
   height: 600px;
@@ -268,6 +271,16 @@ transition-duration: 0.5s;
   color: #757575;
 }
 
+.socialaicon {
+  width: 44px;
+  height: 44px;
+}
+
+.socialaicon:hover {
+  --color4: #{colors.$blue};
+  --color2: #{colors.$white};
+}
+
 .s5 {
    justify-content: center;
    margin-top: 94px;
@@ -288,3 +301,15 @@ transition-duration: 0.5s;
     justify-content: center;
    }
 }
+
+.s5svgi {
+  --color2: #afb1b8;
+  transition: all 1s ease;
+}
+
+.s5svgi:hover {
+  --color2: #{colors.$blue};
+}
+
+
+
