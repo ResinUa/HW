@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+.is-hidden {
+  opacity: 0;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.backdrop .backdropstuff {
+  background-image: url(./../img/avatarbg.png);
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 404px;
+}
+.backdrop .backdropstuff .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: -10px;
+}
+.backdrop .backdropstuff .form p {
+  font-size: 24px;
+  font-weight: 400px;
+  color: #0b0e66;
+  text-transform: capitalize;
+}
+.backdrop .backdropstuff .form input {
+  width: 440px;
+  height: 40px;
+  border: 2px solid #0b0e66;
+}
+
+.fe {
+  margin-top: 12px;
+}
+
+.fn {
+  margin-top: 111px;
+}
+
+.btn-open-second {
+  width: 260px;
+  height: 80px;
+  background-color: #0b0e66;
+  color: #26c7ea;
+  border: 3px solid #26c7ea;
+  border-radius: 45px 0 45px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-top: 39px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.backdrop-second {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.bcstuff {
+  background-image: url(./../img/avatarbg2.png);
+  width: 600px;
+  height: 404px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-close {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0b0e66;
+  font-size: 28px;
+  border: none;
+  background: none;
+  margin: 16px 0 0 560px;
+}
+
+.btn-close-second {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 28px;
+  border: none;
+  background: none;
+  margin: -360px 0 0 560px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.bcsp {
+  margin-bottom: 80px;
+}
+.bcsp p {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+}

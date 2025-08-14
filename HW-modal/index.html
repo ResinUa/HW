@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="backdrop is-hidden">
+        <div class="backdrop">
+            <div class="backdropstuff">
+                <button class="btn-close">x</button>
+                <div class="form">
+                    <form action="">
+                        <div class="fn">
+                            <p>name</p>
+                            <input type="text" required>
+                        </div>
+                        <div class="fe">
+                            <p>email</p>
+                            <input type="email" required>
+                        </div>
+                    </form>
+                    <button class="btn-open-second">join clan</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop-second is-hidden">
+        <div class="backdrop-second">
+            <div class="bcstuff">
+                <button class="btn-close-second">x</button>
+                <h2>welcome to our clan</h2>
+                <div class="bcsp">
+                    <p>your banshee is coming.</p>
+                    <p>see you on pandora.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-open">backdrop open</button>
+    <script src="script.js" defer></script>
+</body>
+</html>
