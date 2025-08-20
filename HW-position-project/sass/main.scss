@@ -1,0 +1,14 @@
+@import "utils/mixins";
+@import "components/header";
+@import "components/body";
+@import "components/footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "open-sans", sans-serif;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}

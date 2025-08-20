@@ -1,0 +1,164 @@
+a button {
+    cursor: pointer;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+header {
+    width: 100vw;
+    height: 727px;
+    background-color: #141414;
+}
+
+.header-mc {
+    margin-left: 68px;
+    height: 100%;
+}
+
+.header-func {
+    height: 68px;
+    display: flex;
+    margin-left: 326px;
+
+    .hft {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-left: 34px;
+        cursor: pointer;
+
+        p {
+            text-transform: capitalize;
+            color: #ffffff;
+            font-size: 10px;
+        }
+
+        p:first-child {
+            color: rgba($color: #ffffff, $alpha: 0.75);
+        }
+
+        img {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .hfl {
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+        gap: 37px;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.header-c {
+    width: 978px;
+    height: 591px;
+    background-image: url('./../img/vintagebg.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.vantage-logo {
+    width: 326px;
+    height: 136px;
+    background-image: url('./../img/vintagelogo.svg');
+    position: absolute;
+}
+
+.header-window {
+    width: 584px;
+    height: 499px;
+    background-color: #ffffff;
+    padding: 68px 68px 29px 68px;
+    position: relative;
+    left: 652px;
+    top: -523px;
+    z-index: 2;
+
+    h2 {
+        font-family: "teko", sans-serif;
+        font-size: 67px;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    p:first-child {
+        font-size: 11px;
+        color: #99823D;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    p:last-child {
+        margin-top: 32px;
+    }
+
+    button {
+        width: 216px;
+        height: 68px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 0;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .hchwb {
+        button:first-child {
+            background-color: #99823D;
+        }
+
+        button:last-child {
+            background-color: #141414;
+        }
+
+        margin-top: 15px;
+        gap: 17px;
+        display: flex;
+    }
+}
+
+.header-lower-func {
+    width: 973px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 37px;
+    position: relative;
+    top: -828px;
+
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000000;
+        letter-spacing: 3px;
+    }
+}
+
+.header-yellow-rectangle {
+    width: 489px;
+    height: 329px;
+    background-color: #99823D;
+    position: relative;
+    left: 815px;
+    top: -761px;
+    z-index: 1;
+}

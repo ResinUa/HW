@@ -1,0 +1,26 @@
+@mixin flex-position ($direction: row, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin yellow-p ($fs: 11px, $c: #99823d) {
+    font-size: $fs;
+    color: $c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@mixin h2txt ($fs: 67px, $fw: 400, $tt: capitalize) {
+    font-family: "teko", sans-serif;
+    font-size: $fs;
+    text-transform: $tt;
+    font-weight: $fw;
+}
+
+@mixin black-p ($c: #141414, $fs: 17px, $fw: 400) {
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+}

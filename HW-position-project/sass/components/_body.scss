@@ -1,0 +1,377 @@
+.s1-s2 {
+    background-color: #ebebeb;
+}
+
+.s1-mc {
+    margin-left: 132px;
+    text-align: start;
+    position: relative;
+    top: 136px;
+    @include flex-position ();
+}
+
+.s1-hc {
+    width: 820px;
+    height: 320px;
+}
+
+.s1-h {
+    height: 153px;
+
+    p {
+        @include yellow-p ();
+    }
+
+    h2 {
+        @include h2txt ($fs: 42px);
+        font-weight: 400;
+    }
+}
+
+.s1-c {
+    @include black-p ();
+    width: 683px;
+
+    p:first-child {
+        position: relative;
+        bottom: 16px;
+    }
+}
+
+.s1-thing {
+    width: 424px;
+    height: 321px;
+    @include flex-position ($direction: column);
+
+    h2 {
+        @include h2txt($fs: 26px);
+        width: 339px;
+        cursor: pointer;
+    }
+}
+
+.s1t-1 {
+    width: 424px;
+    height: 159px;
+
+    .s1t-1p {
+        p {
+            @include yellow-p ();
+        }
+
+        display: flex;
+        gap: 17px;
+    }
+}
+
+.s1t-2 {
+    width: 424px;
+    height: 159px;
+
+    .s1t-2p {
+        p {
+            @include yellow-p ();
+        }
+
+        display: flex;
+        gap: 17px;
+    }
+}
+
+#s1t-2-h2 {
+    cursor: pointer;
+}
+
+.s2-mc {
+    width: 1312px;
+    height: 75px;
+    margin: 136px 0 0 64px;
+    @include flex-position();
+    gap: 148px;
+
+    p {
+        @include yellow-p();
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        @include h2txt($fs: 59px, $fw: 700, $tt: uppercase);
+    }
+
+    svg {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.s2-the_thing {
+    width: 113px;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s2-tt-svg {
+    position: relative;
+    width: 148px;
+    height: 75px;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg:first-child {
+        margin-left: 248px;
+    }
+}
+
+.s2et {
+    width: 100vw;
+    height: 415px;
+    position: relative;
+    bottom: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.s3-mc {
+    width: 1304px;
+    height: 360px;
+    position: relative;
+    bottom: 68px;
+    left: 68px;
+    @include flex-position($direction: column);
+}
+
+.s3-i {
+    @include flex-position();
+    gap: 34px;
+}
+
+.s3-i1,
+.s3-i2,
+.s3-i3 {
+    width: 411px;
+    height: 342px;
+    cursor: pointer;
+}
+
+.s3-new-rect {
+    @include yellow-p($c: #fff);
+    width: 102px;
+    height: 34px;
+    background-color: #141414;
+    position: absolute;
+    @include flex-position();
+    margin-top: -279px;
+}
+
+.s3-yellow-rect {
+    @include yellow-p($c: #fff);
+    width: 206px;
+    height: 102px;
+    background-color: #99823d;
+    position: absolute;
+    z-index: 1;
+    margin-left: 206px;
+    margin-top: -104px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    p {
+        position: relative;
+        top: 12px;
+    }
+}
+
+.s3-black-rect {
+    color: white;
+    width: 378px;
+    height: 68px;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    margin-top: -70px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    p {
+        position: relative;
+        top: 10px;
+        @include h2txt($fs: 26px);
+    }
+
+}
+
+.s3-white-things {
+    position: relative;
+    display: flex;
+    gap: 101px;
+    width: 411px;
+    height: 342px;
+    bottom: 279px;
+    z-index: 2;
+
+    div {
+        background-color: #fff;
+        width: 1px;
+        height: 275px;
+    }
+
+    div:first-child {
+        margin-left: 101px;
+    }
+}
+
+.s3-sq {
+    height: 135px;
+    width: 1304px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 11%;
+
+    svg {
+        position: absolute;
+        top: 1%;
+    }
+}
+
+.s4-tc {
+    width: 816px;
+    height: 154px;
+    margin-left: 312px;
+    margin-bottom: 90px;
+
+    p {
+        @include yellow-p();
+        text-align: center;
+    }
+
+    h2 {
+        @include h2txt($fs: 53px, $fw: 700);
+        text-align: center;
+    }
+}
+
+.s4-c {
+    width: 1312px;
+    position: relative;
+    left: 64px;
+    @include flex-position($direction: column);
+
+    img {
+        width: 68px;
+        height: 68px;
+    }
+
+    p {
+        @include black-p();
+    }
+}
+
+.s4ctt {
+    position: relative;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        @include yellow-p();
+        margin-top: 10px;
+    }
+
+    h2 {
+        @include h2txt($fs: 26px);
+    }
+}
+
+.s4cint {
+    display: flex;
+}
+
+.s4ctp {
+    width: 292px;
+    height: 77px;
+    position: relative;
+    top: 18px;
+}
+
+.s4c-r1,
+.s4c-r2 {
+    display: flex;
+    gap: 66px;
+}
+
+.s4c-r2 {
+    position: relative;
+    top: 70px;
+}
+
+.s4-button {
+    position: relative;
+    left: 64px;
+    width: 1312px;
+    @include flex-position();
+
+    button {
+        @include yellow-p($c: #fff, $fs: 12px);
+        width: 392px;
+        height: 68px;
+        border: none;
+        border-radius: 0;
+        background-color: #99823d;
+        position: relative;
+        top: 122px;
+        cursor: pointer;
+    }
+}
+
+.s5-mc {
+    @include flex-position($direction: column);
+    position: relative;
+    top: 321px;
+    background-color: #ebebeb;
+    height: 378px;
+}
+
+.s5-c {
+    @include flex-position();
+    height: 189px;
+
+    img {
+        width: 154px;
+        height: 38px;
+        position: relative;
+        top: -76px;
+    }
+}
+
+.s5-svg {
+    position: relative;
+    width: 148px;
+    height: 75px;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg:first-child {
+        margin-left: 248px;
+    }
+}
+
+.s5-empty_space {
+    height: 189px;
+}
