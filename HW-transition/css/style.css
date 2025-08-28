@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  margin: 50px;
+  height: 100vh;
+  width: 100vw;
+}
+svg rect {
+  rx: 0;
+  ry: 0;
+  transition-duration: 2s;
+  transition-property: fill, rx, ry, width, height;
+  transition-delay: 0s, 2s, 2s, 2s, 2s;
+  transition-timing-function: ease-in-out;
+}
+
+rect:hover {
+  fill: aqua;
+  rx: 50%;
+  ry: 50%;
+  width: 600px;
+  height: 600px;
+}
