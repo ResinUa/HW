@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background-color: #212121;
+        height: 100vh;
+
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    position: relative;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    top: 40px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+button {
+    transition: 2s;
+    text-transform: uppercase;
+    height: 100px;
+    width: 150px;
+    border: none;
+}
+
+button:hover {
+    background-color: red;
+    transform: rotate(360deg);
+}
+
+#svg1, #svg2, #svg3 {
+    transition: 2s;
+    width: 100px;
+    height: 100px;
+}
+
+#svg1:hover {
+    transform: scale(1.5);
+}
+
+#svg2:hover {
+    transform: scale(2);
+}
+
+#svg3:hover {
+    transform: scale(3);
+}
+
+.svg {
+    svg {
+        transition: 2s;
+        width: 150px;
+        height: 100px;
+    }
+}
+
+.svg:hover {
+    svg:first-child {
+        transform: translateX(50px);
+    }
+    svg:nth-child(2) {
+        transform: translateY(110px);
+    }
+    svg:last-child {
+        transform: translate(-50px, -100px);
+    }
+}
