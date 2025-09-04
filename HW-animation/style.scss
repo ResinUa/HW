@@ -1,0 +1,48 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html:hover {
+    cursor: grab;
+}
+
+.box-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: black solid 4px;
+    cursor: grabbing;
+}
+
+.box:hover {
+    animation: sokg 3s linear infinite;
+}
+
+@keyframes sokg {
+    0% {
+        background-color: red;
+    }
+    33% {
+        background-color: green;
+    }
+    66% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
