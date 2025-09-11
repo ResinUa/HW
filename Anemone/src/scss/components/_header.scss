@@ -1,0 +1,21 @@
+.header-c {
+    position: relative;
+    left: 1vw;
+    width: 96vw;
+    height: 850px;
+    margin-top: 28px;
+    margin-left: 24px;
+}
+
+.header-hc-func {
+    width: 100%;
+    height: 57px;
+    @include fp();
+}
+
+.header-a-logo {
+    background-image: url('./../src/img/logo.svg');
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 57px;
+}

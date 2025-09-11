@@ -1,0 +1,18 @@
+@import "utils/mixins";
+@import "components/header";
+@import "components/body";
+@import "components/footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    width: 1256px;
+    height: 5512px;
+}
