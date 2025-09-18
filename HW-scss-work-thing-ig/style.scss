@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "comfortaa";
+}
+
+html {
+    animation: rainbow 3s linear infinite;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#stickbug {
+    font-size: 200px;
+}
+
+#stickbugimg {
+    width: 1920px;
+    height: 1080px;
+    margin-left: 300px;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    .hlog:hover {
+    img {
+        animation: spin 4s;
+        cursor: pointer;
+    }
+    }
+    .hc {
+        display: flex;
+        width: 100vw;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hlog {
+        margin-right: 2000px;
+        position: absolute;
+    }
+    .hfunc {
+        margin-left: 1000px;
+        display: flex;
+        gap: 120px;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+        }
+    }
+}
+
+.s1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      font-size: 70px;
+      margin-left: 45vw;
+      text-transform: capitalize; 
+    }
+    p {
+        position: relative;
+        left: 40%;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    .s1p {
+        font-size: 400px;
+        position: relative;
+        left: 0;
+    }
+    .s1dc {
+        display: flex;
+        gap: 70px;
+        margin-left: 15vw;
+        margin-top: 150px;
+    }
+    .s1dc2 {
+        display: flex;
+        gap: 110px;
+        margin-left: 17vw;
+        margin-top: 150px;
+    }
+    .s1dc3 {
+        display: flex;
+        gap: 130px;
+        margin-left: 17vw;
+        margin-top: 150px;
+    }
+    .s1dcf {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.s2 {
+    background-color: white;
+    margin-top: 150px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin-top: -22.5%;
+        font-size: 70px;
+        text-transform: capitalize;
+        position: absolute;
+    }
+    .s2c {
+        width: 100vw;
+        display: flex;
+        width: 1800px;
+        height: 400px;
+        align-items: center;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    .s2tc {
+        width: 600px;
+        margin-left: 600px;
+        p {
+            font-size: 32px;
+        }
+        h2 {
+            margin: 0;
+            position: static;
+        }
+    }
+}
+
+footer {
+    background-color: #212121;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fc {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+        right: 500px;
+        position: relative;
+    }
+    input {
+        height: 100px;
+        width: 600px;
+        font-size: 40px;
+        border: solid black 10px;
+        border-radius: 25px;
+    }
+    button {
+        border: solid black 10px;
+        border-radius: 25px;
+        height: 100px;
+        width: 250px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    14% {
+        background-color: orange;
+    }
+    28% {
+        background-color: yellow;
+    }
+    42% {
+        background-color: green;
+    }
+    56% {
+        background-color: blue;
+    }
+    70% {
+        background-color: indigo;
+    }
+    84% {
+        background-color: violet;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: skew(0);
+    }
+    20% {
+        transform: skew(120deg, 240deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(360deg);
+    }
+    80% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.s1dcf:hover {
+    cursor: pointer;
+    .s1p {
+        animation: spin 4s;
+    }
+    img {
+        animation: spin 4s;
+    }
+}
