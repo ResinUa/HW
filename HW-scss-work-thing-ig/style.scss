@@ -53,6 +53,11 @@ header {
             text-decoration: none;
             color: black;
             font-size: 32px;
+            transition: 1s;
+        }
+        a:hover {
+            color: #ff9191;
+            transform: scale(2);
         }
     }
 }
@@ -69,6 +74,13 @@ header {
     p {
         position: relative;
         left: 40%;
+        transition: 1s;
+        width: 30px;
+        margin-top: 20px;
+    }
+    p:hover {
+        transform: scale(5) rotate(360deg);
+        color: white;
     }
     img {
         width: 400px;
@@ -78,6 +90,12 @@ header {
         font-size: 400px;
         position: relative;
         left: 0;
+        width: 400px;
+        margin-top: 0;
+    }
+    .s1p:hover {
+        transform: none;
+        color: black;
     }
     .s1dc {
         display: flex;
@@ -87,19 +105,20 @@ header {
     }
     .s1dc2 {
         display: flex;
-        gap: 110px;
+        gap: 70px;
         margin-left: 17vw;
         margin-top: 150px;
     }
     .s1dc3 {
         display: flex;
-        gap: 130px;
+        gap: 70px;
         margin-left: 17vw;
         margin-top: 150px;
     }
     .s1dcf {
         display: flex;
         flex-direction: column;
+        height: 400px;
     }
 }
 
@@ -115,6 +134,11 @@ header {
         font-size: 70px;
         text-transform: capitalize;
         position: absolute;
+        transition: 1s;
+    }
+    h2:hover {
+        animation: gradient 1s infinite;
+        transform: scale(1.5);
     }
     .s2c {
         width: 100vw;
@@ -127,15 +151,23 @@ header {
         width: 400px;
         height: 400px;
     }
+    img:hover {
+        animation: steam-thing-ig 8s;
+    }
     .s2tc {
         width: 600px;
         margin-left: 600px;
         p {
             font-size: 32px;
+            transition: 1s;
         }
         h2 {
             margin: 0;
             position: static;
+            width: 250px;
+        }
+        p:hover {
+            transform: scale(1.25);
         }
     }
 }
@@ -156,12 +188,21 @@ footer {
         right: 500px;
         position: relative;
     }
+    .logo:hover {
+        img {
+            animation: spin 4s;
+        }
+    }
     input {
         height: 100px;
         width: 600px;
         font-size: 40px;
         border: solid black 10px;
         border-radius: 25px;
+        transition: 2s;
+    }
+    input:hover {
+        transform: rotate(360deg);
     }
     button {
         border: solid black 10px;
@@ -170,6 +211,10 @@ footer {
         width: 250px;
         font-size: 32px;
         cursor: pointer;
+        transition: 1s;
+    }
+    button:hover {
+        transform: rotate(360deg);
     }
 }
 
@@ -218,6 +263,85 @@ footer {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background: none;
+    }
+    14% {
+        background: linear-gradient(to right, red);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    28%{
+        background: linear-gradient(to right, red, orange);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    42%{
+        background: linear-gradient(to right, red, orange, yellow);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    56%{
+        background: linear-gradient(to right, red, orange, yellow, green);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    70%{
+        background: linear-gradient(to right, red, orange, yellow, green,
+         blue);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    84%{
+        background: linear-gradient(to right, red, orange, yellow, green,
+         blue, indigo);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to right, red, orange, yellow, green,
+         blue, indigo, violet);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes steam-thing-ig {
+    10% {
+    transform: scale(1.5);
+    }
+    20% {
+    transform: scale(1.5) skew(30deg, 30deg);
+    }
+    30% {
+    transform: scale(1.5);
+    }
+    40% {
+    transform: scale(1.5) skew(-30deg, -30deg);
+    }
+    50% {
+    transform: scale(1.5);
+    }
+    60%{
+    transform: scale(1.5) rotateX(70deg);
+    perspective: 10000px;
+    }
+    70%{
+    transform: scale(1.5);
+    }
+    80%{
+    transform: scale(1.5) rotateX(-70deg);
+    perspective: 10000px;
+    }
+    90%{
+    transform: scale(1.5);
+    }
+    100% {
+    transform: scale(1);
     }
 }
 

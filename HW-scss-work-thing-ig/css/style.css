@@ -53,6 +53,11 @@ header .hfunc a {
   text-decoration: none;
   color: black;
   font-size: 32px;
+  transition: 1s;
+}
+header .hfunc a:hover {
+  color: #ff9191;
+  transform: scale(2);
 }
 
 .s1 {
@@ -68,6 +73,13 @@ header .hfunc a {
 .s1 p {
   position: relative;
   left: 40%;
+  transition: 1s;
+  width: 30px;
+  margin-top: 20px;
+}
+.s1 p:hover {
+  transform: scale(5) rotate(360deg);
+  color: white;
 }
 .s1 img {
   width: 400px;
@@ -77,6 +89,12 @@ header .hfunc a {
   font-size: 400px;
   position: relative;
   left: 0;
+  width: 400px;
+  margin-top: 0;
+}
+.s1 .s1p:hover {
+  transform: none;
+  color: black;
 }
 .s1 .s1dc {
   display: flex;
@@ -86,19 +104,20 @@ header .hfunc a {
 }
 .s1 .s1dc2 {
   display: flex;
-  gap: 110px;
+  gap: 70px;
   margin-left: 17vw;
   margin-top: 150px;
 }
 .s1 .s1dc3 {
   display: flex;
-  gap: 130px;
+  gap: 70px;
   margin-left: 17vw;
   margin-top: 150px;
 }
 .s1 .s1dcf {
   display: flex;
   flex-direction: column;
+  height: 400px;
 }
 
 .s2 {
@@ -114,6 +133,11 @@ header .hfunc a {
   font-size: 70px;
   text-transform: capitalize;
   position: absolute;
+  transition: 1s;
+}
+.s2 h2:hover {
+  animation: gradient 1s infinite;
+  transform: scale(1.5);
 }
 .s2 .s2c {
   width: 100vw;
@@ -126,16 +150,24 @@ header .hfunc a {
   width: 400px;
   height: 400px;
 }
+.s2 img:hover {
+  animation: steam-thing-ig 8s;
+}
 .s2 .s2tc {
   width: 600px;
   margin-left: 600px;
 }
 .s2 .s2tc p {
   font-size: 32px;
+  transition: 1s;
 }
 .s2 .s2tc h2 {
   margin: 0;
   position: static;
+  width: 250px;
+}
+.s2 .s2tc p:hover {
+  transform: scale(1.25);
 }
 
 footer {
@@ -155,12 +187,19 @@ footer img {
   right: 500px;
   position: relative;
 }
+footer .logo:hover img {
+  animation: spin 4s;
+}
 footer input {
   height: 100px;
   width: 600px;
   font-size: 40px;
   border: solid black 10px;
   border-radius: 25px;
+  transition: 2s;
+}
+footer input:hover {
+  transform: rotate(360deg);
 }
 footer button {
   border: solid black 10px;
@@ -169,6 +208,10 @@ footer button {
   width: 250px;
   font-size: 32px;
   cursor: pointer;
+  transition: 1s;
+}
+footer button:hover {
+  transform: rotate(360deg);
 }
 
 @keyframes rainbow {
@@ -212,6 +255,80 @@ footer button {
   }
   80% {
     transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes gradient {
+  0% {
+    background: none;
+  }
+  14% {
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  28% {
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  42% {
+    background: linear-gradient(to right, red, orange, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  56% {
+    background: linear-gradient(to right, red, orange, yellow, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: linear-gradient(to right, red, orange, yellow, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  84% {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes steam-thing-ig {
+  10% {
+    transform: scale(1.5);
+  }
+  20% {
+    transform: scale(1.5) skew(30deg, 30deg);
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  40% {
+    transform: scale(1.5) skew(-30deg, -30deg);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  60% {
+    transform: scale(1.5) rotateX(70deg);
+    perspective: 10000px;
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  80% {
+    transform: scale(1.5) rotateX(-70deg);
+    perspective: 10000px;
+  }
+  90% {
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
