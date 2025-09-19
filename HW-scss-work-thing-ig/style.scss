@@ -58,6 +58,7 @@ header {
         a:hover {
             color: #ff9191;
             transform: scale(2);
+            cursor: pointer;
         }
     }
 }
@@ -218,6 +219,55 @@ footer {
     }
 }
 
+.joinhtml {
+    animation: none;
+}
+
+.joins1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button {
+        width: 250px;
+        height: 100px;
+        background-color: #219eff;
+        border: none;
+        border-radius: 40px;
+        transition: 1s;
+        margin-top: 120px;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+    }
+    button:hover {
+        border:15px rgba($color: #20ff, $alpha: 0.5) solid;
+        cursor: pointer;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+        animation: spin-normal 4s linear infinite;
+        transition: 1s;
+    }
+    img:hover {
+        width: 750px;
+        height: 750px;
+        cursor: pointer;
+    }
+    p {
+        text-transform: capitalize;
+        font-size: 60px;
+        animation: gradient 2s infinite;
+        margin-bottom: 120px;
+    }
+}
+
 @keyframes rainbow {
     0% {
         background-color: red;
@@ -259,45 +309,61 @@ footer {
         transform: rotate(360deg);
     }
     80% {
-        transform: scale(3);
+        transform: scale(2);
     }
     100% {
         transform: scale(1);
     }
 }
 
+@keyframes spin-normal {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes gradient {
     0% {
-        background: none;
+        background: linear-gradient(to right, red, orange, yellow, green,
+         blue, indigo, violet);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
     }
     14% {
-        background: linear-gradient(to right, red);
+        background: linear-gradient(to right, orange, yellow, green,
+         blue, indigo, violet, red);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
     }
     28%{
-        background: linear-gradient(to right, red, orange);
+        background: linear-gradient(to right, yellow, green,
+         blue, indigo, violet, red, orange);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
     }
     42%{
-        background: linear-gradient(to right, red, orange, yellow);
+        background: linear-gradient(to right,green, blue, indigo, violet,
+         red, orange, yellow);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
     }
     56%{
-        background: linear-gradient(to right, red, orange, yellow, green);
+        background: linear-gradient(to right,blue, indigo, violet, red, 
+        orange, yellow, green,);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
     }
     70%{
-        background: linear-gradient(to right, red, orange, yellow, green,
-         blue);
+        background: linear-gradient(to right, indigo, violet, red, orange, 
+        yellow, green, blue);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
     }
     84%{
-        background: linear-gradient(to right, red, orange, yellow, green,
+        background: linear-gradient(to right, violet, red, orange, yellow, green,
          blue, indigo);
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
@@ -315,27 +381,25 @@ footer {
     transform: scale(1.5);
     }
     20% {
-    transform: scale(1.5) skew(30deg, 30deg);
+    transform: scale(1.5) skew(25deg, 25deg);
     }
     30% {
     transform: scale(1.5);
     }
     40% {
-    transform: scale(1.5) skew(-30deg, -30deg);
+    transform: scale(1.5) skew(-25deg, -25deg);
     }
     50% {
     transform: scale(1.5);
     }
     60%{
     transform: scale(1.5) rotateX(70deg);
-    perspective: 10000px;
     }
     70%{
     transform: scale(1.5);
     }
     80%{
     transform: scale(1.5) rotateX(-70deg);
-    perspective: 10000px;
     }
     90%{
     transform: scale(1.5);
