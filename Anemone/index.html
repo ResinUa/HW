@@ -64,13 +64,44 @@
           <img src="./src/img/s1flower.png" alt="thingflower" />
         </div>
       </section>
-      <div class="long-ahh-thing" id="store">
+            <div class="backdrop is-hidden">
+            <div class="backdrop" id="backdrop">
+                <div class="backdropstuff">
+                    <button class="btn-close">x</button>
+                    <h2>Contact us</h2>
+                    <p>If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
+                    <form action="" class="backdrop-form">
+                        <div class="backdrop-name">
+                            <p>Name</p>
+                            <input type="text" placeholder="Your name">
+                        </div>
+                        <div class="backdrop-mail">
+                            <p>Email</p>
+                            <input type="email" placeholder="Your email">
+                        </div>
+                    </form>
+                    <button class="btn-open-second">Send</button>
+                </div>
+            </div>
+        </div>
+      <div class="backdrop-second is-hidden">
+        <div class="back-2-c">
+          <button class="btn-close-both">x</button>
+          <div class="back-2c-mc">
+            <img src="./src/img/flowers-backdrop.png" alt="fb">
+            <h2>Thank you!</h2>
+            <p>We have received your contact details and will reach you soon.</p>
+            <button>Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="long-ahh-thing">
         <h2>store</h2>
         <svg>
           <rect fill="#000000" width="1050" height="1px"></rect>
         </svg>
       </div>
-      <section class="s2">
+      <section class="s2"  id="store">
         <div class="s2c">
           <div class="s2c-mc">
             <img src="./src/img/s2flower1.png" alt="s2img-1" />
@@ -115,35 +146,30 @@
             <p>from $60</p>
           </div>
         </div>
-        <button class="btn-open">Order flowers</button>
+        <button class="btn-open" onclick="location.href='#backdrop'">Order flowers</button>
       </section>
-        <!-- <div class="backdrop is-hidden">
-            <div class="backdrop">
-                <div class="backdropstuff">
-                    <button class="btn-close">x</button>
-                    <h2>Contact us</h2>
-                    <p>If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
-                    <form action="" class="backdrop-form">
-                        <div class="backdrop-name">
-                            <p>Name</p>
-                            <input type="text" placeholder="お名前">
-                        </div>
-                        <div class="backdrop-mail">
-                            <p>Email</p>
-                            <input type="email" placeholder="Your email">
-                        </div>
-                    </form>
-                    <button class="btn-open-second">Send</button>
-                </div>
-            </div>
-        </div> -->
-      <div class="long-ahh-thing" id="delivery">
+      <div class="long-ahh-thing">
         <h2>delivery</h2>
         <svg>
           <rect fill="#000000" width="1050" height="1px"></rect>
         </svg>
       </div>
-      <section class="s3">
+      <section class="s3"  id="delivery">
+      <div class="backdrop-third is-hidden-second">
+        <div class="backdrop-third"  id="back3">
+          <div class="backdrop-third-stuff">
+            <img src="./src/img/omgflowers.png" alt="b3thing">
+            <div class="b3c">
+              <button class="btn-close-third">x</button>
+              <h2>Follow to our newsletter</h2>
+              <p>Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+              <h3>Email</h3>
+              <input type="email" placeholder="Your email">
+              <button id="IHATEYOUWHYCANTYOUBEHAVE">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
         <div class="s3c">
           <div class="s3row-c">
             <img src="./src/img/s3img1.png" alt="s3rowimg1" />
@@ -170,13 +196,13 @@
         </div>
         <div class="s3-bottom-img"></div>
       </section>
-      <div class="long-ahh-thing" id="blog">
+      <div class="long-ahh-thing">
         <h2>blog</h2>
         <svg>
           <rect fill="#000000" width="1050" height="1px"></rect>
         </svg>
       </div>
-      <section class="s4">
+      <section class="s4"  id="blog">
         <div class="s4c">
           <div class="s4img">
             <img src="./src/img/s4img1.png" alt="s4img1" />
@@ -184,7 +210,7 @@
             <img src="./src/img/s4img3.png" alt="s4img3" />
           </div>
           <p>Follow to our newsletter</p>
-          <button>Subscribe</button>
+          <button class="btn-open-third" onclick="location.href='#back3'">Subscribe</button>
         </div>
       </section>
     </main>

@@ -1,20 +1,238 @@
-// .is-hidden {
-//     opacity: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     position: absolute;
-// }
+.is-hidden {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
 
-// .backdrop {
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: rgba($color: #000000, $alpha: 0.5);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: absolute;
-//     z-index: 2;
-//     pointer-events: auto;
-// }
 
-//нічо не працює з мене досить я зараз просто зламаюсь я вже не можу це жах якись
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    pointer-events: auto;
+    .backdropstuff {
+        background-color: white;
+        padding: 24px;
+        width: 480px;
+        height: 511px;
+        button:first-child {
+            position: relative;
+            left: 412px;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 32px;
+        }
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            width: 416px;
+            color: #5C5C5C;
+            margin-top: 24px;
+        }
+        input {
+                border-radius: 10px;
+                border: solid #D7D7D7 1px;
+                height: 49px;
+                width: 416px;
+                margin-top: 8px;
+        }
+        input::placeholder {
+                color: #D7D7D7;
+        }
+        .backdrop-name {
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                color: #5C5C5C;
+            }
+        }
+        .backdrop-email {
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                color: #5C5C5C;
+            }
+        }
+        button:last-child {
+            background-color: rgba($color: #E86F5466, $alpha: 0.4);
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            width: 416px;
+            height: 50px;
+            cursor: pointer;
+            position: relative;
+            top: 38px;
+            justify-self: center;
+        }
+    }
+}
+
+.backdrop-second {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index:2;
+    pointer-events: auto;
+    .btn-close-both {
+        position: relative;
+        left: 400px;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        align-self: self-start;
+    }
+    .back-2-c {
+        background-color: white;
+        width: 480px;
+        height: 505px;
+        padding: 24px;
+        @include fp();
+        h2 {
+            font-weight: 600;
+            font-size: 32px;
+            position: relative;
+            left: 80px;
+        }
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+            right: 40px;
+            text-align: center;
+            color: #5C5C5C;
+            top: 16px;
+        }
+        .back-2c-mc {
+            position: relative;
+            left: 20px;
+        }
+        button:last-child {
+            position: relative;
+            top: 34px;
+            background-color: #E86F54;
+            width: 418px;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            right: 35px;
+            cursor: pointer;
+        }
+    }
+}
+
+.is-hidden-second {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+
+
+.backdrop-third {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.backdrop-third-stuff {
+    display: flex;
+    background-color: white;
+    width: 860px;
+    height: 528px;
+    .btn-close-third {
+        position: relative;
+        left: 400px;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        align-self: self-start;
+        bottom: 120px;
+    }
+    .b3c {
+        @include fp($fd: column);
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+        position: relative;
+        bottom: 24px;
+        left: 36px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #5C5C5C;
+        width: 336px;
+        text-align: center;
+        position: relative;
+        left: 36px;
+    }
+    h3 {
+        position: relative; 
+        right: 100px;
+        margin-top: 32px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    input {
+        border-radius: 10px;
+        border: solid #D7D7D7 1px;
+        height: 49px;
+        width: 336px;
+        position: relative;
+        left: 45px;
+        margin-top: 8px;
+        }
+        input::placeholder {
+        color: #D7D7D7;
+    }
+    #IHATEYOUWHYCANTYOUBEHAVE {
+        position: relative;
+        top: 34px;
+        background-color: #E86F54;
+        width: 336px;
+        height: 49px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        right: 35px;
+        cursor: pointer;
+        left: 45px;
+    }
+}
