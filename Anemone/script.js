@@ -20,31 +20,37 @@ const scroll = () => {
 open1.addEventListener('click', () => {
     backdrop1.classList.remove('is-hidden');
     noscrollforyou();
+    backdrop1.style.zIndex = '15';
 });
 
 close1.addEventListener('click', () => {
     backdrop1.classList.add('is-hidden');
     scroll();
+    backdrop1.style.zIndex = '-1';
 });
 
 open2.addEventListener('click', () => {
     backdrop2.classList.remove('is-hidden');
     backdrop1.classList.add('is-hidden');
-    backdrop1.style.zIndex = '1';
+    backdrop1.style.zIndex = '-1';
+    backdrop2.style.zIndex = '5';
 });
 
 close2.addEventListener('click', () => {
     backdrop2.classList.add('is-hidden');
-    backdrop1.style.zIndex = '3';
+    backdrop1.style.zIndex = '-1';
+    backdrop2.style.zIndex = '-1';
     scroll();
 });
 
 open3.addEventListener('click', () => {
     backdrop3.classList.remove('is-hidden-second');
     noscrollforyou();
+    backdrop3.style.zIndex = '2';
 });
 
 close3.addEventListener('click', () => {
     backdrop3.classList.add('is-hidden-second');
+    backdrop3.style.zIndex = '-1';
     scroll();
 });

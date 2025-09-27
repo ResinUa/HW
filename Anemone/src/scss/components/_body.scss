@@ -54,6 +54,7 @@ main {
     }
     button {
         @include button-bruh();
+        z-index: 5;
     }
 }
 
