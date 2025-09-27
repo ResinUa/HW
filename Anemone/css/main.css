@@ -1,3 +1,7 @@
+header {
+  width: 100vw;
+}
+
 .header-c {
   position: relative;
   left: 1vw;
@@ -21,11 +25,333 @@
   background-repeat: no-repeat;
   width: 72px;
   height: 57px;
+  position: relative;
+  right: 261px;
+}
+
+.hhfa-func {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 48px;
+}
+.hhfa-func a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.call-me-maybe {
+  position: relative;
+  left: 261px;
+  cursor: pointer;
+}
+
+.header-fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 795px;
+  width: 99vw;
+}
+.header-fc .hfc-c {
+  display: flex;
+}
+.header-fc p {
+  font-size: 32px;
+  font-weight: 400;
+}
+.header-fc .hfcc-p {
+  width: 100px;
+  height: 78px;
+  align-self: center;
+  position: relative;
+  right: 110px;
+}
+.header-fc img:last-child {
+  width: 166px;
+  height: 166px;
+  align-self: center;
+  position: relative;
+  left: 110px;
+}
+
+.htitle {
+  position: relative;
+  right: 1vw;
+  margin-top: -120px;
+}
+.htitle h2 {
+  font-size: 160px;
+  font-weight: 400;
+}
+
+.hfc-c {
+  display: flex;
+}
+
+main {
+  width: 100vw;
+}
+
+.s1 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 126px;
+  margin-bottom: 100px;
+}
+.s1 .s1c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 90px;
+}
+.s1 .s1c .s1c-p {
+  width: 510px;
+}
+.s1 .s1c p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 65px;
+}
+
+.s2 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 126px;
+  margin-bottom: 100px;
+}
+.s2 .s2c {
+  display: flex;
+  gap: 32px;
+  margin-left: 5vw;
+}
+.s2 .s2c-mc {
+  width: 600px;
+}
+.s2 .s2c-mc p:last-child {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(159, 159, 159);
+}
+.s2 .s2cmc-psvg {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.s2 .s2cmc-psvg p {
+  font-size: 36px;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+.s2 .s2cmc-p {
+  margin-bottom: 64px;
+}
+.s2 button {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: #E86F54;
+  font-size: 28px;
+  font-weight: 500;
+  width: 240px;
+  height: 64px;
+  justify-self: center;
+  position: relative;
+  left: 2vw;
+  top: 60px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.s3 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 126px;
+  margin-bottom: 200px;
+  margin-top: 80px;
+}
+.s3 .s3row-c {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 56px;
+  margin-bottom: 55px;
+  width: 1088px;
+}
+.s3 .s3row-c p {
+  font-size: 32px;
+  font-weight: 500;
+}
+.s3 .s3-bottom-img {
+  height: 391px;
+  width: 1280px;
+  justify-self: center;
+  position: relative;
+  left: 3vw;
+  background-image: url("./../src/img/s3img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s4 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 126px;
+  margin-top: 80px;
+}
+.s4 .s4img {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.s4 p {
+  justify-self: center;
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 44px;
+  transform: translateX(1vw);
+}
+.s4 button {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: #E86F54;
+  font-size: 28px;
+  font-weight: 500;
+  width: 240px;
+  height: 64px;
+  justify-self: center;
+  position: relative;
+  left: 2vw;
+  top: 60px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  transform: translateX(15vw);
+  margin-bottom: 300px;
+  width: 280px;
+  height: 64px;
+}
+
+footer {
+  width: 100vw;
+  height: 298px;
+  background-color: black;
+}
+
+.fc {
+  position: relative;
+  top: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 96px;
+  left: 3vw;
+}
+.fc .fc-logo {
+  width: 73px;
+  height: 57px;
+  align-self: self-start;
+}
+.fc .fc-1 {
+  width: 105px;
+  height: 154px;
+  line-height: 32px;
+}
+.fc .fc-1 h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-bottom: 12px;
+}
+.fc .fc-1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "inter";
+}
+.fc .fc-2 {
+  width: 143px;
+  height: 79px;
+  line-height: 32px;
+  align-self: self-start;
+}
+.fc .fc-2 h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-bottom: 12px;
+}
+.fc .fc-2 p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "inter";
+}
+.fc .fc-3 {
+  width: 237px;
+  height: 142px;
+  line-height: 32px;
+  align-self: self-start;
+}
+.fc .fc-3 h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "inter";
+  margin-bottom: 12px;
+}
+.fc .fc-3 p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "inter";
+}
+.fc .fc-thing {
+  align-self: self-start;
+  width: 29px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.fc .fc-thing img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.fc .fc-thing img:last-child {
+  position: relative;
+  top: 14px;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "montserrat", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -34,5 +360,28 @@ html::-webkit-scrollbar {
 
 body {
   width: 1256px;
-  height: 5512px;
+}
+
+.long-ahh-thing {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  position: relative;
+  top: 100px;
+  left: 730px;
+}
+.long-ahh-thing svg {
+  height: 1px;
+  width: 100%;
+}
+.long-ahh-thing h2 {
+  font-size: 44px;
+  font-weight: bold 700;
+  text-transform: uppercase;
+}
+
+a {
+  cursor: pointer;
 }

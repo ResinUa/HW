@@ -4,3 +4,25 @@
     align-items: $ai;
     flex-direction: $fd;
 }
+
+@mixin omg-bruh() {
+    position: relative;
+    top: 126px;
+}
+
+@mixin button-bruh() {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background-color: #E86F54;
+    font-size: 28px;
+    font-weight: 500;
+    width: 240px;
+    height: 64px;
+    justify-self: center;
+    position: relative;
+    left: 2vw;
+    top: 60px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}

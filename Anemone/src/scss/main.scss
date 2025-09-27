@@ -2,10 +2,12 @@
 @import "components/header";
 @import "components/body";
 @import "components/footer";
+@import "components/backdrop";
 
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "montserrat", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -14,5 +16,25 @@ html::-webkit-scrollbar {
 
 body {
     width: 1256px;
-    height: 5512px;
+}
+
+.long-ahh-thing {
+  @include fp($jc: none);
+  gap: 16px;
+  position: relative;
+  top: 100px;
+  left: 730px;
+  svg {
+    height: 1px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 44px;
+    font-weight: bold 700;
+    text-transform: uppercase;
+  }
+}
+
+a {
+  cursor: pointer;
 }

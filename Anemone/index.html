@@ -1,24 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anemone</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-c">
-            <div class="header-hc-func">
-                <div class="header-a-logo"></div>
-                <div class="hhfa-func"></div>
-                <div class="call-me-maybe"></div>
-            </div>
-            <div class="header-fc"></div>
+      <div class="header-c" id="anemone">
+        <div class="header-hc-func">
+          <div class="header-a-logo">
+            <img src="./src/img/logo.svg" alt="logo" />
+          </div>
+          <div class="hhfa-func">
+            <a onclick="location.href='#anemone'">Anemone</a>
+            <a onclick="location.href='#abtus'">About us</a>
+            <a onclick="location.href='#store'">Store</a>
+            <a onclick="location.href='#delivery'">Delivery</a>
+            <a onclick="location.href='#blog'">Blog</a>
+          </div>
+          <div class="call-me-maybe">
+            <img src="./src/img/call-me-maybe.svg" alt="call-us" />
+          </div>
         </div>
+        <div class="header-fc">
+          <div class="hfc-c">
+            <div class="hfcc-p">
+              <p>flower studio</p>
+            </div>
+            <img src="./src/img/main-image.png" alt="big ahh flower" />
+            <img src="./src/img/im-so-lazy.png" alt="round text" />
+          </div>
+          <div class="htitle">
+            <h2>ANEMONE</h2>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="long-ahh-thing" id="abtus">
+        <h2>about</h2>
+        <svg>
+          <rect fill="#000000" width="1050" height="1px"></rect>
+        </svg>
+      </div>
+      <section class="s1">
+        <div class="s1c">
+          <div class="s1c-p">
+            <p>
+              We are a minimalistic flower studio. We love people and flowers.
+              Therefore, every day we give people the beauty and joy creating
+              stylish and modern masterpieces. Every bouquet we create is unique
+              as you are.
+            </p>
+          </div>
+          <img src="./src/img/s1flower.png" alt="thingflower" />
+        </div>
+      </section>
+      <div class="long-ahh-thing" id="store">
+        <h2>store</h2>
+        <svg>
+          <rect fill="#000000" width="1050" height="1px"></rect>
+        </svg>
+      </div>
+      <section class="s2">
+        <div class="s2c">
+          <div class="s2c-mc">
+            <img src="./src/img/s2flower1.png" alt="s2img-1" />
+            <div class="s2cmc-psvg">
+              <p>compliments</p>
+              <svg style="width: 340px; height: 1px">
+                <rect width="340px" height="1px" fill="#000"></rect>
+              </svg>
+            </div>
+            <p class="s2cmc-p">from $15</p>
+          </div>
+          <div class="s2c-mc">
+            <img src="./src/img/s2flower2.png" alt="s2img-2" />
+            <div class="s2cmc-psvg">
+              <p>bouquets size S</p>
+              <svg style="width: 340px; height: 1px">
+                <rect width="340px" height="1px" fill="#000"></rect>
+              </svg>
+            </div>
+            <p class="s2cmc-p">from $25</p>
+          </div>
+        </div>
+        <div class="s2c">
+          <div class="s2c-mc">
+            <img src="./src/img/s2flower3.png" alt="s2img-3" />
+            <div class="s2cmc-psvg">
+              <p>bouquets size M</p>
+              <svg style="width: 340px; height: 1px">
+                <rect width="340px" height="1px" fill="#000"></rect>
+              </svg>
+            </div>
+            <p>from $45</p>
+          </div>
+          <div class="s2c-mc">
+            <img src="./src/img/s2flower4.png" alt="s2img-4" />
+            <div class="s2cmc-psvg">
+              <p>bouquets size L</p>
+              <svg style="width: 340px; height: 1px">
+                <rect width="340px" height="1px" fill="#000"></rect>
+              </svg>
+            </div>
+            <p>from $60</p>
+          </div>
+        </div>
+        <button class="btn-open">Order flowers</button>
+      </section>
+        <!-- <div class="backdrop is-hidden">
+            <div class="backdrop">
+                <div class="backdropstuff">
+                    <button class="btn-close">x</button>
+                    <h2>Contact us</h2>
+                    <p>If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
+                    <form action="" class="backdrop-form">
+                        <div class="backdrop-name">
+                            <p>Name</p>
+                            <input type="text" placeholder="お名前">
+                        </div>
+                        <div class="backdrop-mail">
+                            <p>Email</p>
+                            <input type="email" placeholder="Your email">
+                        </div>
+                    </form>
+                    <button class="btn-open-second">Send</button>
+                </div>
+            </div>
+        </div> -->
+      <div class="long-ahh-thing" id="delivery">
+        <h2>delivery</h2>
+        <svg>
+          <rect fill="#000000" width="1050" height="1px"></rect>
+        </svg>
+      </div>
+      <section class="s3">
+        <div class="s3c">
+          <div class="s3row-c">
+            <img src="./src/img/s3img1.png" alt="s3rowimg1" />
+            <p>Choose your bouquet and make an order on website</p>
+          </div>
+          <div class="s3row-c">
+            <img src="./src/img/s3img1.png" alt="s3rowimg2" />
+            <p>
+              Wait for the call to clarify the details of the order. You can pay
+              online or to the courier
+            </p>
+          </div>
+          <div class="s3row-c">
+            <img src="./src/img/s3img1.png" alt="s3rowimg3" />
+            <p>
+              Wait for the delivery at the selected time or pick up the order
+              from the store
+            </p>
+          </div>
+          <div class="s3row-c">
+            <img src="./src/img/s3img1.png" alt="s3rowimg4" />
+            <p>Make someone happy or enjoy yourself</p>
+          </div>
+        </div>
+        <div class="s3-bottom-img"></div>
+      </section>
+      <div class="long-ahh-thing" id="blog">
+        <h2>blog</h2>
+        <svg>
+          <rect fill="#000000" width="1050" height="1px"></rect>
+        </svg>
+      </div>
+      <section class="s4">
+        <div class="s4c">
+          <div class="s4img">
+            <img src="./src/img/s4img1.png" alt="s4img1" />
+            <img src="./src/img/s4img2.png" alt="s4img2" />
+            <img src="./src/img/s4img3.png" alt="s4img3" />
+          </div>
+          <p>Follow to our newsletter</p>
+          <button>Subscribe</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fc">
+        <div class="fc-logo">
+          <img src="./src/img/logo-footer.svg" alt="anemone logo2" />
+        </div>
+        <div class="fc-1">
+          <h2>Navigation</h2>
+          <a onclick="location.href='#anemone'">Anemone</a>
+          <a onclick="location.href='#abtus'">About us</a>
+          <a onclick="location.href='#store'">Store</a>
+          <a onclick="location.href='#delivery'">Delivery</a>
+        </div>
+        <div class="fc-2">
+          <h2>Opening times</h2>
+          <p>Every day</p>
+          <p>9:00 - 22:00</p>
+        </div>
+        <div class="fc-3">
+          <h2>Contacts</h2>
+          <p>+38 063 123 45 67</p>
+          <p>anemonestudio@example.com</p>
+          <p>Reitarska streetl, 11 Kyiv, Ukraine</p>
+        </div>
+        <div class="fc-thing">
+          <img src="./src/img/boomer-platform.svg" alt="facebook" />
+          <img src="./src/img/inst.svg" alt="inst" />
+        </div>
+      </div>
+    </footer>
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>

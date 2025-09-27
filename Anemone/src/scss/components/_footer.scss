@@ -1,0 +1,91 @@
+footer {
+    width: 100vw;
+    height: 298px;
+    background-color: black;
+}
+
+.fc {
+    position: relative;
+    top: 74px;
+    @include fp();
+    gap: 96px;
+    left: 3vw;
+    .fc-logo {
+        width: 73px;
+        height: 57px;
+        align-self: self-start;
+    }
+    .fc-1 {
+        width: 105px;
+        height: 154px;
+        line-height: 32px;
+        h2 {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "inter";
+            margin-bottom: 12px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "inter";
+        }
+    }
+    .fc-2 {
+        width: 143px;
+        height: 79px;
+        line-height: 32px;
+        align-self: self-start;
+        h2 {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "inter";
+            margin-bottom: 12px;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "inter";
+        }
+    }
+    .fc-3 {
+        width: 237px;
+        height: 142px;
+        line-height: 32px;
+        align-self: self-start;
+        h2 {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "inter";
+            margin-bottom: 12px;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "inter";
+        }
+    }
+    .fc-thing {
+        align-self: self-start;
+        width: 29px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img {
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        }
+        img:last-child {
+            position: relative;
+            top: 14px;
+        }
+    }
+}
