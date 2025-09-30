@@ -17,11 +17,13 @@
     position: absolute;
     z-index: 3;
     pointer-events: auto;
+
     .backdropstuff {
         background-color: white;
         padding: 24px;
         width: 480px;
         height: 511px;
+
         button:first-child {
             position: relative;
             left: 412px;
@@ -31,10 +33,12 @@
             cursor: pointer;
             font-weight: bolder;
         }
+
         h2 {
             font-weight: 600;
             font-size: 32px;
         }
+
         p {
             font-weight: 500;
             font-size: 16px;
@@ -42,16 +46,19 @@
             color: #5C5C5C;
             margin-top: 24px;
         }
+
         input {
-                border-radius: 10px;
-                border: solid #D7D7D7 1px;
-                height: 49px;
-                width: 416px;
-                margin-top: 8px;
+            border-radius: 10px;
+            border: solid #D7D7D7 1px;
+            height: 49px;
+            width: 416px;
+            margin-top: 8px;
         }
+
         input::placeholder {
-                color: #D7D7D7;
+            color: #D7D7D7;
         }
+
         .backdrop-name {
             p {
                 font-size: 14px;
@@ -59,6 +66,7 @@
                 color: #5C5C5C;
             }
         }
+
         .backdrop-email {
             p {
                 font-size: 14px;
@@ -66,6 +74,7 @@
                 color: #5C5C5C;
             }
         }
+
         button:last-child {
             background-color: rgba($color: #E86F5466, $alpha: 0.4);
             border: none;
@@ -91,8 +100,9 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index:2;
+    z-index: 2;
     pointer-events: auto;
+
     .btn-close-both {
         position: relative;
         left: 400px;
@@ -103,18 +113,21 @@
         font-weight: bolder;
         align-self: self-start;
     }
+
     .back-2-c {
         background-color: white;
         width: 480px;
         height: 505px;
         padding: 24px;
         @include fp();
+
         h2 {
             font-weight: 600;
             font-size: 32px;
             position: relative;
             left: 80px;
         }
+
         p {
             font-weight: 500;
             font-size: 16px;
@@ -124,10 +137,12 @@
             color: #5C5C5C;
             top: 16px;
         }
+
         .back-2c-mc {
             position: relative;
             left: 20px;
         }
+
         button:last-child {
             position: relative;
             top: 34px;
@@ -171,6 +186,7 @@
     background-color: white;
     width: 860px;
     height: 528px;
+
     .btn-close-third {
         position: relative;
         left: 400px;
@@ -182,9 +198,11 @@
         align-self: self-start;
         bottom: 120px;
     }
+
     .b3c {
         @include fp($fd: column);
     }
+
     h2 {
         font-size: 28px;
         font-weight: 600;
@@ -192,6 +210,7 @@
         bottom: 24px;
         left: 36px;
     }
+
     p {
         font-weight: 400;
         font-size: 16px;
@@ -201,13 +220,15 @@
         position: relative;
         left: 36px;
     }
+
     h3 {
-        position: relative; 
+        position: relative;
         right: 100px;
         margin-top: 32px;
         font-size: 14px;
         font-weight: 500;
     }
+
     input {
         border-radius: 10px;
         border: solid #D7D7D7 1px;
@@ -216,10 +237,12 @@
         position: relative;
         left: 45px;
         margin-top: 8px;
-        }
-        input::placeholder {
+    }
+
+    input::placeholder {
         color: #D7D7D7;
     }
+
     #IHATEYOUWHYCANTYOUBEHAVE {
         position: relative;
         top: 34px;

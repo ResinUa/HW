@@ -7,12 +7,15 @@ main {
     @include fp();
     @include omg-bruh();
     margin-bottom: 100px;
+
     .s1c {
         @include fp();
         gap: 90px;
+
         .s1c-p {
             width: 510px;
         }
+
         p {
             font-size: 22px;
             font-weight: 400;
@@ -26,32 +29,40 @@ main {
     @include fp($fd: column);
     @include omg-bruh();
     margin-bottom: 100px;
+
     .s2c {
         display: flex;
         gap: 32px;
-        margin-left: 5vw;
+        position: relative;
+        left: 3vw;
     }
+
     .s2c-mc {
         width: 600px;
+
         p:last-child {
             font-size: 28px;
             font-weight: 600;
             color: rgb(159, 159, 159);
         }
     }
+
     .s2cmc-psvg {
         display: flex;
         align-items: center;
         gap: 16px;
+
         p {
             font-size: 36px;
             font-weight: 500;
             text-wrap: nowrap;
         }
     }
+
     .s2cmc-p {
         margin-bottom: 64px;
     }
+
     button {
         @include button-bruh();
         z-index: 5;
@@ -64,16 +75,19 @@ main {
     @include omg-bruh();
     margin-bottom: 200px;
     margin-top: 80px;
+
     .s3row-c {
         @include fp($jc: start);
         gap: 56px;
         margin-bottom: 55px;
         width: 1088px;
+
         p {
             font-size: 32px;
             font-weight: 500;
         }
     }
+
     .s3-bottom-img {
         height: 391px;
         width: 1280px;
@@ -90,11 +104,13 @@ main {
     @include fp($fd: column);
     @include omg-bruh();
     margin-top: 80px;
+
     .s4img {
         display: flex;
         align-items: center;
         gap: 32px;
     }
+
     p {
         justify-self: center;
         font-weight: 500;
@@ -102,6 +118,7 @@ main {
         margin-top: 44px;
         transform: translateX(1vw);
     }
+
     button {
         @include button-bruh();
         transform: translateX(15vw);

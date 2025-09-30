@@ -5,9 +5,9 @@
 @import "components/backdrop";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "montserrat", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    width: 1256px;
+  width: 1256px;
 }
 
 .long-ahh-thing {
@@ -24,10 +24,12 @@ body {
   position: relative;
   top: 100px;
   left: 730px;
+
   svg {
     height: 1px;
     width: 100%;
   }
+
   h2 {
     font-size: 44px;
     font-weight: bold 700;
@@ -37,4 +39,128 @@ body {
 
 a {
   cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .hhfa-func {
+    margin-left: -24px;
+  }
+
+  .header-fc {
+    margin-left: 1vw;
+  }
+
+  .long-ahh-thing {
+    left: 24px;
+  }
+
+  .s1 {
+    position: relative;
+    right: 100px;
+  }
+
+  .s2 {
+    align-items: start;
+
+    button {
+      align-self: center;
+      margin-left: -48px;
+    }
+  }
+
+  .s2c {
+    margin-left: 64px;
+
+    img {
+      width: 600px;
+      height: 542px;
+    }
+  }
+
+  .s4 {
+    margin-left: 12px;
+
+    button {
+      margin-left: 156px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 1024px;
+  }
+
+  .hhfa-func {
+    transform: scale(1.25);
+    gap: 24px;
+    width: 300px;
+
+    a {
+      text-wrap: nowrap;
+    }
+  }
+
+  .call-us-maybe {
+    img {
+      transform: scale(1.5);
+      margin-left: -48px;
+    }
+  }
+
+  .htitle {
+    h2 {
+      margin-right: 44px;
+    }
+  }
+
+  .header-fc {
+    width: auto;
+  }
+
+  .s1c {
+    transform: scale(0.80);
+    margin-left: 150px;
+
+    .s1c-p {
+      width: 300px;
+    }
+  }
+
+  .s2 {
+    align-items: center;
+  }
+
+  .s2c {
+    flex-direction: column;
+    transform: scale(0.75);
+    margin-top: -140px;
+    margin-right: 96px;
+
+    button {
+      margin-bottom: 400px
+    }
+  }
+
+  .s2c:last-child {}
+
+  .s3 {
+    transform: scale(0.8);
+  }
+
+  .s4 {
+    transform: scale(0.8);
+    position: relative;
+    right: 20px;
+
+    button {
+      position: relative;
+      left: 100px;
+    }
+  }
+
+  .fc-thing {
+    position: relative;
+    right: 40px;
+  }
 }

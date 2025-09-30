@@ -29,12 +29,14 @@ header {
 .hhfa-func {
     @include fp();
     gap: 48px;
+
     a {
         text-decoration: none;
         color: #000;
         font-size: 20px;
     }
 }
+
 .call-me-maybe {
     position: relative;
     left: 261px;
@@ -45,13 +47,16 @@ header {
     @include fp($fd: column);
     height: 795px;
     width: 99vw;
+
     .hfc-c {
         display: flex;
     }
+
     p {
         font-size: 32px;
         font-weight: 400;
     }
+
     .hfcc-p {
         width: 100px;
         height: 78px;
@@ -59,6 +64,7 @@ header {
         position: relative;
         right: 110px;
     }
+
     img:last-child {
         width: 166px;
         height: 166px;
@@ -72,6 +78,7 @@ header {
     position: relative;
     right: 1vw;
     margin-top: -120px;
+
     h2 {
         font-size: 160px;
         font-weight: 400;
