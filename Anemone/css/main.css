@@ -700,6 +700,10 @@ a {
   .s2c button {
     margin-bottom: 400px;
   }
+  .s2c:last-child {
+    /*i hate that thing*/
+    position: idk lol;
+  }
   .s3 {
     transform: scale(0.8);
   }
