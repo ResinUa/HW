@@ -635,7 +635,19 @@ a {
 
 @media (max-width: 9999px) {
   .header-thing {
-    display: none;
+    opacity: 0;
+  }
+  #thing {
+    opacity: 0;
+  }
+  #thing2 {
+    opacity: 0;
+  }
+  .sans {
+    opacity: 0;
+  }
+  .header-thing2 {
+    opacity: 0;
   }
 }
 @media (max-width: 1440px) {
@@ -811,6 +823,21 @@ a {
     position: relative;
     top: 150px;
     transform: scale(0.75);
+  }
+  .header-thing {
+    opacity: 100%;
+  }
+  #thing {
+    opacity: 0;
+  }
+  #thing2 {
+    opacity: 0;
+  }
+  .sans {
+    opacity: 100%;
+  }
+  .header-thing2 {
+    opacity: 100%;
   }
 }
 @keyframes ANIMATEYAY {
