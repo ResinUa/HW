@@ -92,6 +92,15 @@ header {
   display: flex;
 }
 
+.header-burger {
+  display: flex;
+}
+
+.header-thing {
+  font-size: 50px;
+  font-weight: 700;
+}
+
 main {
   width: 100vw;
 }
@@ -624,6 +633,11 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 9999px) {
+  .header-thing {
+    display: none;
+  }
+}
 @media (max-width: 1440px) {
   .hhfa-func {
     margin-left: -24px;
@@ -667,13 +681,18 @@ a {
     transform: scale(1.25);
     gap: 24px;
     width: 300px;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
   }
   .hhfa-func a {
     text-wrap: nowrap;
   }
+  .call-us-maybe {
+    width: 22px;
+  }
   .call-us-maybe img {
     transform: scale(1.5);
-    margin-left: -48px;
   }
   .htitle h2 {
     margin-right: 44px;
@@ -719,5 +738,97 @@ a {
   .fc-thing {
     position: relative;
     right: 40px;
+  }
+  .header-thing {
+    display: block;
+    position: relative;
+    left: 300px;
+  }
+  .header-burger {
+    display: none;
+    flex-direction: column;
+    background-color: #E86F54;
+    width: 1048px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    animation: ANIMATEYAY 3600s infinite linear;
+  }
+  .header-burger .hhfa-func a {
+    animation: ANIMATEYAY 3600s infinite linear;
+  }
+  .header-burger .call-us-maybe {
+    animation: ANIMATEYAY 3600s infinite linear;
+  }
+  #thing:checked ~ .header-burger {
+    display: flex;
+  }
+  #thing:checked ~ .header-thing {
+    display: none;
+  }
+  #thing {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+  }
+  .header-hc-func {
+    position: relative;
+    left: -40px;
+  }
+  .header-a-logo {
+    position: absolute;
+    right: 750px;
+  }
+  .header-thing2 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  #thing2:checked ~ .sans {
+    display: flex;
+  }
+  #thing2:checked ~ .header-thing2 {
+    color: red;
+  }
+  #thing2 {
+    z-index: 0;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+  }
+  #thing2:checked {
+    z-index: 5;
+  }
+  .sans {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .sans img {
+    position: absolute;
+    position: relative;
+    top: 150px;
+    transform: scale(0.75);
+  }
+}
+@keyframes ANIMATEYAY {
+  from {
+    transform: rotate(0deg) scale(1) translate(0);
+  }
+  50% {
+    transform: translate(51000px, 105900px);
+  }
+  to {
+    transform: rotate(360deg) scale(5) translate(-15600px, -39500px);
+  }
+}
+@keyframes SANSJUMPSCARE {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(5);
   }
 }
