@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM mono', sans-serif;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+    background-color: black;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+    height: 753px;
+}
+
+.hc {
+    display: flex;
+    position: relative;
+    left: 140px;
+    top: 52px;
+    transform: scale(1.1);
+    gap: 40px;
+    a {
+        text-decoration: none;
+        color: white;
+        align-self: center;
+    }
+}
+
+.hc-f {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    left: 504px;
+}
+
+.h-tc {
+    color: white;
+    display: flex;
+    align-self: center;
+    position: relative;
+    top: 233px;
+    left: 77px;
+    flex-direction: column;
+    width: 580px;
+    h2 {
+        font-size: 51px;
+        width: 484px;
+        text-transform: uppercase;
+        font-family: "audiowide", sans-serif;
+    }
+    p {
+        width: 340px;
+        position: relative;
+        top: 43px;
+        font-size: 16px;
+    }
+    button {
+        width: 205px;
+        height: 60px;
+        position: relative;
+        top: 115px;
+        background-color: #8DFD1B;
+        font-size: 16px;
+        border: none;
+    }
+}
+
+.hbg {
+    position: absolute;
+    z-index: -1;
+    left: 480px;
+    top: 130px;
+    transform: scale(1.25);
+}
