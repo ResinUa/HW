@@ -1,0 +1,386 @@
+.is-hidden {
+  width: 100vw;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.backdrop1, .backdrop2 {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backdrop1-c {
+  background-color: white;
+  width: 891px;
+  height: 911px;
+  border-radius: 20px;
+  position: absolute;
+}
+.backdrop1-c .backdrop1cmc {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  left: 40px;
+  top: 40px;
+}
+.backdrop1-c .backdrop1cmc .strawberrybasket {
+  background-color: #F8766B;
+}
+.backdrop1-c .backdrop1cmc .strawberrybasket img {
+  width: 173px;
+}
+.backdrop1-c .backdrop1cmc .applebasket {
+  background-color: #EDD251;
+}
+.backdrop1-c .backdrop1cmc .fruitsbasket {
+  background-color: #9DC262;
+}
+.backdrop1-c .backdrop1c-mc {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 14px;
+  border-radius: 20px;
+  width: 257px;
+}
+.backdrop1-c .backdrop1c-mc .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px white solid;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  left: 207px;
+}
+.backdrop1-c .backdrop1c-mc img {
+  width: 229px;
+  height: 196px;
+}
+.backdrop1-c .backdrop1c-mc h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.backdrop1-c .backdrop1c-mc p {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.backdrop1-c .backdrop1c-mc h2, .backdrop1-c .backdrop1c-mc p {
+  color: white;
+}
+.backdrop1-c .btn-close1 {
+  color: #AE1332;
+  font-weight: 1000;
+  font-size: 21px;
+  position: relative;
+  left: 850px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  z-index: 4;
+  cursor: pointer;
+}
+.backdrop1-c .backdrop1-h2 {
+  color: #AE1332;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  position: relative;
+  left: 40px;
+}
+.backdrop1-c form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  position: relative;
+  left: 40px;
+  top: 80px;
+  column-gap: 14px;
+}
+.backdrop1-c form input {
+  height: 48px;
+  border: rgba(0, 0, 0, 0.3) 1px solid;
+  border-radius: 100px;
+}
+.backdrop1-c form input::placeholder {
+  position: relative;
+  left: 24px;
+}
+.backdrop1-c form input:nth-child(2) {
+  margin-top: 14px;
+}
+.backdrop1-c form input:nth-child(3) {
+  margin-top: 14px;
+}
+.backdrop1-c form textarea {
+  height: 145px;
+  border: rgba(0, 0, 0, 0.3) 1px solid;
+  border-radius: 20px;
+  margin-top: 14px;
+}
+.backdrop1-c form textarea::placeholder {
+  position: relative;
+  left: 24px;
+  top: 15px;
+}
+.backdrop1-c .bananamen {
+  position: absolute;
+  left: 420px;
+  bottom: 0px;
+}
+.backdrop1-c .btn-open2 {
+  position: absolute;
+  top: 379px;
+  background-color: #9DC162;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  width: 114px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.backdrop2-c {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 600px;
+  height: 545px;
+  background-color: #E03F5E;
+  border-radius: 20px;
+  padding: 20px;
+}
+.backdrop2-c .btn-close2 {
+  color: white;
+  font-weight: 1000;
+  font-size: 21px;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  z-index: 5;
+  cursor: pointer;
+  bottom: 64px;
+  left: 542px;
+}
+.backdrop2-c img {
+  position: relative;
+  left: 141px;
+}
+.backdrop2-c .backdrop2-tc {
+  width: 391px;
+  position: relative;
+  left: 85px;
+}
+.backdrop2-c .backdrop2-tc h2, .backdrop2-c .backdrop2-tc p {
+  color: white;
+  text-align: center;
+}
+.backdrop2-c .backdrop2-tc h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+}
+.backdrop2-c .backdrop2-tc p {
+  font-size: 14px;
+  font-weight: 400px;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "dm sans", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #AE1332;
+}
+
+body {
+  width: 100%;
+}
+
+.ys-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.ys-section p, .ys-section h2 {
+  color: #ffffff;
+}
+.ys-section .btn-open1 {
+  position: relative;
+  top: 152px;
+  width: 144px;
+  height: 144px;
+  background-color: #9DC262;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: rotate(346deg);
+  cursor: pointer;
+}
+
+.yss-tc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.yss-tc h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.yss-tc p {
+  text-align: center;
+  width: 547px;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  top: 16px;
+}
+
+.yss-mc {
+  width: 389px;
+  height: 465px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 20px;
+  position: static;
+}
+.yss-mc h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: capitalize;
+  position: relative;
+  left: 24px;
+}
+.yss-mc .behold_my_ultimate_aligning_technique {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  position: relative;
+  left: 24px;
+}
+.yss-mc img {
+  position: relative;
+  left: 47px;
+  width: 295px;
+  height: 251px;
+}
+.yss-mc .yss-mc-p {
+  background-color: white;
+  width: 136px;
+  height: 48px;
+  position: relative;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 200px;
+  cursor: auto;
+}
+.yss-mc .yss-mc-p p {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: none;
+  color: #AE1332;
+  text-wrap: nowrap;
+}
+
+.yss-c {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.yss-c:nth-child(2) {
+  top: 24px;
+}
+
+.yss-c:nth-child(3) {
+  top: 48px;
+}
+
+.yss-mc-c {
+  position: relative;
+  top: 60px;
+}
+
+.strawberry {
+  background-color: #F8766B;
+  width: 389px;
+}
+
+.banana {
+  background-color: #EDD251;
+  width: 389px;
+}
+
+.watermelon {
+  background-color: #9DC262;
+  width: 389px;
+}
+
+.lime {
+  background-color: #BFD663;
+}
+
+.apple {
+  background-color: #E93F29;
+}
+
+.peach {
+  background-color: #DB4F4B;
+}
+
+.plums {
+  background-color: #9B5366;
+}
+
+.organge {
+  background-color: #F47F4C;
+}
+
+.kiwi {
+  background-color: #98B37E;
+}

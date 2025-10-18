@@ -1,0 +1,170 @@
+@import "scss/mixins";
+@import "scss/adaptive";
+@import "scss/backdrop";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "dm sans", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+    background-color: #AE1332;
+}
+
+body {
+    width: 100%;
+}
+
+.ys-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  p, h2 {
+    color: #ffffff;
+}
+.btn-open1 {
+  position: relative;
+  top: 152px;
+  width: 144px;
+  height: 144px;
+  background-color: #9DC262;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: rotate(346deg);
+  cursor: pointer;
+}
+}
+
+.yss-tc {
+  @include fp($fd: column);
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+    width: 547px;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: 16px;
+  }
+}
+
+.yss-mc {
+  width: 389px;
+  height: 465px;
+  @include fp($ai: start, $fd: column);
+  border-radius: 20px;
+  position: static;
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: capitalize;
+    position: relative;
+    left: 24px;
+  }
+  .behold_my_ultimate_aligning_technique {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    left: 24px;
+  }
+  img {
+    position: relative;
+    left: 47px;
+    width: 295px;
+    height: 251px;
+  }
+  .yss-mc-p {
+    background-color: white;
+    width: 136px;
+    height: 48px;
+    position: relative;
+    left: 24px;
+    @include fp();
+    border-radius: 200px;
+    cursor:auto;
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: none;
+      color: #AE1332;
+      text-wrap: nowrap;
+    }
+  }
+}
+
+.yss-c {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.yss-c:nth-child(2) {
+  top: 24px;
+}
+
+.yss-c:nth-child(3) {
+  top: 48px;
+}
+
+.yss-mc-c {
+  position: relative;
+  top: 60px;
+}
+
+.strawberry {
+  background-color: #F8766B;
+  width: 389px;
+}
+
+.banana {
+  background-color: #EDD251;
+  width: 389px;
+}
+
+.watermelon {
+  background-color: #9DC262;
+  width: 389px;
+}
+
+.lime {
+  background-color: #BFD663;
+}
+
+.apple {
+  background-color: #E93F29;
+}
+
+.peach {
+  background-color: #DB4F4B;
+}
+
+.plums {
+  background-color: #9B5366;
+}
+
+.organge {
+  background-color: #F47F4C;
+}
+
+.kiwi {
+  background-color: #98B37E;
+}
