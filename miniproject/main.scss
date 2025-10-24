@@ -45,6 +45,10 @@ body {
   text-transform: uppercase;
   transform: rotate(346deg);
   cursor: pointer;
+  transition: 0.5s;
+}
+.btn-open1:hover {
+  transform: scale(1.5);
 }
 }
 
@@ -55,6 +59,7 @@ body {
     font-weight: 500;
     font-size: 40px;
     text-transform: uppercase;
+    transition: 0.2s;
   }
   p {
     text-align: center;
@@ -63,6 +68,15 @@ body {
     font-size: 14px;
     position: relative;
     top: 16px;
+    transition: 0.5s;
+  }
+  h2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  p:hover {
+    cursor: pointer;
+    transform: scale(1.3);
   }
 }
 
@@ -91,6 +105,11 @@ body {
     left: 47px;
     width: 295px;
     height: 251px;
+    transition: 0.5s;
+  }
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
   }
   .yss-mc-p {
     background-color: white;
@@ -100,7 +119,7 @@ body {
     left: 24px;
     @include fp();
     border-radius: 200px;
-    cursor:auto;
+    transition: 0.2s;
     p {
       font-weight: 500;
       font-size: 18px;
@@ -108,6 +127,16 @@ body {
       color: #AE1332;
       text-wrap: nowrap;
     }
+  }
+  .yss-mc-p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .yssmcp-h2tp {
+    transition: 0.5s;
+  }
+  .yssmcp-h2tp:hover {
+    transform: scale(1.2);
   }
 }
 
