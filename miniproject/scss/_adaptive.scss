@@ -2,16 +2,20 @@
     .yss-c {
         flex-direction: column;
     }
+
     .yss-mc {
         width: 335px !important;
         height: 465px !important;
+
         img {
             left: 20px !important;
         }
+
         .yss-mc-p {
             top: 24px;
         }
     }
+
     .yss-tc {
         h2 {
             width: 210px !important;
@@ -19,110 +23,139 @@
             font-weight: 500 !important;
             text-wrap: nowrap;
         }
+
         p {
             width: 334px !important;
             font-size: 14px !important;
             font-weight: 400 !important;
         }
     }
-    .plums, .organge, .kiwi {
+
+    .plums,
+    .organge,
+    .kiwi {
         display: none !important;
     }
-    .backdrop1, .backdrop2 {
+
+    .backdrop1,
+    .backdrop2 {
         background-color: transparent !important;
     }
+
     .backdrop1-c {
         width: 335px !important;
         height: 950px !important;
+
         .backdrop1-h2 {
             font-size: 28px !important;
             font-weight: 500 !important;
             left: 20px !important;
             bottom: 10px;
         }
+
         .backdrop1c-mc {
             flex-direction: row !important;
             width: 295px !important;
             height: 119px !important;
+
             h2 {
                 font-size: 18px !important;
                 font-weight: 700 !important;
                 width: 150px !important;
                 text-wrap: nowrap;
             }
+
             p {
                 position: relative;
                 top: 26px;
             }
+
             img {
                 height: 95px !important;
                 right: 25px;
                 position: relative;
             }
+
             input {
                 left: 250px !important;
                 width: 16px;
                 height: 16px;
             }
         }
+
         .strawberrybasket {
             img {
                 width: 88px !important;
             }
+
             p {
                 right: 149px;
             }
         }
+
         .applebasket {
             img {
                 width: 106px !important;
             }
+
             p {
                 right: 117px;
             }
         }
+
         .fruitsbasket {
             img {
                 width: 107px !important;
             }
+
             p {
                 right: 114px;
             }
         }
+
         .backdrop1cmc {
             left: 20px !important;
             flex-direction: column !important;
         }
+
         form {
             left: 20px !important;
             width: 295px !important;
+
             input {
                 height: 46px !important;
             }
         }
+
         .btn-close1 {
             left: 291px !important;
         }
+
         .btn-open2 {
             left: 10px !important;
             top: 343px !important;
         }
+
         .bananamen {
             display: none !important;
         }
     }
 }
+
 .backdrop2-c {
     width: 335px !important;
     height: 426px !important;
+
     img {
         width: 207px !important;
         height: 176px !important;
         left: 44px !important;
         bottom: 20px;
     }
+
     .backdrop2-tc {
         left: 0 !important;
+
         h2 {
             font-size: 28px !important;
             font-weight: 500 !important;
@@ -131,12 +164,14 @@
             left: 75px;
             position: relative;
         }
+
         p {
             font-size: 14px !important;
             font-weight: 400 !important;
             width: 295px !important;
         }
     }
+
     .btn-close2 {
         left: 278px !important;
         bottom: 25px !important;
