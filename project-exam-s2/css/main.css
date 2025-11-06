@@ -140,7 +140,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s2mc .s2mc-c {
   position: relative;
@@ -172,7 +172,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s3 .s3mmc {
   display: flex;
@@ -215,7 +215,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
   position: relative;
   left: 736px;
 }
@@ -259,7 +259,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s6mc .s6mc-tc {
   width: 380px;
@@ -299,13 +299,13 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s7mc .s7-mc-ctc h2 {
   font-size: 28px;
   font-weight: 600;
   text-transform: capitalize;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s7mc .s7-mc-ctc p {
   font-size: 20px;
@@ -357,7 +357,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s8mc .s8mc-c p {
   font-size: 20px;
@@ -401,7 +401,7 @@
   font-size: 28px;
   font-weight: 600;
   text-transform: none;
-  color: #E7E7E7;
+  color: #e7e7e7;
   width: 382px;
   position: relative;
   top: 60px;
@@ -418,21 +418,33 @@
   margin-top: 170px;
 }
 
-.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+.s10mc1,
+.s10mc2,
+.s10mc3,
+.s10mc4 {
   display: flex;
 }
-.s10mc1 .s10mc-c, .s10mc2 .s10mc-c, .s10mc3 .s10mc-c, .s10mc4 .s10mc-c {
+.s10mc1 .s10mc-c,
+.s10mc2 .s10mc-c,
+.s10mc3 .s10mc-c,
+.s10mc4 .s10mc-c {
   width: 258px;
   position: relative;
   left: 150px;
 }
-.s10mc1 .s10mc-c h2, .s10mc2 .s10mc-c h2, .s10mc3 .s10mc-c h2, .s10mc4 .s10mc-c h2 {
+.s10mc1 .s10mc-c h2,
+.s10mc2 .s10mc-c h2,
+.s10mc3 .s10mc-c h2,
+.s10mc4 .s10mc-c h2 {
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
-.s10mc1 .s10mc-c p:first-child, .s10mc2 .s10mc-c p:first-child, .s10mc3 .s10mc-c p:first-child, .s10mc4 .s10mc-c p:first-child {
+.s10mc1 .s10mc-c p:first-child,
+.s10mc2 .s10mc-c p:first-child,
+.s10mc3 .s10mc-c p:first-child,
+.s10mc4 .s10mc-c p:first-child {
   font-size: 28px;
   font-weight: 600;
   color: #DF3D3A;
@@ -440,78 +452,214 @@
   position: relative;
   top: 50px;
 }
-.s10mc1 .s10mc-c p, .s10mc2 .s10mc-c p, .s10mc3 .s10mc-c p, .s10mc4 .s10mc-c p {
+.s10mc1 .s10mc-c p,
+.s10mc2 .s10mc-c p,
+.s10mc3 .s10mc-c p,
+.s10mc4 .s10mc-c p {
   font-size: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
-.s10mc1 .s10mc-c p:last-child, .s10mc2 .s10mc-c p:last-child, .s10mc3 .s10mc-c p:last-child, .s10mc4 .s10mc-c p:last-child {
+.s10mc1 .s10mc-c p:last-child,
+.s10mc2 .s10mc-c p:last-child,
+.s10mc3 .s10mc-c p:last-child,
+.s10mc4 .s10mc-c p:last-child {
   position: relative;
   top: 64px;
 }
-.s10mc1 .s10mcctc-b1, .s10mc1 .s10mcctc-b2, .s10mc1 .s10mcctc-b3, .s10mc1 .s10mcctc-b4, .s10mc2 .s10mcctc-b1, .s10mc2 .s10mcctc-b2, .s10mc2 .s10mcctc-b3, .s10mc2 .s10mcctc-b4, .s10mc3 .s10mcctc-b1, .s10mc3 .s10mcctc-b2, .s10mc3 .s10mcctc-b3, .s10mc3 .s10mcctc-b4, .s10mc4 .s10mcctc-b1, .s10mc4 .s10mcctc-b2, .s10mc4 .s10mcctc-b3, .s10mc4 .s10mcctc-b4 {
+.s10mc1 .s10mcctc-b1,
+.s10mc1 .s10mcctc-b2,
+.s10mc1 .s10mcctc-b3,
+.s10mc1 .s10mcctc-b4,
+.s10mc2 .s10mcctc-b1,
+.s10mc2 .s10mcctc-b2,
+.s10mc2 .s10mcctc-b3,
+.s10mc2 .s10mcctc-b4,
+.s10mc3 .s10mcctc-b1,
+.s10mc3 .s10mcctc-b2,
+.s10mc3 .s10mcctc-b3,
+.s10mc3 .s10mcctc-b4,
+.s10mc4 .s10mcctc-b1,
+.s10mc4 .s10mcctc-b2,
+.s10mc4 .s10mcctc-b3,
+.s10mc4 .s10mcctc-b4 {
   display: flex;
 }
-.s10mc1 .s10mcctc-b1 button, .s10mc1 .s10mcctc-b2 button, .s10mc1 .s10mcctc-b3 button, .s10mc1 .s10mcctc-b4 button, .s10mc2 .s10mcctc-b1 button, .s10mc2 .s10mcctc-b2 button, .s10mc2 .s10mcctc-b3 button, .s10mc2 .s10mcctc-b4 button, .s10mc3 .s10mcctc-b1 button, .s10mc3 .s10mcctc-b2 button, .s10mc3 .s10mcctc-b3 button, .s10mc3 .s10mcctc-b4 button, .s10mc4 .s10mcctc-b1 button, .s10mc4 .s10mcctc-b2 button, .s10mc4 .s10mcctc-b3 button, .s10mc4 .s10mcctc-b4 button {
+.s10mc1 .s10mcctc-b1 button,
+.s10mc1 .s10mcctc-b2 button,
+.s10mc1 .s10mcctc-b3 button,
+.s10mc1 .s10mcctc-b4 button,
+.s10mc2 .s10mcctc-b1 button,
+.s10mc2 .s10mcctc-b2 button,
+.s10mc2 .s10mcctc-b3 button,
+.s10mc2 .s10mcctc-b4 button,
+.s10mc3 .s10mcctc-b1 button,
+.s10mc3 .s10mcctc-b2 button,
+.s10mc3 .s10mcctc-b3 button,
+.s10mc3 .s10mcctc-b4 button,
+.s10mc4 .s10mcctc-b1 button,
+.s10mc4 .s10mcctc-b2 button,
+.s10mc4 .s10mcctc-b3 button,
+.s10mc4 .s10mcctc-b4 button {
   border: none;
   background-color: transparent;
   font-family: "roboto condensed", sans-serif;
   font-size: 28px;
   font-weight: 400;
-  color: #DF3D3A;
+  color: #df3d3a;
   cursor: pointer;
 }
-.s10mc1 .s10mcctc-b1 button:nth-child(1), .s10mc1 .s10mcctc-b1 button:nth-child(2), .s10mc1 .s10mcctc-b1 button:nth-child(3), .s10mc1 .s10mcctc-b1 button:nth-child(4), .s10mc1 .s10mcctc-b2 button:nth-child(1), .s10mc1 .s10mcctc-b2 button:nth-child(2), .s10mc1 .s10mcctc-b2 button:nth-child(3), .s10mc1 .s10mcctc-b2 button:nth-child(4), .s10mc1 .s10mcctc-b3 button:nth-child(1), .s10mc1 .s10mcctc-b3 button:nth-child(2), .s10mc1 .s10mcctc-b3 button:nth-child(3), .s10mc1 .s10mcctc-b3 button:nth-child(4), .s10mc1 .s10mcctc-b4 button:nth-child(1), .s10mc1 .s10mcctc-b4 button:nth-child(2), .s10mc1 .s10mcctc-b4 button:nth-child(3), .s10mc1 .s10mcctc-b4 button:nth-child(4), .s10mc2 .s10mcctc-b1 button:nth-child(1), .s10mc2 .s10mcctc-b1 button:nth-child(2), .s10mc2 .s10mcctc-b1 button:nth-child(3), .s10mc2 .s10mcctc-b1 button:nth-child(4), .s10mc2 .s10mcctc-b2 button:nth-child(1), .s10mc2 .s10mcctc-b2 button:nth-child(2), .s10mc2 .s10mcctc-b2 button:nth-child(3), .s10mc2 .s10mcctc-b2 button:nth-child(4), .s10mc2 .s10mcctc-b3 button:nth-child(1), .s10mc2 .s10mcctc-b3 button:nth-child(2), .s10mc2 .s10mcctc-b3 button:nth-child(3), .s10mc2 .s10mcctc-b3 button:nth-child(4), .s10mc2 .s10mcctc-b4 button:nth-child(1), .s10mc2 .s10mcctc-b4 button:nth-child(2), .s10mc2 .s10mcctc-b4 button:nth-child(3), .s10mc2 .s10mcctc-b4 button:nth-child(4), .s10mc3 .s10mcctc-b1 button:nth-child(1), .s10mc3 .s10mcctc-b1 button:nth-child(2), .s10mc3 .s10mcctc-b1 button:nth-child(3), .s10mc3 .s10mcctc-b1 button:nth-child(4), .s10mc3 .s10mcctc-b2 button:nth-child(1), .s10mc3 .s10mcctc-b2 button:nth-child(2), .s10mc3 .s10mcctc-b2 button:nth-child(3), .s10mc3 .s10mcctc-b2 button:nth-child(4), .s10mc3 .s10mcctc-b3 button:nth-child(1), .s10mc3 .s10mcctc-b3 button:nth-child(2), .s10mc3 .s10mcctc-b3 button:nth-child(3), .s10mc3 .s10mcctc-b3 button:nth-child(4), .s10mc3 .s10mcctc-b4 button:nth-child(1), .s10mc3 .s10mcctc-b4 button:nth-child(2), .s10mc3 .s10mcctc-b4 button:nth-child(3), .s10mc3 .s10mcctc-b4 button:nth-child(4), .s10mc4 .s10mcctc-b1 button:nth-child(1), .s10mc4 .s10mcctc-b1 button:nth-child(2), .s10mc4 .s10mcctc-b1 button:nth-child(3), .s10mc4 .s10mcctc-b1 button:nth-child(4), .s10mc4 .s10mcctc-b2 button:nth-child(1), .s10mc4 .s10mcctc-b2 button:nth-child(2), .s10mc4 .s10mcctc-b2 button:nth-child(3), .s10mc4 .s10mcctc-b2 button:nth-child(4), .s10mc4 .s10mcctc-b3 button:nth-child(1), .s10mc4 .s10mcctc-b3 button:nth-child(2), .s10mc4 .s10mcctc-b3 button:nth-child(3), .s10mc4 .s10mcctc-b3 button:nth-child(4), .s10mc4 .s10mcctc-b4 button:nth-child(1), .s10mc4 .s10mcctc-b4 button:nth-child(2), .s10mc4 .s10mcctc-b4 button:nth-child(3), .s10mc4 .s10mcctc-b4 button:nth-child(4) {
+.s10mc1 .s10mcctc-b1 button:nth-child(1),
+.s10mc1 .s10mcctc-b1 button:nth-child(2),
+.s10mc1 .s10mcctc-b1 button:nth-child(3),
+.s10mc1 .s10mcctc-b1 button:nth-child(4),
+.s10mc1 .s10mcctc-b2 button:nth-child(1),
+.s10mc1 .s10mcctc-b2 button:nth-child(2),
+.s10mc1 .s10mcctc-b2 button:nth-child(3),
+.s10mc1 .s10mcctc-b2 button:nth-child(4),
+.s10mc1 .s10mcctc-b3 button:nth-child(1),
+.s10mc1 .s10mcctc-b3 button:nth-child(2),
+.s10mc1 .s10mcctc-b3 button:nth-child(3),
+.s10mc1 .s10mcctc-b3 button:nth-child(4),
+.s10mc1 .s10mcctc-b4 button:nth-child(1),
+.s10mc1 .s10mcctc-b4 button:nth-child(2),
+.s10mc1 .s10mcctc-b4 button:nth-child(3),
+.s10mc1 .s10mcctc-b4 button:nth-child(4),
+.s10mc2 .s10mcctc-b1 button:nth-child(1),
+.s10mc2 .s10mcctc-b1 button:nth-child(2),
+.s10mc2 .s10mcctc-b1 button:nth-child(3),
+.s10mc2 .s10mcctc-b1 button:nth-child(4),
+.s10mc2 .s10mcctc-b2 button:nth-child(1),
+.s10mc2 .s10mcctc-b2 button:nth-child(2),
+.s10mc2 .s10mcctc-b2 button:nth-child(3),
+.s10mc2 .s10mcctc-b2 button:nth-child(4),
+.s10mc2 .s10mcctc-b3 button:nth-child(1),
+.s10mc2 .s10mcctc-b3 button:nth-child(2),
+.s10mc2 .s10mcctc-b3 button:nth-child(3),
+.s10mc2 .s10mcctc-b3 button:nth-child(4),
+.s10mc2 .s10mcctc-b4 button:nth-child(1),
+.s10mc2 .s10mcctc-b4 button:nth-child(2),
+.s10mc2 .s10mcctc-b4 button:nth-child(3),
+.s10mc2 .s10mcctc-b4 button:nth-child(4),
+.s10mc3 .s10mcctc-b1 button:nth-child(1),
+.s10mc3 .s10mcctc-b1 button:nth-child(2),
+.s10mc3 .s10mcctc-b1 button:nth-child(3),
+.s10mc3 .s10mcctc-b1 button:nth-child(4),
+.s10mc3 .s10mcctc-b2 button:nth-child(1),
+.s10mc3 .s10mcctc-b2 button:nth-child(2),
+.s10mc3 .s10mcctc-b2 button:nth-child(3),
+.s10mc3 .s10mcctc-b2 button:nth-child(4),
+.s10mc3 .s10mcctc-b3 button:nth-child(1),
+.s10mc3 .s10mcctc-b3 button:nth-child(2),
+.s10mc3 .s10mcctc-b3 button:nth-child(3),
+.s10mc3 .s10mcctc-b3 button:nth-child(4),
+.s10mc3 .s10mcctc-b4 button:nth-child(1),
+.s10mc3 .s10mcctc-b4 button:nth-child(2),
+.s10mc3 .s10mcctc-b4 button:nth-child(3),
+.s10mc3 .s10mcctc-b4 button:nth-child(4),
+.s10mc4 .s10mcctc-b1 button:nth-child(1),
+.s10mc4 .s10mcctc-b1 button:nth-child(2),
+.s10mc4 .s10mcctc-b1 button:nth-child(3),
+.s10mc4 .s10mcctc-b1 button:nth-child(4),
+.s10mc4 .s10mcctc-b2 button:nth-child(1),
+.s10mc4 .s10mcctc-b2 button:nth-child(2),
+.s10mc4 .s10mcctc-b2 button:nth-child(3),
+.s10mc4 .s10mcctc-b2 button:nth-child(4),
+.s10mc4 .s10mcctc-b3 button:nth-child(1),
+.s10mc4 .s10mcctc-b3 button:nth-child(2),
+.s10mc4 .s10mcctc-b3 button:nth-child(3),
+.s10mc4 .s10mcctc-b3 button:nth-child(4),
+.s10mc4 .s10mcctc-b4 button:nth-child(1),
+.s10mc4 .s10mcctc-b4 button:nth-child(2),
+.s10mc4 .s10mcctc-b4 button:nth-child(3),
+.s10mc4 .s10mcctc-b4 button:nth-child(4) {
   color: rgba(223, 61, 58, 0.4);
 }
-.s10mc1 .s10mcctc-b1, .s10mc2 .s10mcctc-b1, .s10mc3 .s10mcctc-b1, .s10mc4 .s10mcctc-b1 {
+.s10mc1 .s10mcctc-b1,
+.s10mc2 .s10mcctc-b1,
+.s10mc3 .s10mcctc-b1,
+.s10mc4 .s10mcctc-b1 {
   position: relative;
   top: 130px;
 }
-.s10mc1 .s10mcctc-b1 button:nth-child(1), .s10mc2 .s10mcctc-b1 button:nth-child(1), .s10mc3 .s10mcctc-b1 button:nth-child(1), .s10mc4 .s10mcctc-b1 button:nth-child(1) {
+.s10mc1 .s10mcctc-b1 button:nth-child(1),
+.s10mc2 .s10mcctc-b1 button:nth-child(1),
+.s10mc3 .s10mcctc-b1 button:nth-child(1),
+.s10mc4 .s10mcctc-b1 button:nth-child(1) {
   color: #DF3D3A;
 }
-.s10mc1 .s10mcctc-b2, .s10mc2 .s10mcctc-b2, .s10mc3 .s10mcctc-b2, .s10mc4 .s10mcctc-b2 {
+.s10mc1 .s10mcctc-b2,
+.s10mc2 .s10mcctc-b2,
+.s10mc3 .s10mcctc-b2,
+.s10mc4 .s10mcctc-b2 {
   position: relative;
   top: 237px;
 }
-.s10mc1 .s10mcctc-b2 button:nth-child(2), .s10mc2 .s10mcctc-b2 button:nth-child(2), .s10mc3 .s10mcctc-b2 button:nth-child(2), .s10mc4 .s10mcctc-b2 button:nth-child(2) {
+.s10mc1 .s10mcctc-b2 button:nth-child(2),
+.s10mc2 .s10mcctc-b2 button:nth-child(2),
+.s10mc3 .s10mcctc-b2 button:nth-child(2),
+.s10mc4 .s10mcctc-b2 button:nth-child(2) {
   color: #DF3D3A;
 }
-.s10mc1 .s10mcctc-b3, .s10mc2 .s10mcctc-b3, .s10mc3 .s10mcctc-b3, .s10mc4 .s10mcctc-b3 {
+.s10mc1 .s10mcctc-b3,
+.s10mc2 .s10mcctc-b3,
+.s10mc3 .s10mcctc-b3,
+.s10mc4 .s10mcctc-b3 {
   position: relative;
   top: 350px;
 }
-.s10mc1 .s10mcctc-b3 button:nth-child(3), .s10mc2 .s10mcctc-b3 button:nth-child(3), .s10mc3 .s10mcctc-b3 button:nth-child(3), .s10mc4 .s10mcctc-b3 button:nth-child(3) {
+.s10mc1 .s10mcctc-b3 button:nth-child(3),
+.s10mc2 .s10mcctc-b3 button:nth-child(3),
+.s10mc3 .s10mcctc-b3 button:nth-child(3),
+.s10mc4 .s10mcctc-b3 button:nth-child(3) {
   color: #DF3D3A;
 }
-.s10mc1 .s10mcctc-b4, .s10mc2 .s10mcctc-b4, .s10mc3 .s10mcctc-b4, .s10mc4 .s10mcctc-b4 {
+.s10mc1 .s10mcctc-b4,
+.s10mc2 .s10mcctc-b4,
+.s10mc3 .s10mcctc-b4,
+.s10mc4 .s10mcctc-b4 {
   position: relative;
   top: 270px;
 }
-.s10mc1 .s10mcctc-b4 button:nth-child(4), .s10mc2 .s10mcctc-b4 button:nth-child(4), .s10mc3 .s10mcctc-b4 button:nth-child(4), .s10mc4 .s10mcctc-b4 button:nth-child(4) {
+.s10mc1 .s10mcctc-b4 button:nth-child(4),
+.s10mc2 .s10mcctc-b4 button:nth-child(4),
+.s10mc3 .s10mcctc-b4 button:nth-child(4),
+.s10mc4 .s10mcctc-b4 button:nth-child(4) {
   color: #DF3D3A;
 }
 
-.s10hidden1, .s10hidden2, .s10hidden3, .s10hidden4 {
+.s10hidden1,
+.s10hidden2,
+.s10hidden3,
+.s10hidden4 {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-.s10hidden1 button, .s10hidden2 button, .s10hidden3 button, .s10hidden4 button {
+.s10hidden1 button,
+.s10hidden2 button,
+.s10hidden3 button,
+.s10hidden4 button {
   z-index: 3;
 }
 
-.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+.s10mc1,
+.s10mc2,
+.s10mc3,
+.s10mc4 {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-.s10mc1 button, .s10mc2 button, .s10mc3 button, .s10mc4 button {
+.s10mc1 button,
+.s10mc2 button,
+.s10mc3 button,
+.s10mc4 button {
   z-index: 3;
 }
 
-.s10mc1, .s10hidden1 {
+.s10mc1,
+.s10hidden1 {
   position: static;
   opacity: 1;
   z-index: 2;
@@ -524,7 +672,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
   position: relative;
   left: 190px;
 }
@@ -557,7 +705,7 @@
   font-size: 28px;
   font-weight: 600;
   text-transform: none;
-  color: #E7E7E7;
+  color: #e7e7e7;
   position: relative;
   left: 32px;
 }
@@ -601,7 +749,10 @@
   left: 405px;
 }
 
-#s11p1, #s11p2, #s11p3, #s11p4 {
+#s11p1,
+#s11p2,
+#s11p3,
+#s11p4 {
   font-size: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
@@ -627,7 +778,7 @@
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .s12mc .s12mcc-button {
   display: flex;
@@ -672,7 +823,8 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.s12mc #s12img2, .s12mc #s12img1 {
+.s12mc #s12img2,
+.s12mc #s12img1 {
   position: absolute;
   left: 600px;
 }
@@ -766,13 +918,13 @@ footer {
   font-size: 54px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 .fc-c p {
   font-size: 28px;
   font-weight: 600;
   text-transform: none;
-  color: #E7E7E7;
+  color: #e7e7e7;
   width: 400px;
   position: relative;
   top: 50px;
@@ -783,7 +935,8 @@ footer {
   position: relative;
   left: 150px;
 }
-.f-form input, .f-form textarea {
+.f-form input,
+.f-form textarea {
   width: 510px;
   border: none;
   border-bottom: 2px rgb(97, 97, 97) solid;
@@ -801,7 +954,8 @@ footer {
   position: relative;
   top: 100px;
 }
-.f-form input::placeholder, .f-form textarea::placeholder {
+.f-form input::placeholder,
+.f-form textarea::placeholder {
   color: rgb(97, 97, 97);
   font-size: 20px;
 }
@@ -812,7 +966,8 @@ footer {
   position: relative;
   top: 150px;
 }
-.f-form .f-form-checkbox p, .f-form .f-form-checkbox a {
+.f-form .f-form-checkbox p,
+.f-form .f-form-checkbox a {
   text-wrap: nowrap;
   color: #E9EDFA;
   position: relative;

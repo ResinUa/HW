@@ -2,15 +2,18 @@
   0% {
     border: none;
   }
+
   25% {
     border-left: 1px solid rgba($color: #fff, $alpha: 0.8);
     border-radius: 5px;
   }
+
   50% {
     border-radius: 10px;
     border-left: rgba($color: #fff, $alpha: 0.9);
     border-top: 1px solid rgba($color: #fff, $alpha: 0.7);
   }
+
   75% {
     border-radius: 15px;
     border-top: white;
@@ -20,23 +23,26 @@
 }
 
 @keyframes pthing {
-    98% {
+  98% {
     transform: scale(1.1);
     color: rgba($color: #fff, $alpha: 0.9);
-    }
-    100% {
+  }
+
+  100% {
     transform: scale(1.2);
     color: white;
-    }
+  }
 }
 
 @keyframes questionmark_gradient {
   25% {
-    background-color: linear-gradient(to bottom-right rgba($color: #fff, $alpha: 0.4),rgba($color: #fff, $alpha: 0.6));
+    background-color: linear-gradient(to bottom-right rgba($color: #fff, $alpha: 0.4), rgba($color: #fff, $alpha: 0.6));
   }
+
   50% {
     background-color: rgba($color: #fff, $alpha: 0.7);
   }
+
   75% {
     background-color: rgb(159, 159, 159);
   }
