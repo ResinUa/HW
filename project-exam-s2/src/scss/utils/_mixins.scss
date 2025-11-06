@@ -1,0 +1,21 @@
+@mixin h2thing($fs: 54px, $fw:600, $tt: uppercase, $c: #E7E7E7) {
+    font-size: $fs;
+    font-weight: $fw;
+    text-transform: $tt;
+    color: $c;
+}
+
+@mixin pthing ($fs: 20px, $fw: 400, $c: rgba($color: #fff, $alpha: 0.8)) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin buttonthing ($b: none, $bc: transparent, $fs: 28px, $fw: 400, $c: #DF3D3A) {
+    border: $b;
+    background-color: $bc;
+    font-family: 'roboto condensed', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}

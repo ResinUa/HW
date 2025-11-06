@@ -1,0 +1,101 @@
+footer {
+    margin-top: 170px;
+    height: 856px;
+}
+.fc {
+    position: relative;
+    left: 190px;
+    display: flex;
+}
+.fc-c {
+    h2 {
+        @include h2thing();
+    }
+    p {
+        @include h2thing($fs: 28px, $tt: none);
+        width: 400px;
+        position: relative;
+        top: 50px;
+    }
+}
+.f-form {
+    width: 510px;
+    position: relative;
+    left: 150px;
+    input, textarea {
+        width: 510px;
+        border: none;
+        border-bottom: 2px rgb(97, 97, 97) solid;
+        background-color: transparent;
+    }
+    input {
+        height: 50px;
+    }
+    input:nth-child(2) {
+        position: relative;
+        top: 50px;
+    }
+    textarea{
+        height: 150px;
+        position: relative;
+        top: 100px;
+    }
+    input::placeholder, textarea::placeholder {
+        color: rgb(97, 97, 97);
+        font-size: 20px;
+    }
+    .f-form-checkbox {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        position: relative;
+        top: 150px;
+        p, a {
+            text-wrap: nowrap;
+            color: #E9EDFA;
+            position: relative;
+            left: 20px;
+        }
+        input {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+    button {
+        position: relative;
+        top: 270px;
+        width: 510px;
+        height: 68px;
+        border: 1px solid #DF3D3A;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba($color: #fff, $alpha: 0.9);
+        text-transform: uppercase;
+    }
+}
+.flc {
+    display: flex;
+    position: relative;
+    top: 408px;
+    left: 190px;
+    gap: 50px;
+    a {
+        text-decoration: none;
+        color: rgba($color: #fff, $alpha: 0.3);
+        text-transform: capitalize;
+        transition: 0.2s;
+    }
+    a:hover {
+            //animation: 0.15s pthing forwards;
+            color: white;
+    }
+    p {
+        color: rgba($color: #fff, $alpha: 0.8);
+        text-transform: capitalize;
+        position: relative;
+        left: 217px;
+    }
+}

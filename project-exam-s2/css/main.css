@@ -1,0 +1,885 @@
+@keyframes s1button {
+  0% {
+    border: none;
+  }
+  25% {
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+  }
+  50% {
+    border-radius: 10px;
+    border-left: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  75% {
+    border-radius: 15px;
+    border-top: white;
+    border-left: white;
+    font-size: 22px;
+  }
+}
+@keyframes pthing {
+  98% {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    transform: scale(1.2);
+    color: white;
+  }
+}
+@keyframes questionmark_gradient {
+  25% {
+    background-color: linear-gradient(to bottom-right rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  75% {
+    background-color: rgb(159, 159, 159);
+  }
+}
+.hfunc {
+  display: flex;
+  position: relative;
+  left: 80px;
+  margin-top: 64px;
+}
+.hfunc .hfunc-a {
+  position: relative;
+  left: 37vw;
+}
+.hfunc .hfunc-a a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.2s;
+}
+.hfunc .hfunc-a a:hover {
+  color: white;
+}
+.hfunc .hfunc-a nav {
+  gap: 77px;
+  display: flex;
+}
+
+.s1mc {
+  position: relative;
+  left: 80px;
+  margin-top: 72px;
+  display: flex;
+}
+
+.s1p p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.s1p p:first-child {
+  width: 321px;
+}
+.s1p p:last-child {
+  width: 150px;
+  position: relative;
+  top: 36px;
+  transition: 0.2s;
+}
+.s1p p:hover {
+  color: white;
+}
+
+.s1mc-c {
+  position: relative;
+  left: 13%;
+  top: 280px;
+  position: absolute;
+}
+.s1mc-c h2 {
+  width: 574px;
+  font-weight: 600;
+  font-size: 74px;
+  color: #E7E7E7;
+  text-transform: uppercase;
+}
+.s1mc-c button {
+  background-color: #DF3D3A;
+  color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  height: 68px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 68px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.s1mc-c button:hover {
+  transform: scale(1);
+}
+
+.s1img {
+  left: 51%;
+  position: absolute;
+  top: 74px;
+}
+
+.s2 {
+  margin-top: 720px;
+  display: flex;
+}
+
+.s2mc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 150px;
+  width: 510px;
+}
+.s2mc .s2h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s2mc .s2mc-c {
+  position: relative;
+  top: 50px;
+}
+.s2mc .s2mc-c h2 {
+  color: #E7E7E7;
+  font-size: 28px;
+  font-weight: 600;
+}
+.s2mc .s2mc-c p {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.s2mc .s2mc-c:last-child {
+  position: relative;
+  top: 150px;
+}
+
+.s3 {
+  position: relative;
+  top: 170px;
+  left: 190px;
+}
+.s3 h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s3 .s3mmc {
+  display: flex;
+  gap: 220px;
+}
+.s3 .s3mc-c {
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+.s3 .s3mc-c svg {
+  height: 13px;
+  width: 13px;
+}
+.s3 .s3mc-c p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-6px);
+  position: relative;
+  left: 24px;
+  transition: 0.2s;
+}
+.s3 .s3mc-c p:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.s3 .s3mc {
+  display: grid;
+  row-gap: 20px;
+}
+
+.s4 {
+  margin-top: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.s4 h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+  position: relative;
+  left: 736px;
+}
+.s4 img {
+  height: 524px;
+  width: 100vw;
+  position: relative;
+  top: 50px;
+}
+
+.s5 {
+  margin-top: 100px;
+}
+.s5 .s5mc {
+  display: flex;
+  position: relative;
+  left: 190px;
+  gap: 40px;
+}
+.s5 .s5mc h2 {
+  color: #E7E7E7;
+}
+.s5 .s5mc p {
+  width: 510px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 20px;
+}
+
+.s6 {
+  margin-top: 170px;
+  height: 586px;
+}
+
+.s6mc {
+  display: flex;
+}
+.s6mc .s6h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s6mc .s6mc-tc {
+  width: 380px;
+  position: relative;
+  top: 50px;
+}
+.s6mc .s6mc-tc h2 {
+  color: #E7E7E7;
+  font-size: 28px;
+  font-weight: 600px;
+}
+.s6mc .s6mc-tc p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 20px;
+}
+.s6mc img {
+  position: relative;
+  left: 30vw;
+}
+.s6mc .s6mc-c {
+  width: 380px;
+  position: relative;
+  left: 190px;
+}
+
+.s7 {
+  margin-top: 170px;
+}
+
+.s7mc {
+  display: flex;
+}
+.s7mc h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s7mc .s7-mc-ctc h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #E7E7E7;
+}
+.s7mc .s7-mc-ctc p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.s7mc svg {
+  height: 13px;
+  width: 13px;
+}
+.s7mc .s7mc-c {
+  width: 405px;
+  position: relative;
+  left: 150px;
+}
+.s7mc .s7thing {
+  position: relative;
+  top: 50px;
+}
+.s7mc .s7thing .s7-mc-ctc {
+  position: relative;
+  top: 24px;
+}
+.s7mc .s7thing:last-child {
+  top: 120px;
+}
+.s7mc .tidalwave_tuntun {
+  position: absolute;
+  height: 112px;
+  align-self: self-end;
+  left: 83vw;
+}
+
+.s8 {
+  margin-top: 170px;
+}
+
+.s8mc {
+  display: flex;
+}
+.s8mc .s8mc-c {
+  width: 400px;
+  display: grid;
+  row-gap: 50px;
+  position: relative;
+  left: 190px;
+}
+.s8mc .s8mc-c h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s8mc .s8mc-c p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.s8mc .s8mc-c p:last-child {
+  position: relative;
+  top: 24px;
+}
+.s8mc img {
+  position: relative;
+  left: 27%;
+  top: 30px;
+}
+
+.s9 {
+  margin-top: 130px;
+}
+
+.s9mc {
+  display: flex;
+  position: relative;
+  left: 190px;
+}
+.s9mc .s9mc-c p:first-child {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  width: 510px;
+  position: relative;
+  left: 260px;
+  bottom: 60px;
+}
+.s9mc .s9mc-ctc {
+  position: relative;
+  left: 260px;
+  top: 60px;
+}
+.s9mc .s9mc-ctc h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+  color: #E7E7E7;
+  width: 382px;
+  position: relative;
+  top: 60px;
+}
+.s9mc .s9mc-ctc p {
+  position: relative;
+  top: 80px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.s10 {
+  margin-top: 170px;
+}
+
+.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+  display: flex;
+}
+.s10mc1 .s10mc-c, .s10mc2 .s10mc-c, .s10mc3 .s10mc-c, .s10mc4 .s10mc-c {
+  width: 258px;
+  position: relative;
+  left: 150px;
+}
+.s10mc1 .s10mc-c h2, .s10mc2 .s10mc-c h2, .s10mc3 .s10mc-c h2, .s10mc4 .s10mc-c h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s10mc1 .s10mc-c p:first-child, .s10mc2 .s10mc-c p:first-child, .s10mc3 .s10mc-c p:first-child, .s10mc4 .s10mc-c p:first-child {
+  font-size: 28px;
+  font-weight: 600;
+  color: #DF3D3A;
+  text-transform: capitalize;
+  position: relative;
+  top: 50px;
+}
+.s10mc1 .s10mc-c p, .s10mc2 .s10mc-c p, .s10mc3 .s10mc-c p, .s10mc4 .s10mc-c p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.s10mc1 .s10mc-c p:last-child, .s10mc2 .s10mc-c p:last-child, .s10mc3 .s10mc-c p:last-child, .s10mc4 .s10mc-c p:last-child {
+  position: relative;
+  top: 64px;
+}
+.s10mc1 .s10mcctc-b1, .s10mc1 .s10mcctc-b2, .s10mc1 .s10mcctc-b3, .s10mc1 .s10mcctc-b4, .s10mc2 .s10mcctc-b1, .s10mc2 .s10mcctc-b2, .s10mc2 .s10mcctc-b3, .s10mc2 .s10mcctc-b4, .s10mc3 .s10mcctc-b1, .s10mc3 .s10mcctc-b2, .s10mc3 .s10mcctc-b3, .s10mc3 .s10mcctc-b4, .s10mc4 .s10mcctc-b1, .s10mc4 .s10mcctc-b2, .s10mc4 .s10mcctc-b3, .s10mc4 .s10mcctc-b4 {
+  display: flex;
+}
+.s10mc1 .s10mcctc-b1 button, .s10mc1 .s10mcctc-b2 button, .s10mc1 .s10mcctc-b3 button, .s10mc1 .s10mcctc-b4 button, .s10mc2 .s10mcctc-b1 button, .s10mc2 .s10mcctc-b2 button, .s10mc2 .s10mcctc-b3 button, .s10mc2 .s10mcctc-b4 button, .s10mc3 .s10mcctc-b1 button, .s10mc3 .s10mcctc-b2 button, .s10mc3 .s10mcctc-b3 button, .s10mc3 .s10mcctc-b4 button, .s10mc4 .s10mcctc-b1 button, .s10mc4 .s10mcctc-b2 button, .s10mc4 .s10mcctc-b3 button, .s10mc4 .s10mcctc-b4 button {
+  border: none;
+  background-color: transparent;
+  font-family: "roboto condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #DF3D3A;
+  cursor: pointer;
+}
+.s10mc1 .s10mcctc-b1 button:nth-child(1), .s10mc1 .s10mcctc-b1 button:nth-child(2), .s10mc1 .s10mcctc-b1 button:nth-child(3), .s10mc1 .s10mcctc-b1 button:nth-child(4), .s10mc1 .s10mcctc-b2 button:nth-child(1), .s10mc1 .s10mcctc-b2 button:nth-child(2), .s10mc1 .s10mcctc-b2 button:nth-child(3), .s10mc1 .s10mcctc-b2 button:nth-child(4), .s10mc1 .s10mcctc-b3 button:nth-child(1), .s10mc1 .s10mcctc-b3 button:nth-child(2), .s10mc1 .s10mcctc-b3 button:nth-child(3), .s10mc1 .s10mcctc-b3 button:nth-child(4), .s10mc1 .s10mcctc-b4 button:nth-child(1), .s10mc1 .s10mcctc-b4 button:nth-child(2), .s10mc1 .s10mcctc-b4 button:nth-child(3), .s10mc1 .s10mcctc-b4 button:nth-child(4), .s10mc2 .s10mcctc-b1 button:nth-child(1), .s10mc2 .s10mcctc-b1 button:nth-child(2), .s10mc2 .s10mcctc-b1 button:nth-child(3), .s10mc2 .s10mcctc-b1 button:nth-child(4), .s10mc2 .s10mcctc-b2 button:nth-child(1), .s10mc2 .s10mcctc-b2 button:nth-child(2), .s10mc2 .s10mcctc-b2 button:nth-child(3), .s10mc2 .s10mcctc-b2 button:nth-child(4), .s10mc2 .s10mcctc-b3 button:nth-child(1), .s10mc2 .s10mcctc-b3 button:nth-child(2), .s10mc2 .s10mcctc-b3 button:nth-child(3), .s10mc2 .s10mcctc-b3 button:nth-child(4), .s10mc2 .s10mcctc-b4 button:nth-child(1), .s10mc2 .s10mcctc-b4 button:nth-child(2), .s10mc2 .s10mcctc-b4 button:nth-child(3), .s10mc2 .s10mcctc-b4 button:nth-child(4), .s10mc3 .s10mcctc-b1 button:nth-child(1), .s10mc3 .s10mcctc-b1 button:nth-child(2), .s10mc3 .s10mcctc-b1 button:nth-child(3), .s10mc3 .s10mcctc-b1 button:nth-child(4), .s10mc3 .s10mcctc-b2 button:nth-child(1), .s10mc3 .s10mcctc-b2 button:nth-child(2), .s10mc3 .s10mcctc-b2 button:nth-child(3), .s10mc3 .s10mcctc-b2 button:nth-child(4), .s10mc3 .s10mcctc-b3 button:nth-child(1), .s10mc3 .s10mcctc-b3 button:nth-child(2), .s10mc3 .s10mcctc-b3 button:nth-child(3), .s10mc3 .s10mcctc-b3 button:nth-child(4), .s10mc3 .s10mcctc-b4 button:nth-child(1), .s10mc3 .s10mcctc-b4 button:nth-child(2), .s10mc3 .s10mcctc-b4 button:nth-child(3), .s10mc3 .s10mcctc-b4 button:nth-child(4), .s10mc4 .s10mcctc-b1 button:nth-child(1), .s10mc4 .s10mcctc-b1 button:nth-child(2), .s10mc4 .s10mcctc-b1 button:nth-child(3), .s10mc4 .s10mcctc-b1 button:nth-child(4), .s10mc4 .s10mcctc-b2 button:nth-child(1), .s10mc4 .s10mcctc-b2 button:nth-child(2), .s10mc4 .s10mcctc-b2 button:nth-child(3), .s10mc4 .s10mcctc-b2 button:nth-child(4), .s10mc4 .s10mcctc-b3 button:nth-child(1), .s10mc4 .s10mcctc-b3 button:nth-child(2), .s10mc4 .s10mcctc-b3 button:nth-child(3), .s10mc4 .s10mcctc-b3 button:nth-child(4), .s10mc4 .s10mcctc-b4 button:nth-child(1), .s10mc4 .s10mcctc-b4 button:nth-child(2), .s10mc4 .s10mcctc-b4 button:nth-child(3), .s10mc4 .s10mcctc-b4 button:nth-child(4) {
+  color: rgba(223, 61, 58, 0.4);
+}
+.s10mc1 .s10mcctc-b1, .s10mc2 .s10mcctc-b1, .s10mc3 .s10mcctc-b1, .s10mc4 .s10mcctc-b1 {
+  position: relative;
+  top: 130px;
+}
+.s10mc1 .s10mcctc-b1 button:nth-child(1), .s10mc2 .s10mcctc-b1 button:nth-child(1), .s10mc3 .s10mcctc-b1 button:nth-child(1), .s10mc4 .s10mcctc-b1 button:nth-child(1) {
+  color: #DF3D3A;
+}
+.s10mc1 .s10mcctc-b2, .s10mc2 .s10mcctc-b2, .s10mc3 .s10mcctc-b2, .s10mc4 .s10mcctc-b2 {
+  position: relative;
+  top: 237px;
+}
+.s10mc1 .s10mcctc-b2 button:nth-child(2), .s10mc2 .s10mcctc-b2 button:nth-child(2), .s10mc3 .s10mcctc-b2 button:nth-child(2), .s10mc4 .s10mcctc-b2 button:nth-child(2) {
+  color: #DF3D3A;
+}
+.s10mc1 .s10mcctc-b3, .s10mc2 .s10mcctc-b3, .s10mc3 .s10mcctc-b3, .s10mc4 .s10mcctc-b3 {
+  position: relative;
+  top: 350px;
+}
+.s10mc1 .s10mcctc-b3 button:nth-child(3), .s10mc2 .s10mcctc-b3 button:nth-child(3), .s10mc3 .s10mcctc-b3 button:nth-child(3), .s10mc4 .s10mcctc-b3 button:nth-child(3) {
+  color: #DF3D3A;
+}
+.s10mc1 .s10mcctc-b4, .s10mc2 .s10mcctc-b4, .s10mc3 .s10mcctc-b4, .s10mc4 .s10mcctc-b4 {
+  position: relative;
+  top: 270px;
+}
+.s10mc1 .s10mcctc-b4 button:nth-child(4), .s10mc2 .s10mcctc-b4 button:nth-child(4), .s10mc3 .s10mcctc-b4 button:nth-child(4), .s10mc4 .s10mcctc-b4 button:nth-child(4) {
+  color: #DF3D3A;
+}
+
+.s10hidden1, .s10hidden2, .s10hidden3, .s10hidden4 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.s10hidden1 button, .s10hidden2 button, .s10hidden3 button, .s10hidden4 button {
+  z-index: 3;
+}
+
+.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.s10mc1 button, .s10mc2 button, .s10mc3 button, .s10mc4 button {
+  z-index: 3;
+}
+
+.s10mc1, .s10hidden1 {
+  position: static;
+  opacity: 1;
+  z-index: 2;
+}
+
+.s11 {
+  margin-top: 190px;
+}
+.s11 h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+  position: relative;
+  left: 190px;
+}
+.s11 svg {
+  height: 1px;
+  width: 1059px;
+}
+.s11 svg rect {
+  width: 1059px;
+}
+
+.s11thing {
+  display: grid;
+  row-gap: 84px;
+  position: relative;
+  top: 50px;
+}
+
+.s11mc {
+  position: relative;
+  left: 190px;
+}
+.s11mc p:first-child {
+  font-family: "roboto condensed", sans-serif;
+  color: #E7E7E7;
+  font-size: 28px;
+  font-weight: 400;
+}
+.s11mc p:nth-child(2) {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+  color: #E7E7E7;
+  position: relative;
+  left: 32px;
+}
+
+.s11q {
+  display: flex;
+}
+.s11q button {
+  border: none;
+  font-family: "roboto condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #E7E7E7;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.s11q button:hover {
+  animation: 0.5s questionmark_gradient forwards;
+}
+
+.s11mc:nth-child(1) button {
+  position: relative;
+  left: 510px;
+}
+
+.s11mc:nth-child(2) button {
+  position: relative;
+  left: 330px;
+}
+
+.s11mc:nth-child(3) button {
+  position: relative;
+  left: 210px;
+}
+
+.s11mc:nth-child(4) button {
+  position: relative;
+  left: 405px;
+}
+
+#s11p1, #s11p2, #s11p3, #s11p4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  left: 60px;
+  display: none;
+}
+
+#s11p1 {
+  width: 897px;
+}
+
+.s12 {
+  margin-top: 170px;
+}
+
+.s12mc {
+  display: flex;
+  position: relative;
+  left: 187px;
+}
+.s12mc h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.s12mc .s12mcc-button {
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+.s12mc .s12mcc-button .s12mccb-1 {
+  background-color: #1D1D1D;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s12mc .s12mcc-button .s12mccb-1 button {
+  width: 54px;
+  height: 54px;
+  border: 2px solid #DF3D3A;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.s12mc .s12mcc-button .s12mccb-2 {
+  background-color: #dfdfdf;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+.s12mc .s12mcc-button .s12mccb-2 button {
+  width: 54px;
+  height: 54px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.s12mc #s12img2, .s12mc #s12img1 {
+  position: absolute;
+  left: 600px;
+}
+.s12mc #s12img2 {
+  opacity: 0;
+}
+.s12mc .s12mcc-link {
+  display: flex;
+}
+.s12mc .s12mcc-link p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  align-self: center;
+}
+.s12mc .s12mcc-link button {
+  color: #DF3D3A;
+  font-size: 28px;
+  border: none;
+  background-color: transparent;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.s12mc .s12mcc-link .s12mccl-b1 {
+  position: relative;
+  left: 175px;
+}
+.s12mc .s12mcc-link .s12mccl-b2 {
+  position: relative;
+  left: 210px;
+}
+.s12mc .s12mcc-link .s12mccl-b3 {
+  position: relative;
+  left: 65px;
+}
+.s12mc svg {
+  height: 1px;
+  width: 400px;
+}
+.s12mc svg rect {
+  width: 400px;
+}
+.s12mc .s12mc-cc {
+  position: relative;
+  top: 100px;
+}
+.s12mc .s12price {
+  position: relative;
+  top: 150px;
+}
+.s12mc .s12price h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #DF3D3A;
+}
+.s12mc .s12price button {
+  position: relative;
+  top: 32px;
+  background-color: #DF3D3A;
+  color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  height: 68px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.s13 {
+  margin-top: 340px;
+}
+.s13 img {
+  width: 100vw;
+  height: 524px;
+}
+
+footer {
+  margin-top: 170px;
+  height: 856px;
+}
+
+.fc {
+  position: relative;
+  left: 190px;
+  display: flex;
+}
+
+.fc-c h2 {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #E7E7E7;
+}
+.fc-c p {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: none;
+  color: #E7E7E7;
+  width: 400px;
+  position: relative;
+  top: 50px;
+}
+
+.f-form {
+  width: 510px;
+  position: relative;
+  left: 150px;
+}
+.f-form input, .f-form textarea {
+  width: 510px;
+  border: none;
+  border-bottom: 2px rgb(97, 97, 97) solid;
+  background-color: transparent;
+}
+.f-form input {
+  height: 50px;
+}
+.f-form input:nth-child(2) {
+  position: relative;
+  top: 50px;
+}
+.f-form textarea {
+  height: 150px;
+  position: relative;
+  top: 100px;
+}
+.f-form input::placeholder, .f-form textarea::placeholder {
+  color: rgb(97, 97, 97);
+  font-size: 20px;
+}
+.f-form .f-form-checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  top: 150px;
+}
+.f-form .f-form-checkbox p, .f-form .f-form-checkbox a {
+  text-wrap: nowrap;
+  color: #E9EDFA;
+  position: relative;
+  left: 20px;
+}
+.f-form .f-form-checkbox input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.f-form button {
+  position: relative;
+  top: 270px;
+  width: 510px;
+  height: 68px;
+  border: 1px solid #DF3D3A;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+}
+
+.flc {
+  display: flex;
+  position: relative;
+  top: 408px;
+  left: 190px;
+  gap: 50px;
+}
+.flc a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+.flc a:hover {
+  color: white;
+}
+.flc p {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+  position: relative;
+  left: 217px;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "red hat display", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #191919;
+}
+
+body {
+  width: 100%;
+}
+
+.test {
+  display: none;
+}

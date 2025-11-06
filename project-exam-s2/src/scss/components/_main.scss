@@ -1,0 +1,660 @@
+.s1mc {
+    position: relative;
+    left: 80px;
+    margin-top: 72px;
+    display: flex;
+}
+.s1p {
+    p {
+        @include pthing();
+    }
+    p:first-child {
+        width: 321px;
+    }
+    p:last-child {
+        width: 150px;
+        position: relative;
+        top: 36px;
+        transition: 0.2s;
+    }
+    p:hover {
+        //animation: 0.15s pthing forwards;
+        color: white;
+    }
+}
+.s1mc-c {
+    position: relative;
+    left: 13%;
+    top: 280px;
+    position: absolute;
+    h2 {
+        width: 574px;
+        font-weight: 600;
+        font-size: 74px;
+        color: #E7E7E7;
+        text-transform: uppercase;
+    }
+    button {
+        background-color: #DF3D3A;
+        color: rgba($color: #fff, $alpha: 0.9);
+        width: 400px;
+        height: 68px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 68px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    button:hover {
+        //animation: s1button 0.25s infinite;
+        transform: scale(1.0); //я це пишу бо мені розширення sass live formatter пише що тут написане empty rule
+    }
+}
+.s1img {
+    left: 51%;
+    position: absolute;
+    top: 74px;
+}
+
+//s2
+
+.s2 {
+    margin-top: 720px;
+    display: flex;
+}
+
+.s2mc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 150px;
+    width: 510px;
+    .s2h2 {
+        @include h2thing();
+    }
+    .s2mc-c {
+        position: relative;
+        top: 50px;
+        h2 {
+            color: #E7E7E7;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        p {
+            position: relative;
+            top: 20px;
+            @include pthing();
+        }
+    }
+    .s2mc-c:last-child {
+        position: relative;
+        top: 150px;
+    }
+}
+
+//s3 
+
+.s3 {
+    position: relative;
+    top: 170px;
+    left: 190px;
+    h2 {
+        @include h2thing();
+    }
+    .s3mmc {
+        display: flex;
+        gap: 220px;
+    }
+    .s3mc-c {
+        display: flex;
+        position: relative;
+        top: 50px;
+        svg {
+            height: 13px;
+            width: 13px;
+        }
+        p {
+            @include pthing();
+            transform: translateY(-6px);
+            position: relative;
+            left: 24px;
+            transition: 0.2s;
+        }
+        p:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .s3mc {
+        display: grid;
+        row-gap: 20px;
+    }
+}
+
+//s4
+
+.s4 {
+    margin-top: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h2 {
+        @include h2thing();
+        position: relative;
+        left: 736px;
+    }
+    img {
+        height: 524px;
+        width: 100vw;
+        position: relative;
+        top: 50px;
+    }
+}
+
+//s5
+
+.s5 {
+    margin-top: 100px;
+    .s5mc {
+        display: flex;
+        position: relative;
+        left: 190px;
+        gap: 40px;
+        h2 {
+            color: #E7E7E7;
+        }
+        p {
+            width: 510px;
+            @include pthing();
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+
+//s6
+
+.s6 {
+    margin-top: 170px;
+    height: 586px;
+}
+
+.s6mc {
+    display: flex;
+    .s6h2 {
+        @include h2thing();
+    }
+    .s6mc-tc {
+        width: 380px;
+        position: relative;
+        top: 50px;
+        h2 {
+            color: #E7E7E7;
+            font-size: 28px;
+            font-weight: 600px;
+        }
+        p {
+            @include pthing();
+            position: relative;
+            top: 20px;
+        }
+    }
+    img {
+        position: relative;
+        left: 30vw;
+    }
+    .s6mc-c {
+        width: 380px;
+        position: relative;
+        left: 190px;
+    }
+}
+
+//s7
+
+.s7 {
+    margin-top: 170px;
+}
+
+.s7mc {
+    display: flex;
+    h2 {
+        @include h2thing();
+    }
+    .s7-mc-ctc {
+        h2 {
+            @include h2thing($fs: 28px, $tt: capitalize);
+        }
+        p {
+            @include pthing();
+        }
+    }
+    svg {
+        height: 13px;
+        width: 13px;
+    }
+    .s7mc-c {
+        width: 405px;
+        position: relative;
+        left: 150px;
+    }
+    .s7thing {
+        position: relative;
+        top: 50px;
+        .s7-mc-ctc {
+            position: relative;
+            top: 24px;
+        }
+    }
+    .s7thing:last-child {
+        top: 120px;
+    }
+    .tidalwave_tuntun {
+        position: absolute;
+        height: 112px;
+        align-self: self-end;
+        left: 83vw;
+    }
+}
+
+//s8
+
+.s8 {
+    margin-top: 170px;
+}
+
+.s8mc {
+    display: flex;
+    .s8mc-c {
+        width: 400px;
+        display: grid;
+        row-gap: 50px;
+        position: relative;
+        left: 190px;
+        h2 {
+            @include h2thing();
+        }
+        p {
+            @include pthing();
+        }
+        p:last-child {
+            position: relative;
+            top: 24px;
+        }
+    }
+    img {
+        position: relative;
+        left: 27%;
+        top: 30px;
+    }
+}
+
+//s9 
+
+.s9 {
+    margin-top: 130px;
+}
+
+.s9mc {
+    display: flex;
+    position: relative;
+    left: 190px;
+    .s9mc-c {
+        p:first-child {
+            @include pthing();
+            width: 510px;
+            position: relative;
+            left: 260px;
+            bottom: 60px;
+        }
+    }
+    .s9mc-ctc {
+        position: relative;
+        left: 260px;
+        top: 60px;
+        h2 {
+            @include h2thing($fs: 28px, $tt: none);
+            width: 382px;
+            position: relative;
+            top: 60px;
+        }
+        p {
+            position: relative;
+            top: 80px;
+            @include pthing($fs: 16px, $c: rgba($color: #fff, $alpha: 0.4));
+        }
+    }
+}
+
+//s10
+
+.s10 {
+    margin-top: 170px;
+}
+
+.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+    display: flex;
+    .s10mc-c {
+        width: 258px;
+        position: relative;
+        left: 150px;
+        h2 {
+            @include h2thing();
+        }
+        p:first-child {
+            font-size: 28px;
+            font-weight: 600;
+            color: #DF3D3A;
+            text-transform: capitalize;
+            position: relative;
+            top: 50px;
+        }
+        p {
+            @include pthing();
+        }
+        p:last-child {
+            position: relative;
+            top: 64px;
+        }
+    }
+    .s10mcctc-b1, .s10mcctc-b2, .s10mcctc-b3, .s10mcctc-b4 {
+        display: flex;
+        button {
+            @include buttonthing();
+            cursor: pointer;
+        }
+        button:nth-child(1), button:nth-child(2), button:nth-child(3), button:nth-child(4) {
+            color: rgba($color: #DF3D3A, $alpha: 0.4);
+        }
+    }
+    .s10mcctc-b1 {
+        position: relative;
+        top: 130px;
+        button:nth-child(1) {
+            color: #DF3D3A;
+        }
+    }
+    .s10mcctc-b2 {
+        position: relative;
+        top: 237px;
+        button:nth-child(2) {
+            color: #DF3D3A;
+        }
+    }
+    .s10mcctc-b3 {
+        position: relative;
+        top: 350px;
+        button:nth-child(3) {
+            color: #DF3D3A;
+        }
+    }
+    .s10mcctc-b4 {
+        position: relative;
+        top: 270px;
+        button:nth-child(4) {
+            color: #DF3D3A;
+        }
+    }
+}
+
+.s10hidden1, .s10hidden2, .s10hidden3, .s10hidden4 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    button {
+        z-index: 3;
+    }
+}
+
+.s10mc1, .s10mc2, .s10mc3, .s10mc4 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    button {
+        z-index: 3;
+    };
+}
+
+.s10mc1, .s10hidden1 {
+    position: static;
+    opacity: 1;
+    z-index: 2;
+}
+
+//s11 
+
+.s11 {
+    margin-top: 190px;
+    h2 {
+        @include h2thing();
+        position: relative;
+        left: 190px;
+    }
+    svg {
+        height: 1px;
+        width: 1059px;
+        rect {
+            width: 1059px;
+        }
+    }
+}
+
+.s11thing {
+    display: grid;
+    row-gap: 84px;
+    position: relative;
+    top: 50px;
+}
+
+.s11mc {
+    position: relative;
+    left: 190px;
+    p:first-child {
+        font-family: 'roboto condensed', sans-serif;
+        color: #E7E7E7;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    p:nth-child(2) {
+        @include h2thing($fs: 28px, $tt: none, $fw: 600);
+        position: relative;
+        left: 32px;
+    }
+}
+
+.s11q {
+    display: flex;
+    button {
+        border: none;
+        font-family: 'roboto condensed', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: #E7E7E7;
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    button:hover {
+        animation: 0.5s questionmark_gradient forwards;
+    }
+}
+
+.s11mc:nth-child(1) {
+    button {
+        position: relative;
+        left: 510px;
+    }
+}
+
+.s11mc:nth-child(2) {
+    button {
+        position: relative;
+        left: 330px;
+    }
+}
+
+.s11mc:nth-child(3) {
+    button {
+        position: relative;
+        left: 210px;
+    }
+}
+
+.s11mc:nth-child(4) {
+    button {
+        position: relative;
+        left: 405px;
+    }
+}
+
+#s11p1, #s11p2, #s11p3, #s11p4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba($color: #fff, $alpha: 0.8);
+    position: relative;
+    left: 60px;
+    display: none;
+}
+
+#s11p1 {
+    width: 897px;
+}
+
+//s12
+
+.s12 {
+    margin-top: 170px;
+}
+
+.s12mc {
+    display: flex;
+    position: relative;
+    left: 187px;
+    h2 {
+        @include h2thing();
+    }
+    .s12mcc-button {
+        display: flex;
+        position: relative;
+        top: 50px;
+        .s12mccb-1 {
+            background-color: #1D1D1D;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: 1px solid rgba($color: #fff, $alpha: 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                width: 54px;
+                height: 54px;
+                border: 2px solid #DF3D3A;
+                background-color: #000;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        .s12mccb-2 {
+            background-color: #dfdfdf;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: 1px solid rgba($color: #fff, $alpha: 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 20px;
+            button {
+                width: 54px;
+                height: 54px;
+                border: none;
+                background-color: rgba($color: #fff, $alpha: 0.8);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    #s12img2, #s12img1 {
+        position: absolute;
+        left: 600px;
+    }
+    #s12img2 {
+        opacity: 0;
+    }
+    .s12mcc-link {
+        display: flex;
+        p {
+            @include pthing();
+            align-self: center;
+        }
+        button {
+            color: #DF3D3A;
+            font-size: 28px;
+            border: none;
+            background-color: transparent;
+            transform: rotate(-45deg);
+            cursor: pointer;
+        }
+        .s12mccl-b1 {
+            position: relative;
+            left: 175px;
+        }
+        .s12mccl-b2 {
+            position: relative;
+            left: 210px;
+        }
+        .s12mccl-b3 {
+            position: relative;
+            left: 65px;
+        }
+    }
+    svg {
+        height: 1px;
+        width: 400px;
+        rect {
+            width: 400px;
+        }
+    }
+    .s12mc-cc {
+        position: relative;
+        top: 100px;
+    }
+    .s12price {
+        position: relative;
+        top: 150px;
+        h2 {
+            @include h2thing($c: #DF3D3A);
+        }
+        button {
+        position: relative;
+        top: 32px;
+        background-color: #DF3D3A;
+        color: rgba($color: #fff, $alpha: 0.9);
+        width: 400px;
+        height: 68px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        }
+    }
+}
+
+//s13 
+
+.s13 {
+    margin-top: 340px;
+    img {
+        width: 100vw;
+        height: 524px;
+    }
+}
+
+//ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА НАРЕШТІ КІНЕЦЬ ЦЬОГО АААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА

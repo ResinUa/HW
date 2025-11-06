@@ -1,0 +1,25 @@
+.hfunc {
+    display: flex;
+    position: relative;
+    left: 80px;
+    margin-top: 64px;
+    .hfunc-a {
+        position: relative;
+        left: 37vw;
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: rgba($color: #fff, $alpha: 0.8);
+            transition: 0.2s;
+        }
+        a:hover {
+            //animation: 0.15s pthing forwards;
+            color: white;
+        }
+        nav {
+            gap: 77px;
+            display: flex;
+        }
+    }
+}
+//лол це весь хедер

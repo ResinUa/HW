@@ -1,0 +1,30 @@
+@import "utils/mixins";
+@import "utils/keyframes";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+@import "components/adaptive";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'red hat display', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #191919;
+}
+
+body {
+  width: 100%;
+}
+
+.test {
+  display: none;
+}
