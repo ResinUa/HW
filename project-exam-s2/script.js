@@ -1,20 +1,10 @@
 const s1button = document.querySelector(".s1button");
 const s12button = document.querySelector(".s12button");
 
-const s10hidden1 = document.querySelector(".s10hidden1");
-const s10hidden2 = document.querySelector(".s10hidden2");
-const s10hidden3 = document.querySelector(".s10hidden3");
-const s10hidden4 = document.querySelector(".s10hidden4");
-
 const s10btn1 = document.querySelector(".s10btn-1");
 const s10btn2 = document.querySelector(".s10btn-2");
 const s10btn3 = document.querySelector(".s10btn-3");
 const s10btn4 = document.querySelector(".s10btn-4");
-
-// const s10m1 = document.querySelector('.s10m1');
-// const s10m2 = document.querySelector('.s10m2');
-// const s10m3 = document.querySelector('.s10m3');
-// const s10m4 = document.querySelector('.s10m4');
 
 const s10thing1 = document.querySelector(".s10mc1");
 const s10thing2 = document.querySelector(".s10mc2");
@@ -35,6 +25,8 @@ const s12b1 = document.querySelector("#s12b1");
 const s12b2 = document.querySelector("#s12b2");
 const s12img1 = document.querySelector("#s12img1");
 const s12img2 = document.querySelector("#s12img2");
+
+const fbutton = document.querySelector("#footer_button")
 
 //---------------------------------s1&12button-----------------------------------------//
 
@@ -57,145 +49,37 @@ s12button.addEventListener("mouseup", () => {
 //---------------------------------s10thing1----------------------------------------------//
 
 s10btn1.addEventListener("click", () => {
-  [s10hidden2, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.zIndex = "-1")
-  );
-  [s10thing2, s10thing3, s10thing4].forEach((el) => (el.style.zIndex = "-1"));
-  [s10hidden2, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10thing2, s10thing3, s10thing4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10hidden2, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.opacity = "0")
-  );
-  [s10thing2, s10thing3, s10thing4].forEach((el) => (el.style.opacity = "0"));
-  //   [s10btn2, s10btn3, s10btn4].forEach(el => el.style.zIndex = "-1");
-  //   [s10btn2, s10btn3, s10btn4].forEach(el => el.style.position = "absolute");
-  //   [s10btn2, s10btn3, s10btn4].forEach(el => el.style.opacity = "0");
-
-  s10thing2.classList.add("s10hidden2");
-  s10thing3.classList.add("s10hidden3");
-  s10thing4.classList.add("s10hidden4");
-  s10thing1.classList.remove("s10hidden1");
-
-  [s10hidden1, s10thing1].forEach((el) => (el.style.zIndex = "2"));
-  [s10hidden1, s10thing1].forEach((el) => (el.style.position = "static"));
-  [s10hidden1, s10thing1].forEach((el) => (el.style.opacity = "1"));
-
-  //   s10m1.style.zIndex = "1";
-  //   [s10m2, s10m3, s10m4].forEach(el => el.style.zIndex = "3");
-  //   [s10m2, s10m3, s10m4].forEach(el => el.style.position = "static");
-  //   [s10m2, s10m3, s10m4].forEach(el => el.style.opacity = "1");
+  [s10thing2, s10thing3, s10thing4].forEach(el => el.style.display = "none");
+  s10thing1.style.display = "flex";
+  [s10btn2, s10btn3, s10btn4].forEach(el => el.style.color = "#B5302D");
+  s10btn1.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing2----------------------------------------------//
 
 s10btn2.addEventListener("click", () => {
-  [s10hidden1, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.zIndex = "-1")
-  );
-  [s10thing1, s10thing3, s10thing4].forEach((el) => (el.style.zIndex = "-1"));
-  [s10hidden1, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10thing1, s10thing3, s10thing4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10hidden1, s10hidden3, s10hidden4].forEach(
-    (el) => (el.style.opacity = "0")
-  );
-  [s10thing1, s10thing3, s10thing4].forEach((el) => (el.style.opacity = "0"));
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.zIndex = "-1");
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.position = "absolute");
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.opacity = "0");
-
-  s10thing1.classList.add("s10hidden1");
-  s10thing3.classList.add("s10hidden3");
-  s10thing4.classList.add("s10hidden4");
-  s10thing2.classList.remove("s10hidden2");
-
-  [s10hidden2, s10thing2].forEach((el) => (el.style.zIndex = "2"));
-  [s10hidden2, s10thing2].forEach((el) => (el.style.position = "static"));
-  [s10hidden2, s10thing2].forEach((el) => (el.style.opacity = "1"));
-
-  //   s10m2.style.zIndex = "1";
-  //   [s10m1, s10m3, s10m4].forEach(el => el.style.zIndex = "3");
-  //   [s10m1, s10m3, s10m4].forEach(el => el.style.position = "static");
-  //   [s10m1, s10m3, s10m4].forEach(el => el.style.opacity = "1");
+  [s10thing1, s10thing3, s10thing4].forEach(el => el.style.display = "none");
+  s10thing2.style.display = "flex";
+  [s10btn1, s10btn3, s10btn4].forEach(el => el.style.color = "#B5302D");
+  s10btn2.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing3----------------------------------------------//
 
 s10btn3.addEventListener("click", () => {
-  [s10hidden2, s10hidden1, s10hidden4].forEach(
-    (el) => (el.style.zIndex = "-1")
-  );
-  [s10thing2, s10thing1, s10thing4].forEach((el) => (el.style.zIndex = "-1"));
-  [s10hidden2, s10hidden1, s10hidden4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10thing2, s10thing1, s10thing4].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10hidden2, s10hidden1, s10hidden4].forEach(
-    (el) => (el.style.opacity = "0")
-  );
-  [s10thing2, s10thing1, s10thing4].forEach((el) => (el.style.opacity = "0"));
-  //   [s10btn2, s10btn1, s10btn4].forEach(el => el.style.zIndex = "-1");
-  //   [s10btn2, s10btn1, s10btn4].forEach(el => el.style.position = "absolute");
-  //   [s10btn2, s10btn1, s10btn4].forEach(el => el.style.opacity = "0");
-
-  s10thing2.classList.add("s10hidden2");
-  s10thing1.classList.add("s10hidden1");
-  s10thing4.classList.add("s10hidden4");
-  s10thing3.classList.remove("s10hidden3");
-
-  [s10hidden3, s10thing3].forEach((el) => (el.style.zIndex = "2"));
-  [s10hidden3, s10thing3].forEach((el) => (el.style.position = "static"));
-  [s10hidden3, s10thing3].forEach((el) => (el.style.opacity = "1"));
-
-  //   s10m3.style.zIndex = "1";
-  //   [s10m2, s10m1, s10m4].forEach(el => el.style.zIndex = "3");
-  //   [s10m2, s10m1, s10m4].forEach(el => el.style.position = "static");
-  //   [s10m2, s10m1, s10m4].forEach(el => el.style.opacity = "1");
+  [s10thing2, s10thing1, s10thing4].forEach(el => el.style.display = "none");
+  s10thing3.style.display = "flex";
+  [s10btn2, s10btn1, s10btn4].forEach(el => el.style.color = "#B5302D");
+  s10btn3.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing4----------------------------------------------//
 
 s10btn4.addEventListener("click", () => {
-  [s10hidden2, s10hidden3, s10hidden1].forEach(
-    (el) => (el.style.zIndex = "-1")
-  );
-  [s10thing2, s10thing3, s10thing1].forEach((el) => (el.style.zIndex = "-1"));
-  [s10hidden2, s10hidden3, s10hidden1].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10thing2, s10thing3, s10thing1].forEach(
-    (el) => (el.style.position = "absolute")
-  );
-  [s10hidden2, s10hidden3, s10hidden1].forEach(
-    (el) => (el.style.opacity = "0")
-  );
-  [s10thing2, s10thing3, s10thing1].forEach((el) => (el.style.opacity = "0"));
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.zIndex = "-1");
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.position = "absolute");
-  //   [s10btn2, s10btn3, s10btn1].forEach(el => el.style.opacity = "0");
-
-  s10thing2.classList.add("s10hidden2");
-  s10thing3.classList.add("s10hidden3");
-  s10thing1.classList.add("s10hidden4");
-  s10thing4.classList.remove("s10hidden1");
-
-  [s10hidden4, s10thing4].forEach((el) => (el.style.zIndex = "2"));
-  [s10hidden4, s10thing4].forEach((el) => (el.style.position = "static"));
-  [s10hidden4, s10thing4].forEach((el) => (el.style.opacity = "1"));
-
-  //   s10m4.style.zIndex = "1";
-  //   [s10m2, s10m3, s10m1].forEach(el => el.style.zIndex = "3");
-  //   [s10m2, s10m3, s10m1].forEach(el => el.style.position = "static");
-  //   [s10m2, s10m3, s10m1].forEach(el => el.style.opacity = "1");
+  [s10thing2, s10thing3, s10thing1].forEach(el => el.style.display = "none");
+  s10thing4.style.display = "flex";
+  [s10btn2, s10btn3, s10btn1].forEach(el => el.style.color = "#B5302D");
+  s10btn4.style.color = "#DF3D3A";
 });
 
 //---------------------------------s11buttons----------------------------------------------//
@@ -245,4 +129,16 @@ s12b2.addEventListener("click", () => {
   s12b1.style.border = "none";
   s12img2.style.opacity = "1";
   s12img1.style.opacity = "0";
+});
+
+//---------------------------------footer button----------------------------------------------//
+
+fbutton.addEventListener("mousedown", () => {
+  fbutton.style.border = "1px solid rgba($color: #fff, $alpha: 0.8)";
+  fbutton.style.color = "#B5302D";
+});
+
+fbutton.addEventListener("mouseup", () => {
+  fbutton.style.border = "1px solid #DF3D3A";
+  fbutton.style.Color = "rgba($color: #fff, $alpha: 0.9)";
 });

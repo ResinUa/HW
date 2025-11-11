@@ -28,7 +28,6 @@
 }
 
 .s1mc-c {
-    position: relative;
     left: 13%;
     top: 280px;
     position: absolute;
@@ -417,98 +416,33 @@
             top: 64px;
         }
     }
+}
 
-    .s10mcctc-b1,
-    .s10mcctc-b2,
-    .s10mcctc-b3,
-    .s10mcctc-b4 {
+.s10mc2, .s10mc3, .s10mc4 {
+    display: none;
+}
+
+.s10b {
+        gap: 0px;
         display: flex;
-
-        button {
+        z-index: 2;
+        position: absolute;
+        left: 1070px;
+        margin-top: -50px;
+    button {
             @include buttonthing();
             cursor: pointer;
         }
 
-        button:nth-child(1),
         button:nth-child(2),
         button:nth-child(3),
         button:nth-child(4) {
-            color: rgba($color: #DF3D3A, $alpha: 0.4);
+            color: #B5302D;
         }
-    }
-
-    .s10mcctc-b1 {
-        position: relative;
-        top: 130px;
-
-        button:nth-child(1) {
+        .s10btn-1 {
             color: #DF3D3A;
         }
-    }
-
-    .s10mcctc-b2 {
-        position: relative;
-        top: 237px;
-
-        button:nth-child(2) {
-            color: #DF3D3A;
-        }
-    }
-
-    .s10mcctc-b3 {
-        position: relative;
-        top: 350px;
-
-        button:nth-child(3) {
-            color: #DF3D3A;
-        }
-    }
-
-    .s10mcctc-b4 {
-        position: relative;
-        top: 270px;
-
-        button:nth-child(4) {
-            color: #DF3D3A;
-        }
-    }
 }
-
-.s10hidden1,
-.s10hidden2,
-.s10hidden3,
-.s10hidden4 {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-
-    button {
-        z-index: 3;
-    }
-}
-
-.s10mc1,
-.s10mc2,
-.s10mc3,
-.s10mc4 {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-
-    button {
-        z-index: 3;
-    }
-
-    ;
-}
-
-.s10mc1,
-.s10hidden1 {
-    position: static;
-    opacity: 1;
-    z-index: 2;
-}
-
 //s11 
 
 .s11 {
@@ -614,9 +548,6 @@
     position: relative;
     left: 60px;
     display: none;
-}
-
-#s11p1 {
     width: 897px;
 }
 

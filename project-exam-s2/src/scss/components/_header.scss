@@ -3,11 +3,13 @@
     position: relative;
     left: 80px;
     margin-top: 64px;
-
+    img {
+        z-index: 3;
+    }
     .hfunc-a {
         position: relative;
         left: 37vw;
-
+        z-index: 3;
         a {
             text-decoration: none;
             text-transform: capitalize;
@@ -27,4 +29,39 @@
     }
 }
 
-//лол це весь хедер
+.header-thing, #thing {
+    display: none;
+    position: absolute;
+    left: 486px;
+    z-index: 5;
+}
+
+#thing {
+    opacity: 0;
+}
+
+.header-thing {
+    color: rgba($color: #fff, $alpha: 0.8);
+    font-size: 28px;
+    align-self: center;
+}
+
+.header-burger {
+    position: absolute;
+    width: 768px;
+    height: 367px;
+    background-color: #191919;
+    display: none;
+    z-index: 2;
+    .header-burger-a {
+        display: grid;
+        row-gap: 24px;
+        position: absolute;
+        top: 119px;
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: rgba($color: #fff, $alpha: 0.8);
+        }
+    }
+}

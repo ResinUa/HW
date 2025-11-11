@@ -17,13 +17,23 @@
     <header>
       <div class="hfunc">
         <img src="./src/img/boselogo.svg" alt="logo" />
-        <div class="hfunc-a">
-          <nav>
-            <a onclick="location.href='#char'" href="#">characteristics</a>
-            <a onclick="location.href='#history'" href="#">history</a>
-            <a onclick="location.href='#reviews'" href="#">reviews</a>
-            <a onclick="location.href='#pnd'" href="#">Payment and delivery</a>
-          </nav>
+          <input type="checkbox" id="thing">
+            <label for="thing" class="header-thing">☰</label>
+          <div class="header-burger">
+            <div class="header-burger-a">
+              <a href="#">characteristics</a>
+              <a href="#">history</a>
+              <a href="#">reviews</a>
+              <a href="#">Payment and delivery</a>
+            </div>
+          </div>
+            <div class="hfunc-a">
+            <nav>
+              <a onclick="location.href='#char'" href="#">characteristics</a>
+              <a onclick="location.href='#history'" href="#">history</a>
+              <a onclick="location.href='#reviews'" href="#">reviews</a>
+              <a onclick="location.href='#pnd'" href="#">Payment and delivery</a>
+            </nav>
         </div>
       </div>
     </header>
@@ -283,7 +293,7 @@
         </div>
       </section>
       <section class="s10">
-        <div class="s10mc1 s10hidden1">
+        <div class="s10mc1">
           <iframe
             width="920px"
             height="590px"
@@ -303,15 +313,9 @@
                 world for a few moments and relax.
               </p>
             </div>
-            <div class="s10mcctc-b1">
-              <button class="s10btn-1 s10m1">01 -</button>
-              <button class="s10btn-2">02 -</button>
-              <button class="s10btn-3">03 -</button>
-              <button class="s10btn-4">04</button>
-            </div>
           </div>
         </div>
-        <div class="s10mc2 s10hidden2">
+        <div class="s10mc2">
           <iframe
             width="920px"
             height="590px"
@@ -328,15 +332,9 @@
                 balance of quiet, comfort, and sound.
               </p>
             </div>
-            <div class="s10mcctc-b2">
-              <button class="s10btn-1">01 -</button>
-              <button class="s10btn-2 s10m2">02 -</button>
-              <button class="s10btn-3">03 -</button>
-              <button class="s10btn-4">04</button>
-            </div>
           </div>
         </div>
-        <div class="s10mc3 s10hidden3">
+        <div class="s10mc3">
           <iframe
             width="920px"
             height="590px"
@@ -352,15 +350,9 @@
                 escape, and for self-care
               </p>
             </div>
-            <div class="s10mcctc-b3">
-              <button class="s10btn-1">01 -</button>
-              <button class="s10btn-2">02 -</button>
-              <button class="s10btn-3 s10m3">03 -</button>
-              <button class="s10btn-4">04</button>
-            </div>
           </div>
         </div>
-        <div class="s10mc4 s10hidden4">
+        <div class="s10mc4">
           <iframe
             width="920px"
             height="590px"
@@ -378,13 +370,13 @@
                 gonna let you down. Bruh.
               </p>
             </div>
-            <div class="s10mcctc-b4">
-              <button class="s10btn-1">01 -</button>
-              <button class="s10btn-2">02 -</button>
-              <button class="s10btn-3">03 -</button>
-              <button class="s10btn-4 s10m4">04</button>
-            </div>
           </div>
+        </div>
+        <div class="s10b">
+          <button class="s10btn-1">01 -</button>
+          <button class="s10btn-2">02 -</button>
+          <button class="s10btn-3">03 -</button>
+          <button class="s10btn-4">04</button>
         </div>
       </section>
       <section class="s11">
@@ -455,7 +447,7 @@
       <section class="s12">
         <div class="s12mc">
           <div class="s12mc-c">
-            <h2>bose nc 700</h2>
+            <h2 id="s12h2">bose nc 700</h2>
             <div class="s12mcc-button">
               <div class="s12mccb-1">
                 <button id="s12b1"></button>
@@ -527,17 +519,21 @@
               <p>I agree to the</p>
               <a href="#">privacy policy</a>
             </div>
-            <button>send</button>
+            <button id="footer_button">send</button>
           </form>
         </div>
       </div>
       <div class="flc">
-        <a onclick="location.href='#char'" href="#">Characteristics</a>
-        <a onclick="location.href='#history'" href="#">History</a>
-        <a onclick="location.href='#reviews'" href="#">Reviews</a>
-        <a onclick="location.href='#pnd'" href="#">Payment and delivery</a>
-        <a href="#">Store addresses</a>
-        <a onclick="location.href='#faq'" href="#">FAQ</a>
+        <div class="flc1">
+          <a onclick="location.href='#char'" href="#">Characteristics</a>
+          <a onclick="location.href='#history'" href="#">History</a>
+          <a onclick="location.href='#reviews'" href="#">Reviews</a>
+        </div>
+        <div class="flc2">
+          <a onclick="location.href='#pnd'" href="#">Payment and delivery</a>
+          <a href="#">Store addresses</a>
+          <a onclick="location.href='#faq'" href="#">FAQ</a>
+        </div>
         <p>8 (800) 111-11-11</p>
       </div>
     </footer>

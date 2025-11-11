@@ -98,7 +98,6 @@ footer {
     position: relative;
     top: 408px;
     left: 190px;
-    gap: 50px;
 
     a {
         text-decoration: none;
@@ -117,5 +116,13 @@ footer {
         text-transform: capitalize;
         position: relative;
         left: 217px;
+    }
+    .flc1, .flc2 {
+        display: flex;
+        gap: 50px;
+    }
+    .flc2  {
+        position: relative;
+        left: 50px;
     }
 }
