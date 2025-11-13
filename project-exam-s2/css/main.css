@@ -936,7 +936,7 @@ footer {
     top: 220px !important;
   }
   .s2 {
-    margin-top: 520px !important;
+    margin-top: 200px !important;
   }
   .s2 img {
     height: 540px;
@@ -1181,7 +1181,10 @@ footer {
   .s11mc {
     width: 648px !important;
   }
-  .s11mc1, .s11mc2, .s11mc3, .s11mc4 {
+  .s11mc1,
+  .s11mc2,
+  .s11mc3,
+  .s11mc4 {
     width: 648px !important;
   }
   .s12 {
@@ -1216,7 +1219,8 @@ footer {
   .s12mccl-b3 {
     left: 365px !important;
   }
-  #s12img1, #s12img2 {
+  #s12img1,
+  #s12img2 {
     left: 0 !important;
     width: 648px !important;
     height: 446px !important;
@@ -1260,10 +1264,12 @@ footer {
   .f-form {
     left: 0 !important;
   }
-  .f-form input, .f-form textarea {
+  .f-form input,
+  .f-form textarea {
     width: 646px !important;
   }
-  .f-form input::placeholder, .f-form textarea::placeholder {
+  .f-form input::placeholder,
+  .f-form textarea::placeholder {
     font-size: 16px !important;
   }
   .f-form-checkbox input {
@@ -1283,7 +1289,8 @@ footer {
     position: relative;
     top: 145px;
   }
-  .flc1, .flc2 {
+  .flc1,
+  .flc2 {
     flex-direction: column;
   }
   .flc2 {

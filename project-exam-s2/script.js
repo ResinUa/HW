@@ -26,7 +26,7 @@ const s12b2 = document.querySelector("#s12b2");
 const s12img1 = document.querySelector("#s12img1");
 const s12img2 = document.querySelector("#s12img2");
 
-const fbutton = document.querySelector("#footer_button")
+const fbutton = document.querySelector("#footer_button");
 
 //---------------------------------s1&12button-----------------------------------------//
 
@@ -49,36 +49,44 @@ s12button.addEventListener("mouseup", () => {
 //---------------------------------s10thing1----------------------------------------------//
 
 s10btn1.addEventListener("click", () => {
-  [s10thing2, s10thing3, s10thing4].forEach(el => el.style.display = "none");
+  [s10thing2, s10thing3, s10thing4].forEach(
+    (el) => (el.style.display = "none")
+  );
   s10thing1.style.display = "flex";
-  [s10btn2, s10btn3, s10btn4].forEach(el => el.style.color = "#B5302D");
+  [s10btn2, s10btn3, s10btn4].forEach((el) => (el.style.color = "#B5302D"));
   s10btn1.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing2----------------------------------------------//
 
 s10btn2.addEventListener("click", () => {
-  [s10thing1, s10thing3, s10thing4].forEach(el => el.style.display = "none");
+  [s10thing1, s10thing3, s10thing4].forEach(
+    (el) => (el.style.display = "none")
+  );
   s10thing2.style.display = "flex";
-  [s10btn1, s10btn3, s10btn4].forEach(el => el.style.color = "#B5302D");
+  [s10btn1, s10btn3, s10btn4].forEach((el) => (el.style.color = "#B5302D"));
   s10btn2.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing3----------------------------------------------//
 
 s10btn3.addEventListener("click", () => {
-  [s10thing2, s10thing1, s10thing4].forEach(el => el.style.display = "none");
+  [s10thing2, s10thing1, s10thing4].forEach(
+    (el) => (el.style.display = "none")
+  );
   s10thing3.style.display = "flex";
-  [s10btn2, s10btn1, s10btn4].forEach(el => el.style.color = "#B5302D");
+  [s10btn2, s10btn1, s10btn4].forEach((el) => (el.style.color = "#B5302D"));
   s10btn3.style.color = "#DF3D3A";
 });
 
 //---------------------------------s10thing4----------------------------------------------//
 
 s10btn4.addEventListener("click", () => {
-  [s10thing2, s10thing3, s10thing1].forEach(el => el.style.display = "none");
+  [s10thing2, s10thing3, s10thing1].forEach(
+    (el) => (el.style.display = "none")
+  );
   s10thing4.style.display = "flex";
-  [s10btn2, s10btn3, s10btn1].forEach(el => el.style.color = "#B5302D");
+  [s10btn2, s10btn3, s10btn1].forEach((el) => (el.style.color = "#B5302D"));
   s10btn4.style.color = "#DF3D3A";
 });
 

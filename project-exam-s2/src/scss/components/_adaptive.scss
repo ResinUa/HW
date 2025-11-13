@@ -8,9 +8,11 @@
     .header-burger-a {
         display: block;
     }
+
     .hfunc {
         width: 600px !important;
     }
+
     .hfunc-a {
         display: none;
     }
@@ -29,13 +31,16 @@
             height: 394px;
             position: relative;
         }
+
         .s1img {
             position: relative;
             left: 0 !important;
         }
-.s1mc {
-    width: 666px !important;
-}
+
+        .s1mc {
+            width: 666px !important;
+        }
+
         h2 {
             font-size: 42px;
             width: 289px;
@@ -52,7 +57,7 @@
     }
 
     .s2 {
-        margin-top: 520px !important;
+        margin-top: 200px !important;
 
         img {
             height: 540px;
@@ -86,12 +91,15 @@
         top: 128px !important;
         left: 60px !important;
         width: 608px !important;
-.s3mc {
-    width: 412px !important;
-}
-.s3mc-c {
-    width: 412px !important;
-}
+
+        .s3mc {
+            width: 412px !important;
+        }
+
+        .s3mc-c {
+            width: 412px !important;
+        }
+
         .s3mmc {
             flex-direction: column;
             gap: 16px !important;
@@ -169,9 +177,11 @@
 
     .s7 {
         margin-top: 100px !important;
-.s7mc {
-    width: 294px !important;
-}
+
+        .s7mc {
+            width: 294px !important;
+        }
+
         img {
             width: 354px !important;
             height: 442px !important;
@@ -318,6 +328,7 @@
 
     .s11q {
         width: 648px !important;
+
         p:first-child {
             font-size: 20px !important;
         }
@@ -335,12 +346,15 @@
         #s11b1 {
             left: 340px !important;
         }
+
         #s11b2 {
             left: 240px !important;
         }
+
         #s11b3 {
             left: 175px !important;
         }
+
         #s11b4 {
             left: 290px !important;
         }
@@ -353,64 +367,85 @@
         width: 500px !important;
         font-size: 16px !important;
     }
+
     .s11mc {
         width: 648px !important;
     }
-    .s11mc1, .s11mc2, .s11mc3, .s11mc4 {
+
+    .s11mc1,
+    .s11mc2,
+    .s11mc3,
+    .s11mc4 {
         width: 648px !important;
     }
+
     .s12 {
         margin-top: 214px !important;
     }
+
     .s12mc {
         left: 60px !important;
         width: 690px !important;
     }
+
     .s12mc-c {
         margin-top: 406px;
+
         #s12h2 {
             bottom: 500px;
             position: relative;
         }
     }
+
     .s12mc-cc {
         svg {
             width: 648px !important;
         }
+
         rect {
             width: 648px !important;
         }
     }
+
     .s12mcc-link {
         p {
             font-size: 16px !important;
         }
     }
+
     .s12mccl-b1 {
-                left: 450px !important;
-        }
-        .s12mccl-b2 {
-            left: 480px !important;
-        }
-        .s12mccl-b3 {
-            left: 365px !important;
-        }
-    #s12img1, #s12img2 {
+        left: 450px !important;
+    }
+
+    .s12mccl-b2 {
+        left: 480px !important;
+    }
+
+    .s12mccl-b3 {
+        left: 365px !important;
+    }
+
+    #s12img1,
+    #s12img2 {
         left: 0 !important;
         width: 648px !important;
         height: 446px !important;
     }
+
     .s12price {
         h2 {
             font-size: 30px !important;
         }
+
         button {
             width: 294px !important;
             height: 58px !important;
         }
     }
+
     .s13 {
         margin-top: 300px !important;
+
         img {
             position: relative;
             left: 60px;
@@ -418,59 +453,76 @@
             height: 360px !important;
         }
     }
+
     footer {
         margin-top: 100px !important;
         height: 900px !important;
+
         form {
             margin-top: 52px;
         }
     }
+
     .fc {
         left: 60px !important;
         flex-direction: column;
         width: 648px !important;
     }
+
     .fc-c {
         h2 {
             font-size: 30px !important;
         }
+
         p {
             width: 445px !important;
             font-size: 20px !important;
             top: 32px !important;
         }
     }
+
     .f-form {
         left: 0 !important;
-        input, textarea {
+
+        input,
+        textarea {
             width: 646px !important;
         }
-        input::placeholder, textarea::placeholder {
+
+        input::placeholder,
+        textarea::placeholder {
             font-size: 16px !important;
         }
     }
+
     .f-form-checkbox {
         input {
             width: 30px !important;
             height: 30px !important;
         }
     }
+
     #footer_button {
         width: 294px !important;
         height: 58px !important;
         font-size: 16px !important;
     }
+
     .flc {
         left: 60px !important;
         width: 648px !important;
+
         p {
             position: relative;
             top: 145px;
         }
     }
-    .flc1, .flc2 {
+
+    .flc1,
+    .flc2 {
         flex-direction: column;
     }
+
     .flc2 {
         left: 139px !important;
     }
