@@ -97,4 +97,4 @@ circle.addEventListener('click', () => {
     alert('area of your circle equals' + 3.14*r*r);
 });
 
-//або ж Math.PI*r**2 (джерело: )
+//або ж Math.PI*r**2
