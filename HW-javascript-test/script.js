@@ -30,7 +30,7 @@ const bum_button = document.getElementById('bum');
 bum_button.addEventListener('click', () => {
     var year = prompt('in which year javascript was founded?');
     console.log(year);
-    if (year === '1995') {
+    if (year == '1995') {
         alert('you`re right!');
     } else {
         alert('you`re wrong!')
