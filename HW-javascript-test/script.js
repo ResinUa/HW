@@ -94,7 +94,7 @@ square.addEventListener('click', () => {
 
 circle.addEventListener('click', () => {
     var r = prompt('radius of your circle?');
-    alert('area of your circle equals' + 3.14*r*r);
+    alert('area of your circle equals ' + 3.14*r*r);
 });
 
 //або ж Math.PI*r**2
