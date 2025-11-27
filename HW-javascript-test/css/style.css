@@ -11,3 +11,11 @@
 .divthing button {
   height: 25px;
 }
+
+.divthing2 {
+  display: flex;
+  gap: 20px;
+}
+.divthing2 button {
+  height: 25px;
+}
