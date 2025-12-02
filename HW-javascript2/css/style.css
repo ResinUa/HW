@@ -1,0 +1,28 @@
+.divig {
+  display: flex;
+  gap: 20px;
+  transform: translate(30vw, 20vh);
+}
+.divig button {
+  height: 50px;
+  width: 50px;
+}
+
+.calculator-dig {
+  display: grid;
+  row-gap: 15px;
+}
+.calculator-dig .cd-f {
+  justify-self: center;
+}
+
+.calc-operators {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: 50px;
+}
+
+p {
+  font-size: 67px;
+}
