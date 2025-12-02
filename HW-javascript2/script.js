@@ -11,7 +11,7 @@ document.querySelector('.sigmabutton').addEventListener('click', () => {
         var [Xreg, Yreg, operator] = undefined;
     }
     if (operator == "+") {
-        alert((+Xreg + +Yreg));
+        alert(+Xreg + +Yreg);
         var [Xreg, Yreg, operator] = undefined;
     }
     if (operator == "-") {
