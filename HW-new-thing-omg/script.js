@@ -51,7 +51,7 @@ document.getElementById('ig2').addEventListener('click', () => {
     
     thousand = 1000;
     alert('знижка woaw');
-    alert("АЖ " + (thousand * Number.parseInt(Math.random(0.1)*0.5)))
+    alert("АЖ " + (thousand * Number.parseInt(Math.random(0.1)*0.5)));
 
     num22 = prompt('why are we doing this again?');
     alert("тіпа то чісло до 2 це " + Math.pow(num22, 2));
