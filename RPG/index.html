@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background-color: #212121;
+      }
+    </style>
+    <script>
+      // гра
+      good = false;
+      bad = false;
+      goodQuestionmark = false;
+      friendslost = 0;
+      // act 1 (out of 2 + epilogue)
+
+      alert("Welcome to the Honyou literature club!");
+      alert(
+        "                                ===DISCLAIMER===" +
+          "\n\n this game contains depictions of self harm, suicide and bullying.",
+      );
+      alert("you`ve been warned.");
+      alert("enjoy.");
+      alert('it was a beautiful day..');
+      alert('it was late February,' +
+        '\n when you joined the Honyou literature club.',
+      );
+      alert('☆: We have some new members in our club!');
+      user = prompt("☆: what`s your name?");
+      alert("♡: Such an unusual name, hi " + user + "!");
+      alert('☆: nice to meet you ' + user + ' I`m Hoshizora Ao');
+      alert('hoshi(☆): you can call me Hoshi.');
+      alert('hoshi: let`s bring the topic of today`s meeting!');
+      alert('...');
+      alert('..favorite manga!');
+      alert('♡: I`m interested what`s y`alls favorite title!');
+      alert('hoshi: well, I`m glad you asked!');
+      alert('hoshi: because, we`ll bring each one`s favorite title on tomorrow`s meeting!');
+      alert('##jeez.. I dont want them to know that I`m a JJK fan..');
+      alert('! sory to interrupt you, I`ll explain what those symbols mean' +
+        '\n\n## means your thoughts' +
+        '\n~ means time' +
+        '\n! means narrator`s speech' +
+        '\n* means change in statistics or action' +
+        '\n& means character`s thoughts' +
+        '\n\n! got it? let`s continue',
+      );
+      alert('hoshi: okay since we`ve got a new member today that`ll be the end for today');
+      alert('hoshi: see you tomorrow!');
+      choise1 = prompt('hoshi (to you): hope you make friends with us!' +
+        '\nI hope so (1)' +
+        '\nI don`t think so (2)',
+      );
+      hoshi = 5;
+      if (choise1 == 1) {
+        hoshi += 2;
+        alert('hoshi seems happy!');
+        alert('*hoshi`s affection +2!');
+      } else {
+        hoshi -= 1;
+        alert('hoshi seems a bit frustrated..');
+        alert('*hoshi`s affection -1!')
+      }
+      alert('♡: sorry I didn`t catch your name,' +
+        '\n could you repeat it please?..',
+      );
+      choise2 = prompt('##what will you do?' +
+        '\n tell her (1)' +
+        '\n ignore her (2)',
+      );
+      hado = 2;
+      if (choise2 == 1) {
+      alert("-" + user);
+      alert('♡: ' + user + '...?');
+      alert('hado(♡): such an unusual name,' +
+        '\n I`m Hado, Hado Mitsuki by the way',
+      );
+      hado += 1;
+      alert('*hado`s affection increased!');
+      } else {
+        alert('*you`ve ignored ♡');
+        hado -= 2;
+        alert('*♡ looks frustrated...');
+      }
+      alert('~the next day');
+      if (hado == 3) {
+        alert('##I didn`t even get to know 2 other member`s name..');
+        alert('##I should fix it');
+      } else {
+        alert('##I might`ve done wrong with that girl yesterday..');
+        importantChoise1 = prompt('!will you fix it?' +
+          '\nI have to apologize to her (1)'+ 
+          '\nNah (2)',
+        );
+        if (importantChoise1 == 1) {
+          alert('*you`ve found ♡ during the lunch break');
+          alert('-sorry for ghosting you yesterday,' +
+            '\nI was so out of my mind that I didn`t hear you..',
+          );
+          hado += 3;
+          alert('♡: ah it`s okay!');
+          alert('♡: so what`s your name?');
+          alert('-' + user);
+          alert('♡: ah ' + user + ', nice to meet you ' + user + '!');
+          alert('hado(♡): I`m hado by the way!');
+          alert('*hado looked very pleased');
+          alert('*hado`s affection increased!');
+        } else {
+          alert('! as you wish..');
+        }
+      }
+      alert('~at the club');
+      alert('hoshi: as i said yesterday, today we`ll talk about our favorite mangas!');
+      alert('hoshi: let`s begin with momo!');
+      alert('momo: my favorite manga is the vinland saga.');
+      alert('hoshi: cool, didn`t know you liked icelanders!');
+      alert('hoshi: what about you, hori');
+      alert('hori: my favorite manga is jojo bizarre adventures.');
+      alert('hoshi: that`s nice');
+      alert('hoshi: hado?');
+      alert('hado: my hero academia');
+      manga = prompt('hoshi: and now you, ' + user + ' what`s your favorite?' +
+        '\n JJK (1)' +
+        '\n [lie] I haven`t brought anything.. (2)' +
+        '\nMHA (3)',
+      );
+      if (manga == 1) {
+        alert('hoshi: привіт вчителько я знаю що тільки ви обрали б магічку проти геройки');
+        hado += 2;
+      }
+      else if (manga == 2) {
+        alert('hoshi: &they lied...');
+        hoshi -= 3;
+        alert('*hoshi`s affection dropped!!')
+      }
+      else {
+        alert('*hado looks stunned');
+        hado += 2;
+      }
+      importantChoise2 = prompt('hoshi: pick who you want to talk with!' +
+        '\n\n hado (1)' +
+        '\n hori (2)' +
+        '\n momo (3)' ,
+      );
+      hoshi -= 4; //bad -3; good 0
+      if (importantChoise2 == 1) {
+        alert('*you`ve chosen to talk with hado');
+        alert('*hado`s affection increased');
+        hado += 2; // 7;5;3;2;0
+        alert('*you talked about MHA all club.');
+        if (hado >= 5) {
+          alert('! untill..');
+          alert('hado: let`s go to the roof after club?');
+          roofChoise = prompt('go with her?' +
+            '\n\nyes (1)' +
+            '\nno (2)', 
+          );
+          if (roofChoise == 2) {
+            hado -= 5;
+            alert('hado: nevermind..');
+            alert('*hado looked very sad..');
+          }
+        } 
+      }
+      else if (importantChoise2 == 2) {
+        alert('*you`ve chosen to talk with hori');
+        alert('*you talked about jojo all club');
+      }
+      else {
+        alert('*you`ve chosen to talk with momo');
+        alert('*you talked about vinland saga all club');
+      }
+      if (roofChoise == 1) {
+        alert('~you met with hado on the roof');
+        alert('hado: you know, life has been tough on me recently');
+        alert('hado: it`s very hard to find someone I could trust..');
+        alert('hado: I feel like I`m at the bottom of the ocean' +
+          '\n I feel like I can see light far above me' +
+          '\n but so far away I could never reach it..' +
+          '\n you can spend here some time' +
+          '\n\n but eventually you must breathe..',
+        );
+        alert('hado: I don`t want you to help me');
+        alert('I just want you to understand');
+        understand = prompt('will you help hado?' +
+          '\nyes (1)' +
+          '\nno (2)',
+        );
+        if (understand == 1) {
+          alert('-I want to help you, I want to give you a hand.');
+          alert('*hado began to cry');
+          var hado = 10; // 0 ; 10 other way around 3
+          alert('hado`s affection increased');
+        } else {
+          var hado = 0;
+          alert('*hado looked crushed..');
+        }
+      }
+      if (hado == 10) {
+        alert('the end of act 1.' +
+        '\n\n you`ve made friends with hado',
+      );
+      good = true;
+      }
+      else {
+        alert('the end of act 1.');
+      }
+      // act 2
+      alert('мені тааааак лінь це дописувати😭😭😭😭');
+      if (good === true) {
+      // тут все добре
+      } 
+      else if (hado <= 5 && hado > 0) {
+      // тут все ще можна скатитися до поганого кіньця
+      }
+      else {
+      // різня
+      }
+      // statistics
+      alert('the end.');
+      if (good === true) {
+        alert('! you are a good friend.');
+        alert('statistics: you lost ' + friendslost + ' friends!');
+        alert('well done!');
+      } 
+      else if (goodQuestionmark === true) {
+        alert('congratulations? you did some mistakes and lost ' + friendslost + ' friends' +
+          '\n! but you`re still redeemable' +
+          '\nwell done?',
+        );
+      }
+      else {
+        alert('! hi, you really thought you could do all that and remain untouched?' +
+          '\nwell you won`t. I want you to experience all you did to these poor children' +
+          '\n\nthe darkest pits of hell had opened to swallow you whole..',
+        );
+        alert('c̴𝘰ｎGr⦏a⦎𝖙ʊ⦑l⦒a𝚝i̷o⃝nⓈ!' +
+        '\ny̷𝚘Ꮼ ʍaᦔ⦑e⦒ iɬ.̴. ⦑y⦒ｏ𝖚 Ⓦiຖ');
+        alert('statistics:' +
+        '\n bad ending' +
+        'all friends killed (including one inside you)' +
+        '\n\nif you were more humane they would be alive' +
+        '\ntheir blood is on your hands' +
+        '\nit`s all your fault..',
+      );
+      }
+      alert('inspired by' +
+        '\nDokiDoki literature club' +
+        '\nDeltarune weird route' +
+        '\nFNaF franschize',
+      );
+      alert(
+        'зразу кажу я нормальна адекватна людина і все це було створено під сильним натхненням від докідокі.' +
+        '\nP.s. то "you are my special" це відсиланка на опенінг JJK' +
+        '\nв цей проєкт пішла частинка мене можна так сказати,' +
+        '\nя знаю що це все не серйозно але це моя перша спроба в писання історії..' +
+        '\nсподіваюсь вам сподобалося!');
+      alert('thanks for playing!');
+      alert('ㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ ㅤㅤ');
+      
+      //////////////////////////////////////////////////////////////////////////////////////////////////
+    </script>
+    <!-- <script>
+      // вікторина
+
+      alert("welcome to the javascript quiz!");
+      p = 0;
+      q1 = prompt(
+        "question 1\n in which year javascript was created?" +
+          "\n1997 (1)" +
+          "\n1995 (2)" +
+          "\n1994 (3)"
+      );
+      if (q1 == 1) {
+        alert("well done!");
+        p += 10;
+      } else {
+        alert("you`re wrong!");
+      }
+      q2 = prompt(
+        "what is the name of a thing purposed to standardize javascript?" +
+          "\n Java (1)" +
+          "\n JavaScript+ (2)" +
+          "\n ECMAscript (3)"
+      );
+      if (q2 == 3) {
+        alert("it was easy, right?");
+        p += 10;
+      }
+      q3 = prompt(
+        "is javascript a flexible language?" +
+          "\n Yes, you can make (technically) whatewer you`d want to! (1)" +
+          "\n Kind of.. (2)" +
+          "\n No, you cannot make everything, javascript is very strict (3)"
+      );
+      if (q3 == 1) {
+        alert("that`s right!");
+        p += 10;
+      } else {
+        alert("omg bruh");
+      }
+      alert("results time!");
+      if (p === 30) {
+        alert("you`ve done without any mistakes, congratulations!!");
+      } else if (p === 20) {
+        alert("uhh you`ve made 1 mistake, but well done!");
+      } else if (p === 10) {
+        alert("I`m very disappointed...");
+      } else {
+        alert("the darkest pits of hell had opened to swallow you whole...");
+        alert("you loose!");
+      }
+      if (p > 0) {
+        alert("you win!");
+      }
+      alert(p);
+    </script> -->
+  </body>
+</html>
