@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background-color: #212121;
+      }
+    </style>
+    <script>
+      //   var thing = prompt("type a traffic lights color");
+      //   switch (thing) {
+      //     case "red":
+      //       alert("OMG STOP RIGHT THERE YOU LITTLE S..");
+      //       break;
+      //     case "yellow":
+      //       alert("waitttttttttttttttttt");
+      //       break;
+      //     case "green":
+      //       alert("GO");
+      //       break;
+      //   };
+
+      //   var grade = prompt("type a grade");
+      //   switch (grade) {
+      //     case "A":
+      //       alert("great!");
+      //       break;
+      //     case "B":
+      //       alert("good!");
+      //       break;
+      //     case "C":
+      //       alert("not bad!");
+      //       break;
+      //     case "D":
+      //       alert("bad!");
+      //       break;
+      //     case "E":
+      //       alert("very bad!");
+      //       break;
+      //     case "F":
+      //       alert("you are worthless!");
+      //       break;
+      //   };
+
+      //   var menu = Number(
+      //     prompt(
+      //       "enter what you`d want to get!" +
+      //         "\n\n 1. pizza, 2. sushi, 3. pasta, 4. burger"
+      //     )
+      //   );
+
+      //   switch (menu) {
+      //     case 1:
+      //       alert("you`ve chosen pizza!");
+      //       alert("enjoy!");
+      //       choise = "pizza";
+      //       alert("ur code is PZZ-" + Math.floor(Math.random() * 1000));
+      //       break;
+      //     case 2:
+      //       alert("you`ve chosen sushi!");
+      //       alert("enjoy!");
+      //       choise = "shushi";
+      //       alert("ur code is SSH-" + Math.floor(Math.random() * 1000));
+      //       break;
+      //     case 3:
+      //       alert("you`ve chosen pasta!");
+      //       alert("enjoy!");
+      //       choise = "pasta";
+      //       alert("ur code is PST-" + Math.floor(Math.random() * 1000));
+      //       break;
+      //     case 4:
+      //       alert("you`ve chosen burger!");
+      //       alert("enjoy!");
+      //       choise = "burger";
+      //       alert("ur code is BRG-" + Math.floor(Math.random() * 1000));
+      //       break;
+      //   };
+
+      //   lang = prompt("enter countries domain");
+
+      //   switch (lang) {
+      //     case "ua":
+      //       alert("Привіт!");
+      //       break;
+      //     case "en":
+      //       alert("Hello!");
+      //       break;
+      //     case "pl":
+      //       alert("Cześć!");
+      //       break;
+      //     case "de":
+      //       alert("Hallo!");
+      //       break;
+      //     case "fr":
+      //       alert("Bonjour!");
+      //       break;
+      //     case "es":
+      //       alert("¡Hola!");
+      //       break;
+      //     case "it":
+      //       alert("Ciao!");
+      //       break;
+      //     case "pt":
+      //       alert("Olá!");
+      //       break;
+      //     case "tr":
+      //       alert("Merhaba!");
+      //       break;
+      //     case "jp":
+      //       alert("こんにちは");
+      //       break;
+      //     case "ko":
+      //       alert("안녕하세요");
+      //       break;
+      //     case "ch":
+      //       alert("你好");
+      //       break;
+      //   };
+
+      //   music = prompt("enter music");
+
+      //   switch (music) {
+      //     case "rock":
+      //       alert(
+      //         "you should try:" +
+      //           "\n\nbroken exploded scull emoji" +
+      //           "\nangry sceleton death"
+      //       );
+      //       break;
+      //     case "pop":
+      //       alert(
+      //         "you should try:" +
+      //           "\n\nlovelovelovelovelvoelvelveovlelo" +
+      //           "\nbasicbasicbasicbasicbasic"
+      //       );
+      //       break;
+      //     case "rap":
+      //       alert(
+      //         "you should try:" + "\n\nsmoke weed when weed" + "\nlife under bars"
+      //       );
+      //       break;
+      //     case "jazz":
+      //       alert("you should try:" + "\n\nsaxophone" + "\npiano");
+      //       break;
+      //     case "Lo-fi":
+      //       alert("you should try:" + "\n\nstudy" + "\nhave you tried maths");
+      //       break;
+      //     default:
+      //       alert("omg bruh");
+      //   };
+
+      bomb = prompt(
+        "OMG BOMB" +
+          "\nwhich wire to cut?" +
+          "\n\nred, blue, green, black" +
+          "\nonly one is correct"
+      );
+
+      //   switch (bomb) {
+      //     case "red":
+      //       alert("bomb exploded");
+      //       alert("you died!");
+      //       break;
+      //     case "blue":
+      //       alert("bomb exploded");
+      //       alert("you died!");
+      //       break;
+      //     case "green":
+      //       alert("bomb exploded");
+      //       alert("you died!");
+      //       break;
+      //     case "black":
+      //       alert("you are racist");
+      //       alert("wait, it was the correct answer");
+      //       alert("huh");
+      //       break;
+      //     default:
+      //     alert('bomb exploded');
+      //     alert('you died!');
+      //   };
+      correct = Math.floor(Math.random(1) * 4);
+
+      switch (bomb) {
+        case "red":
+          if (correct == 1) {
+            alert("you win!");
+          } else {
+            alert("you loose!");
+          }
+        case "blue":
+          if (correct == 2) {
+            alert("you win!");
+          } else {
+            alert("you loose!");
+          }
+        case "green":
+          if (correct == 3) {
+            alert("you win!");
+          } else {
+            alert("you loose!");
+          }
+        case "black":
+          if (correct == 4) {
+            alert("you win!");
+          } else {
+            alert("you loose!");
+          }
+      };
+    </script>
+  </body>
+</html>
