@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-idklol">IKEA</button>
+    <script>
+      document.getElementById("btn-idklol").addEventListener("click", () => {
+        lookingFor = prompt(
+          "what are we looking for today?" +
+            "\n\na fridge (1)" +
+            "\na sofa (2)" +
+            "\aan ironboard (3)" +
+            "\na robo-vacuum cleaner (4)" +
+            "\na blahaj (5)" +
+            "\nI just wanted to eat some swedish meatballs w mashed potatoes (6)"
+        );
+
+        while (lookingFor < 1 || lookingFor > 6) {
+          alert("nope");
+          lookingFor = prompt(
+            "what are we looking for today?" +
+              "\n\na fridge (1)" +
+              "\na sofa (2)" +
+              "\aan ironboard (3)" +
+              "\na robo-vacuum cleaner (4)" +
+              "\na blahaj (5)" +
+              "\nI just wanted to eat some swedish meatballs w mashed potatoes (6)"
+          );
+        }
+
+        const stock = [
+          "fridge 1 ",
+          "fridge 2 ",
+          "fridge 3",
+          "sofa 1 ",
+          "sofa 2 ",
+          "sofa 3",
+          "ironboard 1 ",
+          "ironboard 2 ",
+          "ironboard 3",
+          "robovc 1 ",
+          "robovc 2 ",
+          "robovc 3",
+          "blahaj 150cm ",
+          "blahaj 50cm ",
+          "blahaj mini",
+          "адрес ікеї: Велика Окружна дорога, 1, Київ",
+        ];
+
+        switch (lookingFor) {
+          case "1":
+            var buy = stock.filter((x) => x.includes("fridge"));
+            choise = prompt(buy + "\n which one will you take?");
+            while (choise < 1 || choise > 3) {
+              choise = prompt(buy + "\n which one will you take?");
+            }
+            alert(
+              "great! it costs " +
+                Math.floor(Math.random(1) * 9) * 100 +
+                ",99 UAH!"
+            );
+            confirm();
+            break;
+          case "2":
+            var buy = stock.filter((x) => x.includes("sofa"));
+            choise = prompt(buy + "\n which one will you take?");
+            while (choise < 1 || choise > 3) {
+              choise = prompt(buy + "\n which one will you take?");
+            }
+            alert(
+              "great! it costs " +
+                Math.floor(Math.random(1) * 9) * 100 +
+                ",99 UAH!"
+            );
+            confirm();
+            break;
+          case "3":
+            var buy = stock.filter((x) => x.includes("ironboard"));
+            choise = prompt(buy + "\n which one will you take?");
+            while (choise < 1 || choise > 3) {
+              choise = prompt(buy + "\n which one will you take?");
+            }
+            alert(
+              "great! it costs " +
+                Math.floor(Math.random(1) * 9) * 100 +
+                ",99 UAH!"
+            );
+            confirm();
+            break;
+          case "4":
+            var buy = stock.filter((x) => x.includes("robo"));
+            choise = prompt(buy + "\n which one will you take?");
+            while (choise < 1 || choise > 3) {
+              choise = prompt(buy + "\n which one will you take?");
+            }
+            alert(
+              "great! it costs " +
+                Math.floor(Math.random(1) * 9) * 100 +
+                ",99 UAH!"
+            );
+            confirm();
+            break;
+          case "5":
+            var buy = stock.filter((x) => x.includes("blahaj"));
+            choise = prompt(buy + "\n which one will you take?");
+            while (choise < 1 || choise > 3) {
+              choise = prompt(buy + "\n which one will you take?");
+            }
+            alert(
+              "great! it costs " +
+                Math.floor(Math.random(1) * 9) * 100 +
+                ",99 UAH!"
+            );
+            confirm();
+            break;
+          case "6":
+            var buy = stock.filter((x) => x.includes("адрес"));
+            alert(buy);
+            alert("смачного!");
+            break;
+          default:
+            alert("you`ve overplayed me, for now...");
+        }
+      });
+    </script>
+    <style>
+      html {
+        background-color: #212121;
+      }
+
+      html::-webkit-scrollbar {
+        display: none;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button {
+        width: 500px;
+        height: 150px;
+        font-size: 40px;
+        background-color: rgb(0, 75, 255);
+        color: rgb(255, 255, 90);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+    </style>
+    <!----------------------------------------------------------------------->
+    <script>
+      //   game = true;
+
+      //   while (game) {
+      //     viktor = prompt('end?');
+      //     if (viktor == 1) {
+      //         alert('the world revolving');
+      //         //..........................
+      //         game = confirm('try again?');
+      //     } else {
+      //         game = false;
+      //     }
+      //   }
+
+      // for (let i = 1; i <= 5; i++) {
+      // console.log('hello');
+      // console.log(i);
+      // }
+
+      // for (let j = 1; j <= 5; j++) {
+      // console.log('hi');
+      // console.log(j);
+      // }
+
+      // for (let b = 1; b <= 5; b++) {
+      // console.log('greetings');
+      // console.log(b);
+      // }
+
+      // for (let i = 1; i <= 10; i ++) {
+      //     console.log(5 * i);
+      // }
+    </script>
+  </body>
+</html>
