@@ -13,7 +13,7 @@
           "what are we looking for today?" +
             "\n\na fridge (1)" +
             "\na sofa (2)" +
-            "\aan ironboard (3)" +
+            "\nan ironboard (3)" +
             "\na robo-vacuum cleaner (4)" +
             "\na blahaj (5)" +
             "\nI just wanted to eat some swedish meatballs w mashed potatoes (6)"
@@ -25,7 +25,7 @@
             "what are we looking for today?" +
               "\n\na fridge (1)" +
               "\na sofa (2)" +
-              "\aan ironboard (3)" +
+              "\na ironboard (3)" +
               "\na robo-vacuum cleaner (4)" +
               "\na blahaj (5)" +
               "\nI just wanted to eat some swedish meatballs w mashed potatoes (6)"
@@ -53,7 +53,7 @@
 
         switch (lookingFor) {
           case "1":
-            var buy = stock.filter((x) => x.includes("fridge"));
+            buy = stock.filter((x) => x.includes("fridge"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -66,7 +66,7 @@
             confirm();
             break;
           case "2":
-            var buy = stock.filter((x) => x.includes("sofa"));
+            buy = stock.filter((x) => x.includes("sofa"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -79,7 +79,7 @@
             confirm();
             break;
           case "3":
-            var buy = stock.filter((x) => x.includes("ironboard"));
+            buy = stock.filter((x) => x.includes("ironboard"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -92,7 +92,7 @@
             confirm();
             break;
           case "4":
-            var buy = stock.filter((x) => x.includes("robo"));
+            buy = stock.filter((x) => x.includes("robo"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -105,7 +105,7 @@
             confirm();
             break;
           case "5":
-            var buy = stock.filter((x) => x.includes("blahaj"));
+            buy = stock.filter((x) => x.includes("blahaj"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -118,7 +118,7 @@
             confirm();
             break;
           case "6":
-            var buy = stock.filter((x) => x.includes("адрес"));
+            buy = stock.filter((x) => x.includes("адрес"));
             alert(buy);
             alert("смачного!");
             break;
