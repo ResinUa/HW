@@ -53,7 +53,7 @@
 
         switch (lookingFor) {
           case "1":
-            buy = stock.filter((x) => x.includes("fridge"));
+            buy = stock.filter(item => item.includes("fridge"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -66,7 +66,7 @@
             confirm();
             break;
           case "2":
-            buy = stock.filter((x) => x.includes("sofa"));
+            buy = stock.filter(item => item.includes("sofa"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -79,7 +79,7 @@
             confirm();
             break;
           case "3":
-            buy = stock.filter((x) => x.includes("ironboard"));
+            buy = stock.filter(item => item.includes("ironboard"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -92,7 +92,7 @@
             confirm();
             break;
           case "4":
-            buy = stock.filter((x) => x.includes("robo"));
+            buy = stock.filter(item => item.includes("robo"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -105,7 +105,7 @@
             confirm();
             break;
           case "5":
-            buy = stock.filter((x) => x.includes("blahaj"));
+            buy = stock.filter(item => item.includes("blahaj"));
             choise = prompt(buy + "\n which one will you take?");
             while (choise < 1 || choise > 3) {
               choise = prompt(buy + "\n which one will you take?");
@@ -118,7 +118,7 @@
             confirm();
             break;
           case "6":
-            buy = stock.filter((x) => x.includes("адрес"));
+            buy = stock.filter(item => item.includes("адрес"));
             alert(buy);
             alert("смачного!");
             break;
