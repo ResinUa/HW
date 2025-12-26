@@ -30,23 +30,22 @@
         sum += grades[j];
       }
 
-      console.warn('the sum is ' + sum);
+      console.warn("the sum is " + sum);
 
       average = sum / grades.length;
 
       console.log(Math.floor(average * 100) / 100);
-      //////////////////////////////////////////////////      
+      //////////////////////////////////////////////////
       let max = grades[0];
       let min = grades[0];
 
-      //шо значить поточна оцінка?    
+      //шо значить поточна оцінка?
       //я взагалі не розумію це завдання
       for (let ivan = 0; ivan < grades.length; ivan++) {
         if (grades[ivan] > max) {
-            max = grades[ivan];
-        } 
-        else if (grades[ivan] < min) {
-            min = grades[ivan];
+          max = grades[ivan];
+        } else if (grades[ivan] < min) {
+          min = grades[ivan];
         }
       }
 
@@ -58,20 +57,20 @@
 
       let goodgrades = 0;
 
-      goodgrades += grades.filter(x => x >= 9).length;
-      console.warn('the number of good grades is ' + goodgrades);
+      goodgrades += grades.filter((x) => x >= 9).length;
+      console.warn("the number of good grades is " + goodgrades);
+      
       //ЧІВОООО ВОНО ПРАЦЮЄ ВСЕ ПРАВИЛЬНО І З 1 РАЗУ Я ЗАРАЗ ПРЯМ АРУ ЧІВОООООООООООООО
       //може для когось це давно відома істина але для мене це в новинку коли я пишу щось після (). у мене була повна готовність поставити сотку на те що нічо не спрацює
-      //////////////////////////////////////////////////      
+      //////////////////////////////////////////////////
       for (let viktor = 0; viktor < grades.length; viktor++) {
-      console.log(grades[viktor]);
-      if (grades[viktor] >= 9) {
-        console.log('well done!');
-      } else {
-        console.log('there`s still room for improvement.');
+        console.log(grades[viktor]);
+        if (grades[viktor] >= 9) {
+          console.log("well done!");
+        } else {
+          console.log("there`s still room for improvement.");
+        }
       }
-      }
-
 
       //не знаю як доказати що це не чат гпт. максимум що можу то дати джерела
       //https://javascript.info/array i https://javascript.info/array-methods
