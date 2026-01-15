@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="duh">r you here?</button>
+    <script>
+        bob = false;
+        if (NaN == NaN) {
+            bob = true;
+        }
+        if (bob == true) {
+            console.log('skibidi dop dop');
+        } else {
+            console.log('giant L bruh');
+        }
+        ///////////////////////////////////////////////////////////////////////////
+        // age = prompt('skibidi dop dop');
+        // if (age >= 18) {
+        //     alert('acces granted!');
+        // } else {
+        //     alert('acces denied!');
+        // }
+        
+        // temperature = prompt('kyiv');
+
+        // if (temperature = -273.15) {
+        //     alert('ur dead');
+        // }
+        // else if (temperature <= 0) {
+        //     alert('freezing');
+        // }
+        // else if (temperature > 0 && temperature < 20) {
+        //     alert('chilling');
+        // }
+        // else if(temperature >= 20) {
+        //     alert('warm');
+        // }
+
+        // number = prompt('67 - 41');
+
+        // if (number % 2) {
+        //     alert('neparna');
+        // } else {
+        //     alert('parna');
+        // }
+
+        // password = prompt('entaww dah paswowd');
+
+        // if (password.length < 6) {
+        //     alert('ur dead');
+        // } else {
+        //     alert('password accepted');
+        // }
+
+        online = false;
+        console.log(online);
+        document.getElementById('duh').addEventListener('click', () => {
+            online = true;
+            console.log(online);
+        });
+
+        // day = prompt('1-7');
+
+        // switch(day) {
+        //     default: 
+        //     alert('skill issue');
+        //     break;
+        //     case"1": 
+        //     alert('monday');
+        //     break;
+        //     case "2": 
+        //     alert('tuesday');
+        //     break;
+        //     case "3": 
+        //     alert('дєвочка вєнсдєй с паслєднєй партьі');
+        //     break;
+        //     case "4": 
+        //     alert('Donnerstag');
+        //     break;
+        //     case "5": 
+        //     alert('friday');
+        //     break;
+        //     case "6": 
+        //     alert('doyoubi');
+        //     break;
+        //     case "7": 
+        //     alert('nichiyoubi');
+        //     break;
+        // }
+
+        // grade = prompt('grade');
+        // switch(grade) {
+        //     default: 
+        //     alert('skill issue');
+        //     break;
+        //     case 'A': 
+        //     alert('Great');
+        //     break;
+        //     case 'B': 
+        //     alert('Nice');
+        //     break;
+        //     case 'C': 
+        //     alert('Not bad');
+        //     break;
+        //     case 'D': 
+        //     alert('Ur a failure');
+        //     break;
+        //     case 'E': 
+        //     alert('kys');
+        //     break;
+        //     case 'F': 
+        //     alert('the darkest pits of hell have opened to swallow you whole');
+        //     break;
+        // }
+
+        // for (i = 1; i <= 10; i++) {
+        //     console.log(i);
+        // }
+
+        // console.warn('next');
+
+        // for (i = 1; i <= 20; i += 2) {
+        //     console.log(i + 1);
+        // }
+
+        // console.warn('next');
+
+        // thing1 = 10;
+        // while (thing1 > 0) {
+        //     console.log(thing1);
+        //     thing1--;
+        // }
+
+        let arr = [1, 2, 3, 4, 5, 'apple', 'banana', 'Bob'];
+
+        console.log(arr.length);
+
+        arr.push('vitcha');
+        console.log(arr);
+
+        arr.pop();
+        console.log(arr);
+
+        arr.shift();
+        arr.pop();
+        console.log(arr);
+
+        if (arr.includes(5) == true) {
+            console.log('arr includes 5 skibidi dop dop');
+        }
+
+        // score = prompt('bebra');
+        // if (score >= 90) {
+        //     alert('perfect');
+        // }
+        // else if (score >= 70 && score < 90) {
+        //     alert('good');
+        // }
+        // else if (score >= 50 && score < 70) {
+        //     alert('fine');
+        // }
+        // else {
+        //     alert('uve failed the class kys');
+        // }
+
+        // login = prompt('login');
+        // password = prompt('password');
+
+        // if (login == 'Admin' && password == '1234') {
+        //     alert('succes!');
+        //     alert('also ur dead');
+        // }
+
+        // year = prompt('year');
+        // if (year % 4 == 0 || year % 400 == 0) {
+        //     alert('wysokostnyj');
+        // } else {
+        //     alert('nuh uh');
+        // }
+        
+        // thing3 = 0;
+        // thing4 = arr[0];
+        // thing5 = 0;
+        // for (i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        //     thing3 += arr[i];
+        //     if (arr[i] > thing4) {
+        //         thing4 = arr[i];
+        //     }
+        //     if (arr[i] % 2 == 0) {
+        //         thing5++;
+        //     }
+        // }
+        // console.log(thing3);
+        // console.log(thing4);
+        // console.log(thing5);
+
+        let arr2 = ['ivan', 'vitcha', 'sasha'];
+
+        arr2.unshift('fidan');
+        console.log(arr2);
+
+        arr2.shift();
+        console.log(arr2);
+
+        thing6 = arr2.concat(arr);
+        console.log(thing6);
+        
+        thing7 = thing6.join(',');
+        console.log(thing7);
+
+        // thing8 = prompt('bob');
+        // thing9 = prompt('bob');
+        // thing10 = prompt('bob');
+        // largestnum = 0;
+        // function largest () {
+        //     for (i = 0; i <= 3; i++) {
+        //     if (i > largestnum) {
+        //         largestnum = i;
+        //     }
+        //     }
+        //     console.log(largestnum);
+        // }
+        // largest();
+        
+        // thing11 = prompt('bob');
+        // function num () {
+        // if (thing11 > 0) {
+        //   console.log('larger than 0');
+        // }
+        // if (thing11 % 2 == 0) {
+        //     console.log('even');
+        // }
+        // if (thing11 > 10) {
+        //     console.log('larger than 10');
+        // }
+        // }
+        // num();
+
+        // for (i = 1; i <= 10; i++) {
+        //     console.log(i * 5);
+        // }
+
+        // thing12 = prompt('bob');
+        // for (i = 1; i < thing12; i++) {
+        //     console.log(i * (i + 1));
+        // }
+
+        // thing13 = prompt('bob');
+
+        // if (thing13 % thing13 == 0 && thing13 % [2, 3, 4, 5, 7]) {
+        //     console.log(true);
+        // } else {
+        //     console.log(false);
+        // }
+
+        arr3 = [1, 2, 3, 4, 5];
+        thing14 = 0;
+        function arrbebra () {
+            for (i = 0; i < arr3.length; i++) {
+                thing14 += arr3[i];
+            }
+            console.log(thing14 / arr3.length);
+        }
+        arrbebra();
+
+        arr4 = ['A', 'B', 'C', 'D'];
+        thing15 = 0;
+        function concatt () {
+            thing15 = arr4.concat(arr3);
+            console.log(thing15);
+        }
+        concatt();
+        
+        arr5 = [-4, -3, -2, -1, 0, 1, 2, 3, 4 ,5];
+        great = 0;
+        function greaterthan0 () {
+           for (i = 0; i < arr5.length; i++) {
+            if (i > 0) {
+                great++;
+            }
+           }
+           console.log(great);
+        }
+        greaterthan0();
+        
+        // a = prompt('a');
+        // b = prompt('b');
+        // operation = prompt('operation');
+        // function calculator (a, b, operation) {
+        //     switch(operation) {
+        //         default: 
+        //         alert('skill issue');
+        //         break;
+        //         case '+': 
+        //         alert(+a + +b);
+        //         break;
+        //         case '-': 
+        //         alert(+a - +b);
+        //         break;
+        //         case '*': 
+        //         alert(+a * +b);
+        //         break;
+        //         case '/': 
+        //         alert(+a / +b);
+        //         break;
+        //     }
+        // }
+        // calculator(a, b, operation);
+
+        let grades = ['A', 'B', 'A', 'C', 'F'];
+        thing67 = 0;
+        for (i = 0; i < grades.length; i++) {
+            if (grades[i].includes('A')) {
+                thing67 += 6;
+            }
+            else if (grades[i].includes('B')) {
+                thing67 += 5;
+            }
+            else if (grades[i].includes('C')) {
+                thing67 += 4;
+            }
+            else if (grades[i].includes('D')) {
+                thing67 += 3;
+            }
+            else if (grades[i].includes('E')) {
+                thing67 += 2;
+            }
+            else if (grades[i].includes('F')) {
+                thing67 += 1;
+            }
+        }
+
+        //alert('середня ' + thing67 / grades.length);
+
+        price = Math.floor(Math.random() * 2000) + 99 / 100;
+        console.log(price);
+        if (price > 1000) {
+            console.log('doroho');
+        } else {
+            console.log('dostupno');
+        }
+    </script>
+</body>
+</html>
