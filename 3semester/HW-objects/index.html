@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="randombtn">bebra</button>
+    <script>
+      const SatoruGojo = {
+        name: "Satoru",
+        surname: "Gojo",
+        age: 36,
+        country: "Japan",
+        employment: ["teacher", "jujutsu sorcerer"],
+        height: 190 + "cm",
+        race: "asian",
+        dateOfBirth: "7.12.1989",
+        cursedTechniques: ["blue", "red", "hollow purple"],
+        sixEyes: true,
+        RCT: true,
+        NahIdWin: true,
+        Win: false,
+        currentState: "split in half by Sukuna",
+        iq: null,
+      };
+
+      console.log(SatoruGojo);
+
+      const user = {
+        name: "",
+        email: "",
+        isOnline: false,
+      };
+
+      //user.name = prompt('what`s your name');
+      //user.email = prompt('what`s your email');
+      //user.isOnline = confirm('are you here?');
+
+      console.log(user);
+
+      const auth = {
+        login() {
+          console.log("log on");
+        },
+      };
+
+      const product = {
+        item: "bottle of water",
+        price: 10,
+      };
+      console.log("towar: " + product.item, product.price);
+
+      const onlinestatus = {
+        online: true,
+        togglestatus() {
+          this.online = false;
+        },
+      };
+
+      const post = {
+        likes: 0,
+        like() {
+          this.likes++;
+        },
+      };
+
+      const form = {
+        isValid: false,
+        validate() {
+          this.isValid = true;
+        },
+      };
+
+      const age = {
+        adult: false,
+        isAdult() {
+          if (adult >= 18) {
+            this.adult = true;
+            console.log(this.adult);
+          }
+        },
+      };
+
+      const error = {
+        show() {
+          console.log("сталася помилка");
+        },
+      };
+
+      const counter = {
+        count: 0,
+        click() {
+          this.count++;
+        },
+      };
+
+      const loginForm = {
+        isOpen: false,
+        open() {
+          this.isOpen = true;
+        },
+      };
+
+      const modal = {
+        open() {
+          console.log("модальне вікно відкрите");
+        },
+      };
+
+      const avatar = {
+        url: "",
+      };
+
+      console.log(avatar.url);
+
+      const order = {
+        status: "new",
+        whenpaid() {
+          this.status = "paid";
+        },
+      };
+
+      const store = {
+        productsCount: 10,
+        bought() {
+          this.productsCount -= 1;
+        },
+      };
+
+      const theme = {
+        mode: "light",
+        btnonclick() {
+          this.mode = "dark";
+        },
+      };
+
+      const account = {
+        ballance: "",
+      };
+
+      console.log(account.ballance);
+
+      const product2 = {
+        name: "water bottle",
+        price: 10,
+        category: "life dependency",
+        inStock: true,
+        components: ["hydrogen", "oxygen"],
+
+        changeprice() {
+          this.price = "";
+        },
+
+        removecategory() {
+          delete this.category;
+        },
+
+        addcompomemt() {
+          this.components.push("formaldehyde");
+        },
+
+        wnayawnosti() {
+          if (this.inStock == true) {
+            this.inStock = false;
+          } else {
+            this.inStock = true;
+          }
+        },
+
+        getinfo() {
+          console.log(
+            "info: " + this.name,
+            this.price,
+            this.category,
+            this.inStock,
+            this.components,
+          );
+        },
+      };
+
+      document.getElementById("randombtn").addEventListener("click", () => {
+        product2.getinfo();
+      });
+    </script>
+    <style>
+      html {
+        background-color: #212121;
+      }
+    </style>
+  </body>
+</html>
