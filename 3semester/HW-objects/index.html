@@ -28,161 +28,218 @@
 
       console.log(SatoruGojo);
 
-      const user = {
-        name: "",
-        email: "",
-        isOnline: false,
-      };
+      //урок 3 по обєктам, завдання
 
-      //user.name = prompt('what`s your name');
-      //user.email = prompt('what`s your email');
-      //user.isOnline = confirm('are you here?');
+      // for (const key in SatoruGojo) {
+      //   console.log(key);
+      // }
 
-      console.log(user);
+      // const key = Object.keys(SatoruGojo);
+      // const values = Object.values(SatoruGojo);
+      // const ent = Object.entries(SatoruGojo);
 
-      const auth = {
-        login() {
-          console.log("log on");
-        },
-      };
+      // console.log(key, values, ent);
 
       const product = {
-        item: "bottle of water",
-        price: 10,
-      };
-      console.log("towar: " + product.item, product.price);
-
-      const onlinestatus = {
-        online: true,
-        togglestatus() {
-          this.online = false;
-        },
+        name: "Coca-Cola",
+        price: 40,
+        volume: "0.5L",
       };
 
-      const post = {
-        likes: 0,
-        like() {
-          this.likes++;
-        },
+      for (const key in product) {
+        console.log(key);
+      }
+
+      const values = Object.values(product);
+      console.log(values);
+
+      const key1 = Object.keys(product);
+      console.log(key1, key1.length);
+
+      for (i = 0; i < key1.length; i++) {
+        console.log(key1[i]);
+      }
+
+      for (i = 0; i < key1.length; i++) {
+        console.log(key1[i] + ": " + values[i]);
+      }
+
+      const prices = {
+        cola: 40,
+        fanta: 38,
+        sprite: 39,
       };
 
-      const form = {
-        isValid: false,
-        validate() {
-          this.isValid = true;
-        },
-      };
+      const values1 = Object.values(prices);
+      
+      var thing1 = 0;
+      for (i = 0; i < values1.length; i++) {
+        thing1 += values1[i];
+      }
+      console.log(thing1);
 
-      const age = {
-        adult: false,
-        isAdult() {
-          if (adult >= 18) {
-            this.adult = true;
-            console.log(this.adult);
-          }
-        },
-      };
+      for (const key in prices) {
+        console.log(key);
+      }
 
-      const error = {
-        show() {
-          console.log("сталася помилка");
-        },
-      };
 
-      const counter = {
-        count: 0,
-        click() {
-          this.count++;
-        },
-      };
+      //завдання урок 2 по обєктам
 
-      const loginForm = {
-        isOpen: false,
-        open() {
-          this.isOpen = true;
-        },
-      };
+      // const user = {
+      //   name: "",
+      //   email: "",
+      //   isOnline: false,
+      // };
 
-      const modal = {
-        open() {
-          console.log("модальне вікно відкрите");
-        },
-      };
+      // //user.name = prompt('what`s your name');
+      // //user.email = prompt('what`s your email');
+      // //user.isOnline = confirm('are you here?');
 
-      const avatar = {
-        url: "",
-      };
+      // console.log(user);
 
-      console.log(avatar.url);
+      // const auth = {
+      //   login() {
+      //     console.log("log on");
+      //   },
+      // };
 
-      const order = {
-        status: "new",
-        whenpaid() {
-          this.status = "paid";
-        },
-      };
+      // const product = {
+      //   item: "bottle of water",
+      //   price: 10,
+      // };
+      // console.log("towar: " + product.item, product.price);
 
-      const store = {
-        productsCount: 10,
-        bought() {
-          this.productsCount -= 1;
-        },
-      };
+      // const onlinestatus = {
+      //   online: true,
+      //   togglestatus() {
+      //     this.online = false;
+      //   },
+      // };
 
-      const theme = {
-        mode: "light",
-        btnonclick() {
-          this.mode = "dark";
-        },
-      };
+      // const post = {
+      //   likes: 0,
+      //   like() {
+      //     this.likes++;
+      //   },
+      // };
 
-      const account = {
-        ballance: "",
-      };
+      // const form = {
+      //   isValid: false,
+      //   validate() {
+      //     this.isValid = true;
+      //   },
+      // };
 
-      console.log(account.ballance);
+      // const age = {
+      //   adult: false,
+      //   isAdult() {
+      //     if (adult >= 18) {
+      //       this.adult = true;
+      //       console.log(this.adult);
+      //     }
+      //   },
+      // };
 
-      const product2 = {
-        name: "water bottle",
-        price: 10,
-        category: "life dependency",
-        inStock: true,
-        components: ["hydrogen", "oxygen"],
+      // const error = {
+      //   show() {
+      //     console.log("сталася помилка");
+      //   },
+      // };
 
-        changeprice() {
-          this.price = "";
-        },
+      // const counter = {
+      //   count: 0,
+      //   click() {
+      //     this.count++;
+      //   },
+      // };
 
-        removecategory() {
-          delete this.category;
-        },
+      // const loginForm = {
+      //   isOpen: false,
+      //   open() {
+      //     this.isOpen = true;
+      //   },
+      // };
 
-        addcompomemt() {
-          this.components.push("formaldehyde");
-        },
+      // const modal = {
+      //   open() {
+      //     console.log("модальне вікно відкрите");
+      //   },
+      // };
 
-        wnayawnosti() {
-          if (this.inStock == true) {
-            this.inStock = false;
-          } else {
-            this.inStock = true;
-          }
-        },
+      // const avatar = {
+      //   url: "",
+      // };
 
-        getinfo() {
-          console.log(
-            "info: " + this.name,
-            this.price,
-            this.category,
-            this.inStock,
-            this.components,
-          );
-        },
-      };
+      // console.log(avatar.url);
 
-      document.getElementById("randombtn").addEventListener("click", () => {
-        product2.getinfo();
-      });
+      // const order = {
+      //   status: "new",
+      //   whenpaid() {
+      //     this.status = "paid";
+      //   },
+      // };
+
+      // const store = {
+      //   productsCount: 10,
+      //   bought() {
+      //     this.productsCount -= 1;
+      //   },
+      // };
+
+      // const theme = {
+      //   mode: "light",
+      //   btnonclick() {
+      //     this.mode = "dark";
+      //   },
+      // };
+
+      // const account = {
+      //   ballance: "",
+      // };
+
+      // console.log(account.ballance);
+
+      // const product2 = {
+      //   name: "water bottle",
+      //   price: 10,
+      //   category: "life dependency",
+      //   inStock: true,
+      //   components: ["hydrogen", "oxygen"],
+
+      //   changeprice() {
+      //     this.price = "";
+      //   },
+
+      //   removecategory() {
+      //     delete this.category;
+      //   },
+
+      //   addcompomemt() {
+      //     this.components.push("formaldehyde");
+      //   },
+
+      //   wnayawnosti() {
+      //     if (this.inStock == true) {
+      //       this.inStock = false;
+      //     } else {
+      //       this.inStock = true;
+      //     }
+      //   },
+
+      //   getinfo() {
+      //     console.log(
+      //       "info: " + this.name,
+      //       this.price,
+      //       this.category,
+      //       this.inStock,
+      //       this.components,
+      //     );
+      //   },
+      // };
+
+      // document.getElementById("randombtn").addEventListener("click", () => {
+      //   product2.getinfo();
+      // });
     </script>
     <style>
       html {
