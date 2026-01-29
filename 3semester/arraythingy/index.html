@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var arr = [1, 2, 3];
+
+      //   var arr2 = [...arr];
+
+      //   console.log(arr2);
+
+      //   var arr3 = [...arr2, 4];
+
+      //   console.log(arr3);
+
+      //   var a = ["a", "b"];
+      //   var b = ["c", "d"];
+
+      //   var ab = [...a, ...b];
+
+      //   console.log(ab);
+      //   console.log(a, b);
+
+      //   const product1 = {
+      //     price: 67,
+      //   };
+
+      //   const product2 = {
+      //     //price: 79,
+      //     ...product1,
+      //     contains: ["water", "salt", "KMnO4"],
+      //   };
+
+      //   console.log(product2);
+
+      //практика
+
+      const arr = [10, 20, 30];
+
+      var copy = [...arr, 40];
+      console.log(copy);
+
+      const fruits = ["banana", "apple"];
+
+      var fruitsnew = ["orange", ...fruits];
+
+      console.log(fruitsnew);
+
+      const colors = ["red", "blue"];
+
+      var newcolors = [...colors, "green"];
+
+      const a = ["a"];
+      const b = ["b"];
+      const c = ["c"];
+
+      var abc = [...a, ...b, ...c];
+
+      const arr2 = [1, 2, 5, 6];
+
+      var newarr2 = [3, 4];
+
+      var newarr22 = [1, 2, ...newarr2, 5, 6];
+
+      const user = { name: "Denys", age: 21 };
+
+      const user2 = { ...user, name: "Vera" };
+
+      const user3 = { name: "Vera" };
+      const user32 = { ...user3, city: "IF" };
+
+      const product3 = { title: "Phone", price: 1000 };
+      const product4 = { ...product3, price: 900 };
+
+      const a1 = { x: 1 };
+      const b1 = { y: 2 };
+
+      const ab1 = { ...a1, ...b1 };
+
+      const a2 = { name: "Anna", age: 18 };
+      const b2 = { age: 19 };
+      const ab2 = { ...a2, ...b2 };
+
+      const nums = [10, 5, 2, 8];
+      var min = Math.min(...nums);
+
+      const numbers = [1, 2, 3];
+      var numbersnew = [...numbers, 4];
+
+      const users = [{ id: 1, name: "Oleg" }];
+      const userira = { id: 2, name: "Ira" };
+
+      var usersnew = [...users, ...userira];
+
+      const user4 = {
+        name: "Vera",
+        profile: { followers: 100 },
+      };
+
+      const user42 = {
+        profile: { followers: 150 },
+      };
+
+      const users2 = { ...user4, ...user42};
+    </script>
+    <style>
+      html {
+        background-color: #212121;
+      }
+    </style>
+  </body>
+</html>
