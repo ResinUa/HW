@@ -1,14 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pls speed I need this</title>
   </head>
   <body>
+    <p class="pthing">click to disable</p>
     <style>
       html {
-        background-color: #212121;
+        animation: 2s ADHDtrap  infinite;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-size: 67px;
+      }
+      
+      @keyframes ADHDtrap {
+        0% {
+          background-color: red;
+        }
+        14% {
+          background-color: orange;
+        }
+        28% {
+          background-color: yellow;
+        }
+        42% {
+          background-color: green;
+        }
+        56% {
+          background-color: blue;
+        }
+        70% {
+          background-color: darkviolet;
+        }
+        84% {
+          background-color: indigo;
+        }
+        100% {
+          background-color: red;
+        }
       }
     </style>
     <script>
@@ -139,5 +176,21 @@
 
 //       calculateTotalPrice(allProdcuts, productName);
 //     </script>
-//   </body>
+      <script>
+        //НЕ СТОСУЄТЬСЯ І НЕ ПІДДАЄТЬСЯ ОЦІНЦІ
+        thing = false;
+        document.querySelector('#id').addEventListener('click', () => {
+          if (thing == false) {
+            document.querySelector('#id').style.animation = 'none';
+            document.querySelector('#id').style.backgroundColor = '#212121';
+            thing = true;
+            document.querySelector('.pthing').textContent = 'click to re-enable';
+          } else {
+            document.querySelector('#id').style.animation = '2s ADHDtrap  infinite';
+            thing = false;
+            document.querySelector('.pthing').textContent = 'click to re-disable';
+          }
+        });
+      </script>
+   </body>
 </html>
