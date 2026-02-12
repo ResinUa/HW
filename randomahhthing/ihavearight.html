@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert('проблема: у тебе закінчилося сало а їсти борщ без сала це гріх. ти мусиш підти в магазин, але на вулиці ожеледь і -375.151 градуса цельсія.');
+        q = prompt('що робитимеш?' +
+            '\n\n 1. підеш на протест з вигуками "смарагдовий продав все гаряче повітря на захід,от жеж зубожіння' +
+            '\n 2. потужно затерпиш протреш портрет зеленського і підеш в магазин' +
+            '\n 3. сало не так важливе, поїм без нього',
+        );
+        points = 0;
+        switch (q) {
+            case '1': 
+            alert('вітаю! ви виграли безкоштовну відпустку на підвал сбу! (я відпустку проведу на підвалах сбу, підвалах сбу)');
+            points -= 1;
+            break;
+            case '2': 
+            alert('хороший вибір, великий лідер задоволений!');
+            points += 1;
+            break;
+            case '3': 
+            alert('смерть');
+            points -= 2;
+            break;
+            default: 
+            alert('skibidi dop dop');
+        }
+
+        if (points == -1 || points == 0) {
+            alert('skill issue');
+        }
+        else if (points == -2) {
+            alert('смерть');
+        }
+        else {
+            alert('харош');
+        }
+    </script>
+</body>
+</html>
