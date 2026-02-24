@@ -1,0 +1,151 @@
+header {
+    position: relative;
+    top: 57px;
+    left: 129px;
+
+    .headerFunc {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 34.06px;
+            font-weight: 800;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .HFnav {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 270px;
+            gap: 80px;
+
+            .hfnanimationm1, .hfnanimationm2, .hfnanimationm3, .hfnanimationm4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .hfnanimationm1:hover, .hfnanimationm2:hover, .hfnanimationm3:hover, .hfnanimationm4:hover {
+                animation: 2s crazyanim forwards;
+            }
+
+            a {
+                text-transform: capitalize;
+                text-decoration: none;
+                font-size: 17.88px;
+                font-weight: 400;
+                color: #A3A3A3;
+                cursor: pointer;
+            }
+
+            .HFNanim:nth-child(1) {
+                width: 0px;
+                height: 6px;
+                border-radius: 50px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .HFNanim:nth-child(2) {
+                width: 0px;
+                height: 6px;
+                border-radius: 50px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .HFNanim:nth-child(3) {
+                width: 0px;
+                height: 6px;
+                border-radius: 50px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .HFNanim:nth-child(4) {
+                width: 0px;
+                height: 6px;
+                border-radius: 50px;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+        .HFbtn {
+            position: relative;
+            left: 545px;
+            display: flex;
+            gap: 26px;
+
+            button {
+                background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                color: white;
+            }
+
+            button:first-child {
+                border: none;
+                border-radius: 700px;
+                width: 160px;
+                height: 40px;
+                font-size: 17.74px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+
+            button:last-child {
+                border: none;
+                border-radius: 700px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@keyframes crazyanim {
+    0% {
+        div {
+            width: 0px;
+            background: none;
+        }
+    }
+
+    25% {
+        div {
+            width: 80px;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        }
+
+        a {
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    50% {
+        div {
+            top: 12px;
+        }
+        a {
+            bottom: 12px;
+        }
+    }
+    75% {
+        div {
+            width: 100px;
+        }
+    }
+    100% {
+        div {
+            width: 6px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const numbers = [1, 2, 3, 4];
+
+      // thing = 0;
+
+      // for (i in numbers) {
+      //     thing += numbers[i];
+      // }
+
+      // console.log(thing);
+
+      // const arr = [10, 20, 30, 40];
+
+      // const thing1 = arr.reduce(amt => amt + 1, 0);
+
+      // console.log(thing1);
+
+      //практика
+
+      // const numbers = [2, 4, 6];
+
+      // thing = numbers.reduce((num, sum) => num * sum, 1);
+
+      //   thing = 1;
+
+      //   for (i in numbers) {
+      //       thing *= numbers[i];
+      //   }
+
+      // console.log(thing);
+
+      //const numbers = [5, 10, 15];
+
+      // thing = 0;
+
+      // for (i in numbers) {
+      //     if (numbers[i] > 7) {
+      //         thing += numbers[i];
+      //     }
+      // }
+
+      //   thing = numbers.reduce((num, sum) => {
+      //     if (num > 7) {
+      //       return sum + num;
+      //     }
+      //     return sum;
+      //   }, 0);
+
+      //   console.log(thing);
+
+      // const numbers = [1, 2, 3, 4, 5, 6];
+
+      // //   thing = 0;
+
+      // //   for (i in numbers) {
+      // //       if (numbers[i] % 2 == 0) {
+      // //           thing += numbers[i];
+      // //       }
+      // //   }
+
+      // thing = numbers.reduce((num, sum) => {
+      //   if (num % 2 == 0) {
+      //     return sum + num;
+      //   }
+      //   return sum;
+      // }, 0); //воно по якісь непонятній мені причині виводить 6
+
+      // console.log(thing);
+
+      //whatever I guess
+
+      // arr = [1, 6, 4, 2, 3, 5];
+
+      // thing = arr.sort((a, b) => a - b);
+
+      // console.log(thing);
+
+      arr = ["banana", "apple", "orange"];
+
+      console.log(arr.sort());
+
+      const numbers = [5, 1, 8, 3, 2];
+
+      console.log(numbers.sort((a, b) => a - b));
+
+      const numbers2 = [12, 4, 7, 1, 9];
+
+      console.log(numbers2.sort((a, b) => b - a));
+
+      const products = [
+        { name: "Телефон", price: 800 },
+        { name: "Ноутбук", price: 1200 },
+        { name: "Мишка", price: 25 },
+      ];
+
+      console.log(products.sort((a, b) => a.price - b.price));
+      console.log(products.sort((a, b) => b.price - a.price));
+
+      const users = [
+        { name: "Ivan", age: 20 },
+        { name: "Anna", age: 25 },
+        { name: "Oleg", age: 22 },
+      ];
+
+      console.log(users.sort((a, b) => a.age - b.age));
+    </script>
+  </body>
+</html>

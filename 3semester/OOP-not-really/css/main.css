@@ -1,0 +1,109 @@
+header {
+  position: relative;
+  top: 57px;
+  left: 129px;
+}
+header .headerFunc {
+  display: flex;
+  align-items: center;
+}
+header .headerFunc p {
+  font-size: 34.06px;
+  font-weight: 800;
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+header .headerFunc .HFnav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 270px;
+  gap: 80px;
+}
+header .headerFunc .HFnav .hfnanimationm1, header .headerFunc .HFnav .hfnanimationm2, header .headerFunc .HFnav .hfnanimationm3, header .headerFunc .HFnav .hfnanimationm4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .headerFunc .HFnav .hfnanimationm1:hover, header .headerFunc .HFnav .hfnanimationm2:hover, header .headerFunc .HFnav .hfnanimationm3:hover, header .headerFunc .HFnav .hfnanimationm4:hover {
+  animation: 2s crazyanim forwards;
+}
+header .headerFunc .HFnav a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 17.88px;
+  font-weight: 400;
+  color: #A3A3A3;
+  cursor: pointer;
+}
+header .headerFunc .HFnav .HFNanim:nth-child(1) {
+  width: 0px;
+  height: 6px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+header .headerFunc .HFnav .HFNanim:nth-child(2) {
+  width: 0px;
+  height: 6px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+header .headerFunc .HFnav .HFNanim:nth-child(3) {
+  width: 0px;
+  height: 6px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+header .headerFunc .HFnav .HFNanim:nth-child(4) {
+  width: 0px;
+  height: 6px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+header .headerFunc .HFbtn {
+  position: relative;
+  left: 545px;
+  display: flex;
+  gap: 26px;
+}
+header .headerFunc .HFbtn button {
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  color: white;
+}
+header .headerFunc .HFbtn button:first-child {
+  border: none;
+  border-radius: 700px;
+  width: 160px;
+  height: 40px;
+  font-size: 17.74px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+header .headerFunc .HFbtn button:last-child {
+  border: none;
+  border-radius: 700px;
+  width: 40px;
+  height: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "monserrat", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #1E0D00;
+}

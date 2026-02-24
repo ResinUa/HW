@@ -1,0 +1,20 @@
+@import './utils/mixins';
+@import './components/header';
+@import './components/body';
+@import './components/footer';
+@import './components/random';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'monserrat', sans-serif;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background-color: #1E0D00;
+}
