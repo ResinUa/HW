@@ -1,0 +1,92 @@
+footer {
+    height: 436px;
+    background: linear-gradient(245.71deg,
+            #170a00 4.96%,
+            #170600 33.7%,
+            #0f0700 68.41%,
+            #170a00 96.42%);
+    position: relative;
+    top: 850px;
+
+    .footerc {
+        position: relative;
+        left: 130px;
+        top: 70px;
+        display: flex;
+
+        p {
+            font-size: 29.85px;
+            font-weight: 800;
+            background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-wrap: nowrap;
+        }
+    }
+
+    .footernav {
+        display: flex;
+        gap: 149.06px;
+        position: relative;
+        left: 84px;
+        top: 15px;
+    }
+
+    .footernavfunc {
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 17.72px;
+            font-weight: 400;
+            color: #515151;
+            transition: 0.25s;
+        }
+        a:hover {
+            color: white;
+        }
+        .chosen {
+            color: #a3a3a3;
+            margin-bottom: 19px;
+        }
+        .fnthing {
+            display: grid;
+            row-gap: 12.14px;
+        }
+    }
+
+    .footerlc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 190px;
+        left: 235px;
+        gap: 948.17px;
+        width: 1026.36px;
+
+        p {
+            font-size: 20.88px;
+            font-weight: 400;
+            background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-wrap: nowrap;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            width: 24.39px;
+            height: 24.39px;
+        }
+
+        .footerbtn {
+            display: flex;
+            gap: 10.47px;
+        }
+    }
+}

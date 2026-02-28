@@ -1,0 +1,908 @@
+//1
+
+.s1 {
+    position: relative;
+    left: 130px;
+    top: 119px;
+}
+
+.s1c {
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    position: relative;
+
+    .thefastest {
+        h2 {
+            @include h2thing();
+        }
+    }
+
+    .pizzadelivery {
+        display: flex;
+        gap: 13px;
+        align-items: center;
+
+        h2 {
+            @include h2thing();
+        }
+    }
+
+    .othertxtc {
+        width: 411px;
+        display: flex;
+        position: relative;
+        top: 30px;
+
+        #otc1 {
+            @include pthing();
+        }
+
+        #otc2 {
+            @include pthing($c: #fff);
+            text-wrap: nowrap;
+        }
+
+        #otc3 {
+            @include pthing();
+        }
+
+        .otcthing {
+            display: flex;
+            position: absolute;
+            gap: 2.5px;
+            top: 23px;
+            left: 282.5px;
+        }
+    }
+
+    .cooking {
+        position: relative;
+        top: 60px;
+        height: 310px;
+
+        p {
+            @include pthing();
+        }
+
+        img {
+            position: absolute;
+            left: -34px;
+            z-index: 1;
+        }
+
+        #pseudoplay {
+            position: absolute;
+            left: 20px;
+            top: 45px;
+            scale: 0.75;
+            cursor: pointer;
+            z-index: 2;
+        }
+    }
+
+    .s1buttonthingy {
+        position: relative;
+        top: 58.62px;
+        display: flex;
+        width: 388px;
+
+        button:first-child {
+            width: 229.92px;
+            height: 62px;
+            border-radius: 100px;
+            border: none;
+            color: #fff;
+            font-size: 22.44px;
+            font-weight: 500;
+            text-transform: capitalize;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            cursor: pointer;
+            transition-duration: 0.25s;
+            transition-property: border, box-shadow;
+            z-index: 2;
+        }
+
+        button:last-child {
+            position: absolute;
+            left: 177px;
+            z-index: 1;
+            width: 229.92px;
+            height: 62px;
+            border-radius: 100px;
+            font-size: 22.44px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border: 1.5px solid #FFA228;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            cursor: pointer;
+            transition-duration: 0.25s;
+        }
+
+        button:first-child:hover {
+            border: white solid 1px;
+            box-shadow: 2px white;
+        }
+
+        button:last-child:hover {
+            background-image: url(./img/funnyimage.png);
+            background-color: #fff;
+        }
+    }
+
+    .s1rc {
+        #smolpizza {
+            position: absolute;
+            right: 148px;
+            top: -105px;
+        }
+
+        #fries {
+            position: absolute;
+            right: 622px;
+            top: 500px;
+        }
+    }
+}
+
+//unimportant
+.randomtext {
+    position: absolute;
+
+    p {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -1;
+    }
+
+    p:nth-child(1) {
+        left: 100px;
+    }
+
+    p:nth-child(2) {
+        left: 1000px;
+        top: -115px;
+    }
+
+    p:nth-child(3) {
+        left: 725px;
+        top: 525px;
+    }
+}
+
+.randomthing {
+    position: absolute;
+
+    img {
+        position: absolute;
+    }
+
+    img:first-child {
+        top: 124px;
+        left: 470px;
+    }
+
+    img:last-child {
+        top: 692px;
+        left: 460px;
+    }
+}
+
+//2
+
+.s2 {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #s2menu {
+        @include h2thing();
+    }
+
+    .s2btnrow {
+        display: flex;
+        position: relative;
+        top: 49px;
+        gap: 24px;
+
+        button {
+            width: 229.93px;
+            height: 62px;
+            border: none;
+            border-radius: 100px;
+            background: #210A01;
+            cursor: pointer;
+            box-shadow: 0px 9px 40px 0px #FF6B000F;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+            transition-property: background;
+            transition-duration: 0.25s;
+        }
+
+        button:nth-child(1) {
+            box-shadow: none;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        }
+
+        button:nth-child(2):hover,
+        button:nth-child(3):hover,
+        button:nth-child(4):hover,
+        button:nth-child(5):hover {
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        }
+
+        //why?????
+    }
+
+    .s2c {
+        display: flex;
+        position: relative;
+        top: 160px;
+        gap: 22px;
+        justify-content: center;
+        align-items: center;
+
+        .s2thing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 287px;
+            height: 459px;
+            background-color: #210A01;
+            border-radius: 29.53px;
+
+            .s2pizzaimg {
+                position: absolute;
+                top: -80px;
+            }
+
+            h2 {
+                @include h2thing ($fs: 25.1px);
+                position: relative;
+                top: 24px;
+            }
+
+            p {
+                @include pthing($fs: 14.32px);
+                width: 229px;
+                position: relative;
+                top: 40px;
+            }
+
+            .s2cbtn {
+                position: relative;
+                top: 72px;
+                display: flex;
+                gap: 37px;
+
+                button {
+                    border: 1.5px solid #a3a3a3;
+                    background-color: transparent;
+                    font-size: 14.32px;
+                    font-weight: 400;
+                    border-radius: 1000px;
+                    width: 40px;
+                    height: 40px;
+                    color: #a3a3a3;
+                    cursor: pointer;
+                    z-index: 2;
+                    transition-duration: 0.25s;
+                }
+
+                button:hover {
+                    border: none;
+                    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                    color: #fff;
+                }
+
+                button:nth-child(2) {
+                    border: none;
+                    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                    color: #fff;
+                }
+            }
+
+            .s2ingridients {
+                border: 1.5px solid #FFA228;
+                border-radius: 1000px;
+                width: 190px;
+                height: 39px;
+                position: relative;
+                top: 87.5px;
+                background-color: transparent;
+                background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+                font-size: 16.08px;
+            }
+
+            .s2func {
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                top: 79px;
+                gap: 46px;
+
+                h2 {
+                    position: relative;
+                    font-size: 25.46px;
+                }
+
+                img {
+                    position: relative;
+                    left: 60px;
+                    top: -10px;
+                }
+            }
+
+            .s2funccount {
+                display: flex;
+                position: relative;
+                align-items: center;
+                top: 15px;
+                gap: 13px;
+
+                p {
+                    width: 10px;
+                    top: 0;
+                    font-size: 22.82px;
+                }
+
+                button {
+                    width: 23px;
+                    height: 23px;
+                    text-align: center;
+                    border: none;
+                    border-radius: 1000px;
+                    font-size: 17.66px;
+                    font-weight: 400;
+                    transition: 0.25s;
+                }
+
+                button:first-child {
+                    border: 1.5px solid #a3a3a3;
+                    color: #a3a3a3;
+                    background-color: transparent;
+                }
+
+                button:last-child {
+                    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                    color: #fff;
+                }
+
+                button:first-child:hover,
+                button:last-child:hover {
+                    border: 1.5px solid #fff;
+                }
+            }
+
+            .s2order {
+                position: relative;
+                top: 90px;
+                width: 194px;
+                height: 45px;
+                border: none;
+                border-radius: 1000px;
+                color: #fff;
+                background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                font-size: 17.45px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+#s2randomp {
+    position: absolute;
+    font-family: 'alex brush', sans-serif;
+    font-weight: 400;
+    font-size: 209.87px;
+    color: rgba($color: #FF653354, $alpha: 0.01);
+    z-index: -1;
+    left: 120px;
+}
+
+#s2randomp2 {
+    position: absolute;
+    font-family: 'alex brush', sans-serif;
+    font-weight: 400;
+    font-size: 209.87px;
+    top: 700px;
+    left: 1112.5px;
+    color: rgba($color: #FF653354, $alpha: 0.01);
+    z-index: -1;
+}
+
+//3
+
+.s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    top: 425px;
+
+    h2 {
+        @include h2thing($fs: 43.86px, $fw: 500, $tt: uppercase);
+        position: absolute;
+        cursor: default;
+    }
+}
+
+//4
+
+.s4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 550px;
+    gap: 22px;
+
+    .s4pizza {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 297px;
+        height: 459px;
+        background-color: #210A01;
+        border-radius: 29.53px;
+
+        img {
+            position: absolute;
+            top: -85px;
+        }
+
+        h2 {
+            @include h2thing($fs: 25.1px, $fw: 500);
+            top: -5px;
+        }
+
+        p {
+            @include pthing($fs: 14.32px);
+            width: 229px;
+            position: relative;
+            top: 20px;
+        }
+
+        .s4btnrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 37px;
+            position: relative;
+            top: 40px;
+
+            button {
+                width: 40px;
+                height: 40px;
+                border: 1.5px solid #a3a3a3;
+                background-color: transparent;
+                color: #a3a3a3;
+                border-radius: 1000px;
+                font-size: 14.32px;
+                transition: 0.25s;
+            }
+
+            button:nth-child(2) {
+                background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+                border: none;
+                color: white;
+            }
+
+            button:hover {
+                border: 1.5px solid #fff;
+            }
+        }
+
+        .s4ingridients {
+            border: 1.5px solid #FFA228;
+            border-radius: 1000px;
+            width: 190px;
+            height: 39px;
+            background-color: transparent;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            font-size: 16.08px;
+            position: relative;
+            top: 60px;
+        }
+
+        .s4func {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 46.24px;
+            position: relative;
+            top: 80px;
+
+            .s4pricething {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5.76px;
+
+                h2 {
+                    @include h2thing($fs: 25.46px, $fw: 500);
+                }
+
+                img {
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+            .s4countthing {
+                display: flex;
+                gap: 13px;
+
+                p {
+                    width: 10px;
+                    @include pthing($fs: 22.82px);
+                    top: 0;
+                }
+
+                button {
+                    width: 23px;
+                    height: 23px;
+                    border: 1.5px solid #a3a3a3;
+                    background-color: transparent;
+                    color: #a3a3a3;
+                    transition: 0.25s;
+                    border-radius: 1000px;
+                    font-size: 17.66px;
+                }
+
+                button:last-child {
+                    border: none;
+                    color: white;
+                    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+                }
+
+                button:hover {
+                    border: 1.5px solid white;
+                }
+            }
+        }
+
+        .s4order {
+            width: 194px;
+            height: 45px;
+            border: none;
+            border-radius: 1000px;
+            color: #fff;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            font-size: 17.45px;
+            text-transform: capitalize;
+            position: relative;
+            top: 100px;
+        }
+    }
+
+    #s4randomp {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -1;
+        left: 120px;
+        top: -120px;
+    }
+}
+
+//5
+
+.s5 {
+    position: relative;
+    top: 600px;
+    display: grid;
+    row-gap: 24px;
+    left: 220px;
+
+    button {
+        width: 204px;
+        height: 38px;
+        border-radius: 33px;
+        background: linear-gradient(261.69deg, #FF5D29 12.12%, #FE9C1C 86.72%);
+        border: none;
+        color: white;
+        font-size: 15.38px;
+        text-transform: capitalize;
+        position: absolute;
+    }
+
+    h2 {
+        @include h2thing($fs: 25.09px, $fw: 500, $tt: uppercase);
+        position: absolute;
+    }
+
+    .s5c1 {
+        display: flex;
+        gap: 23.9px;
+
+        div:nth-child(1) {
+            button {
+                top: 182px;
+                left: 26px;
+            }
+
+            h2 {
+                left: 25px;
+                top: 80px;
+                width: 171px;
+            }
+        }
+
+        div:nth-child(2) {
+            button {
+                left: 416px;
+                top: 181px;
+            }
+
+            h2 {
+                left: 415px;
+                top: 79px;
+            }
+        }
+
+        div:nth-child(3) {
+            position: relative;
+            top: 107px;
+
+            h2 {
+                @include h2thing();
+                position: relative;
+                left: 160px;
+            }
+
+            p {
+                @include pthing();
+                width: 427px;
+            }
+        }
+    }
+
+
+    .s5c2 {
+        display: flex;
+        gap: 23.9px;
+
+        div:nth-child(1) {
+            img {
+                border-radius: 30px;
+            }
+
+            button {
+                top: 485px;
+                left: 25px;
+            }
+
+            h2 {
+                top: 385px;
+                left: 25px;
+                width: 180px;
+            }
+        }
+
+        div:nth-child(2) {
+            button {
+                left: 660px;
+                top: 485px;
+            }
+
+            h2 {
+                left: 660px;
+                top: 390px;
+                width: 168px;
+            }
+        }
+    }
+
+    .s5c3 {
+        display: flex;
+        gap: 23.9px;
+
+        div:nth-child(1) {
+            button {
+                top: 765px;
+                left: 28px;
+            }
+
+            h2 {
+                top: 670px;
+                left: 28px;
+                width: 180px;
+            }
+        }
+
+        div:nth-child(2) {
+            button {
+                left: 460px;
+                top: 765px;
+            }
+
+            h2 {
+                left: 460px;
+                top: 670px;
+                width: 168px;
+            }
+        }
+
+        div:nth-child(3) {
+            button {
+                top: 765px;
+                left: 880px;
+            }
+
+            h2 {
+                top: 670px;
+                width: 200px;
+                left: 880px;
+            }
+        }
+    }
+
+    .s5random {
+        position: absolute;
+    }
+
+    #s5random1 {
+        top: 130px;
+        left: -140px;
+    }
+
+    #s5random2 {
+        top: 235px;
+        right: 340px;
+    }
+
+    #s5random3 {
+        top: 650px;
+        left: -140px;
+    }
+
+    #s5randomp1 {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -1;
+        top: -125px;
+        left: -75px;
+    }
+
+    #s5randomp2 {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -1;
+        top: 700px;
+        right: 250px;
+    }
+}
+
+//6
+
+.s6 {
+    position: relative;
+    top: 800px;
+    left: 130px;
+    display: flex;
+    gap: 250.75px;
+
+    .s6lc {
+        h2 {
+            @include h2thing();
+        }
+
+        p {
+            @include pthing();
+            width: 459px;
+            position: relative;
+        }
+
+        img {
+            position: relative;
+            top: 22px;
+        }
+
+        p:first-child {
+            top: 14px;
+        }
+
+        p:last-child {
+            top: 55px;
+        }
+    }
+
+    .s6rc {
+        display: flex;
+
+        img:nth-child(1) {
+            transition: 1.5s;
+            cursor: pointer;
+        }
+        
+        img:nth-child(1):hover {
+            opacity: 0;
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            top: -100px;
+            left: 1200px;
+        }
+
+        img:nth-child(3) {
+            position: absolute;
+            top: 400px;
+            left: 650px;
+        }
+
+        .s6funnyimage {
+            position: absolute;
+            z-index: -1;
+            top: 60px;
+            left: 812px;
+
+            img {
+                border-radius: 34px;
+                width: 567px;
+                height: 541px;
+                transform: scaleX(0.95) scaleY(1.045);
+            }
+        }
+    }
+    #s6arrow {
+        position: absolute;
+        left: 600px;
+        top: 350px;
+    }
+
+    #s6randomp1 {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -2;
+        top: -100px;
+        left: -100px;
+    }
+
+        #s6randomp2 {
+        position: absolute;
+        font-family: 'alex brush', sans-serif;
+        font-weight: 400;
+        font-size: 209.87px;
+        color: rgba($color: #FF653354, $alpha: 0.01);
+        z-index: -2;
+        top: 475px;
+        left: 1020px;
+    }
+}

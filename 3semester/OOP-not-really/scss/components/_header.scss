@@ -15,6 +15,7 @@ header {
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
+            cursor: pointer;
         }
 
         .HFnav {
@@ -24,15 +25,27 @@ header {
             left: 270px;
             gap: 80px;
 
-            .hfnanimationm1, .hfnanimationm2, .hfnanimationm3, .hfnanimationm4 {
+            .hfnanimationm1,
+            .hfnanimationm2,
+            .hfnanimationm3,
+            .hfnanimationm4 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
             }
 
-            .hfnanimationm1:hover, .hfnanimationm2:hover, .hfnanimationm3:hover, .hfnanimationm4:hover {
-                animation: 2s crazyanim forwards;
+            .hfnanimationm1:hover,
+            .hfnanimationm2:hover,
+            .hfnanimationm3:hover,
+            .hfnanimationm4:hover {
+                a {
+                    animation: crazyanima 2s forwards;
+                }
+
+                div {
+                    animation: crazyanim 2s forwards;
+                }
             }
 
             a {
@@ -76,15 +89,29 @@ header {
                 z-index: -1;
             }
         }
+
         .HFbtn {
             position: relative;
             left: 545px;
             display: flex;
-            gap: 26px;
+            align-items: center;
 
             button {
                 background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
                 color: white;
+                cursor: pointer;
+                transition-duration: 0.25s;
+                transition-property: border, box-shadow;
+            }
+
+            button:first-child:hover {
+                border: white solid 1px;
+                box-shadow: 2px white;
+            }
+
+            button:last-child:hover {
+                border: white solid 1px;
+                box-shadow: 2px white;
             }
 
             button:first-child {
@@ -95,6 +122,8 @@ header {
                 font-size: 17.74px;
                 font-weight: 500;
                 text-transform: capitalize;
+                position: absolute;
+                z-index: 2;
             }
 
             button:last-child {
@@ -102,6 +131,9 @@ header {
                 border-radius: 700px;
                 width: 40px;
                 height: 40px;
+                position: absolute;
+                left: 188px;
+                z-index: 2;
             }
         }
     }
@@ -109,43 +141,48 @@ header {
 
 @keyframes crazyanim {
     0% {
-        div {
-            width: 0px;
-            background: none;
-        }
+        width: 0px;
+        background: none;
     }
 
     25% {
-        div {
-            width: 80px;
-            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-        }
-
-        a {
-            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
+        width: 80px;
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
     }
 
     50% {
-        div {
-            top: 12px;
-        }
-        a {
-            bottom: 12px;
-        }
+        transform: translateY(6px);
     }
-    75% {
-        div {
-            width: 100px;
-        }
+
+    65% {
+        width: 6px;
     }
     100% {
-        div {
-            width: 6px;
-        }
+        width: 6px;
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        transform: translateY(6px);
+    }
+}
+
+@keyframes crazyanima {
+    25% {
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-6px);
     }
 }
