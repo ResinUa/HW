@@ -1,28 +1,20 @@
 header {
-    position: relative;
+    position: fixed;
     top: 57px;
     left: 129px;
+    z-index: 67;
 
     .headerFunc {
         display: flex;
         align-items: center;
-
-        p {
-            font-size: 34.06px;
-            font-weight: 800;
-            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            cursor: pointer;
-        }
+        justify-content: center;
 
         .HFnav {
             display: flex;
             align-items: center;
             position: relative;
-            left: 270px;
+            left: 400px;
+            top: -30px;
             gap: 80px;
 
             .hfnanimationm1,
@@ -89,54 +81,78 @@ header {
                 z-index: -1;
             }
         }
-
-        .HFbtn {
-            position: relative;
-            left: 545px;
-            display: flex;
-            align-items: center;
-
-            button {
-                background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-                color: white;
-                cursor: pointer;
-                transition-duration: 0.25s;
-                transition-property: border, box-shadow;
-            }
-
-            button:first-child:hover {
-                border: white solid 1px;
-                box-shadow: 2px white;
-            }
-
-            button:last-child:hover {
-                border: white solid 1px;
-                box-shadow: 2px white;
-            }
-
-            button:first-child {
-                border: none;
-                border-radius: 700px;
-                width: 160px;
-                height: 40px;
-                font-size: 17.74px;
-                font-weight: 500;
-                text-transform: capitalize;
-                position: absolute;
-                z-index: 2;
-            }
-
-            button:last-child {
-                border: none;
-                border-radius: 700px;
-                width: 40px;
-                height: 40px;
-                position: absolute;
-                left: 188px;
-                z-index: 2;
-            }
-        }
     }
+}
+
+.HFbtn {
+    position: relative;
+    left: 1096px;
+    top: -40px;
+    display: flex;
+    align-items: center;
+
+    button {
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        color: white;
+        cursor: pointer;
+        transition-duration: 0.25s;
+        transition-property: border, box-shadow;
+    }
+
+    button:first-child:hover {
+        border: white solid 1px;
+        box-shadow: 2px white;
+    }
+
+    button:last-child:hover {
+        border: white solid 1px;
+        box-shadow: 2px white;
+    }
+
+    button:first-child {
+        border: none;
+        border-radius: 700px;
+        width: 160px;
+        height: 40px;
+        font-size: 17.74px;
+        font-weight: 500;
+        text-transform: capitalize;
+        position: absolute;
+        z-index: 2;
+    }
+
+    button:last-child {
+        border: none;
+        border-radius: 700px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 188px;
+        z-index: 2;
+    }
+}
+
+#logo {
+    font-size: 34.06px;
+    font-weight: 800;
+    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+#headerburger {
+    scale: 2.5;
+    background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: none;
 }
 
 @keyframes crazyanim {
@@ -157,6 +173,7 @@ header {
     65% {
         width: 6px;
     }
+
     100% {
         width: 6px;
         background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);

@@ -1,27 +1,20 @@
 header {
-  position: relative;
+  position: fixed;
   top: 57px;
   left: 129px;
+  z-index: 67;
 }
 header .headerFunc {
   display: flex;
   align-items: center;
-}
-header .headerFunc p {
-  font-size: 34.06px;
-  font-weight: 800;
-  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
+  justify-content: center;
 }
 header .headerFunc .HFnav {
   display: flex;
   align-items: center;
   position: relative;
-  left: 270px;
+  left: 400px;
+  top: -30px;
   gap: 80px;
 }
 header .headerFunc .HFnav .hfnanimationm1,
@@ -81,28 +74,30 @@ header .headerFunc .HFnav .HFNanim:nth-child(4) {
   position: absolute;
   z-index: -1;
 }
-header .headerFunc .HFbtn {
+
+.HFbtn {
   position: relative;
-  left: 545px;
+  left: 1096px;
+  top: -40px;
   display: flex;
   align-items: center;
 }
-header .headerFunc .HFbtn button {
+.HFbtn button {
   background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
   color: white;
   cursor: pointer;
   transition-duration: 0.25s;
   transition-property: border, box-shadow;
 }
-header .headerFunc .HFbtn button:first-child:hover {
+.HFbtn button:first-child:hover {
   border: white solid 1px;
   box-shadow: 2px white;
 }
-header .headerFunc .HFbtn button:last-child:hover {
+.HFbtn button:last-child:hover {
   border: white solid 1px;
   box-shadow: 2px white;
 }
-header .headerFunc .HFbtn button:first-child {
+.HFbtn button:first-child {
   border: none;
   border-radius: 700px;
   width: 160px;
@@ -113,7 +108,7 @@ header .headerFunc .HFbtn button:first-child {
   position: absolute;
   z-index: 2;
 }
-header .headerFunc .HFbtn button:last-child {
+.HFbtn button:last-child {
   border: none;
   border-radius: 700px;
   width: 40px;
@@ -121,6 +116,29 @@ header .headerFunc .HFbtn button:last-child {
   position: absolute;
   left: 188px;
   z-index: 2;
+}
+
+#logo {
+  font-size: 34.06px;
+  font-weight: 800;
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+#headerburger {
+  scale: 2.5;
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  display: none;
 }
 
 @keyframes crazyanim {
@@ -1062,13 +1080,446 @@ html::-webkit-scrollbar {
 }
 
 html {
-  background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+  background: linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%);
 }
 
 body {
   height: 4900px;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
+}
+
+@media (max-width: 428px) {
+  body {
+    width: 428px !important;
+    height: 4000px !important;
+  }
+  html {
+    width: 428px !important;
+  }
+  #headerburger {
+    display: block !important;
+    left: 360px;
+    top: 5px;
+  }
+  .headerFunc {
+    display: none !important;
+  }
+  header {
+    left: 24px !important;
+    top: 27px !important;
+  }
+  #logo {
+    font-size: 23.76px;
+  }
+  .HFbtn {
+    left: 110px !important;
+    top: -15px;
+  }
+  .HFbtn button:first-child {
+    display: none;
+  }
+  .HFbtn button {
+    width: 30px;
+    height: 30px;
+  }
+  #otc1 {
+    width: 400px !important;
+  }
+  .othertxtc {
+    width: 400px !important;
+  }
+  .randomthing {
+    display: none;
+  }
+  .s1 {
+    width: 120px;
+  }
+  .s1 .s1c {
+    flex-direction: column !important;
+    gap: 0 !important;
+    width: 120px;
+  }
+  .s1 .randomtext {
+    display: none;
+  }
+  .s1 .s1lc {
+    position: relative;
+    top: 1000px;
+  }
+  .s1 .s1rc {
+    left: 50px;
+    position: relative;
+  }
+  .s1 .s1rc img:first-child {
+    width: 129.71px;
+    height: 129.71px;
+    top: -600px !important;
+    right: -20px !important;
+    z-index: 2;
+  }
+  .s1 .s1rc img:last-child {
+    width: 110.14px;
+    height: 117.07px;
+    right: 220px !important;
+    top: -300px !important;
+  }
+  .s1 .s1rc img:nth-child(2) {
+    width: 243.36px;
+    height: 365px;
+    position: relative;
+    top: -570px;
+    right: 30px;
+  }
+  .s1 .s1lc {
+    top: 400px !important;
+    width: 165px;
+    left: -80px;
+  }
+  .s1 .s1lc h2 {
+    font-size: 40px;
+  }
+  .s1 .s1lc .pizzadelivery {
+    gap: 2px !important;
+  }
+  .s1 .s1lc .pizzadelivery img {
+    scale: 0.7 !important;
+  }
+  .s1 .s1lc p {
+    font-size: 14px !important;
+  }
+  .s1 .s1lc .otcthing {
+    top: 16px;
+    left: 97px;
+  }
+  .s1 .s1lc .cooking {
+    top: 150px !important;
+    width: 200px;
+  }
+  .s1 .s1lc .s1buttonthingy {
+    top: -250px !important;
+    scale: 0.7;
+    width: 276.87px !important;
+    left: -45px;
+  }
+  .s2 {
+    left: 24px !important;
+    width: 404px !important;
+  }
+  .s2 #s2menu {
+    font-size: 40px;
+  }
+  .s2 .s2btnrow {
+    width: 380px !important;
+    height: 92px !important;
+    flex-wrap: wrap;
+  }
+  .s2 .s2btnrow button {
+    width: 140px;
+    height: 38px;
+    font-size: 12px;
+    box-shadow: 0px 5.5px 24.46px 0px rgba(255, 107, 0, 0.0588235294) !important;
+  }
+  .s2 .s2btnrow button:nth-child(2) {
+    width: 80px;
+  }
+  .s2 .s2btnrow button:nth-child(3) {
+    width: 110px;
+  }
+  .s2c {
+    width: 380px !important;
+    flex-wrap: wrap;
+    gap: 13px !important;
+    left: -12.5px !important;
+  }
+  .s2c .s2thing {
+    width: 181px !important;
+    height: 280px !important;
+  }
+  .s2c .s2thing img {
+    width: 97px !important;
+    height: 96px !important;
+    top: -50px !important;
+  }
+  .s2c .s2thing p {
+    font-size: 8.76px !important;
+    width: 140px !important;
+    top: 0px !important;
+  }
+  .s2c .s2thing h2 {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    top: -20px !important;
+  }
+  .s2c .s2thing .s2cbtn {
+    gap: 22px !important;
+    top: 20px !important;
+  }
+  .s2c .s2thing .s2cbtn button {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 8.76px !important;
+  }
+  .s2c .s2thing .s2ingridients {
+    width: 118px !important;
+    height: 23px !important;
+    font-size: 9.83px !important;
+    top: 40px !important;
+  }
+  .s2c .s2thing .s2func {
+    gap: 28px !important;
+    top: 60px !important;
+  }
+  .s2c .s2thing .s2func .s2funcprice h2 {
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .s2c .s2thing .s2func .s2funcprice img {
+    width: 7px !important;
+    height: 11px !important;
+    top: 0 !important;
+    left: 32px !important;
+    position: absolute;
+  }
+  .s2c .s2thing .s2funccount {
+    gap: 8px !important;
+    top: 0 !important;
+  }
+  .s2c .s2thing .s2funccount p {
+    width: 6px !important;
+    font-size: 13.95px !important;
+    top: 0 !important;
+  }
+  .s2c .s2thing .s2funccount button {
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 10px !important;
+    top: 0 !important;
+  }
+  .s2c .s2thing .s2order {
+    width: 118px !important;
+    height: 27px !important;
+    font-size: 10px !important;
+    top: 65px !important;
+  }
+  .s2c .s2thing:nth-child(3),
+  .s2c .s2thing:nth-child(4) {
+    position: relative;
+    top: 40px;
+  }
+  #s2randomp,
+  #s2randomp2 {
+    top: 0 !important;
+    left: -60px !important;
+    font-size: 128.33px;
+    font-weight: 400;
+  }
+  #s2randomp {
+    top: 160px !important;
+  }
+  #s2randomp2 {
+    top: 800px !important;
+  }
+  .s3 {
+    width: 428px !important;
+  }
+  .s3 img {
+    width: 375px !important;
+    height: 175px !important;
+  }
+  .s3 h2 {
+    font-size: 26.82px;
+    font-weight: 500;
+  }
+  .s4 {
+    left: 24px !important;
+    width: 404px !important;
+    gap: 13px !important;
+    flex-wrap: wrap;
+    top: 480px !important;
+  }
+  .s4 .s4pizza {
+    width: 181px !important;
+    height: 315px !important;
+    position: relative;
+    left: -12.5px;
+  }
+  .s4 .s4pizza img {
+    width: 97px !important;
+    height: 96px !important;
+    top: -40px !important;
+  }
+  .s4 .s4pizza h2 {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    position: relative;
+    top: -30px !important;
+  }
+  .s4 .s4pizza p {
+    font-size: 9px !important;
+    width: 150px !important;
+    top: -10px;
+  }
+  .s4 .s4pizza .s4btnrow {
+    gap: 23px !important;
+    top: 10px;
+  }
+  .s4 .s4pizza .s4btnrow button {
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 8px !important;
+    font-weight: 400 !important;
+  }
+  .s4 .s4pizza .s4ingridients {
+    width: 118px !important;
+    height: 24px !important;
+    font-size: 9px !important;
+    font-weight: 400 !important;
+    top: 30px;
+  }
+  .s4 .s4pizza .s4func {
+    gap: 28px !important;
+  }
+  .s4 .s4pizza .s4func .s4pricething img {
+    width: 7px !important;
+    height: 11px !important;
+    top: 0;
+    left: 0;
+  }
+  .s4 .s4pizza .s4func .s4countthing {
+    gap: 8px !important;
+    position: relative;
+    top: -30px;
+  }
+  .s4 .s4pizza .s4func .s4countthing p {
+    width: 6px !important;
+    font-size: 14px !important;
+  }
+  .s4 .s4pizza .s4func .s4countthing button {
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 10px !important;
+  }
+  .s4 .s4pizza .s4order {
+    width: 118px !important;
+    height: 27px !important;
+    font-size: 10px !important;
+    top: 70px !important;
+  }
+  .s4 .s4pizza:nth-child(3),
+  .s4 .s4pizza:nth-child(4) {
+    position: relative;
+    top: 40px;
+  }
+  #s4randomp {
+    display: none;
+  }
+  .s5 {
+    display: none;
+  }
+  .s6 {
+    width: 390px !important;
+    left: 24px !important;
+  }
+  .s6 .s6lc {
+    display: grid;
+    row-gap: 28px !important;
+    top: 70px;
+    position: relative;
+  }
+  .s6 .s6lc h2 {
+    font-size: 48px !important;
+    height: 40px;
+  }
+  .s6 .s6lc p {
+    top: -60px !important;
+    font-size: 14px !important;
+    width: 334.71px !important;
+    height: 76px;
+  }
+  .s6 .s6lc p:last-child {
+    width: 316px !important;
+    top: -240px !important;
+  }
+  .s6 .s6lc img {
+    top: -160px !important;
+    width: 343.88px !important;
+    height: 133px !important;
+  }
+  .s6 .s6rc {
+    position: relative;
+    left: -725px !important;
+    top: -450px !important;
+    scale: 0.8;
+    width: 428px !important;
+  }
+  .s6 .s6rc img {
+    scale: 0.6;
+  }
+  .s6 .s6rc img:nth-child(2) {
+    top: 60px !important;
+    left: 350px !important;
+  }
+  .s6 .s6rc img:nth-child(3) {
+    top: 320px !important;
+    left: 40px !important;
+  }
+  .s6 .s6rc .s6funnyimage {
+    top: 67px !important;
+    left: 64px !important;
+    width: 200px;
+    height: 200px;
+  }
+  #s6randomp1,
+  #s6randomp2,
+  #s6arrow {
+    display: none;
+  }
+  footer {
+    height: 537px !important;
+    width: 430px !important;
+    top: 580px;
+  }
+  footer .footerc {
+    left: 24px !important;
+    width: 400px;
+  }
+  footer .footerc p {
+    font-size: 23.76px !important;
+    height: 35px !important;
+  }
+  footer .footerc .footernav {
+    left: 0 !important;
+    width: 266px !important;
+    flex-wrap: wrap;
+    row-gap: 29px !important;
+    gap: 27px !important;
+    position: absolute;
+    top: 88px !important;
+  }
+  footer .footerc .footernav a {
+    font-size: 15.35px !important;
+  }
+  footer .footerc .footernav .footernavfunc a {
+    font-size: 13.75px !important;
+  }
+  footer .footerlc {
+    width: 379px !important;
+    gap: 140px !important;
+    top: 460px !important;
+    left: 15px !important;
+  }
+  footer .footerlc p {
+    font-size: 14.46px !important;
+  }
+  footer .footerlc img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  footer .footerlc .footerbtn {
+    gap: 8px !important;
+  }
 }
