@@ -1069,29 +1069,6 @@ footer .footerlc .footerbtn {
   gap: 10.47px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "monserrat", sans-serif;
-}
-
-html::-webkit-scrollbar {
-  display: none;
-}
-
-html {
-  background: linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%);
-}
-
-body {
-  height: 4900px;
-}
-
-button,
-a {
-  cursor: pointer;
-}
-
 @media (max-width: 428px) {
   body {
     width: 428px !important;
@@ -1522,4 +1499,26 @@ a {
   footer .footerlc .footerbtn {
     gap: 8px !important;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "monserrat", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background: linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%);
+}
+
+body {
+  height: 4900px;
+}
+
+button,
+a {
+  cursor: pointer;
 }
