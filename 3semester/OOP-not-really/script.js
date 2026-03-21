@@ -18,3 +18,124 @@ document.getElementById("headerbuy").addEventListener("mousedown", () => {
 document.getElementById("headerbuy").addEventListener("mouseup", () => {
   document.getElementById("headerbuy").style.scale = "1";
 });
+
+//log in
+const password = document.getElementById("password");
+const mail = document.getElementById("mail");
+const incpass = document.getElementById("incpass");
+const wrongmail = document.getElementById("wrongmail");
+
+const modalbg = document.querySelector(".modalbg");
+const btnlogin = document.getElementById("headerlogin");
+const btnloginmodal = document.getElementById("btnlogin");
+
+btnlogin.addEventListener("click", () => {
+  modalbg.style.display = "flex";
+});
+
+var passwordinput = undefined;
+var mailinput = undefined;
+
+password.addEventListener("keyup", (el) => {
+  passwordinput = el.target.value;
+});
+
+mail.addEventListener("keyup", (el) => {
+  mailinput = el.target.value;
+});
+
+//theme change
+const themebtn = document.querySelector(".theme");
+var themething = true;
+var memecounter = 0;
+
+themebtn.onclick = () => {
+  if (themething == true) {
+    document.body.style.background = "black";
+    themething = false;
+    themebtn.textContent = "✨";
+  } else {
+    document.body.style.background =
+      "linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%) ";
+    themething = true;
+    themebtn.textContent = "🌙";
+  }
+  memecounter++;
+  if (memecounter >= 5) {
+    document.getElementById("logo").textContent = "bro stop pls";
+  }
+  if (memecounter >= 10) {
+    document.getElementById("logo").textContent = "seriously";
+  }
+  if (memecounter >= 15) {
+    document.getElementById("logo").textContent =
+      "why do I have to deal with you";
+  }
+  if (memecounter == 20) {
+    document.getElementById("logo").textContent = "y";
+  }
+  if (memecounter == 21) {
+    document.getElementById("logo").textContent = "yo";
+  }
+  if (memecounter == 22) {
+    document.getElementById("logo").textContent = "you";
+  }
+  if (memecounter == 23) {
+    document.getElementById("logo").textContent = "you`";
+  }
+  if (memecounter == 24) {
+    document.getElementById("logo").textContent = "you`r";
+  }
+  if (memecounter == 25) {
+    document.getElementById("logo").textContent = "you`re";
+  }
+  if (memecounter == 26) {
+    document.getElementById("logo").textContent = "you`re ";
+  }
+  if (memecounter == 27) {
+    document.getElementById("logo").textContent = "you`re a";
+  }
+  if (memecounter == 28) {
+    document.getElementById("logo").textContent = "you`re ad";
+  }
+  if (memecounter == 29) {
+    document.getElementById("logo").textContent = "you`re ado";
+  }
+  if (memecounter == 30) {
+    document.getElementById("logo").textContent = "you`re adop";
+  }
+  if (memecounter == 31) {
+    document.getElementById("logo").textContent = "you`re adopt";
+  }
+  if (memecounter == 32) {
+    document.getElementById("logo").textContent = "you`re adopte";
+  }
+  if (memecounter == 33) {
+    document.getElementById("logo").textContent = "you`re adopted";
+  }
+  if (memecounter == 34) {
+    themebtn.style.display = "none";
+    document.getElementById("logo").textContent = "pizzashop";
+  }
+};
+
+//megafunctions
+
+function modalactioncomplete() {
+  if (
+    passwordinput == "1234qwerty!" &&
+    mailinput == "matveylubitmuzhikov@gmail.com"
+  ) {
+    [modalbg, btnlogin].forEach((el) => (el.style.display = "none"));
+  } else if (
+    passwordinput !== "1234qwerty!" &&
+    mailinput == "matveylubitmuzhikov@gmail.com"
+  ) {
+    incpass.style.display = "block";
+  } else if (
+    passwordinput == "1234qwerty!" &&
+    mailinput !== "matveylubitmuzhikov@gmail.com"
+  ) {
+    wrongmail.style.display = "block";
+  }
+}

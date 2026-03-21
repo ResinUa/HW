@@ -14,6 +14,20 @@
     />
   </head>
   <body>
+    <button class="theme">🌙</button>
+    <div class="modalbg">
+      <div class="modallogin">
+        <p>log in to pizzashop</p>
+        <form onsubmit="modalactioncomplete()">
+          <input type="text" placeholder="password" required id="password">
+          <p id="incpass">incorrect password.</p>
+          <input type="email" placeholder="e-mail" required id="mail">
+          <p id="wrongmail">account with this mail doesn`t exist.</p>
+          <button id="btnlogin" type="submit">log in</button>
+        </form>
+        <a href="">forgot password?</a>
+      </div>
+    </div>
     <header>
       <button id="headerburger">☰</button>
       <p id="logo" onclick="location.href = '#'">pizzashop</p>

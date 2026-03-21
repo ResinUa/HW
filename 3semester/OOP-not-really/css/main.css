@@ -936,6 +936,7 @@ header .headerFunc .HFnav .HFNanim:nth-child(4) {
 .s6 .s6rc img:nth-child(1) {
   transition: 1.5s;
   cursor: pointer;
+  z-index: 2;
 }
 .s6 .s6rc img:nth-child(1):hover {
   opacity: 0;
@@ -944,15 +945,17 @@ header .headerFunc .HFnav .HFNanim:nth-child(4) {
   position: absolute;
   top: -100px;
   left: 1200px;
+  z-index: 3;
 }
 .s6 .s6rc img:nth-child(3) {
   position: absolute;
   top: 400px;
   left: 650px;
+  z-index: 3;
 }
 .s6 .s6rc .s6funnyimage {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 60px;
   left: 812px;
 }
@@ -1510,15 +1513,111 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-html {
-  background: linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%);
-}
-
 body {
   height: 4900px;
+  background: linear-gradient(245.71deg, #1e0c00 4.96%, #1f0700 33.7%, #170a00 68.41%, #1e0d00 96.42%);
 }
 
 button,
 a {
   cursor: pointer;
+}
+
+.theme {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 6700px;
+  border: 1px solid white;
+  background: linear-gradient(261.69deg, #602612 12.12%, #684210 86.72%);
+  top: 750px;
+  left: 1600px;
+  z-index: 67;
+  transition: 0.25s;
+}
+
+.theme:hover {
+  border: 2px solid white;
+}
+
+.modalbg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 68;
+  background-color: rgba(27, 27, 27, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modallogin {
+  width: 400px;
+  height: 460px;
+  background-color: #210A01;
+  border-radius: 50px;
+  display: grid;
+  row-gap: 50px;
+}
+.modallogin p {
+  font-weight: 800;
+  font-size: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  justify-self: center;
+  align-self: center;
+}
+.modallogin a {
+  color: #fff;
+  text-transform: capitalize;
+  justify-self: center;
+}
+.modallogin form {
+  display: grid;
+  row-gap: 50px;
+}
+.modallogin form p {
+  position: absolute;
+}
+.modallogin form input {
+  width: 300px;
+  position: relative;
+  left: 50px;
+  background-color: #c3c3c3;
+  border: none;
+  border-radius: 50px;
+}
+.modallogin form input::placeholder {
+  color: black;
+  position: relative;
+  left: 20px;
+  font-size: 15px;
+}
+.modallogin form button {
+  width: 250px;
+  position: relative;
+  left: 75px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  text-transform: capitalize;
+  color: #fff;
+}
+.modallogin form p {
+  font-size: 10px;
+  color: rgb(255, 123, 123);
+  text-transform: lowercase;
+  font-weight: 300;
+  justify-self: start;
+  left: 710px;
+  display: none;
+}
+.modallogin form #incpass {
+  top: 380px;
+}
+.modallogin form #wrongmail {
+  top: 465px;
 }

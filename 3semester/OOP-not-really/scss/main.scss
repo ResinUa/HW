@@ -14,7 +14,8 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-html {
+body {
+    height: 4900px;
     background: linear-gradient(245.71deg,
             #1e0c00 4.96%,
             #1f0700 33.7%,
@@ -22,11 +23,103 @@ html {
             #1e0d00 96.42%);
 }
 
-body {
-    height: 4900px;
-}
-
 button,
 a {
     cursor: pointer;
+}
+
+.theme {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 6700px;
+    border: 1px solid white;
+    background: linear-gradient(261.69deg, #602612 12.12%, #684210 86.72%);
+    top: 750px;
+    left: 1600px;
+    z-index: 67; //six sevenn
+    transition: 0.25s;
+}
+
+.theme:hover {
+    border: 2px solid white;
+}
+
+.modalbg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 68;
+    background-color: rgba($color: #1b1b1b, $alpha: 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modallogin {
+    width: 400px;
+    height: 460px;
+    background-color: #210A01;
+    border-radius: 50px;
+    display: grid;
+    row-gap: 50px;
+    p {
+        @include h2thing($fs: 25px);
+        justify-self: center;
+        align-self: center;
+    }
+    a {
+        color: #fff;
+        text-transform: capitalize;
+        justify-self: center;
+    }
+    form {
+        display: grid;
+        row-gap: 50px;
+        p {
+            position: absolute;
+        }
+        input {
+            width: 300px;
+            position: relative;
+            left: 50px;
+            background-color: #c3c3c3;
+            border: none;
+            border-radius: 50px;
+        }
+        input::placeholder {
+            color: black;
+            position: relative;
+            left: 20px;
+            font-size: 15px;
+        }
+        button {
+            width: 250px;
+            position: relative;
+            left: 75px;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            text-transform: capitalize;
+            color: #fff;
+        }
+        p {
+            font-size: 10px;
+            color: rgb(255, 123, 123);
+            text-transform: lowercase;
+            font-weight: 300;
+            justify-self: start;
+            left: 710px;
+            display: none;
+        }
+        #incpass {
+            top: 380px;
+        }
+        #wrongmail{
+            top: 465px;
+        }
+    }
 }
