@@ -65,22 +65,27 @@ a {
     border-radius: 50px;
     display: grid;
     row-gap: 50px;
+
     p {
         @include h2thing($fs: 25px);
         justify-self: center;
         align-self: center;
     }
+
     a {
         color: #fff;
         text-transform: capitalize;
         justify-self: center;
     }
+
     form {
         display: grid;
         row-gap: 50px;
+
         p {
             position: absolute;
         }
+
         input {
             width: 300px;
             position: relative;
@@ -89,12 +94,14 @@ a {
             border: none;
             border-radius: 50px;
         }
+
         input::placeholder {
             color: black;
             position: relative;
             left: 20px;
             font-size: 15px;
         }
+
         button {
             width: 250px;
             position: relative;
@@ -106,6 +113,7 @@ a {
             text-transform: capitalize;
             color: #fff;
         }
+
         p {
             font-size: 10px;
             color: rgb(255, 123, 123);
@@ -115,11 +123,94 @@ a {
             left: 710px;
             display: none;
         }
+
         #incpass {
             top: 380px;
         }
-        #wrongmail{
+
+        #wrongmail {
             top: 465px;
         }
+    }
+}
+
+.shoppingbasket {
+    background-color: white;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px; //100 коли буде анімація пані вероніка прошу я хачу красіву анімацію
+    left: 1355px;
+    z-index: 67;
+    opacity: 0;
+
+    .notemptysb {
+        display: grid;
+        flex-direction: column;
+        row-gap: 20px;
+        position: relative;
+        left: 2px;
+        justify-content: center;
+
+        .pizzabought {
+            p {
+                width: 75px;
+            }
+        }
+
+        button {
+            width: 75px;
+            height: 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+            text-transform: capitalize;
+            color: #fff;
+        }
+    }
+
+    #nothinghere {
+        width: 100px;
+        display: none;
+    }
+    
+    #thx {
+        position: absolute;
+        justify-self: center;
+        width: 75px;
+        display: none;
+    }
+}
+
+#funnybtn {
+    position: fixed;
+}
+
+@keyframes superanim {
+    from {
+        opacity: 0;
+        top: 100px;
+    }
+
+    to {
+        opacity: 100;
+        top: 120px;
+    }
+}
+
+@keyframes superanimBackwards {
+    from {
+        opacity: 100;
+        top: 120px;
+    }
+
+    to {
+        opacity: 0;
+        top: 100px;
     }
 }

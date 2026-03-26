@@ -14,12 +14,13 @@
     />
   </head>
   <body>
+    <button id="funnybtn">funny button</button>
     <button class="theme">🌙</button>
     <div class="modalbg">
       <div class="modallogin">
         <p>log in to pizzashop</p>
         <form onsubmit="modalactioncomplete()">
-          <input type="text" placeholder="password" required id="password">
+          <input type="password" placeholder="password" required id="password">
           <p id="incpass">incorrect password.</p>
           <input type="email" placeholder="e-mail" required id="mail">
           <p id="wrongmail">account with this mail doesn`t exist.</p>
@@ -27,6 +28,20 @@
         </form>
         <a href="">forgot password?</a>
       </div>
+    </div>
+    <div class="shoppingbasket">
+      <p id="nothinghere">there`s nothing here..</p>
+      <div class="notemptysb">
+        <div class="nesbcount">
+          <p>amount: 0</p>
+          <p>total : 0.00$</p>
+        </div>
+        <div class="pizzabought">
+          <p>уявіть що це піца з цінником і деталями</p>
+        </div>
+        <button id="paynorder">order</button>
+      </div>
+      <p id="thx">thank you for your order</p>
     </div>
     <header>
       <button id="headerburger">☰</button>

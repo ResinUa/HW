@@ -1621,3 +1621,74 @@ a {
 .modallogin form #wrongmail {
   top: 465px;
 }
+
+.shoppingbasket {
+  background-color: white;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 1355px;
+  z-index: 67;
+  opacity: 0;
+}
+.shoppingbasket .notemptysb {
+  display: grid;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+  left: 2px;
+  justify-content: center;
+}
+.shoppingbasket .notemptysb .pizzabought p {
+  width: 75px;
+}
+.shoppingbasket .notemptysb button {
+  width: 75px;
+  height: 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+  background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+  text-transform: capitalize;
+  color: #fff;
+}
+.shoppingbasket #nothinghere {
+  width: 100px;
+  display: none;
+}
+.shoppingbasket #thx {
+  position: absolute;
+  justify-self: center;
+  width: 75px;
+  display: none;
+}
+
+#funnybtn {
+  position: fixed;
+}
+
+@keyframes superanim {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 100;
+    top: 120px;
+  }
+}
+@keyframes superanimBackwards {
+  from {
+    opacity: 100;
+    top: 120px;
+  }
+  to {
+    opacity: 0;
+    top: 100px;
+  }
+}

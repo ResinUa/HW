@@ -44,6 +44,60 @@ mail.addEventListener("keyup", (el) => {
   mailinput = el.target.value;
 });
 
+//shopping basket
+const shopb = document.querySelector(".shoppingbasket");
+const shopbtn = document.getElementById("headerbuy");
+const sbp = document.getElementById("nothinghere");
+const nesb = document.querySelector(".notemptysb");
+const pay = document.getElementById("paynorder");
+const thx = document.getElementById("thx");
+
+var isactive = false;
+var isproduct = false;
+var importantthing = false;
+
+pay.addEventListener("click", () => {
+  nesb.style.display = "none";
+  thx.style.display = "block";
+  importantthing = true;
+});
+
+shopbtn.addEventListener("click", () => {
+  if (isactive == false) {
+    shopb.style.animation = "superanim 0.25s forwards";
+    isactive = true;
+  } else {
+    shopb.style.animation = "superanimBackwards 0.25s forwards";
+    isactive = false;
+  }
+  if (isproduct == true) {
+    sbp.style.display = "none";
+    nesb.style.display = "flex";
+    shopb.style.height = "300px";
+  } else {
+    sbp.style.display = "block";
+    nesb.style.display = "none";
+    shopb.style.height = "100px";
+  }
+});
+
+shopb.addEventListener("click", () => {
+  if (importantthing == false) {
+    shopb.style.animation = "superanimBackwards 0.25s forwards";
+    isactive = false;
+  } else {
+    return;
+    importantthing = false;
+  }
+});
+
+document.getElementById("funnybtn").addEventListener("click", () => {
+  if (isproduct == false) {
+    isproduct = true;
+  } else {
+    isproduct = false;
+  }
+});
 //theme change
 const themebtn = document.querySelector(".theme");
 var themething = true;
