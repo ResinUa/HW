@@ -1,0 +1,32 @@
+img {
+    width: 500px;
+    height: 500px;
+    display: none;
+}
+
+img:first-child {
+    display: block;
+}
+
+.slider {
+    display: flex;
+}
+
+button {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+#img11, #img12, #img13 {
+    display: none;
+}
+
+#box {
+    background-color: magenta;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+}

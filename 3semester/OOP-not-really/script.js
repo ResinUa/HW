@@ -86,8 +86,8 @@ shopb.addEventListener("click", () => {
     shopb.style.animation = "superanimBackwards 0.25s forwards";
     isactive = false;
   } else {
-    return;
     importantthing = false;
+    return;
   }
 });
 
