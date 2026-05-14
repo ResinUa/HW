@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="bodyig">
+    <h1 id="idig" style="display: none">I love JabaScript</h1>
+    <button id="sigma">sigma</button>
+    <div id="iwannakms"></div>
+    <button id="aboba">aboba</button>
+    <div class="modal">
+        <h2>це модальне вікно</h2>
+        <div id="aboba2">закрити</div>
+    </div>
+    <button id="theme">🌙</button>
+    <button id="nope">ain`t no way you`re clicking on that</button>
+    <p id="aaaa">ig bro</p>
+    <style>
+      #iwannakms {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .modal {
+        display: none;
+        background-color: rgb(255, 147, 255);
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        flex-direction: column;
+        width: 200px;
+        height: 125px;
+      }
+
+    #aboba2 {
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: white;
+    }
+
+    #nope {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #aaaa {
+        font-size: 60px;
+        align-self: center;
+        justify-self: center;
+        display: none;
+    }
+    </style>
+    <script>
+      document.getElementById("sigma").addEventListener("click", () => {
+        document.getElementById("idig").style.display = "block";
+      });
+//2
+      document.getElementById("iwannakms").addEventListener("mouseover", () => {
+        document.getElementById("iwannakms").style.backgroundColor = "green";
+      });
+
+      document.getElementById("iwannakms").addEventListener("mouseout", () => {
+        document.getElementById("iwannakms").style.backgroundColor = "red";
+      });
+//3
+      document.addEventListener("keydown", (bob) => {
+        if (bob.key == "Enter") {
+          alert("i want to kill myself");
+        }
+        else if (bob.key == "Escape") {
+            alert("I really want to kill myself");
+        }
+      });
+//4
+      document.getElementById('aboba').addEventListener('click', () => {
+            document.querySelector('.modal').style.display = 'flex';
+      });
+
+      document.getElementById('aboba2').addEventListener('click', () => {
+        document.querySelector('.modal').style.display = 'none';
+      });
+
+      //5
+      thing = false;
+      document.getElementById('theme').addEventListener('click', () => {
+        if (thing == false) {
+            thing = true;
+            document.getElementById('bodyig').style.backgroundColor = 'black';
+        } else {
+            thing = false;
+            document.getElementById('bodyig').style.backgroundColor = 'white';
+        }
+      });
+//6
+      document.getElementById('iwannakms').addEventListener('click', () => {
+        document.getElementById('iwannakms').style.width = '500px';
+        document.getElementById('iwannakms').style.height = '250px';
+      });
+//7
+document.getElementById('nope').addEventListener('mousemove', () => {
+    document.getElementById('nope').style.top = Math.round(Math.random()*600) + 'px';
+    document.getElementById('nope').style.left = Math.round(Math.random()*1000) + 'px';
+});
+
+document.getElementById('nope').addEventListener('click', () => {
+    document.getElementById('aaaa').style.display = 'block';
+});
+    </script>
+  </body>
+</html>
