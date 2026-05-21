@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat {
+  position: relative;
+  top: 4vh;
+  height: 90vh;
+  width: 30vw;
+  background-image: url(/badassskeleton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px white solid;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#sigmaui {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -30px;
+  gap: 15px;
+}
+#sigmaui input,
+#sigmaui button {
+  height: 25px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#sigmaui input:hover,
+#sigmaui button:hover {
+  transform: scale(1.15);
+}
+#sigmaui input {
+  background-color: rgb(153, 153, 153);
+  color: white;
+  border-radius: 10px;
+  border: white 1px solid;
+}
+#sigmaui input::placeholder {
+  color: white;
+  position: relative;
+  left: 5px;
+}
+#sigmaui button {
+  background-color: rgb(153, 153, 153);
+  border: 1px white solid;
+  border-radius: 6767px;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+#messages {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  row-gap: 5px;
+}
+
+.message {
+  position: relative;
+  top: 70px;
+  left: 40px;
+  color: white;
+  background-color: rgb(153, 153, 153);
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px white solid;
+  padding: 0 10px 0 10px;
+  font-size: 14px;
+}
+
+.lmaoo {
+  position: absolute;
+  left: 42vw;
+  top: 6vh;
+  z-index: 67;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgb(153, 153, 153);
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.lmaoo button {
+  background-color: rgb(153, 153, 153);
+  border: 1px white solid;
+  border-radius: 6767px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  transition: 0.25s;
+  cursor: pointer;
+  position: absolute;
+  left: -4vw;
+  font-size: 10px;
+}
+.lmaoo button:hover {
+  transform: scale(1.15);
+}
+.lmaoo p {
+  text-align: center;
+  color: white;
+}
+
+.lmaoo:hover {
+  border: 2px solid pink;
+}
