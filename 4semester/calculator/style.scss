@@ -1,0 +1,30 @@
+html {
+    background-color: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    border: 1px white solid;
+    border-radius: 6767px; 
+    transition: 0.25s;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
