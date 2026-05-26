@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1
+      
+      const aboba = {
+        name: "gojo satoru",
+        city: "toukyou",
+        age: 21,
+      };
+      
+      console.log(aboba.name, aboba.city, aboba.age);
+      //2
+      
+      const cat = {
+        name: "Бібік",
+        age: 2,
+      };
+
+      const { name, age, color } = cat;
+      cat.color = "сіробуромаліновий лгбт радуга";
+      cat.age = 3;
+      
+      //3
+      const phone = {
+        brand: "iPhone",
+        model: "15 Pro",
+        color: "black",
+      };
+
+      console.log(phone.brand, phone.color);
+      
+      //4
+      
+      const user = {
+        name: "Bob",
+        hobbies: ["музика", "ігри", "фільми"],
+      };
+
+      console.log(user.hobbies[0], user.hobbies[2]);
+      
+      //5
+      
+      const user1 = {
+        name: "Ніка",
+        sayName() {
+          console.log(this.name);
+        },
+      };
+      
+      //6
+      
+      const game = {
+        title: "Minecraft",
+        price: 1000,
+        online: true,
+      };
+
+      let { title, online } = game;
+      
+      //7
+      
+      const person = {
+        name: "Макс",
+        address: {},
+      };
+
+      let { city, street } = person.address;
+      person.address.city = "kyiv";
+
+      console.log(person.address.city);
+      
+      //8
+      
+      const users = [
+        {
+          name: "Оля",
+        },
+        {
+          name: "Ігор",
+        },
+      ];
+      
+      
+      console.log(users[0].name, users[1].name);
+      
+      //9
+      
+      const calculator = {
+        sum(a, b) {
+          console.log(a + b);
+        },
+      };
+     
+      //10
+      
+      const phone1 = {};
+
+      let { brand, model, price } = phone1;
+
+      phone1.model = "geometry dash";
+      phone1.price = Math.round(Math.random() * 100000000) + " ILS";
+
+      console.log(phone1.model, phone1.price);
+    </script>
+  </body>
+</html>

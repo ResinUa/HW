@@ -71,24 +71,27 @@ body {
 
 #messages {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 60px;
+    left: 340px;
     display: grid;
     row-gap: 5px;
+    overflow-y: auto;
+    min-height: 0;
+    justify-items: end;
+    height: 70vh;
+    overflow-x: hidden;
+    align-content: start;
 }
 
 .message {
-    position: relative;
-    top: 70px;
-    left: 40px;
     color: white;
     background-color: rgb(153, 153, 153);
-    width: auto;
-    height: auto;
+    max-width: 67px;
     border-radius: 10px;
     border: 1px white solid;
     padding: 0 10px 0 10px;
     font-size: 14px;
+    height: auto;
 }
 
 .lmaoo {
