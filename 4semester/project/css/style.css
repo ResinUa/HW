@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat alternates", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  width: 536px;
+  height: 1px;
+  border: 1px solid black;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+header div {
+  display: flex;
+}
+header .logo {
+  position: relative;
+  right: 81px;
+  cursor: pointer;
+}
+header .navbar {
+  gap: 50px;
+  margin-right: 160px;
+}
+header .navbar .navinter {
+  gap: 5px;
+}
+header .navbar .navinter button {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  rotate: 90deg;
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+header .navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+header .hfunc {
+  gap: 50px;
+  align-items: center;
+}
+header .hfunc .welcome {
+  display: flex;
+  gap: 5px;
+}
+header .hfunc .welcome p {
+  font-size: 12px;
+}
+header .hfunc .themechange {
+  width: 40px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6767px;
+}
+header .hfunc .themechange button {
+  border: 0.5px solid black;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 6767px;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .mainthing {
+  display: flex;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1090px;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+main h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 36px;
+}
+main .s1 .s1func {
+  display: flex;
+}
+main .s1 .s1thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 149px;
+  margin-top: 36px;
+}
+main .s1 .s1thing input {
+  height: 35px;
+  width: 215px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+main .s1 .s1thing input::placeholder {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
+}
+main .s1 .s1thing button {
+  position: relative;
+  left: -35px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  border-radius: 0 35px 35px 0;
+}
+main .s2 .s2thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 202px;
+}
+main .s2 .s2func {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .s2 .s2func input {
+  height: 35px;
+  width: 150px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+main .s2 .s2func input::placeholder {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
+}
+main .s2 .s2func button {
+  position: relative;
+  left: -35px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  border-radius: 0 35px 35px 0;
+}
+main .s3 .s3thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 104px;
+}
+main .s3 .s3func {
+  display: flex;
+  gap: 38px;
+}
+main .s3 .s3func button {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+}
+main .s3 .s3text {
+  display: grid;
+  row-gap: 10px;
+}
+main .s3 .s3count {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 36px;
+}
+main .s3 .s3count button {
+  width: 182px;
+  height: 35px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+main .s4 .s4thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 38px;
+}
+main .s4 .s4buttons {
+  width: 95px;
+}
+main .s4 button {
+  color: white;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  margin: 10px;
+}
+main .s4 input {
+  height: 35px;
+  width: 135px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+main .s4 input:last-child {
+  width: 118px;
+}
+main .s4 input::placeholder {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
+}
+main .s5 .s5thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 33px;
+}
+main .s5 .s5func {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .s5 .s5func input {
+  height: 35px;
+  width: 150px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+main .s5 .s5func input::placeholder {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
+}
+main .s5 .s5func button {
+  position: relative;
+  left: -35px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  border-radius: 0 35px 35px 0;
+}
+main .s8 .s8thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  flex-direction: column;
+  row-gap: 36px;
+}
+main .s8 .s8thing input {
+  height: 35px;
+  width: 135px;
+  color: #7e7e7e;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+main .s8 .s8thing input::placeholder {
+  position: relative;
+  left: 20px;
+  font-size: 12px;
+}
+main .s8 .s8func {
+  display: flex;
+  gap: 38px;
+}
+main .s9 button {
+  background-color: transparent;
+  border: none;
+}
+main .s9 .s9thing {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+}
+main .s9 .s9idk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+main .s9 .s9idk h2 {
+  position: relative;
+  left: 0;
+}
+main .s9 .s9idk #s9ig {
+  width: 150px;
+  height: 150px;
+  background-color: #D9D9D9;
+  border-radius: 20px;
+}
+main .s9 .s9bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 174px;
+  height: 3px;
+  gap: 6px;
+}
+main .s9 .s9bar div {
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #D9D9D9;
+}
+main .s9 .s9bar #s9main {
+  width: 30px;
+  background-color: #797979;
+}
+main .s10 div {
+  font-size: 12px;
+}
+main .s10 .s10boxes {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 36px;
+}
+main .s10 .s10boxes .s10box {
+  display: flex;
+  gap: 59px;
+}
+main .s10 .s10boxes .s10box div {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
+main .s10 .s10thing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 36px;
+  row-gap: 20px;
+}
+main .s10 .s10idk {
+  display: flex;
+  gap: 36px;
+  position: relative;
+}
+main .s10 .s10idk div {
+  background-color: #000;
+  color: white;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20px;
+  padding: 10px;
+}
+main .s10 #s10lastthing {
+  background-color: #000;
+  color: white;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20px;
+  padding: 10px;
+}
+main .s10 .s10idk:nth-child(1) {
+  left: 33px;
+}
+main .s10 .s10idk:nth-child(2) {
+  left: 77px;
+}
+main .s10 .s10idk:nth-child(3) {
+  left: -6px;
+}
+main .s10 .s10idk:nth-child(4) {
+  left: 90px;
+}
+main section {
+  margin: 19px 0 19px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section h2 {
+  font-size: 16px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 185px;
+  background-color: #fff;
+  height: 220px;
+  z-index: 3;
+}
+footer img {
+  width: 165px;
+  height: 70px;
+}
+footer .footeridk p {
+  font-size: 12px;
+}
+footer .footerjoin {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerjoin input {
+  width: 204px;
+  height: 35px;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 20px;
+}
+footer .footerjoin button {
+  width: 107px;
+  height: 35px;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+footer p:last-child {
+  font-size: 6px;
+  position: relative;
+  top: 18px;
+}
+
+.mainleft, .mainright {
+  background-color: #D9D9D9;
+  height: 3000px;
+  width: 186px;
+  z-index: -2;
+  position: relative;
+}
+
+.mainleft img {
+  left: -1px;
+}
+
+.mainright img {
+  right: -1px;
+}
+
+#greenthing {
+  position: absolute;
+  z-index: -9999;
+  top: 56.65px;
+}
+
+#greenthing2 {
+  position: absolute;
+  z-index: -9;
+  top: 2603px;
+}
+
+#greything {
+  position: absolute;
+  z-index: -9;
+  top: 1374.74px;
+}
+
+#lightgreything {
+  position: relative;
+  z-index: -9;
+  top: 1881.62px;
+}
+
+#blackthing {
+  position: absolute;
+  z-index: -8;
+  top: 170px;
+}
+
+#blackthing2 {
+  position: absolute;
+  z-index: -8;
+  top: 1472px;
+}
+
+#blackthing3 {
+  position: absolute;
+  z-index: -8;
+  top: 2091px;
+}
+
+#blackthing4 {
+  position: absolute;
+  z-index: -8;
+  top: 2712px;
+}
+
+#coding {
+  position: absolute;
+  z-index: -7;
+  top: 688px;
+  left: 64px;
+}
+
+#controller {
+  position: absolute;
+  z-index: -7;
+  top: 944px;
+  left: 89px;
+}
+
+#puzzle {
+  position: absolute;
+  z-index: -7;
+  top: 1545px;
+  left: 76px;
+}
+
+#tictactoe {
+  position: absolute;
+  z-index: -7;
+  top: 1782px;
+  left: 101px;
+}
+
+#dagger {
+  position: absolute;
+  z-index: -7;
+  top: 2293px;
+  left: 26px;
+}
+
+#greything2 {
+  position: absolute;
+  z-index: -9;
+  top: 0;
+}
+
+#lightgreything2 {
+  position: absolute;
+  z-index: -9;
+  top: 606px;
+}
+
+#greenthing3 {
+  position: absolute;
+  z-index: -9;
+  top: 1431px;
+}
+
+#greything3 {
+  position: absolute;
+  z-index: -9;
+  top: 2580px;
+}
+
+#blackthing5 {
+  position: absolute;
+  z-index: -8;
+  top: 97px;
+}
+
+#blackthing6 {
+  position: absolute;
+  z-index: -8;
+  top: 716px;
+}
+
+#blackthing7 {
+  position: absolute;
+  z-index: -8;
+  top: 1544px;
+}
+
+#blackthing8 {
+  position: absolute;
+  z-index: -8;
+  top: 2680px;
+}
+
+#puzzle2 {
+  position: absolute;
+  z-index: -7;
+  top: 170px;
+  right: 77px;
+}
+
+#tictactoe2 {
+  position: absolute;
+  z-index: -7;
+  top: 407px;
+  right: 102px;
+}
+
+#dagger2 {
+  position: absolute;
+  z-index: -7;
+  top: 919px;
+  right: 27px;
+}
+
+#coding2 {
+  position: absolute;
+  z-index: -7;
+  top: 2064px;
+  right: 65px;
+}
+
+#controller2 {
+  position: absolute;
+  z-index: -7;
+  top: 2318px;
+  right: 90px;
+}
+
+#puzzle3 {
+  position: absolute;
+  z-index: -7;
+  top: 2755px;
+  right: 77px;
+}
+
+@keyframes bravo-six-going-dark {
+  from {
+    background-color: white;
+    left: 0;
+    transform: rotate(0deg);
+    color: black;
+    border: 1px solid black;
+  }
+  to {
+    background-color: black;
+    left: 20px;
+    transform: rotate(360deg);
+    color: white;
+    border: 1px solid white;
+  }
+}
+@keyframes bravo-six-going-light {
+  from {
+    background-color: black;
+    left: 20px;
+    transform: rotate(360deg);
+    color: white;
+    border: 1px solid white;
+  }
+  to {
+    background-color: white;
+    left: 0;
+    transform: rotate(0deg);
+    color: black;
+    border: 1px solid black;
+  }
+}
