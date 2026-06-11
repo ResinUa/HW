@@ -25,7 +25,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 67;
+  position: fixed;
+  background-color: white;
 }
 header div {
   display: flex;
@@ -90,6 +92,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 80px;
 }
 main .mainthing {
   display: flex;
@@ -410,6 +414,7 @@ main .s10 .s10idk div {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 main .s10 #s10lastthing {
   background-color: #000;
@@ -453,6 +458,8 @@ footer {
   background-color: #fff;
   height: 220px;
   z-index: 3;
+  position: relative;
+  top: 80px;
 }
 footer img {
   width: 165px;
@@ -488,7 +495,8 @@ footer p:last-child {
   top: 18px;
 }
 
-.mainleft, .mainright {
+.mainleft,
+.mainright {
   background-color: #D9D9D9;
   height: 3000px;
   width: 186px;
@@ -708,4 +716,172 @@ footer p:last-child {
     color: black;
     border: 1px solid black;
   }
+}
+#headermodal {
+  position: absolute;
+  top: 80px;
+  left: 380px;
+  z-index: 68;
+  width: 160px;
+  height: 105px;
+  display: none;
+  flex-direction: column;
+}
+#headermodal button {
+  height: 35px;
+  width: 160px;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+  background-color: white;
+  transition: 0.5s;
+  font-size: 12px;
+}
+#headermodal button:last-child {
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#headermodal button:hover {
+  background-color: #F1F1F1;
+}
+
+#modalwelcomebg {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalwelcome {
+  z-index: 100;
+  width: 576px;
+  height: 316px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 18px;
+}
+#modalwelcome #frickyou1 {
+  width: 392px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: 26px;
+}
+#modalwelcome #frickyou2 {
+  font-size: 12px;
+}
+#modalwelcome input {
+  width: 169px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #D7D7D7;
+  border: none;
+  color: #7E7E7E;
+}
+#modalwelcome input::placeholder {
+  font-size: 12px;
+  color: #7E7E7E;
+  position: relative;
+  left: 10px;
+}
+#modalwelcome button {
+  height: 35px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  width: 105px;
+  border: none;
+}
+#modalwelcome img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#modalwelcome img:first-child {
+  top: 154px;
+  left: 41px;
+}
+#modalwelcome img:nth-child(2) {
+  top: 154px;
+  left: 505px;
+}
+#modalwelcome img:nth-child(3) {
+  top: 230px;
+  left: 85px;
+}
+#modalwelcome img:nth-child(4) {
+  top: 230px;
+  left: 461px;
+}
+#modalwelcome .modalwelcomeimg {
+  position: absolute;
+  top: 220px;
+  left: 440px;
+}
+
+#modalthx {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 463px;
+  height: 245px;
+}
+#modalthx img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+#modalthx img:first-child {
+  top: 69px;
+  left: 43px;
+}
+#modalthx img:nth-child(2) {
+  top: 69px;
+  left: 391px;
+}
+#modalthx img:nth-child(3) {
+  top: 145px;
+  left: 87px;
+}
+#modalthx img:last-child {
+  top: 145px;
+  left: 347px;
+}
+#modalthx .modalthximg {
+  position: absolute;
+  top: 280px;
+  left: 500px;
+}
+#modalthx p {
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+}
+#modalthx button {
+  position: absolute;
+  top: 280px;
+  left: 920px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+}
+#modalthx #modalthxcloseimg {
+  position: static;
+  width: 15px !important;
+  height: 15px !important;
 }

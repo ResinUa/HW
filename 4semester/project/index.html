@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,39 @@
 </head>
 
 <body>
+    <div id="modalwelcomebg">
+        <div id="modalwelcome">
+            <div class="modalwelcomeimg">
+                <img src="img/dagger.svg" alt="dagger">
+                <img src="img/coding.svg" alt="coding">
+                <img src="img/puzzle.svg" alt="puzzle">
+                <img src="img/tictactoe.svg" alt="tictactoe">
+            </div>
+            <p id="frickyou1">Привіт!<br>
+Ви потрапили на сайт інтерактивних ігор та завдань<br>
+Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+Бажаємо Вам гарно провести час!</p>
+            <p id="frickyou2">Введіть своє ім’я:</p>
+            <input type="text" placeholder="Ваше ім’я..." id="modalinput">
+            <button id="modalthxopen">Зберегти</button>
+        </div>
+        <div id="modalthx">
+                <div class="modalthximg">
+                    <img src="img/dagger.svg" alt="dagger">
+                    <img src="img/coding.svg" alt="coding">
+                    <img src="img/puzzle.svg" alt="puzzle">
+                    <img src="img/tictactoe.svg" alt="tictactoe">
+                </div>
+                <p>Дякую за підписку!</p>
+                <button id="modalthxclose"><img src="img/close.svg" alt="close" id="modalthxcloseimg"></button>
+            </div>
+    </div>
     <header>
+        <div id="headermodal">
+            <button>Числовий</button>
+            <button>Ігровий</button>
+            <button>Ознайомчий</button>
+        </div>
         <img src="img/logo.svg" alt="logo" class="logo" onclick="location.href = '#'">
         <div class="navbar">
             <div class="navinter">
@@ -30,8 +62,7 @@
                 <button id="theme">☼</button>
             </div>
             <div class="welcome">
-                <p>Вітаємо,</p>
-                <p id="nameenter">user!</p>
+                <p id="namething"></p>
             </div>
         </div>
     </header>
@@ -257,4 +288,5 @@
         </div>
     </footer>
 </body>
+
 </html>
