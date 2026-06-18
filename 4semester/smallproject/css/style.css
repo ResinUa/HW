@@ -9,11 +9,13 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
-h2, p {
+h2,
+p {
   cursor: default;
 }
 
@@ -188,7 +190,8 @@ footer .fthing h2 {
   text-transform: uppercase;
   font-weight: 600;
 }
-footer .fthing p, footer .fthing a {
+footer .fthing p,
+footer .fthing a {
   color: #828282;
   text-decoration: none;
   text-transform: uppercase;

@@ -6,14 +6,16 @@
 }
 
 html::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-a, button {
+a,
+button {
     cursor: pointer;
 }
 
-h2, p {
+h2,
+p {
     cursor: default;
 }
 
@@ -94,6 +96,7 @@ h2, p {
         align-items: center;
         justify-content: center;
         gap: 30px;
+
         .sc2thing {
             background-color: white;
             width: 447px;
@@ -128,6 +131,7 @@ h2, p {
                 font-weight: 400;
                 height: 124px;
             }
+
             p:last-child {
                 height: 36px;
                 font-weight: 300;
@@ -156,6 +160,7 @@ h2, p {
     position: relative;
     top: 200px;
     height: 100px;
+
     .sc3thing {
         display: flex;
         gap: 10px;
@@ -172,14 +177,17 @@ footer {
     gap: 187px;
     padding-top: 65px;
     padding-left: 21px;
+
     img {
         width: 102px;
         height: 44px;
         cursor: pointer;
     }
+
     .bottom {
         position: absolute;
         top: 485px;
+
         p {
             position: relative;
             top: 14px;
@@ -192,103 +200,106 @@ footer {
         }
     }
 
-            .fthing {
+    .fthing {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: white;
+            font-size: 18px;
+            font-family: 'oswald', sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        p,
+        a {
+            color: #828282;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        p {
+            color: white;
+        }
+
+        .fthingig {
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
-            
-            h2 {
-                color: white;
-                font-size: 18px;
-                font-family: 'oswald', sans-serif;
-                text-transform: uppercase;
-                font-weight: 600;
-            }
-            p, a {
-                color: #828282;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 13px;
-                font-weight: 400;
-            }
+            justify-content: start;
+            row-gap: 25px;
+        }
 
-            p {
-                color: white;
-            }
+        .fthingin2 {
+            display: flex;
+            align-items: center;
 
-            .fthingig {
-                margin-top: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                row-gap: 25px;
-            }
-
-            .fthingin2 {
-                display: flex;
-                align-items: center;
-                img {
-                    width: 21px;
-                    height: 21px;
-                    cursor: pointer;
-                }
-
-                a {
-                    position: relative;
-                    left: 19px;
-                }
+            img {
+                width: 21px;
+                height: 21px;
+                cursor: pointer;
             }
 
             a {
-                transition: 0.25s;
-            }
-
-            a:hover {
-                color: rgb(228, 228, 228);
-            }
-        }
-
-        .fform {
-            row-gap: 10px !important;
-            
-            p {
-                color: #828282;
-            }
-            
-            input {
-                width: 280px;
-                height: 40px;
-                padding: 15px;
-                background: transparent;
-                border: 1px solid white;
-                transition: 0.25s;
-            }
-
-            input::placeholder {
-                color: white;
-                text-transform: capitalize;
-                font-size: 12px;
-            }
-
-            input:hover {
-                box-shadow: 1px 1px 1px 1px #ffffff80;
-            }
-
-            button {
                 position: relative;
-                top: -3px;
-                height: 40px;
-                width: 280px;
-                border: none;
-                color: #3F3F3F;
-                background-color: white;
-                font-family: 'oswald', sans-serif;
-                text-transform: uppercase;
-                font-size: 14px;
-                transition: 0.25s;
-            }
-
-            button:hover {
-                background-color: #eeeeee;
+                left: 19px;
             }
         }
+
+        a {
+            transition: 0.25s;
+        }
+
+        a:hover {
+            color: rgb(228, 228, 228);
+        }
+    }
+
+    .fform {
+        row-gap: 10px !important;
+
+        p {
+            color: #828282;
+        }
+
+        input {
+            width: 280px;
+            height: 40px;
+            padding: 15px;
+            background: transparent;
+            border: 1px solid white;
+            transition: 0.25s;
+        }
+
+        input::placeholder {
+            color: white;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+
+        input:hover {
+            box-shadow: 1px 1px 1px 1px #ffffff80;
+        }
+
+        button {
+            position: relative;
+            top: -3px;
+            height: 40px;
+            width: 280px;
+            border: none;
+            color: #3F3F3F;
+            background-color: white;
+            font-family: 'oswald', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.25s;
+        }
+
+        button:hover {
+            background-color: #eeeeee;
+        }
+    }
 }
