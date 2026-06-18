@@ -82,7 +82,7 @@
             <img src="img/tictactoe.svg" alt="tictactoe" id="tictactoe">
             <img src="img/dagger.svg" alt="dagger" id="dagger">
         </div>
-        <div class="mainthing">
+        <div class="mainthing" id="mainmiddle">
             <h2>Популярні інетрактивні ігри</h2>
             <hr>
             </hr>
@@ -90,10 +90,10 @@
                 <h2>Перевір в який рік ти народився</h1>
                     <div class="s1thing">
                         <div class="s1func">
-                            <input type="text" placeholder="Введіть рік народження">
-                            <button>⌕</button>
+                            <input type="text" placeholder="Введіть рік народження" id="inputs1">
+                            <button id="buttons1">⌕</button>
                         </div>
-                        <p id="s1thing">skibidi dop dop</p>
+                        <p id="things1">skibidi dop dop</p>
                     </div>
             </section>
             <hr>
@@ -102,10 +102,10 @@
                 <h2>Вгадай число, яке загадав комп’ютер</h2>
                 <div class="s2thing">
                     <div class="s2func">
-                        <input type="text" placeholder="Введіть число">
-                        <button>⌕</button>
+                        <input type="text" placeholder="Введіть число" id="s2input">
+                        <button id="s2button">⌕</button>
                     </div>
-                    <p>skibidi dop dop</p>
+                    <p id="s2thing">skibidi dop dop</p>
                 </div>
             </section>
             <hr>
@@ -114,9 +114,9 @@
                 <h2>Камінь - ножиці - папір</h2>
                 <div class="s3thing">
                     <div class="s3func">
-                        <button><img src="img/rock.svg" alt="rock"></button>
-                        <button><img src="img/scissors.svg" alt="scissors"></button>
-                        <button><img src="img/paper.svg" alt="paper"></button>
+                        <button id="s3rock"><img src="img/rock.svg" alt="rock"></button>
+                        <button id="s3scissors"><img src="img/scissors.svg" alt="scissors"></button>
+                        <button id="s3paper"><img src="img/paper.svg" alt="paper"></button>
                     </div>
                     <div class="s3text">
                         <p>Рахунок:</p>
@@ -125,8 +125,8 @@
                     </div>
                 </div>
                 <div class="s3count">
-                    <p>skibidi dop dop</p>
-                    <button>Варіант комп’ютера</button>
+                    <p id="s3thing">skibidi dop dop</p>
+                    <button id='s3whydoyouexist'>Варіант комп’ютера</button>
                 </div>
             </section>
             <hr>
@@ -134,16 +134,16 @@
             <section class="s4">
                 <h2>Калькулятор</h2>
                 <div class="s4thing">
-                    <input type="text" placeholder="Введіть число">
+                    <input type="text" placeholder="Введіть число" id="s4input">
                     <div class="s4buttons">
-                        <button>+</button>
-                        <button>*</button>
-                        <button>-</button>
-                        <button>/</button>
+                        <button id="s4addition">+</button>
+                        <button id="s4multiplication">*</button>
+                        <button id="s4substraction">-</button>
+                        <button id="s4division">/</button>
                     </div>
-                    <input type="text" placeholder="Введіть число">
-                    <button>=</button>
-                    <input type="text" disabled placeholder="Результат">
+                    <input type="text" placeholder="Введіть число" id="s4input2">
+                    <button id="s4equals">=</button>
+                    <p id="s4result">Результат</p>
                 </div>
             </section>
             <hr>

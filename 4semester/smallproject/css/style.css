@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+h2, p {
+  cursor: default;
+}
+
+.sc1 {
+  position: relative;
+  top: 118px;
+}
+.sc1 .sc1c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+}
+.sc1 .sc1cr {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+.sc1 .sc1cr img {
+  position: absolute;
+  top: 0;
+}
+.sc1 .sc1cr h2 {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+  font-weight: 500;
+}
+.sc1 .sc1cr p {
+  width: 640px;
+  font-size: 25px;
+}
+.sc1 .sc1cr button {
+  background: transparent;
+  border: 2px solid black;
+  font-weight: 500;
+  width: 175px;
+  height: 56px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+  cursor: pointer;
+  border-radius: 0;
+  transition: 0.25s;
+}
+.sc1 .sc1cr button:hover {
+  background: #eeeeee;
+}
+
+.sc2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background: #F8F9FB;
+  position: relative;
+  top: 200px;
+  height: 564px;
+}
+.sc2 h2 {
+  font-size: 24px;
+  font-family: "oswald", sans-serif;
+  text-transform: capitalize;
+  margin-top: 46px;
+  position: relative;
+  left: 21px;
+  font-weight: 400;
+}
+.sc2 .sc2c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.sc2 .sc2c .sc2thing {
+  background-color: white;
+  width: 447px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 24px;
+}
+.sc2 .sc2c .sc2thing h2 {
+  margin: 0;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  position: static;
+}
+.sc2 .sc2c .sc2thing h2:first-child {
+  color: #BDBDBD;
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sc2 .sc2c .sc2thing p {
+  position: relative;
+  top: 11px;
+  width: 398.67px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 124px;
+}
+.sc2 .sc2c .sc2thing p:last-child {
+  height: 36px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.sc2 .sc2c .sc2thing hr {
+  width: 398.67px;
+  border: 1.5px solid black;
+}
+.sc2 .sc2c .sc2thing .sc2phr {
+  position: relative;
+  top: 60px;
+}
+
+.sc3 {
+  background-color: #E6F1FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 203px;
+  position: relative;
+  top: 200px;
+  height: 100px;
+}
+.sc3 .sc3thing {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 527px;
+  position: relative;
+  top: 200px;
+  background: black;
+  gap: 187px;
+  padding-top: 65px;
+  padding-left: 21px;
+}
+footer img {
+  width: 102px;
+  height: 44px;
+  cursor: pointer;
+}
+footer .bottom {
+  position: absolute;
+  top: 485px;
+}
+footer .bottom p {
+  position: relative;
+  top: 14px;
+  color: white;
+}
+footer .bottom hr {
+  border: 1px solid #4F4F4F;
+  width: 1878px;
+}
+footer .fthing {
+  display: flex;
+  flex-direction: column;
+}
+footer .fthing h2 {
+  color: white;
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+footer .fthing p, footer .fthing a {
+  color: #828282;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+}
+footer .fthing p {
+  color: white;
+}
+footer .fthing .fthingig {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 25px;
+}
+footer .fthing .fthingin2 {
+  display: flex;
+  align-items: center;
+}
+footer .fthing .fthingin2 img {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+footer .fthing .fthingin2 a {
+  position: relative;
+  left: 19px;
+}
+footer .fthing a {
+  transition: 0.25s;
+}
+footer .fthing a:hover {
+  color: rgb(228, 228, 228);
+}
+footer .fform {
+  row-gap: 10px !important;
+}
+footer .fform p {
+  color: #828282;
+}
+footer .fform input {
+  width: 280px;
+  height: 40px;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.25s;
+}
+footer .fform input::placeholder {
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+footer .fform input:hover {
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.5019607843);
+}
+footer .fform button {
+  position: relative;
+  top: -3px;
+  height: 40px;
+  width: 280px;
+  border: none;
+  color: #3F3F3F;
+  background-color: white;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.25s;
+}
+footer .fform button:hover {
+  background-color: #eeeeee;
+}
