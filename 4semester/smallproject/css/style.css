@@ -265,3 +265,74 @@ footer .fform button {
 footer .fform button:hover {
   background-color: #eeeeee;
 }
+
+.sc {
+  display: flex;
+  gap: 97px;
+  justify-content: center;
+}
+.sc .scleft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.sc h2 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "oswald", sans-serif;
+  text-transform: capitalize;
+}
+.sc p {
+  width: 818px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #828282;
+}
+.sc .scleftc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.sc .scright {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sc .scright .adbtns {
+  display: flex;
+  gap: 1px;
+  position: absolute;
+  right: 345px;
+  top: 7px;
+}
+.sc .scright .adbtns button {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.sc .scright .adbtns2 {
+  right: 364px;
+  top: 699px;
+}
+.sc #ad1 {
+  position: absolute;
+  top: 530px;
+  right: 417px;
+  width: 175px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sc #ad2 {
+  position: absolute;
+  top: 1235px;
+  right: 391px;
+  width: 90px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

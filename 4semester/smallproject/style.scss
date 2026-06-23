@@ -303,3 +303,76 @@ footer {
         }
     }
 }
+
+.sc {
+    display: flex;
+    gap: 97px;
+    justify-content: center;
+    .scleft {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+        font-family: 'oswald', sans-serif;
+        text-transform: capitalize;
+    }
+    p {
+        width: 818px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #828282;
+    }
+    .scleftc {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .scright {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .adbtns {
+            display: flex;
+            gap: 1px;
+            position: absolute;
+            right: 345px;
+            top: 7px;
+            button {
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        .adbtns2 {
+            right: 364px;
+            top: 699px;
+        }
+    }
+    #ad1 {
+        position: absolute;
+        top: 530px;
+        right: 417px;
+        width: 175px;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+        #ad2 {
+        position: absolute;
+        top: 1235px;
+        right: 391px;
+        width: 90px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
