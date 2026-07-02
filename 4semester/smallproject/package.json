@@ -11,6 +11,6 @@
     "ILoveTV": "echo 'I love TV'"
   },
   "dependencies": {
-    "eslint": "^10.6.0"
+    "just-validate": "^4.3.0"
   }
 }
