@@ -1,0 +1,13 @@
+{
+  "name": "nodething",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "wako",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ilovetv": "echo \"I love TV x99\" && exit 1"
+  }
+}

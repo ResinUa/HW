@@ -1,0 +1,16 @@
+{
+  "name": "smallproject",
+  "version": "1.0.0",
+  "description": "Crisp",
+  "license": "ISC",
+  "author": "Wako and more",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ILoveTV": "echo 'I love TV'"
+  },
+  "dependencies": {
+    "eslint": "^10.6.0"
+  }
+}
