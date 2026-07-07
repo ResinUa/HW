@@ -11,6 +11,10 @@
     "ILoveTV": "echo 'I love TV'"
   },
   "dependencies": {
-    "just-validate": "^4.3.0"
+    "dayjs": "^1.11.21",
+    "just-validate": "^4.3.0",
+    "nanoid": "^5.1.16",
+    "sweetalert": "^2.1.2",
+    "swiper": "^14.0.1"
   }
 }
