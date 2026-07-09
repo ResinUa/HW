@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html::-webkit-scrollbar {
   display: none;
 }
 
-a, button {
-    cursor: pointer;
+a,
+button,
+input {
+  cursor: pointer;
 }
 
-h2, p {
-    cursor: default;
+h2,
+p {
+  cursor: default;
 }
 
 body {
@@ -45,52 +48,214 @@ header {
 }
 
 main {
-    margin-top: 115px;
+  margin-top: 115px;
 }
 
 #searchmodal {
-    height: 200px;
-    width: 100vw;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 25%;
-    z-index: 6768;
-    top: 115px;
-    position: absolute;
-    background-color: white;
-    position: fixed;
+  height: 200px;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+  z-index: 6768;
+  top: 115px;
+  position: absolute;
+  background-color: white;
+  position: fixed;
+
+  input {
+    width: 1152px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px #3F3F3F solid;
+    padding-left: 58px;
+    font-size: 24px;
+  }
+
+  input::placeholder {
+    font-size: 24px;
+  }
+
+  .smthing {
+    img {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 8px;
+      left: 37px;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+#loginmodal {
+  height: 530px;
+  width: 388px;
+  background-color: white;
+  position: fixed;
+  top: 115px;
+  left: 56vw;
+  z-index: 6769;
+  padding: 45px 0 0 30px;
+  display: none;
+  flex-direction: column;
+  row-gap: 31px;
+
+  button {
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: transparent;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
     input {
-        width: 1152px;
-        height: 50px;
-        border: none;
-        border-bottom: 1px #3F3F3F solid;
-        padding-left: 58px;
-        font-size: 24px;
+      width: 328px;
+      height: 44px;
+      padding-left: 14px;
+      font-size: 16px;
+      color: #3F3F3F;
+      border: #C4C4C4 1px solid;
     }
 
-    input::placeholder {
-        font-size: 24px;
+    #lmemail {
+      margin-top: 13px;
     }
 
-    .smthing {
-        img {
-            width: 30px;
-            height: 30px;
-            position: relative;
-            top: 8px;
-            left: 37px;
-        }
+    #lmformcheck {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #828282;
     }
+  }
+
+  .lmformthing {
+    display: flex;
+    gap: 9px;
+
+    p {
+      color: #828282;
+      font-size: 14px;
+      width: 305px;
+      font-family: 'roboto', sans-serif;
+    }
+  }
+
+  .lmbtn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 30px;
+
     button {
-        border: none;
-        background-color: transparent;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      width: 328px;
+      height: 50px;
+      font-family: 'oswald', sans-serif;
+      color: #3F3F3F;
+      border: 2px solid #C4C4C4;
     }
+
+    button:last-child {
+      background-color: #000000;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+#bagmodal {
+  z-index: 5;
+  position: fixed;
+  top: 115px;
+  left: 67vw;
+  padding: 45px 0 0 30px;
+  background-color: white;
+  width: 388px;
+  height: 364px; //+160 кожну покупку
+  display: none;
+  flex-direction: column;
+  row-gap: 36px;
+
+  #bmclose {
+    border: none;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+  }
+
+  .bmmenu {
+    align-self: bottom;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    hr {
+      position: relative;
+      left: -30px;
+      width: 388px;
+      border: 1px solid #F0F2F2;
+    }
+
+    .bmmcount {
+      display: flex;
+      gap: 158px;
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'oswald', sans-serif;
+        text-transform: capitalize;
+      }
+    }
+
+    .bmmbtn {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+
+      button {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 328px;
+        height: 50px;
+        font-family: 'oswald', sans-serif;
+        color: #3F3F3F;
+        border: 2px solid #C4C4C4;
+        background-color: transparent;
+      }
+
+      button:last-child {
+        background-color: #000000;
+        color: white;
+        border: none;
+      }
+    }
+  }
 }
 
 #smopen {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 a {
@@ -614,7 +779,7 @@ header div {
 }
 
 .sc1 .sc1cr h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
   color: black;
   border-top: 2px solid #000000;
   border-right: 2px solid #000000;
@@ -655,6 +820,7 @@ header div {
 .sc1 .sc1cr button:hover {
   background: #eeeeee;
 }
+
 .sc2 {
   display: flex;
   flex-direction: column;

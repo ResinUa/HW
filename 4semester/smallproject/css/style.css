@@ -10,11 +10,14 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-a, button {
+a,
+button,
+input {
   cursor: pointer;
 }
 
-h2, p {
+h2,
+p {
   cursor: default;
 }
 
@@ -81,6 +84,147 @@ main {
 #searchmodal button {
   border: none;
   background-color: transparent;
+}
+
+#loginmodal {
+  height: 530px;
+  width: 388px;
+  background-color: white;
+  position: fixed;
+  top: 115px;
+  left: 56vw;
+  z-index: 6769;
+  padding: 45px 0 0 30px;
+  display: none;
+  flex-direction: column;
+  row-gap: 31px;
+}
+#loginmodal button {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+}
+#loginmodal form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+#loginmodal form h2 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#loginmodal form input {
+  width: 328px;
+  height: 44px;
+  padding-left: 14px;
+  font-size: 16px;
+  color: #3F3F3F;
+  border: #C4C4C4 1px solid;
+}
+#loginmodal form #lmemail {
+  margin-top: 13px;
+}
+#loginmodal form #lmformcheck {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #828282;
+}
+#loginmodal .lmformthing {
+  display: flex;
+  gap: 9px;
+}
+#loginmodal .lmformthing p {
+  color: #828282;
+  font-size: 14px;
+  width: 305px;
+  font-family: "roboto", sans-serif;
+}
+#loginmodal .lmbtn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 30px;
+}
+#loginmodal .lmbtn button {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 328px;
+  height: 50px;
+  font-family: "oswald", sans-serif;
+  color: #3F3F3F;
+  border: 2px solid #C4C4C4;
+}
+#loginmodal .lmbtn button:last-child {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+#bagmodal {
+  z-index: 5;
+  position: fixed;
+  top: 115px;
+  left: 67vw;
+  padding: 45px 0 0 30px;
+  background-color: white;
+  width: 388px;
+  height: 364px;
+  display: none;
+  flex-direction: column;
+  row-gap: 36px;
+}
+#bagmodal #bmclose {
+  border: none;
+  background-color: transparent;
+  width: 21px;
+  height: 21px;
+}
+#bagmodal .bmmenu {
+  align-self: bottom;
+  height: 217px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#bagmodal .bmmenu hr {
+  position: relative;
+  left: -30px;
+  width: 388px;
+  border: 1px solid #F0F2F2;
+}
+#bagmodal .bmmenu .bmmcount {
+  display: flex;
+  gap: 158px;
+}
+#bagmodal .bmmenu .bmmcount p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "oswald", sans-serif;
+  text-transform: capitalize;
+}
+#bagmodal .bmmenu .bmmbtn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#bagmodal .bmmenu .bmmbtn button {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 328px;
+  height: 50px;
+  font-family: "oswald", sans-serif;
+  color: #3F3F3F;
+  border: 2px solid #C4C4C4;
+  background-color: transparent;
+}
+#bagmodal .bmmenu .bmmbtn button:last-child {
+  background-color: #000000;
+  color: white;
+  border: none;
 }
 
 #smopen {
