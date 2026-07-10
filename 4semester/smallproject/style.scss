@@ -182,13 +182,18 @@ main {
 }
 
 #bmopen {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bmopen {
   display: flex;
   gap: 11px;
-  cursor: pointer;
   .bmopentxt {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    row-gap: 1px;
     p {
       color: white;
       font-size: 12px;
@@ -196,6 +201,7 @@ main {
       font-family: 'roboto', sans-serif;
       text-transform: capitalize;
       align-self: start;
+      cursor: pointer;
     }
 
     p:last-child {

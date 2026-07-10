@@ -164,24 +164,30 @@ main {
 }
 
 #bmopen {
-  display: flex;
-  gap: 11px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
-#bmopen .bmopentxt {
+
+.bmopen {
+  display: flex;
+  gap: 11px;
+}
+.bmopen .bmopentxt {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  row-gap: 1px;
 }
-#bmopen .bmopentxt p {
+.bmopen .bmopentxt p {
   color: white;
   font-size: 12px;
   font-weight: 400;
   font-family: "roboto", sans-serif;
   text-transform: capitalize;
   align-self: start;
+  cursor: pointer;
 }
-#bmopen .bmopentxt p:last-child {
+.bmopen .bmopentxt p:last-child {
   font-size: 14px;
 }
 
