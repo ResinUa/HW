@@ -181,6 +181,29 @@ main {
   }
 }
 
+#bmopen {
+  display: flex;
+  gap: 11px;
+  cursor: pointer;
+  .bmopentxt {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    p {
+      color: white;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: 'roboto', sans-serif;
+      text-transform: capitalize;
+      align-self: start;
+    }
+
+    p:last-child {
+      font-size: 14px;
+    }
+  }
+}
+
 #bagmodal {
   z-index: 5;
   position: fixed;
