@@ -607,6 +607,7 @@ header div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  row-gap: 483px;
 }
 
 .product_card_1 {
@@ -699,6 +700,10 @@ header div {
 }
 
 /* zahar */
+.sec4 {
+  margin-top: 364px;
+}
+
 .sec4 h1 {
   text-transform: uppercase;
   color: black;
@@ -1139,7 +1144,14 @@ footer .fform button:hover {
 }
 
 @media (max-width: 320px) {
-  .sec1, .sec2, .sec3, .sec4, .sc1, .sc2, .sc3, footer {
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4,
+  .sc1,
+  .sc2,
+  .sc3,
+  footer {
     display: none;
   }
   header {
@@ -1149,7 +1161,10 @@ footer .fform button:hover {
     align-items: center;
     justify-content: center;
   }
-  header #OLEEEEG, header #OLEEEEG2, header #lmopen, header nav a {
+  header #OLEEEEG,
+  header #OLEEEEG2,
+  header #lmopen,
+  header nav a {
     display: none;
   }
   header #headerburger {
@@ -1162,10 +1177,36 @@ footer .fform button:hover {
     width: 66px;
     height: 35px;
   }
-  header #searchmodal, header #loginmodal, header #bagmodal {
+  header #searchmodal,
+  header #loginmodal,
+  header #bagmodal {
     width: 100vw;
   }
   header #searchmodal #tspmo {
     width: 100px !important;
   }
+}
+.product_card_1,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: magenta;
+  width: 100%;
+  height: 100%;
+}
+
+.scene {
+  perspective: 300px;
+}
+
+.card {
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.scene:hover .card {
+  transform: rotateY(180deg);
 }
