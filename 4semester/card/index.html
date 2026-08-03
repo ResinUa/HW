@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="scene">
+        <div class="card">
+            <div class="front">front</div>
+            <div class="back">back</div>
+        </div>
+    </div>
+    <style>
+        .scene {
+           width: 250px;
+           height: 350px;
+           perspective: 300px;
+           margin-top: 10vh;
+           margin-left: 30vw;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        .front, .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 67px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+        }
+        .front {
+            background-color: magenta;
+        }
+        .back {
+            background-image: url(https://web.telegram.org/453e466b-cd19-45ae-8f66-9c41dd6cca34);
+            transform: rotateY(180deg);
+        }
+
+        .scene:hover .card {
+            transform: rotateY(180deg);
+        }
+    </style>
+</body>
+</html>

@@ -1161,3 +1161,55 @@ footer .fform button:hover {
   border: none;
   cursor: pointer;
 }
+
+#headerburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 320px) {
+  .sec1, .sec2, .sec3, .sec4, .sc1, .sc2, .sc3, footer {
+    display: none;
+  }
+
+  header {
+    width: 320px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #OLEEEEG, #OLEEEEG2, #lmopen, nav a {
+      display: none;
+    }
+
+    #headerburger {
+      display: block;
+    }
+
+    .bmopentxt {
+      display: none !important;
+    }
+
+    #headerlogo {
+      width: 66px;
+      height: 35px;
+    }
+
+  #searchmodal, #loginmodal, #bagmodal {
+    width: 100vw;
+  }
+
+  #searchmodal {
+    #tspmo {
+      width: 100px !important; //воно не працює пішло воно я зараз серйозно просто заплачу на вулиці +38 це жах fml :((
+    }
+  }
+}
+}
+
+.product_card_1, .product_card_2, .product_card_3, .product_card_4, .product_card_5, .product_card_6, .product_card_7, .product_card_8 {
+  
+}

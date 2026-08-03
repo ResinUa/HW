@@ -1129,3 +1129,43 @@ footer .fform button:hover {
   border: none;
   cursor: pointer;
 }
+
+#headerburger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 320px) {
+  .sec1, .sec2, .sec3, .sec4, .sc1, .sc2, .sc3, footer {
+    display: none;
+  }
+  header {
+    width: 320px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header #OLEEEEG, header #OLEEEEG2, header #lmopen, header nav a {
+    display: none;
+  }
+  header #headerburger {
+    display: block;
+  }
+  header .bmopentxt {
+    display: none !important;
+  }
+  header #headerlogo {
+    width: 66px;
+    height: 35px;
+  }
+  header #searchmodal, header #loginmodal, header #bagmodal {
+    width: 100vw;
+  }
+  header #searchmodal #tspmo {
+    width: 100px !important;
+  }
+}
