@@ -1,0 +1,123 @@
+.sec1 h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 68px;
+    text-align: center;
+    vertical-align: middle;
+    color: #828282;
+    margin-top: 115px;
+    height: 50px;
+}
+
+
+.sec1 button {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: black;
+    width: 1242px;
+    height: 100px;
+    background-color: white;
+    border: none;
+    position: relative;
+    top: 193px;
+    left: 320px;
+}
+
+.sec1 div {
+    width: 100%;
+    height: 478px;
+    background-image: url(../Image/fonblog.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sc {
+    display: flex;
+    gap: 97px;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sc .scleft {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sc h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.sc p {
+    width: 818px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3F3F3F;
+    margin: 0;
+    line-height: 30px;
+
+    font-family: "roboto", sans-serif;
+}
+
+.sc .scleftc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sc .scright {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+.sc .scright .adbtns {
+    display: flex;
+    gap: 1px;
+    position: absolute;
+    right: 345px;
+    top: 7px;
+}
+
+.sc .scright .adbtns button {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.sc .scright .adbtns2 {
+    right: 364px;
+    top: 699px;
+}
+
+.sc #ad1 {
+    position: absolute;
+    top: 530px;
+    right: 417px;
+    width: 175px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sc #ad2 {
+    position: absolute;
+    top: 1235px;
+    right: 391px;
+    width: 90px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,192 @@
+.sec1 {
+    border: 1px #C4C4C4 solid;
+    width: 1454px;
+    height: 716px;
+    position: relative;
+
+    font-family: "Oswald";
+    margin-top: 300px;
+    margin-left: 250px;
+}
+
+.sec1 h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 48px;
+    top: -150px;
+    text-align: center;
+}
+
+.lera1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.lera1 button:hover {
+    background-color: #F0F2F2;
+    color: black;
+}
+
+.lera1 button {
+    width: 288px;
+    height: 44px;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    line-height: 24px;
+    border: none;
+    color: #828282;
+    background-color: white;
+    position: relative;
+    top: -20px;
+    left: 210px;
+    transition: 0.3s;
+}
+
+.lera2 {
+    position: relative;
+    top: -320px;
+    left: 610px;
+}
+
+.lera2 h2 {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    top: -30px;
+}
+
+.lera3 {
+    display: flex;
+}
+
+.lera3 h3 {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.lera3 input {
+    width: 392px;
+    height: 44px;
+    border: 1px #C4C4C4 solid;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    padding-left: 15px;
+}
+
+.lera4 input {
+    position: relative;
+    top: 30px;
+}
+
+.lera4 h5 {
+    position: relative;
+    left: 35px;
+    top: -13px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+}
+
+.lera5 {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -20px;
+}
+
+.lera5:hover {
+    color: black;
+    background: none;
+    border: 2px black solid;
+}
+
+.lera6 {
+    width: 200px;
+    height: 353px;
+    background-color: white;
+}
+
+.lera6 h4 {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    top: -50px;
+    width: 167px;
+}
+
+.lera6 h5 {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+    position: relative;
+    top: -63px;
+}
+
+
+.lera7 {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 117px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: -90px;
+    left: -6px;
+    border: none;
+    transition: 0.3s;
+}
+
+.lera7:hover{
+color: black;
+background: none;  
+border: 2px black solid; 
+}
+
+.lera8 button {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 169px;
+    height: 40px;
+    border: 2px #C4C4C4 solid;
+    color: #828282;
+    position: relative;
+    top: -200px;
+    left: 600px;
+    transition: 0.5s;
+}
+
+.lera8{
+    display: flex;
+    gap: 20px;
+}
+
+.lera8 button:hover{
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.615);
+transform: scale(1.05);
+}

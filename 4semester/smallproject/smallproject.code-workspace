@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "smallproject",
+			"path": "."
+		},
+		{
+			"name": "Image",
+			"path": "../../../../../../../Downloads/crisp/crisp/Image"
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../../../../../Downloads/crisp/crisp/node_modules"
+		},
+		{
+			"name": "css",
+			"path": "../../../../../../../Downloads/crisp/crisp/css"
+		},
+		{
+			"name": "js",
+			"path": "../../../../../../../Downloads/crisp/crisp/js"
+		}
+	],
+	"settings": {}
+}

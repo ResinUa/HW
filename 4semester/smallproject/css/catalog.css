@@ -1,0 +1,530 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  min-height: 260px;
+  margin-top: 115px;
+}
+.hero-text {
+  flex: 1;
+  padding: 60px 80px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  color: #111;
+  border-left: 3px solid #111;
+  border-top: 3px solid #111;
+  padding: 12px 0 12px 16px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  font-size: 15px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 420px;
+  margin-bottom: 28px;
+}
+
+.shop-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #111;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
+}
+
+.shop-btn:hover {
+  background-color: #111;
+  color: white;
+}
+
+.hero-img {
+  flex: 1;
+  height: 100%;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sc {
+  display: flex;
+  gap: 97px;
+  justify-content: center;
+  position: relative;
+}
+
+.sc .scleft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sc h2 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "oswald", sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.sc p {
+  width: 818px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #828282;
+  margin: 0;
+}
+
+.sc .scleftc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sc .scright {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.sc .scright .adbtns {
+  display: flex;
+  gap: 1px;
+  position: absolute;
+  right: 345px;
+  top: 7px;
+}
+
+.sc .scright .adbtns button {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.sc .scright .adbtns2 {
+  right: 364px;
+  top: 699px;
+}
+
+.sc #ad1 {
+  position: absolute;
+  top: 530px;
+  right: 417px;
+  width: 175px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sc #ad2 {
+  position: absolute;
+  top: 1235px;
+  right: 391px;
+  width: 90px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.breadcrumb {
+  max-width: 1878px;
+  margin: 0 auto;
+  padding: 24px 21px 18px;
+  font-size: 13px;
+  color: #828282;
+  text-transform: uppercase;
+}
+
+.breadcrumb a {
+  color: #828282;
+}
+
+.breadcrumb a:hover {
+  color: #111;
+}
+
+.breadcrumb span {
+  color: #111;
+}
+
+
+.shop-layout {
+  max-width: 1878px;
+  margin: 0 auto;
+  padding: 0 21px 60px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.filter-block {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 24px 0;
+}
+
+.filter-block:first-child {
+  padding-top: 0;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-title h3 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.filter-title .toggle {
+  font-size: 18px;
+  color: #828282;
+  line-height: 1;
+}
+
+.filter-title.collapsed h3 {
+  color: #111;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.filter-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  cursor: pointer;
+}
+
+.filter-list input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #111;
+  cursor: pointer;
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.size-grid button {
+  padding: 9px 0;
+  font-size: 11px;
+  font-family: "Oswald", sans-serif;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #4f4f4f;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.size-grid button:hover {
+  border-color: #111;
+}
+
+.size-grid button.active {
+  border: 2px solid #111;
+  color: #111;
+  font-weight: 600;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.color-grid .swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.color-grid .swatch.active {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+.price-range {
+  margin-top: 20px;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #4f4f4f;
+  margin-bottom: 12px;
+}
+
+.price-range input[type="range"] {
+  width: 100%;
+  accent-color: #111;
+  cursor: pointer;
+}
+
+.apply-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  background: #111;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.apply-btn:hover {
+  background: #333;
+}
+
+.about-dresses {
+  padding-top: 24px;
+}
+
+.about-dresses h3 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.about-dresses p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #828282;
+}
+
+
+.swatch-navy { background-color: #2d3561; }
+.swatch-green { background-color: #1f4c3f; }
+.swatch-gray { background-color: #bdbdbd; }
+.swatch-lightblue { background-color: #a9c6d8; }
+.swatch-pink { background-color: #e8b4bc; }
+.swatch-red { background-color: #d64545; }
+.swatch-gold { background-color: #c9a24b; }
+.swatch-cream { background-color: #ece6da; }
+.swatch-mauve { background-color: #8d7b8c; }
+.swatch-black { background-color: #111; }
+.swatch-white { background-color: #fff; border: 1px solid #e0e0e0; }
+.swatch-purple { background-color: #6b5b8c; }
+.swatch-brown { background-color: #6f4e37; }
+.swatch-maroon { background-color: #7a1f2b; }
+.swatch-teal { background-color: #2f8f8f; }
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.content-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.content-toolbar select {
+  padding: 10px 16px;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  color: #4f4f4f;
+  border: 1px solid #e0e0e0;
+  background: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 24px;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #f0f2f5;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-cat {
+  font-size: 11px;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.product-title {
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.product-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.product-colors {
+  display: flex;
+  gap: 6px;
+}
+
+.product-colors .swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.promo-banner {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  min-height: 220px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.promo-text {
+  flex: 1;
+  padding: 40px 60px;
+}
+
+.promo-text h2 {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  color: white;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  padding: 10px 0 10px 14px;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.promo-text p {
+  font-size: 14px;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 380px;
+  margin-bottom: 22px;
+}
+
+.shop-btn-light {
+  border-color: white;
+  color: white;
+}
+
+.shop-btn-light:hover {
+  background-color: white;
+  color: #111;
+}
+
+.promo-img {
+  flex: 1;
+  height: 220px;
+}
+
+.promo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.features-bar {
+  background-color: #e8f0f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 22px 20px;
+}
+
+.features-bar .feature {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+}
+
+.features-bar .check {
+  color: #2f8f5f;
+  font-weight: 700;
+}
