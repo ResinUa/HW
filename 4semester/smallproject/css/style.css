@@ -1,7 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @media (max-width: 320px) {
-  .sec3, footer, .angle_img, .accordion-item, .size_grid, header {
+  .sec3,
+  footer,
+  .angle_img,
+  .accordion-item,
+  .size_grid,
+  header {
     display: none !important;
   }
   .section1_container {
@@ -57,7 +62,9 @@
     top: 330px;
     left: 130px;
   }
-  .adaptive_square_thing #ast1, .adaptive_square_thing #ast3, .adaptive_square_thing #ast4 {
+  .adaptive_square_thing #ast1,
+  .adaptive_square_thing #ast3,
+  .adaptive_square_thing #ast4 {
     height: 11px;
     width: 11px;
     border: 1px solid #828282;
