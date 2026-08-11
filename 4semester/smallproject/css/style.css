@@ -472,7 +472,7 @@ header div {
   align-items: center;
 }
 
-.ah {
+#ah {
   width: 54px;
   border-bottom: 3px solid #eb5757;
   text-align: center;
@@ -1420,4 +1420,71 @@ footer .fform button:hover {
 
 .sc_adaptive {
   display: none;
+}
+
+#homemodal {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  opacity: 0;
+  top: -423px;
+  left: 75px;
+  height: 308px;
+  width: 1195px;
+  background-color: white;
+  box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.2509803922);
+}
+#homemodal .hmc {
+  display: flex;
+  position: relative;
+  left: 42px;
+  top: 38px;
+  gap: 100px;
+}
+#homemodal .hmcc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#homemodal .hmcc h2 {
+  width: 187px;
+  height: 29px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  border-bottom: #000000 3px solid;
+  margin-bottom: 12px;
+}
+#homemodal .hmcc p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "roboto", sans-serif;
+  text-transform: capitalize;
+  color: #3F3F3F;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#homemodal .hmcc p:hover {
+  color: black;
+}
+#homemodal img {
+  position: absolute;
+  right: 0;
+}
+
+@keyframes hmappear {
+  from {
+    opacity: 0;
+    top: -423px;
+  }
+  to {
+    opacity: 1;
+    top: 115px;
+  }
+}
+#homemodal:hover {
+  top: 115px;
+  opacity: 0;
 }

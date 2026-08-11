@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="pthing">1000</p>
+    <p id="clock"></p>
+    <p id="timer">0</p>
+    <button id="start">sta</button><button id="stop">sto</button>
+    <script>
+      const pthing = document.getElementById("pthing");
+      const clock = document.getElementById('clock');
+      const timer = document.getElementById('timer');
+      const sta = document.getElementById('start');
+      const sto = document.getElementById('stop');
+      let thing = pthing.innerHTML;
+      let thing2 = timer.innerHTML;
+
+      //setTimeout(()=>{
+      //console.log("hello");
+      //}, 5000);
+      // setTimeout(функція, мілісекунди (1000мл = 1с));
+
+      //   setInterval(()=>{
+      //     thing++;
+      //     pthing.textContent = thing;
+      //   }, 1000);
+
+      //   const gay = setInterval(()=>{
+      //     thing--;
+      //     pthing.textContent = thing;
+      //     if (thing <= 0) {
+      //         clearInterval(gay);
+      //     }
+      //   }, 1000);
+
+      setInterval(() => {
+        const netanyahu = new Date();
+        clock.innerHTML = netanyahu.toLocaleTimeString();
+      }, 1000);
+
+      let bibinetanyahu;
+
+      sta.addEventListener('click', () => {
+        bibinetanyahu = setInterval(()=>{
+           thing2++;
+           timer.textContent = thing2;
+         }, 1000);
+      });
+
+      sto.addEventListener('click', () => {
+        clearInterval(bibinetanyahu);
+      });
+    </script>
+  </body>
+</html>
