@@ -61,3 +61,29 @@ const hm = document.getElementById("homemodal");
 ah.addEventListener("mouseover", () => {
   hm.style.animation = "hmappear 0.25s forwards";
 });
+
+const hlpmbtn = document.getElementById('hlpmbtn');
+const helpmemodal = document.getElementById('helpmemodal');
+const modal2 = document.getElementById('modal2');
+const closebtn2 = document.getElementById('closebtn2');
+
+let helpmemodaltoggle = false;
+
+hlpmbtn.addEventListener('click', () => {
+  if (helpmemodaltoggle == false) {
+    helpmemodal.style.display = 'block';
+    modal2.style.display = 'block';
+    helpmemodaltoggle = true;
+  } else {
+    helpmemodal.style.display = 'none';
+    modal2.style.display = 'none';
+    helpmemodaltoggle = false;
+  }
+});
+
+closebtn2.addEventListener('click', () => {
+  helpmemodal.style.display = 'none';
+    modal2.style.display = 'none';
+    helpmemodaltoggle = false;
+});
+

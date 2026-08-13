@@ -1488,3 +1488,127 @@ footer .fform button:hover {
   top: 115px;
   opacity: 0;
 }
+
+.hlpm_external {
+  position: fixed;
+  z-index: 9999;
+  bottom: 50px;
+  right: 50px;
+}
+.hlpm_external #hlpmbtn {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 1000px;
+  border: 2px solid white;
+}
+.hlpm_external #wsphm {
+  width: 100px;
+  height: 100px;
+  border-radius: 1000px;
+}
+.hlpm_external p {
+  position: absolute;
+  top: -45px;
+  left: -150px;
+  height: 30px;
+  width: 260px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 1000px;
+  text-align: center;
+}
+.hlpm_external #helpmemodal {
+  position: absolute;
+  top: -500px;
+  left: -600px;
+  background-color: white;
+  width: 310px;
+  height: 310px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: none;
+}
+.hlpm_external #helpmemodal form {
+  display: grid;
+  row-gap: 20px;
+}
+.hlpm_external #helpmemodal input {
+  height: 30px;
+}
+.hlpm_external #helpmemodal button {
+  height: 30px;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#modal2 {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  top: 25%;
+  left: 37%;
+  width: 350px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 50px;
+  padding: 10px;
+  background-image: url(Image/pih.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#modal2 .chat-header {
+  display: flex;
+  gap: 170px;
+  margin-bottom: 20px;
+}
+#modal2 .chat-header h1 {
+  font-family: "oswald", sans-serif;
+  color: white;
+}
+#modal2 .chat-header button {
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#modal2 .chat-form {
+  position: absolute;
+  left: 5px;
+  top: 410px;
+  background-color: #828282;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 50px;
+}
+#modal2 .chat-form button {
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  width: 30px;
+  height: 20px;
+  color: white;
+}
+#modal2 .bot-message {
+  background-color: #828282;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+}
+#modal2 img {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+  width: 350px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 50px;
+}
