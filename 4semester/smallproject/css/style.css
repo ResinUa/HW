@@ -1612,3 +1612,87 @@ footer .fform button:hover {
   border: 5px solid black;
   border-radius: 50px;
 }
+
+@media (max-width: 320px) {
+  .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sc2, .sc3, footer {
+    display: none !important;
+  }
+  header {
+    display: flex !important;
+  }
+  header .bob a:nth-child(2) {
+    display: none;
+  }
+  header #adaptiveburger {
+    display: block;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+  #adaptivemenu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 289px;
+    background-color: #000000;
+    position: fixed;
+    top: 115px;
+    row-gap: 23px;
+  }
+  #adaptivemenu input {
+    width: 212px;
+    height: 40px;
+    padding-left: 14px;
+    color: #828282;
+    font-size: 12px;
+    font-family: "roboto", sans-serif;
+    border: none;
+    border-radius: 0;
+  }
+  #adaptivemenu input::placeholder {
+    color: #828282;
+    font-size: 12px;
+    font-family: "roboto", sans-serif;
+  }
+  #adaptivemenu button {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #C4C4C4;
+    background-color: #F0F2F2;
+    color: #828282;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  #adaptivemenu .amfinder {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #adaptivemenu #amthing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #adaptivemenu #amthing p {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    width: 70px;
+    text-align: center;
+  }
+  #adaptivemenu #amthing img {
+    position: absolute;
+    right: 21px;
+  }
+}
+#adaptiveburger {
+  display: none;
+}
+
+#adaptivemenu {
+  display: none;
+}

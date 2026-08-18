@@ -1,579 +1,683 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crisp - Магазин потужного одягу</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="image/logo.png" type="image/png" />
+    <script src="js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crisp - Магазин потужного одягу</title>
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="icon" href="image/logo.png" type="image/png">
-  <script src="js/script.js" defer></script>
-</head>
+  <body id="bod">
+    <!-- ========== oleg ========== -->
+    <header>
+      <button id="adaptiveburger">☰</button>
+      <a href="#bod"><img id="logo" src="Image/Group 4.svg" alt="lerka" /></a>
 
-<body id="bod">
+      <nav>
+        <a id="ah" href="index.html">HOME</a>
+        <a href="catalog.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="#">SALE</a>
+        <a href="#">CONTACT US</a>
+        <a href="#" id="smopen"
+          ><img src="Image/Group 3.svg" alt="lerka" /> <span>search</span></a
+        >
+      </nav>
 
-  <!-- ========== oleg ========== -->
-  <header>
-    <a href="#bod"><img id="logo" src="Image/Group 4.svg" alt="lerka" /></a>
-
-    <nav>
-      <a id="ah" href="index.html">HOME</a>
-      <a href="catalog.html">SHOP</a>
-      <a href="blog.html">BLOG</a>
-      <a href="#">SALE</a>
-      <a href="#">CONTACT US</a>
-      <a href="#" id="smopen"><img src="Image/Group 3.svg" alt="lerka" /> <span>search</span></a>
-    </nav>
-
-    <div class="bob">
-      <a href="#" id="lmopen">SIGN IN</a>
-      <a href="#">CREATE AN ACCOUNT</a>
-      <a href="dashboard.html" class="heard"><img src="Image/Vector.svg" alt="lera" /></a>
-      <button id="bmopen">
-        <div class="bmopen">
-          <img src="Image/baggg.svg" alt="bag">
-          <div class="bmopentxt">
-            <p>shopping cart</p>
-            <p>0.00 EUR</p>
+      <div class="bob">
+        <a href="#" id="lmopen">SIGN IN</a>
+        <a href="#">CREATE AN ACCOUNT</a>
+        <a href="dashboard.html" class="heard"
+          ><img src="Image/Vector.svg" alt="lera"
+        /></a>
+        <button id="bmopen">
+          <div class="bmopen">
+            <img src="Image/baggg.svg" alt="bag" />
+            <div class="bmopentxt">
+              <p>shopping cart</p>
+              <p>0.00 EUR</p>
+            </div>
           </div>
-        </div>
-      </button>
-    </div>
-  </header>
-  <!-- ========== yarik modal&header ========== -->
-  <div id="searchmodal">
-    <div class="smthing">
-      <img src="Image/sea.svg" alt="magi" />
-      <input type="text" placeholder="Search" />
-    </div>
-    <button id="smclose"><img src="Image/Frame 3.svg" alt="cross" /></button>
-  </div>
-  <div id="loginmodal">
-    <div class="fon"></div>
-    <button id="lmclose"><img src="Image/Frame 3.svg" alt="cross" /></button>
-    <form action="">
-      <h2>login your account</h2>
-      <input type="email" placeholder="Email" id="lmemail" required />
-      <input type="password" placeholder="Password" id="lmpassword" required />
-      <div class="lmformthing">
-        <input type="checkbox" id="lmformcheck" required />
-        <p>
-          By using this form you agree with the storage and handling of your
-          data by this website.
-        </p>
-      </div>
-      <div class="lmbtn">
-        <button>sign in</button>
-        <button>create an account</button>
-      </div>
-    </form>
-
-  </div>
-  <div id="bagmodal">
-    <button id="bmclose"><img src="Image/Frame 3.svg" alt="cross"></button>
-    <div id="bmbought"></div>
-    <div class="bmmenu">
-      <hr>
-      <div class="bmmcount">
-        <p>cart subtotal:</p>
-        <p>0.00 EUR</p>
-      </div>
-      <div class="bmmbtn">
-        <button>view and edit cart</button>
-        <button>go to checkout</button>
-      </div>
-    </div>
-  </div>
-  <div id="homemodal">
-    <img src="Image/hmbg.svg" alt="home modal background">
-    <div class="hmc">
-      <div class="hmcc">
-        <h2>menu category list</h2>
-        <p>product page with sidebar</p>
-        <p>product page without sidebar</p>
-        <p>horizontal thumbnails</p>
-        <p>vertical thumbnails</p>
-        <p>addtocart sticky</p>
-        <p>vertical tabs</p>
-      </div>
-      <div class="hmcc">
-        <h2>menu category list</h2>
-        <p>product page with sidebar</p>
-        <p>product page without sidebar</p>
-        <p>horizontal thumbnails</p>
-        <p>vertical thumbnails</p>
-        <p>addtocart sticky</p>
-        <p>vertical tabs</p>
-      </div>
-      <div class="hmcc">
-        <h2>menu category list</h2>
-        <p>product page with sidebar</p>
-        <p>product page without sidebar</p>
-        <p>horizontal thumbnails</p>
-        <p>vertical thumbnails</p>
-        <p>addtocart sticky</p>
-        <p>vertical tabs</p>
-      </div>
-    </div>
-  </div>
-  <div class="hlpm_external">
-    <p>wont someone please help me?</p>
-    <button id="hlpmbtn"><img src="Image/wsphm.png" alt="quicksand" id="wsphm"></button>
-    <div id="helpmemodal">
-      <form action="https://formspree.io/f/mvkpqpby" method="post">
-        <input type="text" placeholder="your full name" name="name">
-        <input type="text" placeholder="your phone" name="phone">
-        <input type="email" placeholder="your email" name="email">
-        <input type="text" placeholder="what happened" name="what">
-        <button id="hlpmformbtn" type="submit">send</button>
-      </form>
-  </div>
-</div>
-
-<div class="sasha-chocolate" id="modal2">
-    <div class="chat-header">
-      <h1>Chat Bob</h1>
-      <button id="closebtn2">⤬</button>
-    </div>
-    <img src="Image/pih.png" alt="pih">
-    <div class="chat-messages">
-      <div class="bot-message">
-        Привіт! 👋<br>
-        Чим можу вам допомогти?
-      </div>
-    </div>
-
-
-    <div class="chat-form">
-      <input type="text" id="chatName" placeholder="Your name">
-      <textarea id="chatMessage" placeholder="Write a message..."></textarea>
-      <button id="sendMessage">
-        ＞
-      </button>
-    </div>
-  </div>
-
-  <main>
-    <section class="sec1">
-      <div class="div1" style="position: relative; left: 140px;">
-        <h1>SUMMER SALE GEt <span>30% OFF</span> On all dress.</h1>
-        <button>shop now</button>
-      </div>
-
-      <div style="position: relative; left: 100px;">
-        <img src="/Image/image 2.svg" alt="" />
-        <img style="margin-left: -100px; position: relative; top: 40px" src="/Image/image 3.svg" alt="" />
-      </div>
-
-      <div class="tatodiv">
-        <div></div>
-        <div class="active"></div>
-        <div></div>
-        <div></div>
-      </div>
-
-      <div class="tatodiv2">
-        <button><img src="Image/Group 10 (1).svg" alt="" /></button>
-        <button>
-          <img src="Image/Group 10.1.svg" alt="" />
         </button>
       </div>
-    </section>
-
-    <section class="sec2">
-      <h1>chose your brand</h1>
-      <div>
-        <img title="CHANEL — French luxury fashion house famous for timeless elegance and iconic handbags."
-          src="Image/Frame.svg" alt="" />
-        <img title="BURBERRY — British luxury brand known for its signature check pattern and classic trench coats."
-          src="Image/Frame (1).svg" alt="" />
-        <img title="DIOR — French fashion house celebrated for haute couture, elegance, and luxury accessories."
-          src="Image/Frame (2).svg" alt="" />
-        <img title="FENDI — Italian luxury brand renowned for premium leather goods and exquisite craftsmanship."
-          src="Image/Frame (3).svg" alt="" />
-        <img title="VERSACE — Italian fashion house recognized for bold designs, glamour, and the iconic Medusa logo"
-          src="Image/Frame (4).svg" alt="" />
-        <img title="GUCCI — Italian luxury brand blending timeless craftsmanship with contemporary fashion."
-          src="Image/Frame (5).svg" alt="" />
-        <img
-          title="ARMANI — Italian fashion house famous for refined tailoring, minimalist elegance, and premium quality."
-          src="Image/Frame (6).svg" alt="" />
+    </header>
+    <!-- ========== yarik modal&header ========== -->
+    <div id="adaptivemenu">
+      <div class="amfinder">
+        <input type="text" placeholder="Type something..."/>
+        <button>find</button>
       </div>
-    </section>
-
-    <!-- ========== ivan ========== -->
-    <section class="sec3">
-      <div class="banners_grid_1">
-        <div class="banner_1">
-          <img src="/Image/image 3.-1svg.svg" class="banner_image_1" alt="Choose your look" />
-          <div class="banner_text_1">
-            <h2 class="banner_title_1">CHOOSE<br />YOUR LOOK</h2>
-            <p class="p_1">See our clothing collections</p>
-            <button class="btn_outline_1">SEE OFFERS</button>
-          </div>
+      <div id="amthing">
+        <p>trending</p>
+        <img src="Image/strila1.svg" alt="arrow" />
+      </div>
+      <div id="amthing">
+        <p>catalog</p>
+        <img src="Image/strila1.svg" alt="arrow" />
+      </div>
+      <div id="amthing">
+        <p>new</p>
+        <img src="Image/strila1.svg" alt="arrow" />
+      </div>
+      <div id="amthing">
+        <p>sale</p>
+        <img src="Image/strila1.svg" alt="arrow" />
+      </div>
+      <div id="amthing">
+        <p>brands</p>
+        <img src="Image/strila1.svg" alt="arrow" />
+      </div>
+    </div>
+    <div id="searchmodal">
+      <div class="smthing">
+        <img src="Image/sea.svg" alt="magi" />
+        <input type="text" placeholder="Search" />
+      </div>
+      <button id="smclose"><img src="Image/Frame 3.svg" alt="cross" /></button>
+    </div>
+    <div id="loginmodal">
+      <div class="fon"></div>
+      <button id="lmclose"><img src="Image/Frame 3.svg" alt="cross" /></button>
+      <form action="">
+        <h2>login your account</h2>
+        <input type="email" placeholder="Email" id="lmemail" required />
+        <input
+          type="password"
+          placeholder="Password"
+          id="lmpassword"
+          required
+        />
+        <div class="lmformthing">
+          <input type="checkbox" id="lmformcheck" required />
+          <p>
+            By using this form you agree with the storage and handling of your
+            data by this website.
+          </p>
         </div>
-
-        <div class="banner_dark_1">
-          <img src="Image/image 5.svg" class="banner_image_dark_1" alt="Up to 40% off" />
-          <div class="banner_text_dark_1">
-            <h2 class="banner_title_big_1">UP TO<br />40% OFF</h2>
-            <p class="p_2">Special offers and great deals</p>
-            <button class="btn_dark_1">SHOP NOW</button>
-          </div>
+        <div class="lmbtn">
+          <button>sign in</button>
+          <button>create an account</button>
         </div>
-
-        <div class="banner_pink_1">
-          <div class="banner_text_12">
-            <h2 class="banner_title_1">BRAND NEW STYLE</h2>
-            <p class="p_1">Popular clothing brands</p>
-            <button class="btn_outline_1">SEE OFFERS</button>
-          </div>
-          <img src="Image/image 4.svg" class="banner_image_2" style="width: 540px;" alt="Brand new style" />
+      </form>
+    </div>
+    <div id="bagmodal">
+      <button id="bmclose"><img src="Image/Frame 3.svg" alt="cross" /></button>
+      <div id="bmbought"></div>
+      <div class="bmmenu">
+        <hr />
+        <div class="bmmcount">
+          <p>cart subtotal:</p>
+          <p>0.00 EUR</p>
+        </div>
+        <div class="bmmbtn">
+          <button>view and edit cart</button>
+          <button>go to checkout</button>
         </div>
       </div>
-    </section>
+    </div>
+    <div id="homemodal">
+      <img src="Image/hmbg.svg" alt="home modal background" />
+      <div class="hmc">
+        <div class="hmcc">
+          <h2>menu category list</h2>
+          <p>product page with sidebar</p>
+          <p>product page without sidebar</p>
+          <p>horizontal thumbnails</p>
+          <p>vertical thumbnails</p>
+          <p>addtocart sticky</p>
+          <p>vertical tabs</p>
+        </div>
+        <div class="hmcc">
+          <h2>menu category list</h2>
+          <p>product page with sidebar</p>
+          <p>product page without sidebar</p>
+          <p>horizontal thumbnails</p>
+          <p>vertical thumbnails</p>
+          <p>addtocart sticky</p>
+          <p>vertical tabs</p>
+        </div>
+        <div class="hmcc">
+          <h2>menu category list</h2>
+          <p>product page with sidebar</p>
+          <p>product page without sidebar</p>
+          <p>horizontal thumbnails</p>
+          <p>vertical thumbnails</p>
+          <p>addtocart sticky</p>
+          <p>vertical tabs</p>
+        </div>
+      </div>
+    </div>
+    <div class="hlpm_external">
+      <p>wont someone please help me?</p>
+      <button id="hlpmbtn">
+        <img src="Image/wsphm.png" alt="quicksand" id="wsphm" />
+      </button>
+      <div id="helpmemodal">
+        <form action="https://formspree.io/f/mvkpqpby" method="post">
+          <input type="text" placeholder="your full name" name="name" />
+          <input type="text" placeholder="your phone" name="phone" />
+          <input type="email" placeholder="your email" name="email" />
+          <input type="text" placeholder="what happened" name="what" />
+          <button id="hlpmformbtn" type="submit">send</button>
+        </form>
+      </div>
+    </div>
 
-    <!-- ========== egor&fidan ========== -->
-    <section class="sec4">
-      <div class="shop_layout_1">
-        <aside class="sidebar_1">
-          <h3 class="sidebar_title_1">Shop Some Wear:</h3>
+    <div class="sasha-chocolate" id="modal2">
+      <div class="chat-header">
+        <h1>Chat Bob</h1>
+        <button id="closebtn2">⤬</button>
+      </div>
+      <img src="Image/pih.png" alt="pih" />
+      <div class="chat-messages">
+        <div class="bot-message">
+          Привіт! 👋<br />
+          Чим можу вам допомогти?
+        </div>
+      </div>
 
-          <ul class="filter_list_1">
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox">
-                <span>BEST SELLERS</span>
-              </label>
-            </li>
+      <div class="chat-form">
+        <input type="text" id="chatName" placeholder="Your name" />
+        <textarea id="chatMessage" placeholder="Write a message..."></textarea>
+        <button id="sendMessage">＞</button>
+      </div>
+    </div>
 
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox">
-                <span>NEW ARRIVALS</span>
-              </label>
-            </li>
+    <main>
+      <section class="sec1">
+        <div class="div1" style="position: relative; left: 140px">
+          <h1>SUMMER SALE GEt <span>30% OFF</span> On all dress.</h1>
+          <button>shop now</button>
+        </div>
 
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox" checked>
-                <span>TOP WOMEN</span>
-              </label>
-            </li>
+        <div style="position: relative; left: 100px">
+          <img src="/Image/image 2.svg" alt="" />
+          <img
+            style="margin-left: -100px; position: relative; top: 40px"
+            src="/Image/image 3.svg"
+            alt=""
+          />
+        </div>
 
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox">
-                <span>COLLECTION: SUMMER</span>
-              </label>
-            </li>
+        <div class="tatodiv">
+          <div></div>
+          <div class="active"></div>
+          <div></div>
+          <div></div>
+        </div>
 
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox">
-                <span>COLLECTION: SPRING</span>
-              </label>
-            </li>
+        <div class="tatodiv2">
+          <button><img src="Image/Group 10 (1).svg" alt="" /></button>
+          <button>
+            <img src="Image/Group 10.1.svg" alt="" />
+          </button>
+        </div>
+      </section>
 
-            <li>
-              <label class="filter_item_1">
-                <input type="checkbox">
-                <span>TRENDING</span>
-              </label>
-            </li>
-          </ul>
-        </aside>
+      <section class="sec2">
+        <h1>chose your brand</h1>
+        <div>
+          <img
+            title="CHANEL — French luxury fashion house famous for timeless elegance and iconic handbags."
+            src="Image/Frame.svg"
+            alt=""
+          />
+          <img
+            title="BURBERRY — British luxury brand known for its signature check pattern and classic trench coats."
+            src="Image/Frame (1).svg"
+            alt=""
+          />
+          <img
+            title="DIOR — French fashion house celebrated for haute couture, elegance, and luxury accessories."
+            src="Image/Frame (2).svg"
+            alt=""
+          />
+          <img
+            title="FENDI — Italian luxury brand renowned for premium leather goods and exquisite craftsmanship."
+            src="Image/Frame (3).svg"
+            alt=""
+          />
+          <img
+            title="VERSACE — Italian fashion house recognized for bold designs, glamour, and the iconic Medusa logo"
+            src="Image/Frame (4).svg"
+            alt=""
+          />
+          <img
+            title="GUCCI — Italian luxury brand blending timeless craftsmanship with contemporary fashion."
+            src="Image/Frame (5).svg"
+            alt=""
+          />
+          <img
+            title="ARMANI — Italian fashion house famous for refined tailoring, minimalist elegance, and premium quality."
+            src="Image/Frame (6).svg"
+            alt=""
+          />
+        </div>
+      </section>
 
-        <div class="products_grid_1">
-          <a href="product.html">
+      <!-- ========== ivan ========== -->
+      <section class="sec3">
+        <div class="banners_grid_1">
+          <div class="banner_1">
+            <img
+              src="/Image/image 3.-1svg.svg"
+              class="banner_image_1"
+              alt="Choose your look"
+            />
+            <div class="banner_text_1">
+              <h2 class="banner_title_1">CHOOSE<br />YOUR LOOK</h2>
+              <p class="p_1">See our clothing collections</p>
+              <button class="btn_outline_1">SEE OFFERS</button>
+            </div>
+          </div>
+
+          <div class="banner_dark_1">
+            <img
+              src="Image/image 5.svg"
+              class="banner_image_dark_1"
+              alt="Up to 40% off"
+            />
+            <div class="banner_text_dark_1">
+              <h2 class="banner_title_big_1">UP TO<br />40% OFF</h2>
+              <p class="p_2">Special offers and great deals</p>
+              <button class="btn_dark_1">SHOP NOW</button>
+            </div>
+          </div>
+
+          <div class="banner_pink_1">
+            <div class="banner_text_12">
+              <h2 class="banner_title_1">BRAND NEW STYLE</h2>
+              <p class="p_1">Popular clothing brands</p>
+              <button class="btn_outline_1">SEE OFFERS</button>
+            </div>
+            <img
+              src="Image/image 4.svg"
+              class="banner_image_2"
+              style="width: 540px"
+              alt="Brand new style"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== egor&fidan ========== -->
+      <section class="sec4">
+        <div class="shop_layout_1">
+          <aside class="sidebar_1">
+            <h3 class="sidebar_title_1">Shop Some Wear:</h3>
+
+            <ul class="filter_list_1">
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" />
+                  <span>BEST SELLERS</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" />
+                  <span>NEW ARRIVALS</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" checked />
+                  <span>TOP WOMEN</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" />
+                  <span>COLLECTION: SUMMER</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" />
+                  <span>COLLECTION: SPRING</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="filter_item_1">
+                  <input type="checkbox" />
+                  <span>TRENDING</span>
+                </label>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="products_grid_1">
+            <a href="product.html">
+              <div class="product_card_1">
+                <img src="Image/bo.svg" class="product_image_1" alt="Сукня 1" />
+                <p class="product_category_1">TOP WOMEN</p>
+                <p class="product_name_1">
+                  Angels malu zip jeans slim black used
+                </p>
+                <p class="product_price_1">139,00 EUR</p>
+              </div>
+            </a>
+
+            <a href="product.html">
+              <div class="product_card_1">
+                <img
+                  src="Image/Rectangle 7 (5).svg"
+                  class="product_image_1"
+                  alt="Сукня 2"
+                />
+                <p class="product_category_1">TOP WOMEN</p>
+                <p class="product_name_1">
+                  Angels malu zip jeans slim black used
+                </p>
+                <p class="product_price_1">235,00 EUR</p>
+              </div>
+            </a>
+
+            <a href="product.html">
+              <div class="product_card_1">
+                <img
+                  src="Image/Rectangle 7 (2).svg"
+                  class="product_image_1"
+                  alt="Сукня 3"
+                />
+                <p class="product_category_1">TOP WOMEN</p>
+                <p class="product_name_1">
+                  Angels malu zip jeans slim black used
+                </p>
+                <p class="product_price_1">90,00 EUR</p>
+              </div>
+            </a>
+
             <div class="product_card_1">
-              <img src="Image/bo.svg" class="product_image_1" alt="Сукня 1" />
+              <div class="product_image_wrap_1">
+                <img
+                  src="Image/Rectangle 7 (3).svg"
+                  class="product_image_1"
+                  alt="Сукня 4"
+                />
+                <span class="badge_sale_1">-30%</span>
+              </div>
+              <p class="product_category_1">TOP WOMEN</p>
+              <p class="product_name_1">
+                Angels malu zip jeans slim black used
+              </p>
+              <p class="product_price_sale_1">
+                139,00 EUR <span class="product_price_old_1">159,00 EUR</span>
+              </p>
+            </div>
+
+            <div class="product_card_1">
+              <img
+                src="Image/Rectangle 7. redsvg.svg"
+                class="product_image_1"
+                alt="Сукня 5"
+              />
               <p class="product_category_1">TOP WOMEN</p>
               <p class="product_name_1">
                 Angels malu zip jeans slim black used
               </p>
               <p class="product_price_1">139,00 EUR</p>
             </div>
-          </a>
 
-          <a href="product.html">
             <div class="product_card_1">
-              <img src="Image/Rectangle 7 (5).svg" class="product_image_1" alt="Сукня 2" />
+              <div class="product_image_wrap_1">
+                <img
+                  src="Image/Rectangle 7 (4).svg"
+                  class="product_image_1"
+                  alt="Сукня 6"
+                />
+                <span class="badge_sale_1">-30%</span>
+              </div>
               <p class="product_category_1">TOP WOMEN</p>
               <p class="product_name_1">
                 Angels malu zip jeans slim black used
               </p>
-              <p class="product_price_1">235,00 EUR</p>
+              <p class="product_price_sale_1">
+                139,00 EUR <span class="product_price_old_1">159,00 EUR</span>
+              </p>
             </div>
-            
-          </a>
 
-          <a href="product.html">
             <div class="product_card_1">
-              <img src="Image/Rectangle 7 (2).svg" class="product_image_1" alt="Сукня 3" />
+              <img
+                src="Image/Rectangle 7 (5).svg"
+                class="product_image_1"
+                alt="Сукня 7"
+              />
               <p class="product_category_1">TOP WOMEN</p>
               <p class="product_name_1">
                 Angels malu zip jeans slim black used
               </p>
-              <p class="product_price_1">90,00 EUR</p>
+              <p class="product_price_1">139,00 EUR</p>
             </div>
-          </a>
 
-          <div class="product_card_1">
-            <div class="product_image_wrap_1">
-              <img src="Image/Rectangle 7 (3).svg" class="product_image_1" alt="Сукня 4" />
-              <span class="badge_sale_1">-30%</span>
+            <div class="product_card_1">
+              <img
+                src="Image/Rectangle 7 (6).svg"
+                class="product_image_1"
+                alt="Сукня 8"
+              />
+              <p class="product_category_1">TOP WOMEN</p>
+              <p class="product_name_1">
+                Angels malu zip jeans slim black used
+              </p>
+              <p class="product_price_1">139,00 EUR</p>
             </div>
-            <p class="product_category_1">TOP WOMEN</p>
-            <p class="product_name_1">
-              Angels malu zip jeans slim black used
-            </p>
-            <p class="product_price_sale_1">
-              139,00 EUR <span class="product_price_old_1">159,00 EUR</span>
-            </p>
           </div>
+        </div>
 
-          <div class="product_card_1">
-            <img src="Image/Rectangle 7. redsvg.svg" class="product_image_1" alt="Сукня 5" />
-            <p class="product_category_1">TOP WOMEN</p>
-            <p class="product_name_1">
-              Angels malu zip jeans slim black used
+        <div class="load_more_wrap_1">
+          <button class="btn_load_more_1">LOAD MORE</button>
+        </div>
+      </section>
+
+      <!-- ========== zahar ========== -->
+      <section class="sec5">
+        <div class="banner">
+          <div class="content">
+            <h1>SHOPPING WITHOUT LIMITS.</h1>
+            <p>
+              You can choose the best option for you, and it does not matter
+              whether you are in Prague or San Francisco. We will deliver your
+              purchase anywhere!
             </p>
-            <p class="product_price_1">139,00 EUR</p>
+            <button>SHOP NOW</button>
           </div>
+        </div>
+      </section>
 
-          <div class="product_card_1">
-            <div class="product_image_wrap_1">
-              <img src="Image/Rectangle 7 (4).svg" class="product_image_1" alt="Сукня 6" />
-              <span class="badge_sale_1">-30%</span>
+      <!-- ========== yarik ========== -->
+      <section id="sec6" class="sc1">
+        <div class="sc1c">
+          <img src="Image/cgirl.png" alt="woman" />
+          <div class="sc1cr">
+            <h2>explore the best of you.</h2>
+            <p>
+              You can choose the best option for you, and it does not matter
+              whether you are in Prague or San Francisco.
+            </p>
+            <button>shop now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc2">
+        <h2>blog</h2>
+        <div class="sc2c">
+          <div class="sc2thing">
+            <h2>article</h2>
+            <h2>exactly what to wear to every type of wedding this summer</h2>
+            <p>
+              A large part of the business here is building up the "experience".
+              Double-page spreads in magazines. Ads on TV. Product placement and
+              sponsorship in golf tournaments.
+            </p>
+            <div class="sc2phr">
+              <hr />
+              <p>21 January 2018 by guido</p>
             </div>
-            <p class="product_category_1">TOP WOMEN</p>
-            <p class="product_name_1">
-              Angels malu zip jeans slim black used
+          </div>
+          <div class="sc2thing">
+            <h2>tips</h2>
+            <h2>exactly what to wear to every type of wedding this summer</h2>
+            <p>
+              When selling 70% fewer shirts, however, there are fewer shirts on
+              the market, making it more exclusive, and therefore worth the
+              money, for those to whom it matters.
             </p>
-            <p class="product_price_sale_1">
-              139,00 EUR <span class="product_price_old_1">159,00 EUR</span>
+            <div class="sc2phr">
+              <hr />
+              <p>21 January 2018 by guido</p>
+            </div>
+          </div>
+          <div class="sc2thing">
+            <h2>tips</h2>
+            <h2>exactly what to wear to every type of wedding this summer</h2>
+            <p>
+              A large part of the business here is building up the "experience".
+              Double-page spreads in magazines. Ads on TV. Product placement and
+              sponsorship in golf tournaments.
             </p>
+            <div class="sc2phr">
+              <hr />
+              <p>21 January 2018 by guido</p>
+            </div>
           </div>
-
-          <div class="product_card_1">
-            <img src="Image/Rectangle 7 (5).svg" class="product_image_1" alt="Сукня 7" />
-            <p class="product_category_1">TOP WOMEN</p>
-            <p class="product_name_1">
-              Angels malu zip jeans slim black used
+          <div class="sc2thing">
+            <h2>article</h2>
+            <h2>exactly what to wear to every type of wedding this summer</h2>
+            <p>
+              When selling 70% fewer shirts, however, there are fewer shirts on
+              the market, making it more exclusive, and therefore worth the
+              money, for those to whom it matters.
             </p>
-            <p class="product_price_1">139,00 EUR</p>
+            <div class="sc2phr">
+              <hr />
+              <p>21 January 2018 by guido</p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="product_card_1">
-            <img src="Image/Rectangle 7 (6).svg" class="product_image_1" alt="Сукня 8" />
-            <p class="product_category_1">TOP WOMEN</p>
-            <p class="product_name_1">
-              Angels malu zip jeans slim black used
-            </p>
-            <p class="product_price_1">139,00 EUR</p>
-          </div>
+      <section class="sc3">
+        <div class="sc3thing">
+          <img src="Image/checkmark.svg" alt="checkmark" />
+          <p>Duties and Taxes Guaranteed</p>
+        </div>
+        <div class="sc3thing">
+          <img src="Image/checkmark.svg" alt="checkmark" />
+          <p>Free Express Shipping</p>
+        </div>
+        <div class="sc3thing">
+          <img src="Image/checkmark.svg" alt="checkmark" />
+          <p>Customer Love</p>
+        </div>
+        <div class="sc3thing">
+          <img src="Image/checkmark.svg" alt="checkmark" />
+          <p>Easy Returns</p>
+        </div>
+        <div class="sc3thing">
+          <img src="Image/checkmark.svg" alt="checkmark" />
+          <p>Secure Payment</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#bod"><img src="Image/logo.svg" alt="logo" /></a>
+      <div class="fthing">
+        <h2>features</h2>
+        <div class="fthingig">
+          <a href="#">men</a>
+          <a href="#">women</a>
+          <a href="#">boys</a>
+          <a href="#">girls</a>
+          <a href="#">new arrivals</a>
+          <a href="#">shoes</a>
+          <a href="#">clothes</a>
+          <a href="#">accessories</a>
         </div>
       </div>
-
-      <div class="load_more_wrap_1">
-        <button class="btn_load_more_1">LOAD MORE</button>
-      </div>
-    </section>
-
-    <!-- ========== zahar ========== -->
-    <section class="sec5">
-      <div class="banner">
-        <div class="content">
-          <h1>SHOPPING WITHOUT LIMITS.</h1>
-          <p>
-            You can choose the best option for you, and it does not matter
-            whether you are in Prague or San Francisco. We will deliver your
-            purchase anywhere!
-          </p>
-          <button>SHOP NOW</button>
+      <div class="fthing">
+        <h2>menu</h2>
+        <div class="fthingig">
+          <a href="#">about us</a>
+          <a href="#">contact us</a>
+          <a href="#">my account</a>
+          <a href="#">orders history</a>
+          <a href="#">my wishlist</a>
+          <a href="#">blog</a>
+          <a href="#">login</a>
         </div>
       </div>
-    </section>
-
-    <!-- ========== yarik ========== -->
-    <section id="sec6" class="sc1">
-      <div class="sc1c">
-        <img src="Image/cgirl.png" alt="woman" />
-        <div class="sc1cr">
-          <h2>explore the best of you.</h2>
-          <p>
-            You can choose the best option for you, and it does not matter
-            whether you are in Prague or San Francisco.
-          </p>
-          <button>shop now</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="sc2">
-      <h2>blog</h2>
-      <div class="sc2c">
-        <div class="sc2thing">
-          <h2>article</h2>
-          <h2>exactly what to wear to every type of wedding this summer</h2>
-          <p>
-            A large part of the business here is building up the "experience".
-            Double-page spreads in magazines. Ads on TV. Product placement and
-            sponsorship in golf tournaments.
-          </p>
-          <div class="sc2phr">
-            <hr />
-            <p>21 January 2018 by guido</p>
+      <div class="fthing">
+        <h2>contact us</h2>
+        <div class="fthingig">
+          <div class="fthingin">
+            <p style="margin-top: -5px">adress:</p>
+            <a
+              href="https://www.google.com/maps?q=123+Street+Name,+City,+England"
+              target="_blank"
+              >123 street name, city, england</a
+            >
           </div>
-        </div>
-        <div class="sc2thing">
-          <h2>tips</h2>
-          <h2>exactly what to wear to every type of wedding this summer</h2>
-          <p>
-            When selling 70% fewer shirts, however, there are fewer shirts on
-            the market, making it more exclusive, and therefore worth the money,
-            for those to whom it matters.
-          </p>
-          <div class="sc2phr">
-            <hr />
-            <p>21 January 2018 by guido</p>
+          <div class="fthingin">
+            <p>phone:</p>
+            <a href="tel:+11234567890">(123) 456-7890</a>
           </div>
-        </div>
-        <div class="sc2thing">
-          <h2>tips</h2>
-          <h2>exactly what to wear to every type of wedding this summer</h2>
-          <p>
-            A large part of the business here is building up the "experience".
-            Double-page spreads in magazines. Ads on TV. Product placement and
-            sponsorship in golf tournaments.
-          </p>
-          <div class="sc2phr">
-            <hr />
-            <p>21 January 2018 by guido</p>
+          <div class="fthingin">
+            <p>email:</p>
+            <a href="mailto:mail@example.com">mail@example.com</a>
           </div>
-        </div>
-        <div class="sc2thing">
-          <h2>article</h2>
-          <h2>exactly what to wear to every type of wedding this summer</h2>
-          <p>
-            When selling 70% fewer shirts, however, there are fewer shirts on
-            the market, making it more exclusive, and therefore worth the money,
-            for those to whom it matters.
-          </p>
-          <div class="sc2phr">
-            <hr />
-            <p>21 January 2018 by guido</p>
+          <div class="fthingin">
+            <p>working days/hours</p>
+            <a>mon - sun / 9:00am - 8:00pm</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="sc3">
-      <div class="sc3thing">
-        <img src="Image/checkmark.svg" alt="checkmark" />
-        <p>Duties and Taxes Guaranteed</p>
-      </div>
-      <div class="sc3thing">
-        <img src="Image/checkmark.svg" alt="checkmark" />
-        <p>Free Express Shipping</p>
-      </div>
-      <div class="sc3thing">
-        <img src="Image/checkmark.svg" alt="checkmark" />
-        <p>Customer Love</p>
-      </div>
-      <div class="sc3thing">
-        <img src="Image/checkmark.svg" alt="checkmark" />
-        <p>Easy Returns</p>
-      </div>
-      <div class="sc3thing">
-        <img src="Image/checkmark.svg" alt="checkmark" />
-        <p>Secure Payment</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <a href="#bod"><img src="Image/logo.svg" alt="logo" /></a>
-    <div class="fthing">
-      <h2>features</h2>
-      <div class="fthingig">
-        <a href="#">men</a>
-        <a href="#">women</a>
-        <a href="#">boys</a>
-        <a href="#">girls</a>
-        <a href="#">new arrivals</a>
-        <a href="#">shoes</a>
-        <a href="#">clothes</a>
-        <a href="#">accessories</a>
-      </div>
-    </div>
-    <div class="fthing">
-      <h2>menu</h2>
-      <div class="fthingig">
-        <a href="#">about us</a>
-        <a href="#">contact us</a>
-        <a href="#">my account</a>
-        <a href="#">orders history</a>
-        <a href="#">my wishlist</a>
-        <a href="#">blog</a>
-        <a href="#">login</a>
-      </div>
-    </div>
-    <div class="fthing">
-      <h2>contact us</h2>
-      <div class="fthingig">
-        <div class="fthingin">
-          <p style="margin-top: -5px;">adress:</p>
-          <a href="https://www.google.com/maps?q=123+Street+Name,+City,+England" target="_blank">123 street name, city,
-            england</a>
-        </div>
-        <div class="fthingin">
-          <p>phone:</p>
-          <a href="tel:+11234567890">(123) 456-7890</a>
-        </div>
-        <div class="fthingin">
-          <p>email:</p>
-          <a href="mailto:mail@example.com">mail@example.com</a>
-        </div>
-        <div class="fthingin">
-          <p>working days/hours</p>
-          <a>mon - sun / 9:00am - 8:00pm</a>
+      <div class="fthing">
+        <h2>follow us</h2>
+        <div class="fthingig">
+          <div class="fthingin2">
+            <img src="Image/facebook.svg" alt="facebook" />
+            <a href="https://www.facebook.com/" target="_blank">facebook</a>
+          </div>
+          <div class="fthingin2">
+            <img src="Image/twitter 2.svg" alt="twitter" />
+            <a href="https://x.com/" target="_blank">twitter</a>
+          </div>
+          <div class="fthingin2">
+            <img
+              src="Image/instagram-photo-camera-symbol.svg"
+              alt="instagram"
+            />
+            <a href="https://www.instagram.com/" target="_blank">instagram</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="fthing">
-      <h2>follow us</h2>
-      <div class="fthingig">
-        <div class="fthingin2">
-          <img src="Image/facebook.svg" alt="facebook" />
-          <a href="https://www.facebook.com/" target="_blank">facebook</a>
-        </div>
-        <div class="fthingin2">
-          <img src="Image/twitter 2.svg" alt="twitter" />
-          <a href="https://x.com/" target="_blank">twitter</a>
-        </div>
-        <div class="fthingin2">
-          <img src="Image/instagram-photo-camera-symbol.svg" alt="instagram" />
-          <a href="https://www.instagram.com/" target="_blank">instagram</a>
+      <div class="fthing">
+        <h2>join us</h2>
+        <div class="fthingig fform">
+          <p>Subscribe to our newsletters</p>
+          <input type="text" placeholder="email adress" />
+          <button class="btn">subscribe!</button>
         </div>
       </div>
-    </div>
-    <div class="fthing">
-      <h2>join us</h2>
-      <div class="fthingig fform">
-        <p>Subscribe to our newsletters</p>
-        <input type="text" placeholder="email adress" />
-        <button class="btn">subscribe!</button>
+      <div class="bottom">
+        <hr />
+        <p>© 2026. Crisp theme Developed by GoIteens group FE_7_18_02_25✌🏻</p>
       </div>
-    </div>
-    <div class="bottom">
-      <hr />
-      <p>© 2026. Crisp theme Developed by GoIteens group FE_7_18_02_25✌🏻</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
