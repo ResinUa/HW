@@ -1577,3 +1577,77 @@ footer .fform button:hover {
 #adaptivemenu {
   display: none;
 }
+
+@media (max-width: 320px) {
+  .hero, .about-dresses, .product-card, .content-toolbar, .breadcrumb, header {
+    display: none !important;
+  }
+
+  .adaptivebtnthing {
+    display: flex !important;
+    margin-bottom: 10px;
+    button {
+      color: white;
+      text-transform: uppercase;
+      padding: 11px;
+      width: 100vw;
+      height: 40px;
+      background-color: black;
+      border: none;
+      border-radius: 0;
+      text-align: start;
+      font-size: 12px;
+    }
+
+    img {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 185px;
+      right: 11px;
+    }
+  }
+
+  .shop-layout {
+    padding-left: 11px !important;
+  }
+
+  .filter-list {
+    label {
+      font-size: 10px !important;
+      gap: 6px !important;
+    }
+
+    input {
+      width: 10px !important;
+      height: 10px !important; 
+    }
+  }
+
+  .swatch {
+    border-radius: 0 !important;
+  }
+
+  .size-grid {
+    button {
+      width: 39px !important;
+      height: 39px !important;
+      font-size: 12px !important;
+    }
+  }
+
+  .apply-btn {
+    width: 86px !important;
+    height: 32px !important;
+    border: 2px solid #C4C4C4 !important;
+    color: #828282 !important;
+    background-color: #F0F2F2 !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 175px !important;
+  }
+}
+
+.adaptivebtnthing {
+  display: none;
+}
