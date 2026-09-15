@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    background-color: #0e0e0e;
+    background-image: url(./../img/noise.png);
+}
+
+header {
+    background-image: url(./../img/headerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 446px;
+}
