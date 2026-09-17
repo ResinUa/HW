@@ -1,0 +1,123 @@
+[
+    {
+        "image": "img/mcd.png",
+        "name": "McDonalds",
+        "niche": "fast food restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/lotus.png",
+        "name": "lotus pavilion",
+        "niche": "european restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/raj.png",
+        "name": "raj steakhouse",
+        "niche": "bar & grill",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/shiro.png",
+        "name": "shiro",
+        "niche": "Pan-Asian Restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/spice.png",
+        "name": "spice terrace",
+        "niche": "north indian restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/taazaa.png",
+        "name": "taazaa thindi",
+        "niche": "fast food restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/toit.png",
+        "name": "Toit BrewPub",
+        "niche": "bar & grill",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/bk.png",
+        "name": "burger king",
+        "niche": "fast food restaurant.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/dominos.png",
+        "name": "dominos pizza",
+        "niche": "pizzarea.",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/amala.png",
+        "name": "amala spot",
+        "niche": "african restaurant",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    },
+    {
+        "image": "img/theonlyplace.png",
+        "name": "the only place",
+        "niche": "steakhouse",
+        "rating": "5.0",
+        "VerStatus": "RN Verified",
+        "VerDate": "2 jan 2025",
+        "number": "+91-998-899-1242",
+        "status": "open now",
+        "respondTime": "Responds in 12 minutes"
+    }
+]
