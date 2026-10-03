@@ -1,3 +1,98 @@
+.faqs2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faqs2 .fs2c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.faqs2 .fs2cright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+}
+.faqs2 .fs2cright .fs2crchild {
+  width: 634px;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 16px;
+  background-color: #242424;
+  padding: 24px;
+  cursor: pointer;
+}
+.faqs2 .fs2cright .fs2crchild p {
+  font-size: 16px;
+  color: #aaa;
+  font-family: "open sans", sans-serif;
+  opacity: 0;
+  position: absolute;
+  width: 586px;
+}
+.faqs2 .fs2cright .fs2crchild h2 {
+  color: #fff;
+  font-size: 23px;
+  letter-spacing: 8%;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+}
+
+.fs2crchild:hover {
+  animation: faq_div 1s forwards;
+}
+.fs2crchild:hover p {
+  animation: faq_p 1s forwards;
+}
+.fs2crchild:hover h2 {
+  animation: faq_h2 1s forwards;
+}
+
+@keyframes faq_div {
+  from {
+    width: 634px;
+    height: 78px;
+    border: none;
+  }
+  to {
+    width: 633px;
+    height: 178px;
+    border: 1px solid #DCCA87;
+  }
+}
+@keyframes faq_p {
+  0% {
+    opacity: 0;
+    position: absolute;
+  }
+  60% {
+    position: static;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    position: static;
+    opacity: 1;
+  }
+}
+@keyframes faq_h2 {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #DCCA87;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

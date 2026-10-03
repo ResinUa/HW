@@ -1,0 +1,81 @@
+@import 'mixins';
+
+.faqs2 {
+    @include flex();
+    .fs2c {
+        @include flex($fd: row);
+        gap: 32px;
+    }
+    .fs2cright {
+        @include flex();
+        row-gap: 16px;
+        .fs2crchild {
+            width: 634px;
+            height: 78px; //178
+            @include flex($ai: start);
+            row-gap: 16px;
+            background-color: #242424;
+            padding: 24px;
+            cursor: pointer;
+            p {
+                @include text();
+                opacity: 0;
+                position: absolute;
+                width: 586px;
+            }
+            h2 {
+                @include title($fs: 23px, $fw: 700, $c: #fff);
+                position: relative;
+            }
+        }
+    }
+}
+
+.fs2crchild:hover {
+    animation: faq_div 1s forwards;
+    p {
+        animation: faq_p 1s forwards;
+    }
+    h2 {
+        animation: faq_h2 1s forwards;
+    }
+}
+
+@keyframes faq_div {
+    from {
+        width: 634px;
+        height: 78px;
+        border: none;
+    }
+    to {
+        width: 633px;
+        height: 178px;
+        border: 1px solid #DCCA87;
+    }
+}
+
+@keyframes faq_p {
+    0% {
+        opacity: 0;
+        position: absolute;
+    }
+    60% {
+        position: static;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        position: static;
+        opacity: 1;
+    }
+}
+
+@keyframes faq_h2 {
+    from {
+        color: #fff;
+    }
+    to {
+        color: #DCCA87;
+    }
+}
