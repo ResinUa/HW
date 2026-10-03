@@ -1,0 +1,489 @@
+@import 'mixins';
+
+//general/////////////////////////////////////////////////////
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'cormorant upright', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  padding-top: 121px; //header 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0C0C0C;
+}
+
+#bullshit {
+  //self-explanatory
+  color: white;
+  position: absolute;
+  top: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 152px;
+}
+
+#leftstring, #rightstring {
+  position: absolute;
+  z-index: -1;
+}
+
+#leftstring { //html line 37-38
+  top: 500px;
+  left: 0;
+}
+
+#rightstring {
+  top: 1300px;
+  right: 0px;
+}
+
+//section 1///////////////////////////////////////////////////
+.s1 {
+  background-image: url(./../src/img/s1bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 679px;
+  @include flex();
+  text-align: center;
+
+  .s1c {
+    @include flex();
+    row-gap: 24px;
+    z-index: 1;
+
+    h2 {
+      @include title($fs: 90px, $fw: 700);
+    }
+
+    .s1cnav {
+      @include flex ($fd: row);
+      gap: 14px;
+
+      a {
+        @include pthing();
+        text-decoration: none;
+        position: relative;
+        top: 0;
+      }
+
+      //s1 animation/////////////////////////////////////////////////////
+      .s1animation {
+        @include flex();
+        cursor: pointer;
+      }
+
+      .s1animthing {
+        background-color: #DCCA87;
+        width: 0;
+        height: 3px;
+        top: 0;
+        position: relative;
+        border-radius: 67px;
+      }
+
+      .s1animation:hover {
+        a {
+          animation: s1animation_a 0.5s forwards;
+        }
+
+        .s1animthing {
+          animation: s1animation_div 0.5s forwards;
+        }
+      }
+    }
+  }
+
+  .s1shade {
+    position: absolute;
+    height: 679px;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+//s1 animations///////////////////////////////////////////////////
+@keyframes s1animation_div {
+  0% {
+    width: 0;
+    top: 0;
+  }
+
+  50% {
+    width: 3px;
+    top: 5px;
+  }
+
+  100% {
+    width: 100%;
+    top: 5px;
+  }
+}
+
+@keyframes s1animation_a {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -5px;
+  }
+
+  100% {
+    top: -5px;
+  }
+}
+
+//section 2//////////////////////////////////////////////////////////
+.s2 {
+  @include flex();
+  width: 100vw;
+  row-gap: 14px;
+
+  .s2up {
+    @include flex();
+    row-gap: 14px;
+
+    p {
+      @include pthing();
+    }
+  }
+
+  h2 {
+    @include title();
+  }
+
+  .s2c {
+    @include flex($fd: row);
+    gap: 143px;
+    margin-top: 60px;
+
+    .s2cleft {
+      @include flex();
+      row-gap: 40px;
+
+      p {
+        @include text();
+        width: 523px;
+        letter-spacing: 4%;
+
+      }
+
+      img {
+        width: 523px;
+        height: 566px;
+      }
+    }
+
+    .s2cright {
+      @include flex($ai: start);
+      row-gap: 40px;
+
+      img {
+        width: 634px;
+        height: 385px;
+      }
+
+      h2 {
+        font-size: 45px;
+      }
+
+      .s2crthing {
+        @include flex($fd: row);
+        gap: 64px;
+
+        .s2crtchild {
+          @include flex($ai: start);
+          row-gap: 8px;
+          width: 126px;
+
+          p:first-child {
+            font-size: 45px;
+            color: #DCCA87;
+          }
+
+          img {
+            width: 40px;
+            height: 9px;
+          }
+
+          p:last-child {
+            @include pthing($fs: 32px);
+            transition: 0.2s;
+            cursor: pointer;
+          }
+          p:last-child:hover {
+            color: #aaa;
+          }
+        }
+        .s2beam {
+          width: 1px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+//section 3///////////////////////////////////////////////////
+.s3 {
+  @include flex();
+  row-gap: 40px;
+
+  .s3up {
+    @include flex();
+    row-gap: 8px;
+    p {
+      @include pthing();
+    }
+  }
+  .s3c {
+    @include flex();
+    row-gap: 40px;
+    h2 {
+      @include title();
+    }
+    p {
+      @include text();
+      width: 824px;
+      text-align: center;
+      letter-spacing: 4%;
+    }
+    img {
+      margin-top: 50px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    img:hover {
+      border: 2px solid #DCCA87;  
+      position: relative;    
+      top: -2px;
+      transform: scale(1.02);
+    }
+  }
+}
+
+//section 4/////////////////////////////////////////////////////////////
+.s4 {
+  background-image: url('./../src/img/sbg.jpg');
+  background-clip: cover;
+  background-position: center;
+  height: 1045px;
+  @include flex();
+  .s4shade {
+    width: 100vw;
+    height: 1045px;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+  }
+  .s4c {
+    z-index: 2;
+    position: relative;
+    @include flex($fd: row);
+    gap: 96px;
+    .s4right {
+      @include flex();
+      row-gap: 64px;
+      .s4rup {
+        @include flex($ai: start);
+        row-gap: 8px;
+        p {
+          @include pthing();
+          font-style: normal;
+          font-family: 'cormorant upright', sans-serif;
+        }
+      }
+      p {
+        @include text();
+        font-style: italic;
+        width: 570px;
+        letter-spacing: 4%;
+        span {
+          margin-right: 10px;
+        }
+      }
+      h2 {
+        @include title();
+        position: relative;
+        top: -56px;
+      }
+      .s4rsignature {
+        @include flex($ai: start);
+        row-gap: 8px;
+        h2 {
+          position: static;
+          @include title($fs: 32px, $fw: 400);
+        }
+        p {
+          font-style: normal;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  #kevinluo {
+    font-family: "rouge script", sans-serif;
+    font-size: 64px;
+    text-transform: capitalize;
+    font-style: normal;
+  }
+}
+
+//section 5///////////////////////////////////////////////////
+.s5 {
+  @include flex();
+  .s5up {
+    @include flex();
+    row-gap: 8px;
+    p {
+      @include pthing();
+    }
+    h2 {
+      margin-top: 6px;
+      @include title();
+    }
+  }
+
+  #s5reviews {
+    @include flex($fd: row);
+    height: 484px;
+    margin-top: 240px;
+    gap: 32px;
+    .s5review {
+      @include flex($fd: row);
+      gap: 16px;
+      width: 634px;
+      .s5rleft {
+        .goy {
+          width: 190px;
+          height: 190px;
+        }
+        .s5quote {
+          position: relative;
+          top: -20px;
+          left: 160px;
+        }
+      }
+      .s5rright {
+        @include flex($ai: start);
+        row-gap: 16px;
+        position: relative;
+        top: -12px;
+        p:first-child {
+          @include text();
+          font-style: italic;
+        }
+        h2 {
+          @include title($fs:32px, $fw: 400);
+        }
+        p:last-child {
+          @include text($c: #F5EFDB);
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .s5review:first-child, .s5review:nth-child(2) {
+      position: relative;
+      top: -292px;
+      left: 684px;
+    }
+    
+    .s5review:nth-child(3), .s5review:last-child {
+      position: relative;
+      top: 82px;
+      right: 645px;
+    }
+  }
+}
+
+//section 6////////////////////////////////////////////////////
+.s6 {
+  width: 100vw;
+  height: 705px;
+  @include flex();
+    background-image: url('./../src/img/sbg.jpg');
+  background-clip: cover;
+  background-position: center;
+  .s6shade {
+    width: 100vw;
+    height: 705px;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+  .s6c {
+    @include flex($fd: row);
+    z-index: 2;
+    gap: 64px;
+    padding-left: 600px;
+    .s6left {
+      width: 491px;
+      @include flex($ai: start);
+      row-gap: 24px;
+      .s6lup {
+        @include flex($ai: start);
+        row-gap: 8px;
+
+        p {
+          @include pthing();
+          text-transform: capitalize;
+        }
+      }
+      h2 {
+        @include title();
+      }
+      #s6ldtext {
+        @include text();
+        width: 491px;
+        letter-spacing: 4%;
+      }
+      .s6ldown {
+        @include flex($ai: start);
+        row-gap: 24px;
+        button {
+          background-color: #DCCA87;
+          border: 1px solid #DCCA87;
+          border-radius: 0;
+          width: 136px;
+          height: 44px;
+          cursor: pointer;
+          color: #0C0C0C;
+          font-weight: 700;
+          font-size: 16px;
+          text-transform: capitalize;
+          transition: 0.2s;
+        }
+        button:hover {
+          border: 1px solid white;
+        }
+      }
+    }
+    #s6right {
+      overflow-x: scroll;
+      width: 1400px;
+      @include flex($fd: row, $ai: start, $jc: start);
+      gap: 32px;
+      img {
+        width: 361px;
+        height: 536px;
+        cursor: pointer;
+      }
+    }
+  }
+}

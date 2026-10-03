@@ -1,0 +1,26 @@
+@mixin pthing ($fs: 23px, $c: #fff, $tt: capitalize) {
+    font-size: $fs;
+    color: $c;
+    text-transform: $tt;
+}
+
+@mixin text ($fs: 16px, $c: #aaa) {
+    font-size: $fs;
+    color: $c;
+    font-family: 'open sans', sans-serif;
+}
+
+@mixin title ($c: #DCCA87, $fs: 64px, $ls: 8%, $tt: capitalize, $fw: 600) {
+    color: $c;
+    font-size: $fs;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    font-weight: $fw;
+}
+
+@mixin flex ($d: flex, $fd: column, $ai: center, $jc: center) {
+    display: $d;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+}

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "1s5",
+        "img": "src/img/people/guy1.jpg",
+        "name": "wade warren",
+        "occupation": "sommelier"
+    },
+    {
+        "id": "2s5",
+        "img": "src/img/people/guy2.jpg",
+        "name": "jane cooper",
+        "occupation": "chef"
+    },
+    {
+        "id": "3s5",
+        "img": "src/img/people/gey3.jpg",
+        "name": "robert fox",
+        "occupation": "chef"
+    },
+    {
+        "id": "4s5",
+        "img": "src/img/people/goy4.jpg",
+        "name": "brooklyn simmons",
+        "occupation": "caterer"
+    },
+
+    {
+        "id": "post1",
+        "img": "src/img/posts/post1.jpg"
+    },
+    {
+        "id": "post2",
+        "img": "src/img/posts/post2.png"
+    },
+    {
+        "id": "post3",
+        "img": "src/img/posts/post3.jpg"
+    },
+    {
+        "id": "post4",
+        "img": "src/img/posts/post4.jpg"
+    },
+    {
+        "id": "post5",
+        "img": "src/img/posts/post5.jpg"
+    },
+    {
+        "id": "post6",
+        "img": "src/img/posts/post6.jpg"
+    },
+    {
+        "id": "post7",
+        "img": "src/img/posts/post7.png"
+    },
+    {
+        "id": "post8",
+        "img": "src/img/posts/post8.jpg"
+    }
+]
