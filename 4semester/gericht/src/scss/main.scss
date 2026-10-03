@@ -37,12 +37,14 @@ main {
   row-gap: 152px;
 }
 
-#leftstring, #rightstring {
+#leftstring,
+#rightstring {
   position: absolute;
   z-index: -1;
 }
 
-#leftstring { //html line 37-38
+#leftstring {
+  //html line 37-38
   top: 500px;
   left: 0;
 }
@@ -228,10 +230,12 @@ main {
             transition: 0.2s;
             cursor: pointer;
           }
+
           p:last-child:hover {
             color: #aaa;
           }
         }
+
         .s2beam {
           width: 1px;
           height: 100px;
@@ -249,30 +253,36 @@ main {
   .s3up {
     @include flex();
     row-gap: 8px;
+
     p {
       @include pthing();
     }
   }
+
   .s3c {
     @include flex();
     row-gap: 40px;
+
     h2 {
       @include title();
     }
+
     p {
       @include text();
       width: 824px;
       text-align: center;
       letter-spacing: 4%;
     }
+
     img {
       margin-top: 50px;
       cursor: pointer;
       transition: 0.2s;
     }
+
     img:hover {
-      border: 2px solid #DCCA87;  
-      position: relative;    
+      border: 2px solid #DCCA87;
+      position: relative;
       top: -2px;
       transform: scale(1.02);
     }
@@ -284,6 +294,7 @@ main {
   right: 151px;
   top: 1984px;
 }
+
 //section 4/////////////////////////////////////////////////////////////
 .s4 {
   background-image: url('./../src/img/sbg.jpg');
@@ -291,6 +302,7 @@ main {
   background-position: center;
   height: 1045px;
   @include flex();
+
   .s4shade {
     width: 100vw;
     height: 1045px;
@@ -298,44 +310,54 @@ main {
     background-color: rgba($color: #000000, $alpha: 0.5);
     z-index: 1;
   }
+
   .s4c {
     z-index: 2;
     position: relative;
     @include flex($fd: row);
     gap: 96px;
+
     .s4right {
       @include flex();
       row-gap: 64px;
+
       .s4rup {
         @include flex($ai: start);
         row-gap: 8px;
+
         p {
           @include pthing();
           font-style: normal;
           font-family: 'cormorant upright', sans-serif;
         }
       }
+
       p {
         @include text();
         font-style: italic;
         width: 570px;
         letter-spacing: 4%;
+
         span {
           margin-right: 10px;
         }
       }
+
       h2 {
         @include title();
         position: relative;
         top: -56px;
       }
+
       .s4rsignature {
         @include flex($ai: start);
         row-gap: 8px;
+
         h2 {
           position: static;
           @include title($fs: 32px, $fw: 400);
         }
+
         p {
           font-style: normal;
           text-transform: capitalize;
@@ -343,6 +365,7 @@ main {
       }
     }
   }
+
   #kevinluo {
     font-family: "rouge script", sans-serif;
     font-size: 64px;
@@ -357,15 +380,19 @@ main {
   left: 146px;
   top: 3138px;
 }
+
 //section 5///////////////////////////////////////////////////
 .s5 {
   @include flex();
+
   .s5up {
     @include flex();
     row-gap: 8px;
+
     p {
       @include pthing();
     }
+
     h2 {
       margin-top: 6px;
       @include title();
@@ -377,33 +404,40 @@ main {
     height: 484px;
     margin-top: 240px;
     gap: 32px;
+
     .s5review {
       @include flex($fd: row);
       gap: 16px;
       width: 634px;
+
       .s5rleft {
         .goy {
           width: 190px;
           height: 190px;
         }
+
         .s5quote {
           position: relative;
           top: -20px;
           left: 160px;
         }
       }
+
       .s5rright {
         @include flex($ai: start);
         row-gap: 16px;
         position: relative;
         top: -12px;
+
         p:first-child {
           @include text();
           font-style: italic;
         }
+
         h2 {
-          @include title($fs:32px, $fw: 400);
+          @include title($fs: 32px, $fw: 400);
         }
+
         p:last-child {
           @include text($c: #F5EFDB);
           text-transform: capitalize;
@@ -411,13 +445,15 @@ main {
       }
     }
 
-    .s5review:first-child, .s5review:nth-child(2) {
+    .s5review:first-child,
+    .s5review:nth-child(2) {
       position: relative;
       top: -292px;
       left: 684px;
     }
-    
-    .s5review:nth-child(3), .s5review:last-child {
+
+    .s5review:nth-child(3),
+    .s5review:last-child {
       position: relative;
       top: 82px;
       right: 645px;
@@ -430,29 +466,34 @@ main {
   right: 157px;
   top: 4359px;
 }
+
 //section 6////////////////////////////////////////////////////
 .s6 {
   width: 100vw;
   height: 705px;
   @include flex();
-    background-image: url('./../src/img/sbg.jpg');
+  background-image: url('./../src/img/sbg.jpg');
   background-clip: cover;
   background-position: center;
+
   .s6shade {
     width: 100vw;
     height: 705px;
     position: absolute;
     background-color: rgba($color: #000000, $alpha: 0.5);
   }
+
   .s6c {
     @include flex($fd: row);
     z-index: 2;
     gap: 64px;
     padding-left: 600px;
+
     .s6left {
       width: 491px;
       @include flex($ai: start);
       row-gap: 24px;
+
       .s6lup {
         @include flex($ai: start);
         row-gap: 8px;
@@ -462,17 +503,21 @@ main {
           text-transform: capitalize;
         }
       }
+
       h2 {
         @include title();
       }
+
       #s6ldtext {
         @include text();
         width: 491px;
         letter-spacing: 4%;
       }
+
       .s6ldown {
         @include flex($ai: start);
         row-gap: 24px;
+
         button {
           background-color: #DCCA87;
           border: 1px solid #DCCA87;
@@ -486,16 +531,19 @@ main {
           text-transform: capitalize;
           transition: 0.2s;
         }
+
         button:hover {
           border: 1px solid white;
         }
       }
     }
+
     #s6right {
       overflow-x: scroll;
       width: 1400px;
       @include flex($fd: row, $ai: start, $jc: start);
       gap: 32px;
+
       img {
         width: 361px;
         height: 536px;

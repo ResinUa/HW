@@ -127,7 +127,8 @@ main {
   row-gap: 152px;
 }
 
-#leftstring, #rightstring {
+#leftstring,
+#rightstring {
   position: absolute;
   z-index: -1;
 }
@@ -582,12 +583,14 @@ main {
   font-family: "open sans", sans-serif;
   text-transform: capitalize;
 }
-.s5 #s5reviews .s5review:first-child, .s5 #s5reviews .s5review:nth-child(2) {
+.s5 #s5reviews .s5review:first-child,
+.s5 #s5reviews .s5review:nth-child(2) {
   position: relative;
   top: -292px;
   left: 684px;
 }
-.s5 #s5reviews .s5review:nth-child(3), .s5 #s5reviews .s5review:last-child {
+.s5 #s5reviews .s5review:nth-child(3),
+.s5 #s5reviews .s5review:last-child {
   position: relative;
   top: 82px;
   right: 645px;
