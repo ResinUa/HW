@@ -279,6 +279,11 @@ main {
   }
 }
 
+#s3logo {
+  position: absolute;
+  right: 151px;
+  top: 1984px;
+}
 //section 4/////////////////////////////////////////////////////////////
 .s4 {
   background-image: url('./../src/img/sbg.jpg');
@@ -346,6 +351,12 @@ main {
   }
 }
 
+#s4logo {
+  position: absolute;
+  z-index: 3;
+  left: 146px;
+  top: 3138px;
+}
 //section 5///////////////////////////////////////////////////
 .s5 {
   @include flex();
@@ -414,6 +425,11 @@ main {
   }
 }
 
+#s5logo {
+  position: absolute;
+  right: 157px;
+  top: 4359px;
+}
 //section 6////////////////////////////////////////////////////
 .s6 {
   width: 100vw;

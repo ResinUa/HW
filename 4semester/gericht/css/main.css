@@ -396,6 +396,12 @@ main {
   transform: scale(1.02);
 }
 
+#s3logo {
+  position: absolute;
+  right: 151px;
+  top: 1984px;
+}
+
 .s4 {
   background-image: url("./../src/img/sbg.jpg");
   background-clip: cover;
@@ -489,6 +495,13 @@ main {
   font-style: normal;
 }
 
+#s4logo {
+  position: absolute;
+  z-index: 3;
+  left: 146px;
+  top: 3138px;
+}
+
 .s5 {
   display: flex;
   flex-direction: column;
@@ -578,6 +591,12 @@ main {
   position: relative;
   top: 82px;
   right: 645px;
+}
+
+#s5logo {
+  position: absolute;
+  right: 157px;
+  top: 4359px;
 }
 
 .s6 {
