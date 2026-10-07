@@ -93,6 +93,150 @@
     color: #DCCA87;
   }
 }
+#tlogo {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 207px;
+}
+
+.thingig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thingig .tcentering {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 64px;
+}
+.thingig .tup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+}
+.thingig .tup div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 14px;
+}
+.thingig .tup div p {
+  font-size: 23px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 4%;
+}
+.thingig .tup h2 {
+  color: #DCCA87;
+  font-size: 64px;
+  letter-spacing: 8%;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 4%;
+}
+.thingig .thingc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.thingig .thingc .tcleft,
+.thingig .thingc .tcright {
+  width: 412px;
+  height: 596px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+.thingig .thingc .tcleft h2,
+.thingig .thingc .tcright h2 {
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: 8%;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 4%;
+  margin-bottom: 8px;
+}
+.thingig .thingc .tcleft hr,
+.thingig .thingc .tcright hr {
+  width: 117px;
+  border: 1px solid #FAFAFA;
+  position: relative;
+  top: 14.5px;
+}
+.thingig .thingc .tcleft .tcchild,
+.thingig .thingc .tcright .tcchild {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 32px;
+}
+.thingig .thingc .tcleft .tcchild p,
+.thingig .thingc .tcright .tcchild p {
+  font-size: 23px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 4%;
+}
+.thingig .thingc .tcleft .tcchild div,
+.thingig .thingc .tcright .tcchild div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 8px;
+}
+.thingig .thingc .tcleft .tcchild div p:first-child,
+.thingig .thingc .tcright .tcchild div p:first-child {
+  width: 192px;
+  color: #DCCA87;
+  font-size: 23px;
+  letter-spacing: 8%;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-wrap: nowrap;
+  letter-spacing: 4%;
+}
+.thingig .thingc .tcleft .tcchild div p:last-child,
+.thingig .thingc .tcright .tcchild div p:last-child {
+  width: 192px;
+  text-wrap: nowrap;
+  font-size: 16px;
+  color: #aaa;
+  font-family: "open sans", sans-serif;
+  text-transform: none;
+  letter-spacing: 4%;
+}
+.thingig button {
+  background-color: #DCCA87;
+  border: 1px solid #DCCA87;
+  border-radius: 0;
+  width: 136px;
+  height: 44px;
+  cursor: pointer;
+  color: #0C0C0C;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+.thingig button:hover {
+  border: 1px solid white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

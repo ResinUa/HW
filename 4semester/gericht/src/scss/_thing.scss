@@ -1,0 +1,108 @@
+@import 'mixins';
+
+#tlogo {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 207px;
+    // привіт вероніка, я не знаю який топ писати бо у мене нема повного сайта, впишіть потрібне значення самостійно. дякую за увагу
+}
+
+.thingig {
+    @include flex();
+
+    .tcentering {
+        width: 1920px;
+        @include flex();
+        row-gap: 64px;
+    }
+
+    .tup {
+        @include flex();
+        row-gap: 16px;
+
+        div {
+            @include flex();
+            row-gap: 14px;
+
+            p {
+                @include pthing();
+                letter-spacing: 4%;
+            }
+        }
+
+        h2 {
+            @include title();
+            letter-spacing: 4%;
+        }
+    }
+
+    .thingc {
+        @include flex($fd: row);
+        gap: 32px;
+
+        .tcleft,
+        .tcright {
+            width: 412px;
+            height: 596px;
+            @include flex();
+            row-gap: 40px;
+
+            h2 {
+                @include title($c: #fff, $fs: 45px, $fw: 600);
+                letter-spacing: 4%;
+                margin-bottom: 8px;
+            }
+
+            hr {
+                width: 117px;
+                border: 1px solid #FAFAFA;
+                position: relative;
+                top: 14.5px;
+            }
+
+            .tcchild {
+                @include flex($fd: row, $ai: start);
+                gap: 32px;
+                p {
+                    @include pthing();
+                    letter-spacing: 4%;
+                }
+                div {
+                    @include flex($ai: start);
+                    row-gap: 8px;
+                    p:first-child {
+                        width: 192px;
+                        @include title($fs: 23px);
+                        text-wrap: nowrap;
+                        letter-spacing: 4%;
+                    }
+                    p:last-child {
+                        width: 192px;
+                        text-wrap: nowrap;
+                        @include text();
+                        text-transform: none;
+                        letter-spacing: 4%;
+                    }
+                }
+            }
+        }
+    }
+        button {
+          background-color: #DCCA87;
+          border: 1px solid #DCCA87;
+          border-radius: 0;
+          width: 136px;
+          height: 44px;
+          cursor: pointer;
+          color: #0C0C0C;
+          font-weight: 700;
+          font-size: 16px;
+          text-transform: capitalize;
+          transition: 0.2s;
+        }
+
+        button:hover {
+          border: 1px solid white;
+        }
+}
